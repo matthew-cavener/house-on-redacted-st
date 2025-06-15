@@ -1,0 +1,2 @@
+extends PuzzleResource
+class_name HouseAddressPuzzle
