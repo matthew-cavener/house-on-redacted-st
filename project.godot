@@ -14,6 +14,11 @@ config/name="June 2025 Summer Slow Jam"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://assets/sprites/icon.svg"
 
+[autoload]
+
+EventBus="*res://autoload/event_bus.gd"
+GameManager="*res://autoload/game_manager.gd"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
