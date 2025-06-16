@@ -18,7 +18,6 @@ config/icon="res://assets/sprites/icon.svg"
 
 EventBus="*res://autoload/event_bus.gd"
 GameManager="*res://autoload/game_manager.gd"
-SaveManager="*res://autoload/save_manager.gd"
 
 [rendering]
 
