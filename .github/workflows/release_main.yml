@@ -9,7 +9,7 @@ on:
 env:
   GODOT_VERSION: 4.4.1
   EXPORT_NAME: house-on-redacted-st
-  PROJECT_PATH: godot
+  PROJECT_PATH: .
 
 # https://hub.docker.com/r/barichello/godot-ci/tags
 jobs:
