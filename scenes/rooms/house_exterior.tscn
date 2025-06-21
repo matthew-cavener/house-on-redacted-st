@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://hefq3hnpwyrq" path="res://scenes/rooms/house_exterior.gd" id="1_s2xer"]
 [ext_resource type="Texture2D" uid="uid://ddox1ysevrpw8" path="res://assets/sprites/backgrounds/house_exterior.png" id="2_j31ps"]
-[ext_resource type="Texture2D" uid="uid://c8clulkbd14g3" path="res://assets/sprites/items/tire_swing.png" id="4_1fkhj"]
-[ext_resource type="Resource" uid="uid://c46ox2aiqmdxu" path="res://data/evidence/tire_swing.tres" id="5_hockt"]
+[ext_resource type="Resource" uid="uid://gdyr2rs1iv4p" path="res://data/evidence/house_exterior/demo_tire_swing.tres" id="5_1fkhj"]
 [ext_resource type="Texture2D" uid="uid://6c6n4oj0hcdm" path="res://assets/sprites/icon.svg" id="5_xlja1"]
-[ext_resource type="Resource" uid="uid://dxjc6mkiwtcri" path="res://data/evidence/placeholder_non_hero.tres" id="7_gqelu"]
+[ext_resource type="Texture2D" uid="uid://bxv8y34xix5sn" path="res://assets/sprites/items/tire_swing_cropped.png" id="6_hockt"]
+[ext_resource type="Resource" uid="uid://bklu4sw6rfbis" path="res://data/evidence/house_exterior/demo_letter_evidence.tres" id="7_hockt"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="7_xwprl"]
 
 [node name="HouseExterior" type="Control"]
@@ -28,22 +28,23 @@ texture = ExtResource("2_j31ps")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="PlaceholderNonHeroEvidence" type="TextureButton" parent="Background"]
+[node name="TireSwingEvidence" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_left = 1080.0
-offset_top = 808.0
-offset_right = 1208.0
-offset_bottom = 936.0
-texture_normal = ExtResource("5_xlja1")
+offset_left = 1456.0
+offset_right = 1705.0
+offset_bottom = 801.0
+texture_normal = ExtResource("6_hockt")
 script = ExtResource("7_xwprl")
-evidence_resource = ExtResource("7_gqelu")
+evidence_resource = ExtResource("5_1fkhj")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
-[node name="EvidenceButton" type="TextureButton" parent="Background"]
+[node name="LetterEvidence" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture_normal = ExtResource("4_1fkhj")
+offset_left = 1080.0
+offset_top = 784.0
+offset_right = 1208.0
+offset_bottom = 912.0
+texture_normal = ExtResource("5_xlja1")
 script = ExtResource("7_xwprl")
-evidence_resource = ExtResource("5_hockt")
+evidence_resource = ExtResource("7_hockt")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"

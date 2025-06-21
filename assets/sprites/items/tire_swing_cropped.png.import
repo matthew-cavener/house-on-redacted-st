@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8clulkbd14g3"
-path="res://.godot/imported/tire_swing.png-7a26023dc68d2dda8ad6089af447c91a.ctex"
+uid="uid://bxv8y34xix5sn"
+path="res://.godot/imported/tire_swing_cropped.png-b86e3479bde6f9c4072509e0a4e117ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/items/tire_swing.png"
-dest_files=["res://.godot/imported/tire_swing.png-7a26023dc68d2dda8ad6089af447c91a.ctex"]
+source_file="res://assets/sprites/items/tire_swing_cropped.png"
+dest_files=["res://.godot/imported/tire_swing_cropped.png-b86e3479bde6f9c4072509e0a4e117ac.ctex"]
 
 [params]
 

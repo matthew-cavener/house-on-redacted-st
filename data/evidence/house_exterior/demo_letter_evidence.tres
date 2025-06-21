@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://bklu4sw6rfbis"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_bow4j"]
+[ext_resource type="Texture2D" uid="uid://6c6n4oj0hcdm" path="res://assets/sprites/icon.svg" id="1_k6232"]
+
+[resource]
+script = ExtResource("1_bow4j")
+id = "demo_letter_evidence"
+name = "Demo Letter Evidence"
+description = "This is a letter or something like that, the visual details are not important, so we'll just blur the image and tell you what's going on."
+image = ExtResource("1_k6232")
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"
