@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://c46ox2aiqmdxu"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_xjkqe"]
+[ext_resource type="Texture2D" uid="uid://bxv8y34xix5sn" path="res://assets/sprites/items/tire_swing_cropped.png" id="2_wa6mc"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_xjkqe")
+id = "tire_swing"
+name = "tire swing"
+description = "An old tire swing"
+image = ExtResource("2_wa6mc")
+hero_image = ExtResource("2_wa6mc")
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

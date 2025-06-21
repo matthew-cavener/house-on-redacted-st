@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="June 2025 Summer Slow Jam"
+run/main_scene="uid://b27of1woe625"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://assets/sprites/icon.svg"
 
@@ -19,7 +20,16 @@ config/icon="res://assets/sprites/icon.svg"
 EventBus="*res://autoload/event_bus.gd"
 GameManager="*res://autoload/game_manager.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+anti_aliasing/quality/msaa_2d=1
+anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/screen_space_aa=1
