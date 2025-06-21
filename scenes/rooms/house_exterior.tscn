@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dql5jdsd2mm7t"]
+[gd_scene load_steps=8 format=3 uid="uid://dql5jdsd2mm7t"]
 
 [ext_resource type="Script" uid="uid://hefq3hnpwyrq" path="res://scenes/rooms/house_exterior.gd" id="1_s2xer"]
+[ext_resource type="Texture2D" uid="uid://ddox1ysevrpw8" path="res://assets/sprites/backgrounds/house_exterior.png" id="2_j31ps"]
+[ext_resource type="Texture2D" uid="uid://c8clulkbd14g3" path="res://assets/sprites/items/tire_swing.png" id="4_1fkhj"]
+[ext_resource type="Resource" uid="uid://c46ox2aiqmdxu" path="res://data/evidence/tire_swing.tres" id="5_hockt"]
+[ext_resource type="Texture2D" uid="uid://6c6n4oj0hcdm" path="res://assets/sprites/icon.svg" id="5_xlja1"]
+[ext_resource type="Resource" uid="uid://dxjc6mkiwtcri" path="res://data/evidence/placeholder_non_hero.tres" id="7_gqelu"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="7_xwprl"]
 
 [node name="HouseExterior" type="Control"]
 layout_mode = 3
@@ -10,3 +16,34 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_s2xer")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_j31ps")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PlaceholderNonHeroEvidence" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 808.0
+offset_right = 1208.0
+offset_bottom = 936.0
+texture_normal = ExtResource("5_xlja1")
+script = ExtResource("7_xwprl")
+evidence_resource = ExtResource("7_gqelu")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="EvidenceButton" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("4_1fkhj")
+script = ExtResource("7_xwprl")
+evidence_resource = ExtResource("5_hockt")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"

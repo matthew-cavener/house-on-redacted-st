@@ -1,5 +1,5 @@
-extends Resource
 class_name PuzzleResource
+extends Resource
 
 @export var puzzle_id: String = ""
 @export var puzzle_name: String = ""
@@ -17,16 +17,22 @@ func validate_solution(theory: Dictionary) -> Dictionary:
         if not theory.has(field) or theory[field] != self.solution.get(field, null):
             incorrect_count += 1
 
-    var is_correct = incorrect_count == 0
-    var is_close = incorrect_count > 0 and incorrect_count <= incorrect_fields_for_close_feedback
+    var is_correct = false
+    if incorrect_count == 0:
+        is_correct = true
+    
+    var is_close = false
+    if incorrect_count > 0 and incorrect_count <= incorrect_fields_for_close_feedback:
+        is_close = true
 
     var feedback = ""
-    if is_correct:
-        feedback = solved_feedback
-    elif is_close:
-        feedback = close_feedback
-    else:
-        feedback = failure_feedback
+    match true:
+        is_correct:
+            feedback = solved_feedback
+        is_close:
+            feedback = close_feedback
+        _:
+            feedback = failure_feedback
 
     return {
         "is_correct": is_correct,

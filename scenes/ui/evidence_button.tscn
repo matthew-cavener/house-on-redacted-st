@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg8ph6xr8ylrx"]
+
+[ext_resource type="Script" path="res://scenes/ui/evidence_button.gd" id="1_evidence_button"]
+
+[node name="EvidenceButton" type="TextureButton"]
+layout_mode = 3
+anchors_preset = 0
+stretch_mode = 4
+script = ExtResource("1_evidence_button")

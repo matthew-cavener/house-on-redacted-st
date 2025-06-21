@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://dxjc6mkiwtcri"]
+
+[ext_resource type="Texture2D" uid="uid://6c6n4oj0hcdm" path="res://assets/sprites/icon.svg" id="1_jjled"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_yyeo3"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_yyeo3")
+id = "placeholder_non_hero"
+name = "Placeholder non hero"
+description = "This is something like a letter, the details of the clue are not important, we'll just describe what's going on."
+image = ExtResource("1_jjled")
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

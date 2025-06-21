@@ -11,5 +11,5 @@ solution = {}
 incorrect_fields_for_close_feedback = 2
 solved_feedback = "You have correctly unredacted these documents, that's probably a crime."
 close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. You ought to just stop now before you learn something you aren't supposed to know."
-failure_feedback = "Excellent work good citizen, you have added incorrect data to these official documents you somehow stumbled upon. Present yourself at the nearest NSA field office you are aware of."
+failure_feedback = "Excellent work good citizen, you have added incorrect data to these official documents you somehow stumbled upon. Present yourself at the nearest NSA field office you have clearance to be aware of."
 metadata/_custom_type_script = "uid://3jcevwhmv3f7"

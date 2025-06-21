@@ -1,6 +1,6 @@
 extends Node
 
-signal object_interacted(object_id: String)
+signal object_interacted(object: EvidenceResource)
 
 signal puzzle_blank_filled_in(blank_id: String)
 signal puzzle_failed()
