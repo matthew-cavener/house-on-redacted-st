@@ -20,6 +20,7 @@ func _create_evidence_indicator():
     evidence_indicator.sprite_frames = sprite_frames
     evidence_indicator.animation = "indicator"
     evidence_indicator.position = size / 2
+    evidence_indicator.scale = Vector2(3, 3)
     evidence_indicator.z_index = 1
     add_child(evidence_indicator)
 
