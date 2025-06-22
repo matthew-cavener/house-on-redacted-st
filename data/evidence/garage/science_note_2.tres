@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://3ituptnettpy"]
 
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_6tf0p"]
-[ext_resource type="Texture2D" uid="uid://bhkg674ny3lrs" path="res://assets/sprites/garage/ian files/science_note_1.png" id="1_14snm"]
+[ext_resource type="Texture2D" uid="uid://b6k14tex6ysyr" path="res://assets/sprites/garage/ian files/science_note_3.png" id="1_14snm"]
 
 [resource]
 script = ExtResource("1_6tf0p")
