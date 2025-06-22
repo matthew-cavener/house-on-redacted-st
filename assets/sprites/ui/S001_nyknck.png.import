@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv8xvisfq18ra"
-path="res://.godot/imported/S001_nyknck.png-a239c48c2c6765ede292e090643e63f7.ctex"
+path="res://.godot/imported/S001_nyknck.png-067c379a34f9f2de35420883ef0e9390.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/S001_nyknck.png"
-dest_files=["res://.godot/imported/S001_nyknck.png-a239c48c2c6765ede292e090643e63f7.ctex"]
+source_file="res://assets/sprites/ui/S001_nyknck.png"
+dest_files=["res://.godot/imported/S001_nyknck.png-067c379a34f9f2de35420883ef0e9390.ctex"]
 
 [params]
 
