@@ -9,6 +9,9 @@ var evidence_indicator: AnimatedSprite2D
 
 func _ready():
     _create_evidence_indicator()
+    randomize()
+    var random_frame = randi() % evidence_indicator.sprite_frames.get_frame_count("indicator")
+    evidence_indicator.frame = random_frame
     evidence_indicator.play("indicator")
     pressed.connect(_on_pressed)
     _update_texture()
@@ -20,7 +23,7 @@ func _create_evidence_indicator():
     evidence_indicator.sprite_frames = sprite_frames
     evidence_indicator.animation = "indicator"
     evidence_indicator.position = size / 2
-    evidence_indicator.scale = Vector2(3, 3)
+    evidence_indicator.scale = Vector2(2, 2)
     evidence_indicator.z_index = 1
     add_child(evidence_indicator)
 
