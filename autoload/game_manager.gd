@@ -1,6 +1,4 @@
 extends Node
-<<<<<<< Updated upstream
-=======
 
 var evidence_popup_scene = preload("res://scenes/ui/evidence_popup.tscn")
 var current_evidence_popup: Control
@@ -48,4 +46,3 @@ func show_evidence_popup(evidence: EvidenceResource):
 
 func _on_popup_closed():
 	current_evidence_popup = null
->>>>>>> Stashed changes
