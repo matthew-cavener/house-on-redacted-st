@@ -16,39 +16,39 @@ extends Control
 var current_evidence: EvidenceResource
 
 func _ready():
-    hide()
-    close_area.gui_input.connect(_on_close_area_input)
+	hide()
+	close_area.gui_input.connect(_on_close_area_input)
 
 func show_evidence(evidence: EvidenceResource):
-    current_evidence = evidence
-    _setup_display()
-    show()
+	current_evidence = evidence
+	_setup_display()
+	show()
 
 func _setup_display():
-    if not current_evidence:
-        return
+	if not current_evidence:
+		return
 
-    if current_evidence.hero_image:
-        hero_layout.show()
-        overlay_layout.hide()
-        hero_image.texture = current_evidence.hero_image
-        hero_text.text = current_evidence.description
-        hero_image.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-        hero_image.custom_minimum_size.x = 400
-        hero_text.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-        hero_text.fit_content = true
-    else:
-        hero_layout.hide()
-        overlay_layout.show()
-        overlay_image.texture = current_evidence.image
-        overlay_image.modulate = Color(1, 1, 1, 0.4)
-        description_label.text = current_evidence.description
+	if current_evidence.hero_image:
+		hero_layout.show()
+		overlay_layout.hide()
+		hero_image.texture = current_evidence.hero_image
+		hero_text.text = current_evidence.description
+		hero_image.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		hero_image.custom_minimum_size.x = 400
+		hero_text.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		hero_text.fit_content = true
+	else:
+		hero_layout.hide()
+		overlay_layout.show()
+		overlay_image.texture = current_evidence.image
+		overlay_image.modulate = Color(1, 1, 1, 0.4)
+		description_label.text = current_evidence.description
 
 func _on_close_area_input(event: InputEvent):
-    if event is InputEventMouseButton and event.pressed:
-        hide()
+	if event is InputEventMouseButton and event.pressed:
+		hide()
 
 func _input(event: InputEvent):
-    if visible and event is InputEventKey and event.pressed:
-        if event.keycode == KEY_ESCAPE:
-            hide()
+	if visible and event is InputEventKey and event.pressed:
+		if event.keycode == KEY_ESCAPE:
+			hide()
