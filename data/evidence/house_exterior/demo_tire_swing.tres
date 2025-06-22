@@ -11,4 +11,5 @@ name = "Demo Tire Swing"
 description = "This is a demonstration of the Tire Swing"
 image = ExtResource("2_ad47e")
 hero_image = ExtResource("1_vgmhl")
+shows_in_background = null
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

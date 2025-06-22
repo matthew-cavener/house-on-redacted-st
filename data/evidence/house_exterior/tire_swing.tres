@@ -11,4 +11,5 @@ name = "tire swing"
 description = "An old tire swing"
 image = ExtResource("2_wa6mc")
 hero_image = ExtResource("2_wa6mc")
+shows_in_background = null
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"
