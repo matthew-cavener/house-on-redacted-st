@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://ci12l3eymk6d4"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_6jywd"]
+[ext_resource type="Texture2D" uid="uid://b57vhrc1s3d0r" path="res://assets/sprites/living_room/greene_letter_1.jpg" id="1_s05un"]
+
+[resource]
+script = ExtResource("1_6jywd")
+id = "greene_letter_1"
+name = "Letter"
+description = "I let myself in to take the thing my daughter bought with money from her first paycheck, but I couldn't find it. She said it was in the shape of a heart and used it the shop where you two first met, which is still going strong, by the way. I can only imagine what this tragedy must have been like for you, but [-------].
+
+Signed Corbin Greene. April 1965"
+image = ExtResource("1_s05un")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

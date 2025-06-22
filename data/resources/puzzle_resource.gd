@@ -12,10 +12,10 @@ extends Resource
 
 
 func validate_solution(theory: Dictionary) -> Dictionary:
-    var incorrect_count = 0
-    for field in solution_fields:
-        if not theory.has(field) or theory[field] != self.solution.get(field, null):
-            incorrect_count += 1
+	var incorrect_count = 0
+	for field in solution_fields:
+		if not theory.has(field) or theory[field] != self.solution.get(field, null):
+			incorrect_count += 1
 
     var is_correct = false
     if incorrect_count == 0:
@@ -34,9 +34,9 @@ func validate_solution(theory: Dictionary) -> Dictionary:
         _:
             feedback = failure_feedback
 
-    return {
-        "is_correct": is_correct,
-        "incorrect_count": incorrect_count,
-        "is_close": is_close,
-        "feedback": feedback
-    }
+	return {
+		"is_correct": is_correct,
+		"incorrect_count": incorrect_count,
+		"is_close": is_close,
+		"feedback": feedback
+	}

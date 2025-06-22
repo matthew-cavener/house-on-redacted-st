@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://dulhaw0d2gf7h"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_bt562"]
+[ext_resource type="Texture2D" uid="uid://csji4cerjgjqi" path="res://assets/sprites/kitchen/window_1.png" id="1_jsplr"]
+
+[resource]
+script = ExtResource("1_bt562")
+id = "window_1"
+name = "Window"
+description = "This window faces towards the sunrise, a pleasant view."
+image = ExtResource("1_jsplr")
+hero_image = ExtResource("1_jsplr")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

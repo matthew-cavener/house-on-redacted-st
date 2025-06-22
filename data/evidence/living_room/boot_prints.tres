@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://n5jo1egceqc3"]
+
+[ext_resource type="Texture2D" uid="uid://lc07tauedge7" path="res://assets/sprites/living_room/boot_prints.png" id="1_l8wnw"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_oesuv"]
+
+[resource]
+script = ExtResource("1_oesuv")
+id = "boot_prints"
+name = "Boot Prints"
+description = "There are deep bootmarks in the floor."
+image = ExtResource("1_l8wnw")
+hero_image = ExtResource("1_l8wnw")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

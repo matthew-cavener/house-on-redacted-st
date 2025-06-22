@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://bxhbw8e0lh0q0"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_473y4"]
+[ext_resource type="Texture2D" uid="uid://cl7v7kvxqb1b" path="res://assets/sprites/unsorted/crumpled_paper_5.png" id="1_mk6ku"]
+
+[resource]
+script = ExtResource("1_473y4")
+id = "writer_letter_3"
+name = "Crumpled Letter #3"
+description = "From: Calvin [----------]
+im touuched thhat u thnk i mieght bee the person who did the [----------] for that show, buut aas u can tell by this leter, that skill sset iz rly out of my hannnds.s"
+image = ExtResource("1_mk6ku")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://b7pfbluo0e7y2"]
+
+[ext_resource type="Texture2D" uid="uid://cx6sbjd0j42xl" path="res://assets/sprites/house_exterior/envelope_2.png" id="1_74hyy"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_u5l2d"]
+
+[resource]
+script = ExtResource("1_u5l2d")
+id = "envelope_2"
+name = "Letter"
+description = "“I don’t know what you’re talking about. If you knew me or read my book, you’d know the answer to your question.”
+From MD"
+image = ExtResource("1_74hyy")
+hero_image = ExtResource("1_74hyy")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

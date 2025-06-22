@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://cfl5epnhvx2w4"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_lcy6f"]
+[ext_resource type="Texture2D" uid="uid://8ockqvmwon83" path="res://assets/sprites/kitchen/divorce_paper_1.png" id="1_owxeb"]
+
+[resource]
+script = ExtResource("1_lcy6f")
+id = "divorce_paper_1"
+name = "Court Notice"
+description = "Papers delcaring the divorce between [--------] and [--------] official in 1964. The former wife will now go by her maiden name."
+image = ExtResource("1_owxeb")
+hero_image = ExtResource("1_owxeb")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

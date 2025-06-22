@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://3x0y8x8vjwbh"]
+
+[ext_resource type="Texture2D" uid="uid://0b0hke3s71gt" path="res://assets/sprites/house_exterior/letter_2.png" id="1_sq713"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_pk07k"]
+
+[resource]
+script = ExtResource("2_pk07k")
+id = "item_2"
+name = "Letter"
+description = "Hey, neighbor. Have you seen my rake? I'm worried that the nutcase in house 340 with our street's namesake hung up in his window ran off with it..."
+image = ExtResource("1_sq713")
+hero_image = ExtResource("1_sq713")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

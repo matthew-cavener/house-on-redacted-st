@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://dlfrkkfnbeo1i"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_is88s"]
+[ext_resource type="Texture2D" uid="uid://2q1gnyogh3fu" path="res://assets/sprites/garage/ian files/notebook_3.png" id="1_ndkqf"]
+
+[resource]
+script = ExtResource("1_is88s")
+id = "notebook_3"
+name = "Note on Paranoia"
+description = "In each room, I’ll mark the signal readings, but I'll do it in such a way that no one can see. I’ll write them as percentages and to hide them, I’ll…"
+image = ExtResource("1_ndkqf")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

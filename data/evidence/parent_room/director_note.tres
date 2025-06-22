@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://c4d3s1gur02h8"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_grvbx"]
+[ext_resource type="Texture2D" uid="uid://c85uuvnvvjmgi" path="res://assets/sprites/unsorted/letter_1.png" id="1_uev50"]
+
+[resource]
+script = ExtResource("1_grvbx")
+id = "director_note"
+name = "Letter"
+description = "You’re looking for a “lost” show? That’s fascinating, but unfortunately I haven't directed any cartoons before. During the 50s when that Melody show would have been produced, I had a gig doing photo shoots for a very sweet (haha!) project. That seems like a lifetime ago compared to directing the highest grossing flick of 1963."
+image = ExtResource("1_uev50")
+hero_image = ExtResource("1_uev50")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=4 format=3 uid="uid://46gq2fjkrkh5"]
+
+[ext_resource type="Texture2D" uid="uid://ddtctam1xdt2c" path="res://assets/sprites/grace_room/movie_poster_1.png" id="1_0rdt5"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_2s2pn"]
+[ext_resource type="Texture2D" uid="uid://dkqbmm825ymqq" path="res://assets/sprites/grace_room/missing_poster_1.png" id="2_a7fi5"]
+
+[resource]
+script = ExtResource("1_2s2pn")
+id = "missing_poster_1"
+name = "Missing Poster"
+description = "Grace McAllister was reported missing on March 17th, 1959. She is eleven years old and was last seen in an orange jumper with a stuffed toy that she sewed herself. The toy is from a TV show that she inisted was real, and the doll resembled... [-------------	]"
+image = ExtResource("2_a7fi5")
+hero_image = ExtResource("1_0rdt5")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

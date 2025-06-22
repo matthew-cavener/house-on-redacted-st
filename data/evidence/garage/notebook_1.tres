@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://3tt5udmvnp0y"]
+
+[ext_resource type="Texture2D" uid="uid://cqb5lsw702cmk" path="res://assets/sprites/garage/ian files/notebook_1.png" id="1_myjn5"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_ppcg2"]
+
+[resource]
+script = ExtResource("1_ppcg2")
+id = "notebook_1"
+name = "Note on the Signal"
+description = "After a lot of research, I’ve discovered the source of the “Melody’s Melodies” broadcast. I don't understand exactly how, but it corresponds to a strange phenomena which only occurs here, at this house. I’ve been able to study it through this device. 
+
+The phenomena doesn’t behave like radio waves, electromagnetism or anything I’ve seen before, so I’m calling it the 'signal' until I think of a better name. Interestingly, every room registers a different 'volume' of this signal. Maybe that's important to unlocking its source?"
+image = ExtResource("1_myjn5")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

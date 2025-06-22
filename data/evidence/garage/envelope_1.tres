@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://beeql2bbc2akm"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_bnabv"]
+[ext_resource type="Texture2D" uid="uid://di25q21soeu3h" path="res://assets/sprites/garage/ian files/envelope_1.png" id="1_um0nj"]
+
+[resource]
+script = ExtResource("1_bnabv")
+id = "envelope_1"
+name = "Letter from Beth"
+description = "Adrian, I took back the painting that was hung up in Grace's room. I don’t know why you wrote that the painting was done in ‘58, when it was actually done in 1960 for her funeral. Which reminds me, please, let this mad idea of yours go. I know it's too late for us, but that doesn't mean... [------]"
+image = ExtResource("1_um0nj")
+hero_image = ExtResource("1_um0nj")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

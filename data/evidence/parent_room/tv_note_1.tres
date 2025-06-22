@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://dmujfu86latsc"]
+
+[ext_resource type="Texture2D" uid="uid://c44cdp1g2nj8p" path="res://assets/sprites/parent_room/tv_note_1.png" id="1_4lf0m"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_vg2cp"]
+
+[resource]
+script = ExtResource("1_vg2cp")
+id = "tv_note_1"
+name = "Adrian's Note #3"
+description = "Last week, I thought it meant something that the first and final season both had the same number of episodes, but that was a dead end. Then I spent another day writing down everything that Harmony says from her underwater home. 
+
+It's baffling. Our daughter talked about this \"imaginary TV show\" obsessively before her disappearance, and now years later, it suddenly gets beamed into our televion set. Maybe it's not the show that's strange, but how it's getting here..."
+image = ExtResource("1_4lf0m")
+hero_image = ExtResource("1_4lf0m")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"
