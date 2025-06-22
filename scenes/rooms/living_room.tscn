@@ -1,12 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://cbxpkyuvvymnv"]
+[gd_scene load_steps=25 format=3 uid="uid://cbxpkyuvvymnv"]
 
-[ext_resource type="Texture2D" uid="uid://drh1k7ajsk0hf" path="res://assets/sprites/backgrounds/Unfinished_Living_Room.png" id="1_j6grr"]
+[ext_resource type="Texture2D" uid="uid://bmaol3gd82t20" path="res://assets/sprites/living_room/Rachel pic/Background_LivingRoom.png" id="1_m25an"]
 [ext_resource type="Texture2D" uid="uid://bwajgfl1tg445" path="res://assets/sprites/living_room/newspaper_photo_2.png" id="2_qlgtg"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_oy7wu"]
 [ext_resource type="Resource" uid="uid://cf1lhp4j6kima" path="res://data/evidence/living_room/newspaper_photo_2.tres" id="4_5s50e"]
-[ext_resource type="Texture2D" uid="uid://byq5hjav7x2ol" path="res://assets/sprites/living_room/3_girls_christmas.png" id="5_oy7wu"]
+[ext_resource type="Texture2D" uid="uid://blspy6gtryf33" path="res://assets/sprites/living_room/Rachel pic/Clue_WeddingPhoto.png" id="5_m25an"]
 [ext_resource type="Resource" uid="uid://ds31mxuok145m" path="res://data/evidence/living_room/3_girls_xmas.tres" id="6_5s50e"]
-[ext_resource type="Texture2D" uid="uid://ccrqsi6b3uih5" path="res://assets/sprites/living_room/wedding_frame_1.png" id="7_2cxqs"]
 [ext_resource type="Resource" uid="uid://cecwdwc7rtho0" path="res://data/evidence/living_room/wedding_frame_1.tres" id="7_5s50e"]
 [ext_resource type="Texture2D" uid="uid://drpvlebmnik0s" path="res://assets/sprites/living_room/coffee_table.png" id="9_8llds"]
 [ext_resource type="Texture2D" uid="uid://b57vhrc1s3d0r" path="res://assets/sprites/living_room/greene_letter_1.jpg" id="10_a5o1a"]
@@ -14,10 +13,17 @@
 [ext_resource type="Texture2D" uid="uid://dgtb0nqlrxefu" path="res://assets/sprites/living_room/end_table.png" id="12_mnsc7"]
 [ext_resource type="Resource" uid="uid://ss0y3534hefk" path="res://data/evidence/living_room/receipt_1.tres" id="13_a5o1a"]
 [ext_resource type="Texture2D" uid="uid://ca8xaa4od0c1x" path="res://assets/sprites/unsorted/crumpled_paper_2.png" id="13_xsf0y"]
-[ext_resource type="Texture2D" uid="uid://c3qo2a56cvq4v" path="res://assets/sprites/living_room/book_pile_1.png" id="15_7cjtg"]
+[ext_resource type="Texture2D" uid="uid://bf63mhep7m8iy" path="res://assets/sprites/living_room/book_shelf_1.png" id="15_xsf0y"]
 [ext_resource type="Resource" uid="uid://bwqbobg4e4pee" path="res://data/evidence/living_room/book_pile_1.tres" id="16_8mmjm"]
+[ext_resource type="Texture2D" uid="uid://dkn8ha0c0bphw" path="res://assets/sprites/living_room/rug_1.png" id="17_16llt"]
 [ext_resource type="Texture2D" uid="uid://lc07tauedge7" path="res://assets/sprites/living_room/boot_prints.png" id="17_xsf0y"]
 [ext_resource type="Resource" uid="uid://n5jo1egceqc3" path="res://data/evidence/living_room/boot_prints.tres" id="18_16llt"]
+[ext_resource type="Texture2D" uid="uid://b42mm2qc1fijo" path="res://assets/sprites/living_room/Rachel pic/Armchair.png" id="19_v4v7e"]
+[ext_resource type="Texture2D" uid="uid://dexn61norycov" path="res://assets/sprites/living_room/ceiling_fan.png" id="20_331a7"]
+[ext_resource type="Texture2D" uid="uid://dms2ebgkcrr4e" path="res://assets/sprites/living_room/Rachel pic/Clue_GirlsChristmas.png" id="20_b5xou"]
+[ext_resource type="Texture2D" uid="uid://c1jrrjlqsrxo" path="res://assets/sprites/living_room/Rachel pic/Sofa.png" id="20_v4v7e"]
+[ext_resource type="Texture2D" uid="uid://3i7s5un86301" path="res://assets/sprites/living_room/Rachel pic/HeightRecord.png" id="23_b5xou"]
+[ext_resource type="Resource" uid="uid://dhvv0v5xc0nfe" path="res://data/evidence/kitchen/height_marker.tres" id="24_12hvq"]
 
 [node name="LivingRoom" type="Control"]
 layout_mode = 3
@@ -34,96 +40,128 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_j6grr")
+texture = ExtResource("1_m25an")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="newspaper_photo" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 596.0
-offset_top = 446.0
-offset_right = 1300.0
-offset_bottom = 1470.0
-scale = Vector2(0.092177, 0.092177)
+offset_left = 697.0
+offset_top = 432.0
+offset_right = 1401.0
+offset_bottom = 1456.0
+scale = Vector2(0.144547, 0.144547)
 texture_normal = ExtResource("2_qlgtg")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("4_5s50e")
-
-[node name="easter_pic" type="TextureButton" parent="TextureRect"]
-layout_mode = 0
-offset_left = 696.0
-offset_top = 416.0
-offset_right = 1720.0
-offset_bottom = 1059.0
-scale = Vector2(0.227902, 0.227902)
-texture_normal = ExtResource("5_oy7wu")
-script = ExtResource("3_oy7wu")
-evidence_resource = ExtResource("6_5s50e")
-
-[node name="wedding_frame" type="TextureButton" parent="TextureRect"]
-layout_mode = 0
-offset_left = 982.0
-offset_top = 464.0
-offset_right = 2006.0
-offset_bottom = 1232.0
-rotation = -0.305227
-scale = Vector2(0.129305, 0.129305)
-texture_normal = ExtResource("7_2cxqs")
-script = ExtResource("3_oy7wu")
-evidence_resource = ExtResource("7_5s50e")
-
-[node name="Coffee Table" type="Sprite2D" parent="TextureRect"]
-position = Vector2(823, 1016)
-scale = Vector2(1.22244, 1.22244)
-texture = ExtResource("9_8llds")
-
-[node name="greene_letter" type="TextureButton" parent="TextureRect"]
-layout_mode = 0
-offset_left = 790.0
-offset_top = 860.0
-offset_right = 1814.0
-offset_bottom = 1739.0
-rotation = 0.239635
-scale = Vector2(0.0651156, 0.0651156)
-texture_normal = ExtResource("10_a5o1a")
-script = ExtResource("3_oy7wu")
-evidence_resource = ExtResource("11_eokjc")
 
 [node name="End Table" type="Sprite2D" parent="TextureRect"]
 position = Vector2(724, 739)
 scale = Vector2(0.378465, 0.378465)
 texture = ExtResource("12_mnsc7")
 
+[node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1095.0
+offset_top = 343.0
+offset_right = 1957.0
+offset_bottom = 1208.0
+scale = Vector2(0.555918, 0.555918)
+texture_normal = ExtResource("15_xsf0y")
+script = ExtResource("3_oy7wu")
+evidence_resource = ExtResource("16_8mmjm")
+
+[node name="Rug" type="Sprite2D" parent="TextureRect"]
+position = Vector2(961.979, 968)
+scale = Vector2(2.93463, 2.93463)
+texture = ExtResource("17_16llt")
+
+[node name="boot_prints" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1173.0
+offset_top = 881.0
+offset_right = 2673.0
+offset_bottom = 2381.0
+rotation = 1.14978
+scale = Vector2(0.0977292, 0.0977292)
+texture_normal = ExtResource("17_xsf0y")
+script = ExtResource("3_oy7wu")
+evidence_resource = ExtResource("18_16llt")
+
+[node name="ceiling_fan" type="Sprite2D" parent="TextureRect"]
+position = Vector2(947, 144)
+rotation = 0.989222
+scale = Vector2(1.09022, 1.09022)
+texture = ExtResource("20_331a7")
+
+[node name="Armchair" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1559, 881)
+scale = Vector2(0.865452, 0.865452)
+texture = ExtResource("19_v4v7e")
+
+[node name="easter_pic" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1677.0
+offset_top = 412.0
+offset_right = 1929.0
+offset_bottom = 620.0
+texture_normal = ExtResource("20_b5xou")
+script = ExtResource("3_oy7wu")
+evidence_resource = ExtResource("6_5s50e")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="Wedding Frame" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1530.0
+offset_top = 260.0
+offset_right = 1756.0
+offset_bottom = 459.0
+texture_normal = ExtResource("5_m25an")
+script = ExtResource("3_oy7wu")
+evidence_resource = ExtResource("7_5s50e")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="sofa" type="Sprite2D" parent="TextureRect"]
+position = Vector2(312, 897)
+scale = Vector2(0.673173, 0.673173)
+texture = ExtResource("20_v4v7e")
+
+[node name="Coffee Table" type="Sprite2D" parent="TextureRect"]
+position = Vector2(743, 1002)
+scale = Vector2(1.28944, 1.28944)
+texture = ExtResource("9_8llds")
+
+[node name="greene_letter" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 824.0
+offset_right = 1800.0
+offset_bottom = 1703.0
+rotation = 0.239635
+scale = Vector2(0.0651156, 0.0651156)
+texture_normal = ExtResource("10_a5o1a")
+script = ExtResource("3_oy7wu")
+evidence_resource = ExtResource("11_eokjc")
+
 [node name="receipt" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 145.0
-offset_top = 854.0
-offset_right = 861.0
-offset_bottom = 1878.0
+offset_left = 223.0
+offset_top = 845.0
+offset_right = 939.0
+offset_bottom = 1869.0
 rotation = 0.838152
-scale = Vector2(0.106678, 0.106678)
+scale = Vector2(0.09263, 0.09263)
 texture_normal = ExtResource("13_xsf0y")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("13_a5o1a")
 
-[node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
+[node name="EvidenceButton" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 818.0
-offset_top = 681.0
-offset_right = 1680.0
-offset_bottom = 1330.0
-scale = Vector2(0.172734, 0.172734)
-texture_normal = ExtResource("15_7cjtg")
+offset_left = 1456.0
+offset_top = 501.0
+offset_right = 1566.0
+offset_bottom = 694.0
+texture_normal = ExtResource("23_b5xou")
 script = ExtResource("3_oy7wu")
-evidence_resource = ExtResource("16_8mmjm")
-
-[node name="EvidenceButton3" type="TextureButton" parent="TextureRect"]
-layout_mode = 0
-offset_left = 484.0
-offset_top = 29.0
-offset_right = 1984.0
-offset_bottom = 1529.0
-scale = Vector2(0.177959, 0.177959)
-texture_normal = ExtResource("17_xsf0y")
-script = ExtResource("3_oy7wu")
-evidence_resource = ExtResource("18_16llt")
+evidence_resource = ExtResource("24_12hvq")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"

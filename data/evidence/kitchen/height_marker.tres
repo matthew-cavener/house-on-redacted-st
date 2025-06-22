@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://dhvv0v5xc0nfe"]
+
+[ext_resource type="Texture2D" uid="uid://3i7s5un86301" path="res://assets/sprites/living_room/Rachel pic/HeightRecord.png" id="1_igrqw"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_vgjo8"]
+
+[resource]
+script = ExtResource("1_vgjo8")
+id = "height_marker"
+name = "Height Marker"
+description = "Marks drawn on the wall charting the growth of a child. The entries stop in 1959."
+image = ExtResource("1_igrqw")
+hero_image = ExtResource("1_igrqw")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

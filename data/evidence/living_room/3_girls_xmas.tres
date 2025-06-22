@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://ds31mxuok145m"]
 
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_1jrrl"]
-[ext_resource type="Texture2D" uid="uid://byq5hjav7x2ol" path="res://assets/sprites/living_room/3_girls_christmas.png" id="1_pi2kr"]
+[ext_resource type="Texture2D" uid="uid://dms2ebgkcrr4e" path="res://assets/sprites/living_room/Rachel pic/Clue_GirlsChristmas.png" id="1_pi2kr"]
 
 [resource]
 script = ExtResource("1_1jrrl")
