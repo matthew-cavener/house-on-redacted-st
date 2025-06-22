@@ -19,6 +19,7 @@ config/icon="res://assets/sprites/icon.svg"
 
 EventBus="*res://autoload/event_bus.gd"
 GameManager="*res://autoload/game_manager.gd"
+TransitionManager="*res://autoload/transition_manager.gd"
 
 [display]
 
