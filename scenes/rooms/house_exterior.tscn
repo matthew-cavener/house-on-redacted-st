@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dql5jdsd2mm7t"]
+[gd_scene load_steps=16 format=3 uid="uid://dql5jdsd2mm7t"]
 
 [ext_resource type="Texture2D" uid="uid://ddox1ysevrpw8" path="res://assets/sprites/backgrounds/house_exterior.png" id="2_j31ps"]
 [ext_resource type="Resource" uid="uid://gdyr2rs1iv4p" path="res://data/evidence/house_exterior/demo_tire_swing.tres" id="5_1fkhj"]
@@ -7,6 +7,13 @@
 [ext_resource type="Resource" uid="uid://bklu4sw6rfbis" path="res://data/evidence/house_exterior/demo_letter_evidence.tres" id="7_hockt"]
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="7_xlja1"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="7_xwprl"]
+[ext_resource type="Texture2D" uid="uid://ckh4qlw5sbrgo" path="res://assets/sprites/house_exterior/orange_1.png" id="8_xlja1"]
+[ext_resource type="Texture2D" uid="uid://0b0hke3s71gt" path="res://assets/sprites/house_exterior/letter_2.png" id="8_xwprl"]
+[ext_resource type="Resource" uid="uid://3x0y8x8vjwbh" path="res://data/evidence/house_exterior/letter_2.tres" id="9_malbg"]
+[ext_resource type="Texture2D" uid="uid://cx6sbjd0j42xl" path="res://assets/sprites/house_exterior/envelope_2.png" id="11_8eor1"]
+[ext_resource type="Resource" uid="uid://b7pfbluo0e7y2" path="res://data/evidence/house_exterior/envelope_2.tres" id="12_dw7o7"]
+[ext_resource type="Texture2D" uid="uid://4qywseq64i6x" path="res://assets/sprites/house_exterior/garbage_bin.png" id="13_s8m07"]
+[ext_resource type="Resource" uid="uid://cpigoyj55l5hq" path="res://data/evidence/house_exterior/painting_2_square.tres" id="14_7qc38"]
 
 [sub_resource type="Resource" id="Resource_gqelu"]
 script = ExtResource("7_xlja1")
@@ -47,6 +54,7 @@ evidence_resource = ExtResource("5_1fkhj")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="LetterEvidence" type="TextureButton" parent="Background"]
+visible = false
 layout_mode = 0
 offset_left = 1080.0
 offset_top = 784.0
@@ -65,4 +73,46 @@ offset_right = 144.0
 offset_bottom = 808.0
 script = ExtResource("7_xwprl")
 evidence_resource = SubResource("Resource_gqelu")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="letter_2" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 962.0
+offset_right = 1190.0
+offset_bottom = 1730.0
+rotation = 0.189759
+scale = Vector2(0.109901, 0.109901)
+texture_normal = ExtResource("8_xwprl")
+script = ExtResource("7_xwprl")
+evidence_resource = ExtResource("9_malbg")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(1705, 385)
+scale = Vector2(0.259698, 0.259698)
+texture = ExtResource("8_xlja1")
+
+[node name="EvidenceButton2" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 837.0
+offset_right = 3780.0
+offset_bottom = 6309.0
+scale = Vector2(0.034972, 0.0194811)
+texture_normal = ExtResource("11_8eor1")
+script = ExtResource("7_xwprl")
+evidence_resource = ExtResource("12_dw7o7")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="EvidenceButton3" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 555.0
+offset_top = 408.0
+offset_right = 1579.0
+offset_bottom = 1176.0
+scale = Vector2(0.284315, 0.284315)
+texture_normal = ExtResource("13_s8m07")
+script = ExtResource("7_xwprl")
+evidence_resource = ExtResource("14_7qc38")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
