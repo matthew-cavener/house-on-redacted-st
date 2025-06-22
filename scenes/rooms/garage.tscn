@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://0s5s7pjbekvw"]
 
 [ext_resource type="Texture2D" uid="uid://20r3ocao2cks" path="res://assets/sprites/garage/rachel files/Background_Garage.png" id="1_jq4lw"]
-[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="2_n4pu4"]
+[ext_resource type="Script" uid="uid://cnfi5rctbgj2v" path="res://scenes/ui/evidence_button.gd" id="2_n4pu4"]
 [ext_resource type="Texture2D" uid="uid://cqb5lsw702cmk" path="res://assets/sprites/garage/ian files/notebook_1.png" id="2_q6jwl"]
 [ext_resource type="Resource" uid="uid://3tt5udmvnp0y" path="res://data/evidence/garage/notebook_1.tres" id="3_q6jwl"]
 [ext_resource type="Texture2D" uid="uid://2q1gnyogh3fu" path="res://assets/sprites/garage/ian files/notebook_3.png" id="5_nl2ye"]
@@ -26,6 +26,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 768.0
+offset_bottom = 432.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_jq4lw")
@@ -40,7 +42,6 @@ scale = Vector2(0.113543, 0.113543)
 texture_normal = ExtResource("2_q6jwl")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("3_q6jwl")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -53,7 +54,6 @@ scale = Vector2(0.0471627, 0.0471627)
 texture_normal = ExtResource("5_nl2ye")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("5_q6jwl")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="EvidenceButton3" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -66,7 +66,6 @@ scale = Vector2(0.0210062, 0.0210062)
 texture_normal = ExtResource("7_o0bpy")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("7_371gr")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="EvidenceButton4" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -78,7 +77,6 @@ scale = Vector2(0.0737545, 0.0737545)
 texture_normal = ExtResource("9_0yego")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("10_a2xk5")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="EvidenceButton5" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -91,4 +89,3 @@ scale = Vector2(0.206708, 0.206708)
 texture_normal = ExtResource("11_kq0ux")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("11_a2xk5")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"

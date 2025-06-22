@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://drh1k7ajsk0hf" path="res://assets/sprites/backgrounds/Unfinished_Living_Room.png" id="1_j6grr"]
 [ext_resource type="Texture2D" uid="uid://bwajgfl1tg445" path="res://assets/sprites/living_room/newspaper_photo_2.png" id="2_qlgtg"]
-[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_oy7wu"]
+[ext_resource type="Script" uid="uid://cnfi5rctbgj2v" path="res://scenes/ui/evidence_button.gd" id="3_oy7wu"]
 [ext_resource type="Resource" uid="uid://cf1lhp4j6kima" path="res://data/evidence/living_room/newspaper_photo_2.tres" id="4_5s50e"]
 [ext_resource type="Texture2D" uid="uid://byq5hjav7x2ol" path="res://assets/sprites/living_room/3_girls_christmas.png" id="5_oy7wu"]
 [ext_resource type="Resource" uid="uid://ds31mxuok145m" path="res://data/evidence/living_room/3_girls_xmas.tres" id="6_5s50e"]
@@ -32,6 +32,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 768.0
+offset_bottom = 432.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_j6grr")
@@ -48,7 +50,6 @@ scale = Vector2(0.092177, 0.092177)
 texture_normal = ExtResource("2_qlgtg")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("4_5s50e")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="easter_pic" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -60,7 +61,6 @@ scale = Vector2(0.227902, 0.227902)
 texture_normal = ExtResource("5_oy7wu")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("6_5s50e")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="wedding_frame" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -73,7 +73,6 @@ scale = Vector2(0.129305, 0.129305)
 texture_normal = ExtResource("7_2cxqs")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("7_5s50e")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="Coffee Table" type="Sprite2D" parent="TextureRect"]
 position = Vector2(823, 1016)
@@ -91,7 +90,6 @@ scale = Vector2(0.0651156, 0.0651156)
 texture_normal = ExtResource("10_a5o1a")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("11_eokjc")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="End Table" type="Sprite2D" parent="TextureRect"]
 position = Vector2(724, 739)
@@ -109,7 +107,6 @@ scale = Vector2(0.106678, 0.106678)
 texture_normal = ExtResource("13_xsf0y")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("13_a5o1a")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -121,7 +118,6 @@ scale = Vector2(0.172734, 0.172734)
 texture_normal = ExtResource("15_7cjtg")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("16_8mmjm")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="EvidenceButton3" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -133,4 +129,3 @@ scale = Vector2(0.177959, 0.177959)
 texture_normal = ExtResource("17_xsf0y")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("18_16llt")
-metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
