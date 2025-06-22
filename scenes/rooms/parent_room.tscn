@@ -1,0 +1,189 @@
+[gd_scene load_steps=27 format=3 uid="uid://1mdtiqf8j787"]
+
+[ext_resource type="Texture2D" uid="uid://f4s6uqivjur" path="res://assets/sprites/backgrounds/Unfinished_Parents_Rm.png" id="1_ttega"]
+[ext_resource type="Texture2D" uid="uid://d1j5qbalhumop" path="res://assets/sprites/parent_room/notebook_2.png" id="2_vmc6p"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_gc6a3"]
+[ext_resource type="Resource" uid="uid://dwx7v1v6th826" path="res://data/evidence/parent_room/notebook_2.tres" id="4_bj8xo"]
+[ext_resource type="Texture2D" uid="uid://cwg457m4c2bjm" path="res://assets/sprites/parent_room/notebook_4.png" id="5_bj8xo"]
+[ext_resource type="Resource" uid="uid://be20p7ig70dli" path="res://data/evidence/parent_room/notebook_4.tres" id="5_gc6a3"]
+[ext_resource type="Texture2D" uid="uid://dq2aeb54fjbu3" path="res://assets/sprites/parent_room/paper_grid_1.png" id="7_rmrxg"]
+[ext_resource type="Resource" uid="uid://c7hi078u6pcec" path="res://data/evidence/parent_room/paper_grid_1.tres" id="8_mxvmn"]
+[ext_resource type="Texture2D" uid="uid://c44cdp1g2nj8p" path="res://assets/sprites/parent_room/tv_note_1.png" id="9_ld0ee"]
+[ext_resource type="Resource" uid="uid://dmujfu86latsc" path="res://data/evidence/parent_room/tv_note_1.tres" id="9_mxvmn"]
+[ext_resource type="Resource" uid="uid://dw5kptc5jhuvp" path="res://data/evidence/parent_room/xmas_list.tres" id="11_p5x3b"]
+[ext_resource type="Texture2D" uid="uid://cy0j5od52vbff" path="res://assets/sprites/unsorted/crumpled_paper_1.png" id="11_xbci7"]
+[ext_resource type="Resource" uid="uid://c4d3s1gur02h8" path="res://data/evidence/parent_room/director_note.tres" id="13_3huj6"]
+[ext_resource type="Texture2D" uid="uid://c85uuvnvvjmgi" path="res://assets/sprites/unsorted/letter_1.png" id="13_fhr42"]
+[ext_resource type="Texture2D" uid="uid://dclvg13bjx8d1" path="res://assets/sprites/unsorted/trash bin.png" id="15_8quf1"]
+[ext_resource type="Texture2D" uid="uid://c1i3pbghtaddq" path="res://assets/sprites/unsorted/crumpled_paper_3.png" id="16_8p83y"]
+[ext_resource type="Resource" uid="uid://o5gg4khxkoi3" path="res://data/evidence/parent_room/writer_letter_1.tres" id="17_stoh5"]
+[ext_resource type="Texture2D" uid="uid://ufnrure1qpwh" path="res://assets/sprites/unsorted/crumpled_paper_4.png" id="18_0g5rn"]
+[ext_resource type="Resource" uid="uid://00qqjc28d588" path="res://data/evidence/parent_room/writer_letter_2.tres" id="19_hrry1"]
+[ext_resource type="Texture2D" uid="uid://cl7v7kvxqb1b" path="res://assets/sprites/unsorted/crumpled_paper_5.png" id="20_a7bte"]
+[ext_resource type="Resource" uid="uid://bxhbw8e0lh0q0" path="res://data/evidence/parent_room/writer_letter_3.tres" id="21_l6shy"]
+[ext_resource type="Texture2D" uid="uid://dwlhqhjnwgjiw" path="res://assets/sprites/parent_room/science_note_5a.png" id="22_stoh5"]
+[ext_resource type="Resource" uid="uid://dapivnrlorf75" path="res://data/evidence/parent_room/science_note_5.tres" id="23_0g5rn"]
+[ext_resource type="Resource" uid="uid://do0a07c0oaagm" path="res://data/evidence/parent_room/painting_4.tres" id="24_0g5rn"]
+[ext_resource type="Texture2D" uid="uid://b7m53megqkuua" path="res://assets/sprites/parent_room/painting_4.png" id="24_hrry1"]
+[ext_resource type="Texture2D" uid="uid://dx8o1s5gumi6v" path="res://assets/sprites/parent_room/broken_chair.png" id="26_a7bte"]
+
+[node name="ParentRoom" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ttega")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="character_appearances" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1138.0
+offset_top = 902.0
+offset_right = 2162.0
+offset_bottom = 1670.0
+scale = Vector2(0.149059, 0.149059)
+texture_normal = ExtResource("2_vmc6p")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("4_bj8xo")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="adrian_note_1" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 727.0
+offset_right = 1879.0
+offset_bottom = 1410.0
+scale = Vector2(0.181785, 0.181785)
+texture_normal = ExtResource("5_bj8xo")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("5_gc6a3")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="adrian_note_2" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 843.0
+offset_right = 1112.0
+offset_bottom = 1486.0
+rotation = 0.21172
+scale = Vector2(0.406644, 0.406644)
+texture_normal = ExtResource("7_rmrxg")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("8_mxvmn")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="adrian_note_3" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 393.0
+offset_right = 689.0
+offset_bottom = 1024.0
+scale = Vector2(0.37282, 0.37282)
+texture_normal = ExtResource("9_ld0ee")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("9_mxvmn")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="xmas_list" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1476.0
+offset_top = 829.0
+offset_right = 2500.0
+offset_bottom = 1853.0
+rotation = 0.295052
+scale = Vector2(0.141331, 0.141331)
+texture_normal = ExtResource("11_xbci7")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("11_p5x3b")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="director_note" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 746.0
+offset_top = 876.0
+offset_right = 1246.0
+offset_bottom = 1202.0
+scale = Vector2(0.443722, 0.443722)
+texture_normal = ExtResource("13_fhr42")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("13_3huj6")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="Sprite2D" type="Sprite2D" parent="TextureRect"]
+position = Vector2(612, 702)
+scale = Vector2(0.641708, 0.641708)
+texture = ExtResource("15_8quf1")
+
+[node name="writer_letter_1" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 788.0
+offset_right = 1291.0
+offset_bottom = 1415.0
+scale = Vector2(0.118391, 0.118391)
+texture_normal = ExtResource("16_8p83y")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("17_stoh5")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="writer_letter_2" type="TextureButton" parent="TextureRect"]
+offset_left = 496.0
+offset_top = 788.0
+offset_right = 1114.0
+offset_bottom = 1199.0
+scale = Vector2(0.122856, 0.122856)
+texture_normal = ExtResource("18_0g5rn")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("19_hrry1")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="writer_letter_3" type="TextureButton" parent="TextureRect"]
+offset_left = 694.0
+offset_top = 765.0
+offset_right = 1290.0
+offset_bottom = 1330.0
+scale = Vector2(0.114601, 0.114601)
+texture_normal = ExtResource("20_a7bte")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("21_l6shy")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="EvidenceButton" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 433.0
+offset_right = 2000.0
+offset_bottom = 1922.0
+scale = Vector2(0.0659407, 0.0659407)
+texture_normal = ExtResource("22_stoh5")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("23_0g5rn")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 815.0
+offset_top = 393.0
+offset_right = 2515.0
+offset_bottom = 2093.0
+scale = Vector2(0.155105, 0.155105)
+texture_normal = ExtResource("24_hrry1")
+script = ExtResource("3_gc6a3")
+evidence_resource = ExtResource("24_0g5rn")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="Chair" type="Sprite2D" parent="TextureRect"]
+position = Vector2(406, 902)
+scale = Vector2(0.554616, 0.554616)
+texture = ExtResource("26_a7bte")

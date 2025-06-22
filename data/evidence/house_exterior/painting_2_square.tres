@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=4 format=3 uid="uid://cpigoyj55l5hq"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_kf6pu"]
+[ext_resource type="Texture2D" uid="uid://eapk1ukl6dhk" path="res://assets/sprites/house_exterior/painting_2_square.png" id="1_n1rb8"]
+[ext_resource type="Texture2D" uid="uid://4qywseq64i6x" path="res://assets/sprites/house_exterior/garbage_bin.png" id="2_eioh6"]
+
+[resource]
+script = ExtResource("1_kf6pu")
+id = "painting_2_square"
+name = "Painting in Trash"
+description = "A painting is found in the trash."
+image = ExtResource("2_eioh6")
+hero_image = ExtResource("1_n1rb8")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

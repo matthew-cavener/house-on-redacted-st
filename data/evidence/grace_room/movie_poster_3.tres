@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://bi5r7p6w707wc"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_1s732"]
+[ext_resource type="Texture2D" uid="uid://dtdg00hfn8r1t" path="res://assets/sprites/grace_room/movie_poster_2.png" id="1_pc7dn"]
+
+[resource]
+script = ExtResource("1_1s732")
+id = "movie_poster_3"
+name = "Movie Poster #3"
+description = "A poster of Night Howl
+The #1 werewolf movie of 1961!
+Directed by Colton Sabiston  "
+image = ExtResource("1_pc7dn")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

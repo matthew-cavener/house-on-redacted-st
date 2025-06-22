@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://be20p7ig70dli"]
+
+[ext_resource type="Texture2D" uid="uid://cwg457m4c2bjm" path="res://assets/sprites/parent_room/notebook_4.png" id="1_0je0x"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_g2wym"]
+
+[resource]
+script = ExtResource("1_g2wym")
+id = "notebook_4"
+name = "Adrian's Note #1"
+description = "\"I can't believe it! Years after Grace disappeared into thin air, I turn on the TV and what do I find on channel seventeen? A full cartoon production of Melody's Melodies!
+
+At first I thought someone stole her idea and made it into a show themselves, but then I discovered that the studio who made this show doesn't exist. Nor do the actors, the writers, director-- anybody! It gets stranger because I asked my colleagues at the bank, my neighbors, and family from out of state: no one gets this program but this house. It's like it's being beamed directly to this set, and no where else.\""
+image = ExtResource("1_0je0x")
+hero_image = ExtResource("1_0je0x")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

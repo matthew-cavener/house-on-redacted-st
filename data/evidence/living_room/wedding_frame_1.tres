@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://cecwdwc7rtho0"]
+
+[ext_resource type="Texture2D" uid="uid://ccrqsi6b3uih5" path="res://assets/sprites/living_room/wedding_frame_1.png" id="1_k03u5"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_w6hp8"]
+
+[resource]
+script = ExtResource("1_w6hp8")
+id = "wedding_frame_1"
+name = "Wedding Photo"
+description = "\"Celebrating the marriage of Mrs. [---------] [---------] and Mr. A-[---------] McAllister in 1946. 
+
+A handwritten note says this is, \"\"the happiest day of our life.\"\"\""
+image = ExtResource("1_k03u5")
+hero_image = ExtResource("1_k03u5")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

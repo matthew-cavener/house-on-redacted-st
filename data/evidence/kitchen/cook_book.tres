@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://d2dekbm77066s"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_rx6jq"]
+[ext_resource type="Texture2D" uid="uid://bdjd7m73d2klq" path="res://assets/sprites/kitchen/cook_book_1.png" id="1_wd78o"]
+
+[resource]
+script = ExtResource("1_rx6jq")
+id = "cook_book_1"
+name = "Cook Book"
+description = "Food photography done by the now famous director of the \"HP 1\" and now \"HP 2.\""
+image = ExtResource("1_wd78o")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

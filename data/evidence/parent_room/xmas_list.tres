@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://dw5kptc5jhuvp"]
+
+[ext_resource type="Texture2D" uid="uid://cy0j5od52vbff" path="res://assets/sprites/unsorted/crumpled_paper_1.png" id="1_rdrox"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_wdyxw"]
+
+[resource]
+script = ExtResource("1_wdyxw")
+id = "xmas_list"
+name = "Grace's Christmas List"
+description = "Dear Santa, 
+Please get me an [---------], the 5958 model please. I like to imagine it’d be the perfect snack for Oboe — too bad he’s not real though!"
+image = ExtResource("1_rdrox")
+hero_image = ExtResource("1_rdrox")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

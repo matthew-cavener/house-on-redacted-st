@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://de2cdqe4s7jnv"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_5fo1o"]
+[ext_resource type="Texture2D" uid="uid://b1ueos2hn373j" path="res://assets/sprites/kitchen/postit_note_1.png" id="1_8ci4m"]
+
+[resource]
+script = ExtResource("1_5fo1o")
+id = "postit_note_1"
+name = "Old Note"
+description = "Mom, I would never have read Little Women if I knew your namesake DIED!"
+image = ExtResource("1_8ci4m")
+hero_image = ExtResource("1_8ci4m")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

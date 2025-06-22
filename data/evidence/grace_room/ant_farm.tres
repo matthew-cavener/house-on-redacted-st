@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://dplrr4p34wtf1"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_ouuwx"]
+[ext_resource type="Texture2D" uid="uid://bw048hos1jcpf" path="res://assets/sprites/grace_room/ant_farm.png" id="1_wj5l0"]
+
+[resource]
+script = ExtResource("1_ouuwx")
+id = "ant_farm"
+name = "Ant Farm"
+description = "An ant farm where all the ants are shriveled and dead. The model is labeled ‘58."
+image = ExtResource("1_wj5l0")
+hero_image = ExtResource("1_wj5l0")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

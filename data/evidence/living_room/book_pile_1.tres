@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://bwqbobg4e4pee"]
+
+[ext_resource type="Texture2D" uid="uid://c3qo2a56cvq4v" path="res://assets/sprites/living_room/book_pile_1.png" id="1_7d203"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_kqk5v"]
+
+[resource]
+script = ExtResource("1_kqk5v")
+id = "book_pile_1"
+name = "Bookshelf"
+description = "\"“Everything to Know about Electromagnetism”
+By Judith Knolls, 1962
+“Somehow, We Go On: On Grief and Hope” 
+By Charlie Saccone, 1961
+“An Implacable Voice: My Life with Selective Mutism.”
+By Meredith Desousa, 1959
+“Lyin’ Tamers and Judicial Tales” 	
+By Carl Sallow, 1953\""
+image = ExtResource("1_7d203")
+hero_image = ExtResource("1_7d203")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

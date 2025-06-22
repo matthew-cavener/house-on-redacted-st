@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://o5gg4khxkoi3"]
+
+[ext_resource type="Texture2D" uid="uid://c1i3pbghtaddq" path="res://assets/sprites/unsorted/crumpled_paper_3.png" id="1_8olcv"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_nk12h"]
+
+[resource]
+script = ExtResource("1_nk12h")
+id = "writer_letter_1"
+name = "Crumpled Letter #1"
+description = "From: CA Summer Air Conditioning
+Thanks for reaching out, but you’ve got the wrong contact. This is an air conditioning company. Good luck tracking down your 'lost' cartoon!"
+image = ExtResource("1_8olcv")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://do0a07c0oaagm"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_ih1tl"]
+[ext_resource type="Texture2D" uid="uid://b7m53megqkuua" path="res://assets/sprites/parent_room/painting_4.png" id="1_trl85"]
+
+[resource]
+script = ExtResource("1_ih1tl")
+id = "painting_4"
+name = "Painting of Mountain"
+description = "A beautiful painting."
+image = ExtResource("1_trl85")
+hero_image = ExtResource("1_trl85")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

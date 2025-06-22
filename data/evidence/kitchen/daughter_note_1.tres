@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://b7d3u6t8y00mh"]
+
+[ext_resource type="Texture2D" uid="uid://cvbmmsch8rdd6" path="res://assets/sprites/kitchen/daughter_note_1.png" id="1_mpkqd"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_y3vev"]
+
+[resource]
+script = ExtResource("1_y3vev")
+id = "daughter_note_1"
+name = "Daughter's Drawing"
+description = "Melody and Harmony get married in Greece, which you PROMISED to take us to on vacation when I turn 13! "
+image = ExtResource("1_mpkqd")
+hero_image = ExtResource("1_mpkqd")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

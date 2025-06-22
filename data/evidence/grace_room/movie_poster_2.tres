@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://uwhgm17y2avv"]
+
+[ext_resource type="Texture2D" uid="uid://ddtctam1xdt2c" path="res://assets/sprites/grace_room/movie_poster_1.png" id="1_fle8s"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_s54vg"]
+
+[resource]
+script = ExtResource("1_s54vg")
+id = "movie_poster_2"
+name = "Movie Poster #2"
+description = "A framed poster of Open Road. 
+The family road movie of the summer!
+Directed by Allan Nguyen"
+image = ExtResource("1_fle8s")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

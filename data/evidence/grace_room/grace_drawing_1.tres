@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://ckkj1cj6t0dek"]
+
+[ext_resource type="Texture2D" uid="uid://ky64lrwhkl2q" path="res://assets/sprites/grace_room/seahorse.png" id="1_2qvhc"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_brrep"]
+
+[resource]
+script = ExtResource("1_brrep")
+id = "grace_drawing_1"
+name = "Grace Drawing #1"
+description = "I’m pretty disappointed in what I'm calling season three of MM. It’s only half as long as the first one! Least it has this swell moment of Harmony. "
+image = ExtResource("1_2qvhc")
+hero_image = ExtResource("1_2qvhc")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

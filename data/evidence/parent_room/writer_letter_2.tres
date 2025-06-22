@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://00qqjc28d588"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_6hwd4"]
+[ext_resource type="Texture2D" uid="uid://ufnrure1qpwh" path="res://assets/sprites/unsorted/crumpled_paper_4.png" id="1_72lhi"]
+
+[resource]
+script = ExtResource("1_6hwd4")
+id = "writer_letter_2"
+name = "Crumpled Letter #2"
+description = "From: [----------]   S[----------]
+Is this your idea of a practical joke? I’ve never heard of that show. I’ll admit, I got curious myself and looked it up at the library here and found there is absolutely zero trace of that cartoon existing. Please, don’t contact me again. "
+image = ExtResource("1_72lhi")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://ss0y3534hefk"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_v8ump"]
+[ext_resource type="Texture2D" uid="uid://ca8xaa4od0c1x" path="res://assets/sprites/unsorted/crumpled_paper_2.png" id="1_wbdge"]
+
+[resource]
+script = ExtResource("1_v8ump")
+id = "receipt_1"
+name = "Customer Receipt"
+description = "Note addressed to MZ Electronics. \"I don’t know how you did it, but your electrician was a real genius. They made my TV work better than ever before! Enjoy a tip! Dated 1964."
+image = ExtResource("1_wbdge")
+hero_image = ExtResource("1_wbdge")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

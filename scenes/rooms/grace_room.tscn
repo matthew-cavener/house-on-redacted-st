@@ -1,0 +1,133 @@
+[gd_scene load_steps=19 format=3 uid="uid://r715kb1j4rem"]
+
+[ext_resource type="Texture2D" uid="uid://pynu5pxo66ra" path="res://assets/sprites/backgrounds/Unfinished_DaughtersRm.png" id="1_glg8i"]
+[ext_resource type="Texture2D" uid="uid://dkqbmm825ymqq" path="res://assets/sprites/grace_room/missing_poster_1.png" id="2_dde0i"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_1laj6"]
+[ext_resource type="Resource" uid="uid://46gq2fjkrkh5" path="res://data/evidence/living_room/missing_poster_1.tres" id="4_f1jou"]
+[ext_resource type="Texture2D" uid="uid://ky64lrwhkl2q" path="res://assets/sprites/grace_room/seahorse.png" id="5_8fde3"]
+[ext_resource type="Resource" uid="uid://ckkj1cj6t0dek" path="res://data/evidence/grace_room/grace_drawing_1.tres" id="6_53xlp"]
+[ext_resource type="Texture2D" uid="uid://13dc02nvx8hs" path="res://assets/sprites/grace_room/tiger.png" id="7_0ia75"]
+[ext_resource type="Resource" uid="uid://cmsxq6ybb550c" path="res://data/evidence/grace_room/grace_drawing_2.tres" id="8_mplh2"]
+[ext_resource type="Texture2D" uid="uid://bw048hos1jcpf" path="res://assets/sprites/grace_room/ant_farm.png" id="9_1laj6"]
+[ext_resource type="Resource" uid="uid://dplrr4p34wtf1" path="res://data/evidence/grace_room/ant_farm.tres" id="10_f1jou"]
+[ext_resource type="Resource" uid="uid://djewi1mylmvbd" path="res://data/evidence/grace_room/movie_poster_1.tres" id="11_0ia75"]
+[ext_resource type="Texture2D" uid="uid://bqk0srlvox78x" path="res://assets/sprites/grace_room/movie_poster_3.png" id="11_bsfao"]
+[ext_resource type="Resource" uid="uid://uwhgm17y2avv" path="res://data/evidence/grace_room/movie_poster_2.tres" id="12_mplh2"]
+[ext_resource type="Resource" uid="uid://bi5r7p6w707wc" path="res://data/evidence/grace_room/movie_poster_3.tres" id="13_1v217"]
+[ext_resource type="Texture2D" uid="uid://ddtctam1xdt2c" path="res://assets/sprites/grace_room/movie_poster_1.png" id="13_iaio8"]
+[ext_resource type="Resource" uid="uid://b0we1ef38vwdr" path="res://data/evidence/grace_room/movie_poster_4.tres" id="14_cnmpb"]
+[ext_resource type="Texture2D" uid="uid://dtdg00hfn8r1t" path="res://assets/sprites/grace_room/movie_poster_2.png" id="15_hg2dm"]
+[ext_resource type="Texture2D" uid="uid://yqqpuclxy067" path="res://assets/sprites/grace_room/movie_poster_4.png" id="17_wmvru"]
+
+[node name="GraceRoom" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_glg8i")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="missing_poster" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 786.0
+offset_top = 195.0
+offset_right = 1469.0
+offset_bottom = 1219.0
+scale = Vector2(0.450704, 0.450704)
+texture_normal = ExtResource("2_dde0i")
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("4_f1jou")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="grace_drawing_1" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 586.0
+offset_top = 383.0
+offset_right = 1203.0
+offset_bottom = 825.0
+scale = Vector2(0.296588, 0.296588)
+texture_normal = ExtResource("5_8fde3")
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("6_53xlp")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="grace_drawing_2" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1094.0
+offset_top = 369.0
+offset_right = 1844.0
+offset_bottom = 1090.0
+scale = Vector2(0.36588, 0.36588)
+texture_normal = ExtResource("7_0ia75")
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("8_mplh2")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="movie_poster_1" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 369.0
+offset_right = 844.0
+offset_bottom = 1393.0
+scale = Vector2(0.254309, 0.254309)
+texture_normal = ExtResource("11_bsfao")
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("11_0ia75")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="movie_poster_2" type="TextureButton" parent="TextureRect"]
+offset_left = 1645.0
+offset_top = 369.0
+offset_right = 2424.0
+offset_bottom = 1393.0
+scale = Vector2(0.243108, 0.243108)
+texture_normal = ExtResource("13_iaio8")
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("12_mplh2")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="movie_poster_3" type="TextureButton" parent="TextureRect"]
+offset_left = 1444.0
+offset_top = 428.0
+offset_right = 2223.0
+offset_bottom = 1452.0
+scale = Vector2(0.146177, 0.146177)
+texture_normal = ExtResource("15_hg2dm")
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("13_1v217")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="movie_poster_4" type="TextureButton" parent="TextureRect"]
+offset_left = 348.0
+offset_top = 428.0
+offset_right = 1127.0
+offset_bottom = 1452.0
+scale = Vector2(0.145417, 0.145417)
+texture_normal = ExtResource("17_wmvru")
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("14_cnmpb")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="ant_farm" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1517.0
+offset_top = 575.0
+offset_right = 2193.0
+offset_bottom = 1101.0
+scale = Vector2(0.221174, 0.221174)
+texture_normal = ExtResource("9_1laj6")
+flip_h = true
+script = ExtResource("3_1laj6")
+evidence_resource = ExtResource("10_f1jou")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"

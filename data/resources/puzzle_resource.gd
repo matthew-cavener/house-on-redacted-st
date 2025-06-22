@@ -12,11 +12,12 @@ class_name PuzzleResource
 
 
 func validate_solution(theory: Dictionary) -> Dictionary:
-    var incorrect_count = 0
-    for field in solution_fields:
-        if not theory.has(field) or theory[field] != self.solution.get(field, null):
-            incorrect_count += 1
+	var incorrect_count = 0
+	for field in solution_fields:
+		if not theory.has(field) or theory[field] != self.solution.get(field, null):
+			incorrect_count += 1
 
+<<<<<<< Updated upstream
     var is_correct = incorrect_count == 0
     var is_close = incorrect_count > 0 and incorrect_count <= incorrect_fields_for_close_feedback
 
@@ -27,10 +28,28 @@ func validate_solution(theory: Dictionary) -> Dictionary:
         feedback = close_feedback
     else:
         feedback = failure_feedback
+=======
+	var is_correct = false
+	if incorrect_count == 0:
+		is_correct = true
+	
+	var is_close = false
+	if incorrect_count > 0 and incorrect_count <= incorrect_fields_for_close_feedback:
+		is_close = true
 
-    return {
-        "is_correct": is_correct,
-        "incorrect_count": incorrect_count,
-        "is_close": is_close,
-        "feedback": feedback
-    }
+	var feedback = ""
+	match true:
+		is_correct:
+			feedback = solved_feedback
+		is_close:
+			feedback = close_feedback
+		_:
+			feedback = failure_feedback
+>>>>>>> Stashed changes
+
+	return {
+		"is_correct": is_correct,
+		"incorrect_count": incorrect_count,
+		"is_close": is_close,
+		"feedback": feedback
+	}
