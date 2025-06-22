@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://drh1k7ajsk0hf" path="res://assets/sprites/backgrounds/Unfinished_Living_Room.png" id="1_j6grr"]
 [ext_resource type="Texture2D" uid="uid://bwajgfl1tg445" path="res://assets/sprites/living_room/newspaper_photo_2.png" id="2_qlgtg"]
-[ext_resource type="Script" uid="uid://cnfi5rctbgj2v" path="res://scenes/ui/evidence_button.gd" id="3_oy7wu"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_oy7wu"]
 [ext_resource type="Resource" uid="uid://cf1lhp4j6kima" path="res://data/evidence/living_room/newspaper_photo_2.tres" id="4_5s50e"]
 [ext_resource type="Texture2D" uid="uid://byq5hjav7x2ol" path="res://assets/sprites/living_room/3_girls_christmas.png" id="5_oy7wu"]
 [ext_resource type="Resource" uid="uid://ds31mxuok145m" path="res://data/evidence/living_room/3_girls_xmas.tres" id="6_5s50e"]
@@ -32,8 +32,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 768.0
-offset_bottom = 432.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_j6grr")

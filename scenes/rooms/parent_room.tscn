@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://f4s6uqivjur" path="res://assets/sprites/backgrounds/Unfinished_Parents_Rm.png" id="1_ttega"]
 [ext_resource type="Texture2D" uid="uid://d1j5qbalhumop" path="res://assets/sprites/parent_room/notebook_2.png" id="2_vmc6p"]
-[ext_resource type="Script" uid="uid://cnfi5rctbgj2v" path="res://scenes/ui/evidence_button.gd" id="3_gc6a3"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_gc6a3"]
 [ext_resource type="Resource" uid="uid://dwx7v1v6th826" path="res://data/evidence/parent_room/notebook_2.tres" id="4_bj8xo"]
 [ext_resource type="Texture2D" uid="uid://cwg457m4c2bjm" path="res://assets/sprites/parent_room/notebook_4.png" id="5_bj8xo"]
 [ext_resource type="Resource" uid="uid://be20p7ig70dli" path="res://data/evidence/parent_room/notebook_4.tres" id="5_gc6a3"]
@@ -40,8 +40,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 768.0
-offset_bottom = 432.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_ttega")

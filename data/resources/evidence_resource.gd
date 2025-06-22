@@ -10,13 +10,13 @@ extends Resource
 @export var shows_in_background: bool = true : set = set_evidence_shows_in_background
 
 func set_evidence_image(value: Texture2D):
-    image = value
-    emit_changed()
+	image = value
+	emit_changed()
 
 func set_evidence_hero_image(value: Texture2D):
-    hero_image = value
-    emit_changed()
+	hero_image = value
+	emit_changed()
 
 func set_evidence_shows_in_background(value: bool):
-    shows_in_background = value
-    emit_changed()
+	shows_in_background = value
+	emit_changed()

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://pynu5pxo66ra" path="res://assets/sprites/backgrounds/Unfinished_DaughtersRm.png" id="1_glg8i"]
 [ext_resource type="Texture2D" uid="uid://dkqbmm825ymqq" path="res://assets/sprites/grace_room/missing_poster_1.png" id="2_dde0i"]
-[ext_resource type="Script" uid="uid://cnfi5rctbgj2v" path="res://scenes/ui/evidence_button.gd" id="3_1laj6"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_1laj6"]
 [ext_resource type="Resource" uid="uid://46gq2fjkrkh5" path="res://data/evidence/living_room/missing_poster_1.tres" id="4_f1jou"]
 [ext_resource type="Texture2D" uid="uid://ky64lrwhkl2q" path="res://assets/sprites/grace_room/seahorse.png" id="5_8fde3"]
 [ext_resource type="Resource" uid="uid://ckkj1cj6t0dek" path="res://data/evidence/grace_room/grace_drawing_1.tres" id="6_53xlp"]
@@ -32,8 +32,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 768.0
-offset_bottom = 432.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_glg8i")
