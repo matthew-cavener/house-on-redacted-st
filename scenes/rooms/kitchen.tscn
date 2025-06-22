@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bjcyr4nksqqyg" path="res://assets/sprites/backgrounds/Kitchen_composition.png" id="1_3w07q"]
 [ext_resource type="Texture2D" uid="uid://7ctc33dy12oi" path="res://assets/sprites/kitchen/doctor_note_1.png" id="2_2812u"]
-[ext_resource type="Script" uid="uid://cnfi5rctbgj2v" path="res://scenes/ui/evidence_button.gd" id="3_jtubd"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_jtubd"]
 [ext_resource type="Resource" uid="uid://3f6tenjsepej" path="res://data/evidence/kitchen/letter_3.tres" id="4_njvo0"]
 [ext_resource type="Texture2D" uid="uid://cnw2cdwgk1rur" path="res://assets/sprites/kitchen/robot_toy.png" id="5_njvo0"]
 [ext_resource type="Resource" uid="uid://p5kwa2wrh6st" path="res://data/evidence/kitchen/robot_toy.tres" id="6_581re"]
@@ -34,8 +34,6 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 768.0
-offset_bottom = 432.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_3w07q")
