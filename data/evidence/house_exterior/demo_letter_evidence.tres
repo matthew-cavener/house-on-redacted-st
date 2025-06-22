@@ -9,4 +9,5 @@ id = "demo_letter_evidence"
 name = "Demo Letter Evidence"
 description = "This is a letter or something like that, the visual details are not important, so we'll just blur the image and tell you what's going on."
 image = ExtResource("1_k6232")
+shows_in_background = null
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"
