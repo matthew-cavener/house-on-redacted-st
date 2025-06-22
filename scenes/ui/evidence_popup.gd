@@ -5,10 +5,11 @@ extends Control
 @onready var popup_container: Control = $PopupContainer
 @onready var hero_layout: HBoxContainer = $PopupContainer/HeroLayout
 @onready var hero_image: TextureRect = $PopupContainer/HeroLayout/HeroImage
-@onready var hero_text: RichTextLabel = $PopupContainer/HeroLayout/HeroText
+@onready var hero_text_background: TextureRect = $PopupContainer/HeroLayout/TextBackgroundTexture
+@onready var hero_text: RichTextLabel = $PopupContainer/HeroLayout/TextBackgroundTexture/HeroText
 @onready var overlay_layout: Control = $PopupContainer/OverlayLayout
 @onready var overlay_image: TextureRect = $PopupContainer/OverlayLayout/OverlayImage
-@onready var description_panel: Panel = $PopupContainer/OverlayLayout/DescriptionPanel
+@onready var description_texture: TextureRect = $PopupContainer/OverlayLayout/DescriptionTexture
 @onready var description_label: RichTextLabel = $PopupContainer/OverlayLayout/DescriptionLabel
 @onready var close_area: Control = $CloseArea
 

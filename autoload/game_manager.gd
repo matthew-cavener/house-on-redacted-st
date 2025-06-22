@@ -10,7 +10,26 @@ func _ready():
     EventBus.evidence_popup_requested.connect(_on_evidence_popup_requested)
 
 func change_room(new_room: String) -> void:
-    pass
+    var world = get_tree().current_scene.get_node("World")
+    if not world:
+        push_error("World node not found in the current scene.")
+        return
+
+    for child in world.get_children():
+        child.queue_free()
+
+    var room_path = "res://scenes/rooms/%s.tscn" % new_room
+    var room_scene = load(room_path)
+    if not room_scene:
+        push_error("Failed to load room scene: " + room_path)
+        return
+
+    var room_instance = room_scene.instantiate()
+    world.add_child(room_instance)
+
+    if current_room != new_room:
+        room_history.append(current_room)
+        current_room = new_room
 
 func _on_evidence_popup_requested(evidence: EvidenceResource):
     show_evidence_popup(evidence)
