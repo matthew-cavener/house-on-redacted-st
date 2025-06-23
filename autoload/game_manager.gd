@@ -1,8 +1,11 @@
 extends Node
 
+signal room_changed(new_room: String)
+
 var evidence_popup_scene = preload("res://scenes/ui/evidence_popup.tscn")
 var current_evidence_popup: Control
 var current_room: String
+var current_room_instance: Node
 var room_history: Array[String] = []
 var is_transitioning: bool = false
 var fade_overlay: ColorRect
@@ -44,25 +47,28 @@ func change_room(new_room: String) -> void:
 	is_transitioning = false
 
 func _transition_to_room(new_room: String) -> void:
-	await _fade_to_black()
+	await _fade_out()
 	var world = get_tree().current_scene.get_node("World")
-	if world.get_child_count() > 0:
-		world.get_child(0).queue_free()
+	if current_room_instance:
+		current_room_instance.queue_free()
+		current_room_instance = null
 		await get_tree().process_frame
-	var room_instance = preloaded_rooms[new_room].instantiate()
-	world.add_child(room_instance)
+	current_room_instance = preloaded_rooms[new_room].instantiate()
+	world.add_child(current_room_instance)
 	await get_tree().process_frame
-	if current_room != new_room:
-		room_history.append(current_room)
-		current_room = new_room
-	await _fade_from_black()
+	current_room = new_room
+	room_history.append(current_room)
+	if room_history.size() > 30:
+		room_history.pop_front()
+	room_changed.emit()
+	await _fade_in()
 
-func _fade_to_black() -> void:
+func _fade_out() -> void:
 	var tween = create_tween()
 	tween.tween_property(fade_overlay, "modulate:a", 1.0, fade_duration)
 	await tween.finished
 
-func _fade_from_black() -> void:
+func _fade_in() -> void:
 	var tween = create_tween()
 	tween.tween_property(fade_overlay, "modulate:a", 0.0, fade_duration)
 	await tween.finished
