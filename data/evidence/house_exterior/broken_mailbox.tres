@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://drxeurbqeg46v"]
 
-[ext_resource type="Texture2D" uid="uid://cl6u7n8bn28c2" path="res://assets/sprites/house_exterior/broken mail box.png" id="1_iammr"]
+[ext_resource type="Texture2D" uid="uid://dt68ua4rg43s1" path="res://assets/sprites/house_exterior/rachel pic/Broken_Mailbox.png" id="1_iammr"]
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_wwbrh"]
 
 [resource]
