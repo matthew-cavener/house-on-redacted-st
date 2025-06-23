@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7q1dri7adi0b"]
+[gd_scene load_steps=2 format=3 uid="uid://c7q1dri7adi0b"]
 
 [ext_resource type="Script" uid="uid://depsgf6sx08yv" path="res://scenes/ui/evidence_popup.gd" id="1_lvauh"]
-[ext_resource type="Texture2D" uid="uid://6c6n4oj0hcdm" path="res://assets/sprites/icon.svg" id="2_bu38h"]
 
 [node name="EvidencePopup" type="Control"]
 layout_mode = 3
@@ -54,7 +53,6 @@ stretch_mode = 5
 [node name="TextBackgroundTexture" type="TextureRect" parent="PopupContainer/HeroLayout"]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_bu38h")
 
 [node name="HeroText" type="RichTextLabel" parent="PopupContainer/HeroLayout/TextBackgroundTexture"]
 layout_mode = 1
