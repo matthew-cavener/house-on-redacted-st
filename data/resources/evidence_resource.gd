@@ -4,7 +4,7 @@ extends Resource
 
 @export var id: String
 @export var name: String
-@export var description: String
+@export_multiline var description: String
 @export var image: Texture2D : set = set_evidence_image
 @export var hero_image: Texture2D : set = set_evidence_hero_image
 @export var shows_in_background: bool = true : set = set_evidence_shows_in_background

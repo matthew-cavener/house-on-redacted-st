@@ -29,13 +29,19 @@ func _ready():
 func _load_and_show_starting_room():
 	var room_path = "res://scenes/rooms/%s.tscn" % starting_room
 	preloaded_rooms[starting_room] = load(room_path)
-	var world = get_tree().current_scene.get_node("World")
-	current_room_instance = preloaded_rooms[starting_room].instantiate()
-	world.add_child(current_room_instance)
-	current_room = starting_room
-	room_history.append(current_room)
-	room_changed.emit.call_deferred()
-	_load_remaining_rooms_async.call_deferred()
+	var world = get_tree().current_scene.get_node_or_null("World")
+	if world:
+		current_room_instance = preloaded_rooms[starting_room].instantiate()
+		world.add_child(current_room_instance)
+		current_room = starting_room
+		room_history.append(current_room)
+		room_changed.emit.call_deferred()
+		_load_remaining_rooms_async.call_deferred()
+	else:
+		current_room_instance = get_tree().current_scene
+		current_room = get_tree().current_scene.scene_file_path.get_file().get_basename()
+		room_history.append(current_room)
+		room_changed.emit.call_deferred()
 
 func _load_remaining_rooms_async():
 	await get_tree().process_frame
