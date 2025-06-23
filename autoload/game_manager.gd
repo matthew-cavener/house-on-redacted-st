@@ -21,7 +21,7 @@ var fade_overlay: ColorRect
 var fade_duration: float = 0.333
 var current_evidence_popup: Control
 var notepad_textures: Array[Texture2D] = []
-var position_weights: Array[float] = [2.1, 1.8, 1.2, 0.9, 0.3, 0.0]
+var position_weights: Array[float] = [2.1, 1.8, 1.2, 0.6, 0.3, 0.0]
 var textures_loaded: bool = false
 
 func _ready():

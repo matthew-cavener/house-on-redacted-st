@@ -53,9 +53,7 @@ func _set_notepad_texture():
 	var selected_texture = GameManager.get_next_notepad_texture()
 	if selected_texture:
 		hero_text_background.texture = selected_texture
-		# Set stretch mode to fit the texture properly within the bounds
 		hero_text_background.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
-		# Ensure the texture scales to fit within the custom minimum size
 		hero_text_background.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
 
 func _on_close_area_input(event: InputEvent):
