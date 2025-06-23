@@ -4,7 +4,6 @@ extends Node
 
 func _ready():
 	GameManager.room_changed.connect(_update_room_history_display)
-	GameManager.change_room("house_exterior")
 	$GUI/Button.pressed.connect(_on_room_button_pressed.bind("garage"))
 	$GUI/Button2.pressed.connect(_on_room_button_pressed.bind("grace_room"))
 	$GUI/Button3.pressed.connect(_on_room_button_pressed.bind("house_exterior"))
