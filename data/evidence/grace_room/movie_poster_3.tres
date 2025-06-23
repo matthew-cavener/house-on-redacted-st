@@ -7,9 +7,11 @@
 script = ExtResource("1_1s732")
 id = "movie_poster_3"
 name = "Movie Poster #3"
-description = "A poster of the movie 'Night Howl'
-The #1 werewolf movie of 1961
-Directed by Colton Sabiston  "
+description = "A poster of the movie \"Night Howl.\"
+
+The #1 werewolf movie of 1961.
+
+Directed by Colton Sabiston."
 image = ExtResource("1_pc7dn")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

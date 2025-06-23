@@ -79,12 +79,11 @@ texture = ExtResource("17_16llt")
 
 [node name="boot_prints" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1171.0
-offset_top = 866.0
-offset_right = 2671.0
-offset_bottom = 2366.0
-rotation = 1.14978
-scale = Vector2(0.0977292, 0.0977292)
+offset_left = 1000.0
+offset_top = 872.0
+offset_right = 2500.0
+offset_bottom = 2088.0
+scale = Vector2(0.149203, 0.149203)
 texture_normal = ExtResource("17_xsf0y")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("18_16llt")
@@ -146,12 +145,12 @@ evidence_resource = ExtResource("11_eokjc")
 
 [node name="receipt" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 223.0
+offset_left = 195.0
 offset_top = 845.0
-offset_right = 939.0
-offset_bottom = 1869.0
-rotation = 0.838152
-scale = Vector2(0.09263, 0.09263)
+offset_right = 801.0
+offset_bottom = 1452.0
+rotation = 0.158028
+scale = Vector2(0.102432, 0.102432)
 texture_normal = ExtResource("13_xsf0y")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("13_a5o1a")

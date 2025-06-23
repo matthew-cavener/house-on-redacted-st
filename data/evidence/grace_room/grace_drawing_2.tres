@@ -7,7 +7,10 @@
 script = ExtResource("1_jw2wx")
 id = "grace_drawing_2"
 name = "Grace Drawing #2"
-description = "The season's climactic battle between Melody and Skeleton Trombone in season one, episode eight of MM."
+description = "~~ CHILD'S DRAWING ~~
+This is the season's climactic battle between Melody and Skeleton Trombone as seen in season one, episode eight of MM. 
+
+Dated 1958"
 image = ExtResource("1_mnfai")
 hero_image = ExtResource("1_mnfai")
 shows_in_background = true

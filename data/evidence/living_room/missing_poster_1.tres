@@ -8,7 +8,8 @@
 script = ExtResource("1_2s2pn")
 id = "missing_poster_1"
 name = "Missing Poster"
-description = "Grace McAllister was reported missing on March 17th, 1959. She is eleven years old and was last seen in an orange jumper with a beloved stuffed toy that she sewed herself. The toy is from a TV show that she inisted was real, and the doll resembled... [-------------]"
+description = "~~ MISSING POSTER ~~
+Grace McAllister was reported missing on March 17th, 1959. She is eleven years old and was last seen in an orange jumper with a beloved stuffed toy that she sewed herself. The toy is from a TV show that she inisted was real, and the doll resembled... "
 image = ExtResource("1_n45q7")
 hero_image = ExtResource("1_0rdt5")
 shows_in_background = true
