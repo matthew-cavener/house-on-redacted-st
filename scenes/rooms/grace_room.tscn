@@ -1,23 +1,31 @@
-[gd_scene load_steps=19 format=3 uid="uid://r715kb1j4rem"]
+[gd_scene load_steps=27 format=3 uid="uid://r715kb1j4rem"]
 
-[ext_resource type="Texture2D" uid="uid://pynu5pxo66ra" path="res://assets/sprites/backgrounds/Unfinished_DaughtersRm.png" id="1_glg8i"]
-[ext_resource type="Texture2D" uid="uid://dkqbmm825ymqq" path="res://assets/sprites/grace_room/missing_poster_1.png" id="2_dde0i"]
+[ext_resource type="Texture2D" uid="uid://dqcpstfl2carr" path="res://assets/sprites/grace_room/rachel pic/Background_DaughtersRoom_PENDING.png" id="1_iaio8"]
+[ext_resource type="Texture2D" uid="uid://bnexc6v3hww4d" path="res://assets/sprites/grace_room/rachel pic/Clue_MissingPoster_OnDesk.png" id="2_hg2dm"]
+[ext_resource type="Texture2D" uid="uid://ce4urc6ksvhje" path="res://assets/sprites/grace_room/floor_lamp.png" id="2_iosu6"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_1laj6"]
 [ext_resource type="Resource" uid="uid://46gq2fjkrkh5" path="res://data/evidence/living_room/missing_poster_1.tres" id="4_f1jou"]
 [ext_resource type="Texture2D" uid="uid://ky64lrwhkl2q" path="res://assets/sprites/grace_room/seahorse.png" id="5_8fde3"]
 [ext_resource type="Resource" uid="uid://ckkj1cj6t0dek" path="res://data/evidence/grace_room/grace_drawing_1.tres" id="6_53xlp"]
 [ext_resource type="Texture2D" uid="uid://13dc02nvx8hs" path="res://assets/sprites/grace_room/tiger.png" id="7_0ia75"]
 [ext_resource type="Resource" uid="uid://cmsxq6ybb550c" path="res://data/evidence/grace_room/grace_drawing_2.tres" id="8_mplh2"]
-[ext_resource type="Texture2D" uid="uid://bw048hos1jcpf" path="res://assets/sprites/grace_room/ant_farm.png" id="9_1laj6"]
+[ext_resource type="Texture2D" uid="uid://ce4isetycawps" path="res://assets/sprites/grace_room/rachel pic/Movie_3.png" id="9_n54td"]
 [ext_resource type="Resource" uid="uid://dplrr4p34wtf1" path="res://data/evidence/grace_room/ant_farm.tres" id="10_f1jou"]
 [ext_resource type="Resource" uid="uid://djewi1mylmvbd" path="res://data/evidence/grace_room/movie_poster_1.tres" id="11_0ia75"]
-[ext_resource type="Texture2D" uid="uid://bqk0srlvox78x" path="res://assets/sprites/grace_room/movie_poster_3.png" id="11_bsfao"]
+[ext_resource type="Texture2D" uid="uid://cupwrxi15403w" path="res://assets/sprites/grace_room/rachel pic/Movie_1.png" id="11_iosu6"]
 [ext_resource type="Resource" uid="uid://uwhgm17y2avv" path="res://data/evidence/grace_room/movie_poster_2.tres" id="12_mplh2"]
+[ext_resource type="Texture2D" uid="uid://b3icr020ghq4p" path="res://assets/sprites/grace_room/rachel pic/Movie_2.png" id="13_0bejd"]
 [ext_resource type="Resource" uid="uid://bi5r7p6w707wc" path="res://data/evidence/grace_room/movie_poster_3.tres" id="13_1v217"]
-[ext_resource type="Texture2D" uid="uid://ddtctam1xdt2c" path="res://assets/sprites/grace_room/movie_poster_1.png" id="13_iaio8"]
 [ext_resource type="Resource" uid="uid://b0we1ef38vwdr" path="res://data/evidence/grace_room/movie_poster_4.tres" id="14_cnmpb"]
-[ext_resource type="Texture2D" uid="uid://dtdg00hfn8r1t" path="res://assets/sprites/grace_room/movie_poster_2.png" id="15_hg2dm"]
-[ext_resource type="Texture2D" uid="uid://yqqpuclxy067" path="res://assets/sprites/grace_room/movie_poster_4.png" id="17_wmvru"]
+[ext_resource type="Texture2D" uid="uid://j5fvfxsepcwe" path="res://assets/sprites/grace_room/rachel pic/Movie_4.png" id="15_4aajh"]
+[ext_resource type="Texture2D" uid="uid://dpkfjp21qp8rb" path="res://assets/sprites/grace_room/rachel pic/Dresser.png" id="17_p13b8"]
+[ext_resource type="Texture2D" uid="uid://dyxw2h4qu5t6u" path="res://assets/sprites/grace_room/rachel pic/AntFarm.png" id="18_06cw7"]
+[ext_resource type="Texture2D" uid="uid://crkuu8a7skr4f" path="res://assets/sprites/grace_room/rachel pic/Bed.png" id="19_wmvru"]
+[ext_resource type="Texture2D" uid="uid://sgejmjtlm0w4" path="res://assets/sprites/grace_room/rachel pic/Junk_Underbed.png" id="20_w0l1b"]
+[ext_resource type="Texture2D" uid="uid://b2tfsh6cdycat" path="res://assets/sprites/grace_room/rachel pic/Desk.png" id="22_hvi8d"]
+[ext_resource type="Texture2D" uid="uid://bw6ju3u0sr004" path="res://assets/sprites/grace_room/rachel pic/Dollhouse.png" id="23_w830h"]
+[ext_resource type="Texture2D" uid="uid://dbbd7phtnk26r" path="res://assets/sprites/grace_room/rachel pic/Pillow.png" id="24_g24ui"]
+[ext_resource type="Texture2D" uid="uid://cfveqwqgm3tjk" path="res://assets/sprites/grace_room/ceiling_light_1.png" id="26_0bejd"]
 
 [node name="GraceRoom" type="Control"]
 layout_mode = 3
@@ -34,95 +42,123 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_glg8i")
+texture = ExtResource("1_iaio8")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="floor lamp" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1445, 674)
+rotation = 0.0367479
+scale = Vector2(0.457787, 0.543364)
+texture = ExtResource("2_iosu6")
+
+[node name="desk" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1142, 763)
+texture = ExtResource("22_hvi8d")
+
 [node name="missing_poster" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 786.0
-offset_top = 195.0
-offset_right = 1469.0
-offset_bottom = 1219.0
-scale = Vector2(0.450704, 0.450704)
-texture_normal = ExtResource("2_dde0i")
+offset_left = 1161.0
+offset_top = 631.0
+offset_right = 1261.0
+offset_bottom = 719.0
+texture_normal = ExtResource("2_hg2dm")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("4_f1jou")
 
+[node name="dresser" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1625, 851)
+texture = ExtResource("17_p13b8")
+
 [node name="grace_drawing_1" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 586.0
-offset_top = 383.0
-offset_right = 1203.0
-offset_bottom = 825.0
-scale = Vector2(0.296588, 0.296588)
+offset_left = 1161.0
+offset_top = 530.0
+offset_right = 1778.0
+offset_bottom = 972.0
+scale = Vector2(0.159027, 0.159027)
 texture_normal = ExtResource("5_8fde3")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("6_53xlp")
 
 [node name="grace_drawing_2" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1094.0
-offset_top = 369.0
-offset_right = 1844.0
-offset_bottom = 1090.0
-scale = Vector2(0.36588, 0.36588)
+offset_left = 1172.0
+offset_top = 407.0
+offset_right = 1922.0
+offset_bottom = 1128.0
+scale = Vector2(0.143681, 0.143681)
 texture_normal = ExtResource("7_0ia75")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("8_mplh2")
 
 [node name="movie_poster_1" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 65.0
-offset_top = 369.0
-offset_right = 844.0
-offset_bottom = 1393.0
-scale = Vector2(0.254309, 0.254309)
-texture_normal = ExtResource("11_bsfao")
+offset_left = 47.0
+offset_top = 299.0
+offset_right = 317.0
+offset_bottom = 674.0
+texture_normal = ExtResource("9_n54td")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("11_0ia75")
 
 [node name="movie_poster_2" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1645.0
-offset_top = 369.0
-offset_right = 2424.0
-offset_bottom = 1393.0
-scale = Vector2(0.243108, 0.243108)
-texture_normal = ExtResource("13_iaio8")
+offset_left = 1618.0
+offset_top = 316.0
+offset_right = 1878.0
+offset_bottom = 675.0
+texture_normal = ExtResource("11_iosu6")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("12_mplh2")
 
 [node name="movie_poster_3" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1444.0
-offset_top = 428.0
-offset_right = 2223.0
-offset_bottom = 1452.0
-scale = Vector2(0.146177, 0.146177)
-texture_normal = ExtResource("15_hg2dm")
+offset_left = 1428.0
+offset_top = 370.0
+offset_right = 1618.0
+offset_bottom = 645.0
+texture_normal = ExtResource("13_0bejd")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("13_1v217")
 
 [node name="movie_poster_4" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 348.0
-offset_top = 428.0
-offset_right = 1127.0
-offset_bottom = 1452.0
-scale = Vector2(0.145417, 0.145417)
-texture_normal = ExtResource("17_wmvru")
+offset_left = 324.0
+offset_top = 370.0
+offset_right = 497.0
+offset_bottom = 631.0
+texture_normal = ExtResource("15_4aajh")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("14_cnmpb")
 
 [node name="ant_farm" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1517.0
-offset_top = 575.0
-offset_right = 2193.0
-offset_bottom = 1101.0
-scale = Vector2(0.221174, 0.221174)
-texture_normal = ExtResource("9_1laj6")
-flip_h = true
+offset_left = 1579.0
+offset_top = 589.0
+offset_right = 1718.0
+offset_bottom = 716.0
+texture_normal = ExtResource("18_06cw7")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("10_f1jou")
+
+[node name="junk_under_bed" type="Sprite2D" parent="TextureRect"]
+position = Vector2(725, 884)
+texture = ExtResource("20_w0l1b")
+
+[node name="bed" type="Sprite2D" parent="TextureRect"]
+position = Vector2(501, 802)
+texture = ExtResource("19_wmvru")
+
+[node name="dollhouse" type="Sprite2D" parent="TextureRect"]
+position = Vector2(144, 950)
+texture = ExtResource("23_w830h")
+
+[node name="pillow" type="Sprite2D" parent="TextureRect"]
+position = Vector2(551, 688)
+texture = ExtResource("24_g24ui")
+
+[node name="ceiling_light" type="Sprite2D" parent="TextureRect"]
+position = Vector2(959, 138)
+scale = Vector2(0.414205, 0.414205)
+texture = ExtResource("26_0bejd")

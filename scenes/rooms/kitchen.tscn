@@ -1,10 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://4ae2vgb1k78c"]
+[gd_scene load_steps=27 format=3 uid="uid://4ae2vgb1k78c"]
 
-[ext_resource type="Texture2D" uid="uid://bjcyr4nksqqyg" path="res://assets/sprites/backgrounds/Kitchen_composition.png" id="1_3w07q"]
+[ext_resource type="Texture2D" uid="uid://dwhc1rk48yos3" path="res://assets/sprites/kitchen/rachel_files/Background_Kitchen.png" id="1_nsrbe"]
 [ext_resource type="Texture2D" uid="uid://7ctc33dy12oi" path="res://assets/sprites/kitchen/doctor_note_1.png" id="2_2812u"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_jtubd"]
 [ext_resource type="Resource" uid="uid://3f6tenjsepej" path="res://data/evidence/kitchen/letter_3.tres" id="4_njvo0"]
-[ext_resource type="Texture2D" uid="uid://cnw2cdwgk1rur" path="res://assets/sprites/kitchen/robot_toy.png" id="5_njvo0"]
 [ext_resource type="Resource" uid="uid://p5kwa2wrh6st" path="res://data/evidence/kitchen/robot_toy.tres" id="6_581re"]
 [ext_resource type="Texture2D" uid="uid://b1ueos2hn373j" path="res://assets/sprites/kitchen/postit_note_1.png" id="7_n5en3"]
 [ext_resource type="Resource" uid="uid://de2cdqe4s7jnv" path="res://data/evidence/kitchen/postit_note_1.tres" id="8_m75iv"]
@@ -12,14 +11,21 @@
 [ext_resource type="Resource" uid="uid://cjvxf5qkauuxy" path="res://data/evidence/kitchen/newspaper_1.tres" id="10_714v7"]
 [ext_resource type="Texture2D" uid="uid://8ockqvmwon83" path="res://assets/sprites/kitchen/divorce_paper_1.png" id="11_sltsg"]
 [ext_resource type="Resource" uid="uid://cfl5epnhvx2w4" path="res://data/evidence/kitchen/divorce_paper_1.tres" id="12_avos5"]
-[ext_resource type="Texture2D" uid="uid://dwk82vskt4kws" path="res://assets/sprites/kitchen/tax_form_1.png" id="13_sltsg"]
-[ext_resource type="Resource" uid="uid://bycqmw52k8gmf" path="res://data/evidence/kitchen/tax_document.tres" id="14_avos5"]
+[ext_resource type="Texture2D" uid="uid://c0p3di076x7i8" path="res://assets/sprites/kitchen/crumpled_paper_6.png" id="13_hm2ep"]
 [ext_resource type="Texture2D" uid="uid://cvbmmsch8rdd6" path="res://assets/sprites/kitchen/daughter_note_1.png" id="15_33dcn"]
+[ext_resource type="Texture2D" uid="uid://ep52nb3585hj" path="res://assets/sprites/kitchen/rachel_files/Clue_Window.png" id="15_nsrbe"]
 [ext_resource type="Resource" uid="uid://b7d3u6t8y00mh" path="res://data/evidence/kitchen/daughter_note_1.tres" id="16_kniln"]
 [ext_resource type="Texture2D" uid="uid://bdjd7m73d2klq" path="res://assets/sprites/kitchen/cook_book_1.png" id="17_4bsll"]
 [ext_resource type="Resource" uid="uid://d2dekbm77066s" path="res://data/evidence/kitchen/cook_book.tres" id="18_nd2m6"]
-[ext_resource type="Texture2D" uid="uid://csji4cerjgjqi" path="res://assets/sprites/kitchen/window_1.png" id="19_hm2ep"]
 [ext_resource type="Resource" uid="uid://dulhaw0d2gf7h" path="res://data/evidence/kitchen/window_1.tres" id="20_nsrbe"]
+[ext_resource type="Texture2D" uid="uid://cij521ifclchf" path="res://assets/sprites/kitchen/rachel_files/Clue_Robot.png" id="20_u5w5f"]
+[ext_resource type="Resource" uid="uid://cjq50a7xmcndj" path="res://data/evidence/kitchen/tax_document_1.tres" id="21_nsrbe"]
+[ext_resource type="Texture2D" uid="uid://db4gc2k10gua8" path="res://assets/sprites/kitchen/rachel_files/Sink.png" id="21_u5w5f"]
+[ext_resource type="Texture2D" uid="uid://b56x7go5soxqj" path="res://assets/sprites/kitchen/rachel_files/Books.png" id="22_u5w5f"]
+[ext_resource type="Texture2D" uid="uid://dthwfkmxkqqwl" path="res://assets/sprites/kitchen/rachel_files/Clue_MissingPainting_Rectangle.png" id="23_v3sj4"]
+[ext_resource type="Resource" uid="uid://b23bx70xq6don" path="res://data/evidence/kitchen/rectangle_frame.tres" id="24_wjo8k"]
+[ext_resource type="Texture2D" uid="uid://bkqtpmmdjkaxy" path="res://assets/sprites/kitchen/cabinet_door.png" id="25_prl6a"]
+[ext_resource type="Resource" uid="uid://ckgcf1k4v884v" path="res://data/evidence/garage/cabinet_door.tres" id="26_re2ba"]
 
 [node name="Kitchen" type="Control"]
 layout_mode = 3
@@ -36,33 +42,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_3w07q")
+texture = ExtResource("1_nsrbe")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="doctor_note" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1346.0
-offset_top = 635.0
-offset_right = 1763.0
-offset_bottom = 1303.0
+offset_left = 1345.0
+offset_top = 536.0
+offset_right = 1762.0
+offset_bottom = 1204.0
 rotation = 0.104784
 scale = Vector2(0.151589, 0.151589)
 texture_normal = ExtResource("2_2812u")
 script = ExtResource("3_jtubd")
 evidence_resource = ExtResource("4_njvo0")
-
-[node name="robot_toy" type="TextureButton" parent="TextureRect"]
-layout_mode = 0
-offset_left = 1822.0
-offset_top = 937.0
-offset_right = 2654.0
-offset_bottom = 1961.0
-rotation = 0.261799
-scale = Vector2(0.118954, 0.118954)
-texture_normal = ExtResource("5_njvo0")
-script = ExtResource("3_jtubd")
-evidence_resource = ExtResource("6_581re")
 
 [node name="postit_note" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -98,29 +92,41 @@ texture_normal = ExtResource("11_sltsg")
 script = ExtResource("3_jtubd")
 evidence_resource = ExtResource("12_avos5")
 
-[node name="tax_document" type="TextureButton" parent="TextureRect"]
-layout_mode = 0
-offset_left = 538.0
-offset_top = 994.0
-offset_right = 1329.0
-offset_bottom = 2018.0
-rotation = -1.17363
-scale = Vector2(0.0938753, 0.0938753)
-texture_normal = ExtResource("13_sltsg")
-script = ExtResource("3_jtubd")
-evidence_resource = ExtResource("14_avos5")
-
 [node name="daughter_note" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1188.0
-offset_top = 421.0
-offset_right = 1832.0
-offset_bottom = 1445.0
+offset_left = 1187.0
+offset_top = 451.0
+offset_right = 1831.0
+offset_bottom = 1475.0
 rotation = -0.200618
 scale = Vector2(0.0628492, 0.0628492)
 texture_normal = ExtResource("15_33dcn")
 script = ExtResource("3_jtubd")
 evidence_resource = ExtResource("16_kniln")
+
+[node name="taxdocument_1" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 588.0
+offset_top = 951.0
+offset_right = 733.0
+offset_bottom = 1103.0
+rotation = 0.0463241
+scale = Vector2(0.494773, 0.494773)
+texture_normal = ExtResource("13_hm2ep")
+script = ExtResource("3_jtubd")
+evidence_resource = ExtResource("21_nsrbe")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="window_1" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 921.0
+offset_top = 463.0
+offset_right = 1135.0
+offset_bottom = 600.0
+texture_normal = ExtResource("15_nsrbe")
+script = ExtResource("3_jtubd")
+evidence_resource = ExtResource("20_nsrbe")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="cook_book" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -135,13 +141,46 @@ flip_h = true
 script = ExtResource("3_jtubd")
 evidence_resource = ExtResource("18_nd2m6")
 
-[node name="window" type="TextureButton" parent="TextureRect"]
+[node name="robot_toy1" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 913.0
-offset_top = 64.0
-offset_right = 1681.0
-offset_bottom = 1088.0
-scale = Vector2(0.351371, 0.351371)
-texture_normal = ExtResource("19_hm2ep")
+offset_left = 1775.0
+offset_top = 984.0
+offset_right = 2048.0
+offset_bottom = 1178.0
+scale = Vector2(0.474106, 0.474106)
+texture_normal = ExtResource("20_u5w5f")
 script = ExtResource("3_jtubd")
-evidence_resource = ExtResource("20_nsrbe")
+evidence_resource = ExtResource("6_581re")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="faucet" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1028, 585)
+scale = Vector2(1.23156, 1.23156)
+texture = ExtResource("21_u5w5f")
+
+[node name="Books" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1040, 423)
+texture = ExtResource("22_u5w5f")
+
+[node name="frame_spot" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1428.0
+offset_top = 348.0
+offset_right = 1652.0
+offset_bottom = 550.0
+texture_normal = ExtResource("23_v3sj4")
+script = ExtResource("3_jtubd")
+evidence_resource = ExtResource("24_wjo8k")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="cabinet" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 632.0
+offset_right = 671.0
+offset_bottom = 844.0
+scale = Vector2(1.36554, 1.15813)
+texture_normal = ExtResource("25_prl6a")
+script = ExtResource("3_jtubd")
+evidence_resource = ExtResource("26_re2ba")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"

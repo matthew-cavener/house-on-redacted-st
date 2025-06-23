@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://drxeurbqeg46v"]
+
+[ext_resource type="Texture2D" uid="uid://dt68ua4rg43s1" path="res://assets/sprites/house_exterior/rachel pic/Broken_Mailbox.png" id="1_iammr"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_wwbrh"]
+
+[resource]
+script = ExtResource("1_wwbrh")
+id = "broken_mailbox"
+name = "Letter"
+description = "A letter sent to the home's occupant."
+image = ExtResource("1_iammr")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

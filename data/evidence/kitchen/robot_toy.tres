@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://p5kwa2wrh6st"]
 
-[ext_resource type="Texture2D" uid="uid://cnw2cdwgk1rur" path="res://assets/sprites/kitchen/robot_toy.png" id="1_nor1x"]
+[ext_resource type="Texture2D" uid="uid://cij521ifclchf" path="res://assets/sprites/kitchen/rachel_files/Clue_Robot.png" id="1_nor1x"]
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_xeeud"]
 
 [resource]

@@ -7,9 +7,9 @@
 script = ExtResource("1_ppcg2")
 id = "notebook_1"
 name = "Note on the Signal"
-description = "After a lot of research, I’ve discovered the source of the “Melody’s Melodies” broadcast. I don't understand exactly how, but it corresponds to a strange phenomena which only occurs here, at this house. I’ve been able to study it through this device. 
+description = "After countless nights, I’ve discovered the source of the “Melody’s Melodies” broadcast. The cause is a phenomena that’s unlike anything I’ve ever seen, and it contains more than just that cartoon show. Within this one signal is an innumerable tangle of radio waves, broadcasts frequencies, and things I can’t make heads or tails of. At least not yet. What’s strange is that it seems this ‘signal’ only occurs at this house. 
 
-The phenomena doesn’t behave like radio waves, electromagnetism or anything I’ve seen before, so I’m calling it the 'signal' until I think of a better name. Interestingly, every room registers a different 'volume' of this signal. Maybe that's important to unlocking its source?"
+Interestingly, every room registers a different 'volume' of this signal. Maybe that's important to unlocking its source? Maybe unlocking this could finally answer what happened to Grace…"
 image = ExtResource("1_myjn5")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

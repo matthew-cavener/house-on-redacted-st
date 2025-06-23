@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://b23bx70xq6don"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_6p2sg"]
+[ext_resource type="Texture2D" uid="uid://dthwfkmxkqqwl" path="res://assets/sprites/kitchen/rachel_files/Clue_MissingPainting_Rectangle.png" id="1_66531"]
+
+[resource]
+script = ExtResource("1_6p2sg")
+id = "rectangle_frame"
+name = "Spot on the Wall"
+description = "Dust on the wall shows something used to be placed here."
+image = ExtResource("1_66531")
+hero_image = ExtResource("1_66531")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

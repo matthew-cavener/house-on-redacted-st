@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=4 format=3 uid="uid://cjq50a7xmcndj"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_5oit6"]
+[ext_resource type="Texture2D" uid="uid://dwk82vskt4kws" path="res://assets/sprites/kitchen/tax_form_1.png" id="1_l01ca"]
+[ext_resource type="Texture2D" uid="uid://c0p3di076x7i8" path="res://assets/sprites/kitchen/crumpled_paper_6.png" id="1_vrwv5"]
+
+[resource]
+script = ExtResource("1_5oit6")
+id = "tax_form_1"
+name = "Tax Document"
+description = "A tax document listing Mr. McAllister as a full time student at a trade school for electricians, specializing in antenna dishes. He was also a waiter on the side. Dated 1963."
+image = ExtResource("1_vrwv5")
+hero_image = ExtResource("1_l01ca")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

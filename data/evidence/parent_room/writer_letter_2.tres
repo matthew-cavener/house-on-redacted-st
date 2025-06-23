@@ -8,7 +8,7 @@ script = ExtResource("1_6hwd4")
 id = "writer_letter_2"
 name = "Crumpled Letter #2"
 description = "From: [----------]   S[----------]
-Is this your idea of a practical joke? I’ve never heard of that show. I’ll admit, I got curious myself and looked it up at the library here and found there is absolutely zero trace of that cartoon existing. Please, don’t contact me again. "
+Is this your idea of a practical joke? I’ve never heard of that show. I’ll admit, I got curious and looked it up at the library here and found there is absolutely zero trace of that cartoon existing. Please, don’t contact me again. "
 image = ExtResource("1_72lhi")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

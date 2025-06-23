@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://ckgcf1k4v884v"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_7rf5j"]
+[ext_resource type="Texture2D" uid="uid://bkqtpmmdjkaxy" path="res://assets/sprites/kitchen/cabinet_door.png" id="1_gdkqk"]
+
+[resource]
+script = ExtResource("1_7rf5j")
+id = "cabinet_door"
+name = "Cabinet"
+description = "There's a dusty kitchen supplies including cookie cutters in the shape of a cat, a tiger, a heart, and a Christmas tree.q"
+image = ExtResource("1_gdkqk")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

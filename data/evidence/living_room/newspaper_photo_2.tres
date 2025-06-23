@@ -7,7 +7,7 @@
 script = ExtResource("1_xkh5q")
 id = "newspaper_photo_2"
 name = "Framed Newspaper Article"
-description = "Young Ms. McAllister, aged 10 won our fiction writing contest with her original story, Melody's Melodies. 'I saw the stories and characters in my dreams like it was all a big TV show,' says young McAllister. We here at the Daily Clarion salute the creative wit of our winner and maybe one day her dreams will be made real.\" Dated 1958."
+description = "Young Ms. McAllister, aged 10 won our fiction writing contest with her original story she wrote herself called Melody's Melodies. 'I saw the stories and characters in my dreams like it was all a big TV show,' says young McAllister. We here at the Daily Clarion salute the creative wit of our winner, and maybe one day her dreams will come true.\" Dated 1958."
 image = ExtResource("1_3xb43")
 hero_image = ExtResource("1_3xb43")
 shows_in_background = true
