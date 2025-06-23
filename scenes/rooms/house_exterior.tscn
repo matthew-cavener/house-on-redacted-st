@@ -82,6 +82,7 @@ offset_right = 144.0
 offset_bottom = 808.0
 script = ExtResource("7_xwprl")
 evidence_resource = SubResource("Resource_gqelu")
+outline_enabled = false
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="letter_2" type="TextureButton" parent="Background"]
@@ -134,6 +135,7 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="Block mail box" type="ColorRect" parent="Background"]
 visible = false
+layout_mode = 0
 offset_left = 56.0
 offset_top = 688.0
 offset_right = 124.0
@@ -143,6 +145,7 @@ color = Color(0.439216, 0.388235, 0.356863, 1)
 
 [node name="Other Neighbor House Address2" type="ColorRect" parent="Background"]
 visible = false
+layout_mode = 0
 offset_left = -28.0
 offset_top = 746.0
 offset_right = 34.0

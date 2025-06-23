@@ -63,10 +63,10 @@ texture = ExtResource("12_mnsc7")
 
 [node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1088.0
-offset_top = 343.0
-offset_right = 1950.0
-offset_bottom = 1208.0
+offset_left = 1072.0
+offset_top = 344.0
+offset_right = 1934.0
+offset_bottom = 1209.0
 scale = Vector2(0.555918, 0.555918)
 texture_normal = ExtResource("15_xsf0y")
 script = ExtResource("3_oy7wu")
