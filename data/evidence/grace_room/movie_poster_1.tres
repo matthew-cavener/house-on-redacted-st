@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://djewi1mylmvbd"]
 
-[ext_resource type="Texture2D" uid="uid://bqk0srlvox78x" path="res://assets/sprites/grace_room/movie_poster_3.png" id="1_7jn66"]
+[ext_resource type="Texture2D" uid="uid://ce4isetycawps" path="res://assets/sprites/grace_room/rachel pic/Movie_3.png" id="1_7jn66"]
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_rg7tx"]
 
 [resource]

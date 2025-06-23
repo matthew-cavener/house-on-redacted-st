@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://c7hi078u6pcec"]
 
-[ext_resource type="Texture2D" uid="uid://dq2aeb54fjbu3" path="res://assets/sprites/parent_room/paper_grid_1.png" id="1_k2xsh"]
+[ext_resource type="Texture2D" uid="uid://dqdrnvjww5oss" path="res://assets/sprites/parent_room/rachel files/Clue_PaperGrid.png" id="1_k2xsh"]
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_nxfsl"]
 
 [resource]
