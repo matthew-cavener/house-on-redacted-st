@@ -24,7 +24,7 @@ var fade_overlay: ColorRect
 var current_evidence_popup: Control
 var evidence_popup_scene = preload("res://scenes/ui/evidence_popup.tscn")
 var notepad_textures: Array[Texture2D] = []
-var position_weights: Array[float] = [2.1, 1.8, 1.2, 0.6, 0.3, 0.0]
+var position_weights: PackedFloat32Array = PackedFloat32Array([5.0, 4.0, 3.0, 2.0, 1.0, 0.0])
 var textures_loaded: bool = false
 
 func _ready():
@@ -133,19 +133,8 @@ func get_next_notepad_texture() -> Texture2D:
 	return selected_texture
 
 func _get_weighted_random_index() -> int:
-	var selection_range = notepad_textures.size() - 1
-	var total_weight = 0.0
-	for i in range(selection_range):
-		var weight = position_weights[i] if i < position_weights.size() else 1.0
-		total_weight += weight
-	var random_value = randf() * total_weight
-	var cumulative_weight = 0.0
-	for i in range(selection_range):
-		var weight = position_weights[i] if i < position_weights.size() else 1.0
-		cumulative_weight += weight
-		if random_value <= cumulative_weight:
-			return i
-	return 0
+	var rng = RandomNumberGenerator.new()
+	return rng.rand_weighted(position_weights)
 
 func _log_texture_selection(texture: Texture2D, index: int):
 	print("Current texture order before selection:")
