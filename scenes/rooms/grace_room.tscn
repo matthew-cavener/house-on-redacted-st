@@ -143,7 +143,7 @@ script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("10_f1jou")
 
 [node name="junk_under_bed" type="Sprite2D" parent="TextureRect"]
-position = Vector2(628, 977)
+position = Vector2(725, 884)
 texture = ExtResource("20_w0l1b")
 
 [node name="bed" type="Sprite2D" parent="TextureRect"]
