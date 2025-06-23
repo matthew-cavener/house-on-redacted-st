@@ -162,7 +162,7 @@ texture = ExtResource("21_u5w5f")
 position = Vector2(1040, 423)
 texture = ExtResource("22_u5w5f")
 
-[node name="EvidenceButton" type="TextureButton" parent="TextureRect"]
+[node name="frame_spot" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
 offset_left = 1428.0
 offset_top = 348.0
@@ -173,7 +173,7 @@ script = ExtResource("3_jtubd")
 evidence_resource = ExtResource("24_wjo8k")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
-[node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
+[node name="cabinet" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
 offset_left = 595.0
 offset_top = 632.0

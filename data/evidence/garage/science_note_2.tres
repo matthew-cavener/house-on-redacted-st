@@ -7,7 +7,7 @@
 script = ExtResource("1_6tf0p")
 id = "science_note_2"
 name = "Machine Instructions"
-description = "To reach the signal's source, activate the machine. Then begin in the westmost room of the house. Next, walk to the place with the lowest reading (34). Then for the remaining rooms, go from lowest to the highest, but the last room might not actually be the one with the highest signal reading. If it works, I imagine the final room would create a mark showing my passage…"
+description = "To reach the signal's source, activate the machine. Then begin in the westmost room of the house. Next, walk to the place with the lowest reading (34). Then for the remaining rooms, go from lowest to the highest, but the last room might not actually be the one with the highest signal reading. If it works, I imagine the final room would create a mark showing my passage to the place of the signal’s origin…"
 image = ExtResource("1_14snm")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

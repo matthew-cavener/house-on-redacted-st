@@ -7,7 +7,7 @@
 script = ExtResource("1_s54vg")
 id = "movie_poster_2"
 name = "Movie Poster #2"
-description = "A framed poster of Open Road. 
+description = "A framed poster of 'Open Road'
 The family road movie of the summer!
 Directed by Allan Nguyen"
 image = ExtResource("1_fle8s")

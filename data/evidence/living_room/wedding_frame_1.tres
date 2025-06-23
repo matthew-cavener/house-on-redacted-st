@@ -9,7 +9,7 @@ id = "wedding_frame_1"
 name = "Wedding Photo"
 description = "\"Celebrating the marriage of Mrs. [---------] [---------] and Mr. A-[---------] McAllister in 1946. 
 
-A handwritten note says this is, \"\"the happiest day of our life.\"\"\""
+A handwritten note says this is, \"the happiest day of our life.\""
 image = ExtResource("1_k03u5")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

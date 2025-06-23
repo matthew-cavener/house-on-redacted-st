@@ -7,7 +7,7 @@
 script = ExtResource("1_oesuv")
 id = "boot_prints"
 name = "Boot Prints"
-description = "There are deep bootmarks in the floor."
+description = "There are deep bootmarks burned into the rug."
 image = ExtResource("1_l8wnw")
 hero_image = ExtResource("1_l8wnw")
 shows_in_background = true

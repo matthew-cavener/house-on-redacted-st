@@ -7,7 +7,9 @@
 script = ExtResource("1_5gpm3")
 id = "science_note_3"
 name = "Adrian Note #3"
-description = "I can increase the volume of the signal with resonance boosters I've created out of [illegible]. With these, I should be able to hone in on the source. I should only have two of these devices, so I just need which rooms to put them in...Luckily, I don't think I need one in [illilegible] which is just as well since it pains me to go in there."
+description = "I can increase the volume of the signal with resonance boosters I've created out of [—————]. With these, I should be able to boost the volume of the signal and maybe even reach the place of origin for this strange phenomena. I only have two of these devices, so I’ll have to find which rooms to put them in... Luckily, I don't need one in [—————] which is just as well since it pains me too much to go in there these days. 
+
+With any luck, maybe I’ll see her again soon. "
 image = ExtResource("1_tfuym")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

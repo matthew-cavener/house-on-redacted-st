@@ -7,7 +7,7 @@
 script = ExtResource("1_bt562")
 id = "window_1"
 name = "Window"
-description = "This window faces towards the sunrise, a pleasant view."
+description = "This window faces towards the morning's sunrise, a pleasant view."
 image = ExtResource("1_jsplr")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

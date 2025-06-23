@@ -9,10 +9,13 @@ id = "book_pile_1"
 name = "Bookshelf"
 description = "“Everything to Know about Electromagnetism”
 By Judith Knolls, 1962
+
 “Somehow, We Go On: On Grief and Hope” 
 By Charlie Saccone, 1961
+
 “An Implacable Voice: My Life with Selective Mutism.”
 By Meredith Desousa, 1959
+
 “Lyin’ Tamers and Judicial Tales” 	
 By Carl Sallow, 1953\""
 image = ExtResource("1_7d203")

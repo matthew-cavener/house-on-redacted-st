@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dql5jdsd2mm7t"]
+[gd_scene load_steps=24 format=3 uid="uid://dql5jdsd2mm7t"]
 
 [ext_resource type="Texture2D" uid="uid://catgveo15d0pl" path="res://assets/sprites/house_exterior/rachel pic/Background_Exterior_UndevelopedLand.png" id="1_p1cgh"]
 [ext_resource type="Resource" uid="uid://gdyr2rs1iv4p" path="res://data/evidence/house_exterior/demo_tire_swing.tres" id="5_1fkhj"]
@@ -14,7 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://4qywseq64i6x" path="res://assets/sprites/house_exterior/garbage_bin.png" id="13_s8m07"]
 [ext_resource type="Texture2D" uid="uid://bwbla8yoa5neg" path="res://assets/sprites/house_exterior/rachel pic/NeighborsHouse_cut.png" id="14_7jfh8"]
 [ext_resource type="Resource" uid="uid://cpigoyj55l5hq" path="res://data/evidence/house_exterior/painting_2_square.tres" id="14_7qc38"]
-[ext_resource type="Texture2D" uid="uid://bejo0jhphehqd" path="res://assets/sprites/house_exterior/livingroominterior.png" id="15_1mla5"]
 [ext_resource type="Texture2D" uid="uid://bk8ri8nd3tqr7" path="res://assets/sprites/house_exterior/rachel pic/TireSwing.png" id="15_6m3xl"]
 [ext_resource type="Resource" uid="uid://drxeurbqeg46v" path="res://data/evidence/house_exterior/broken_mailbox.tres" id="15_kate0"]
 [ext_resource type="Texture2D" uid="uid://b7c3ghqcmx6t3" path="res://assets/sprites/house_exterior/rachel pic/House_asset.png" id="15_ky5tg"]
@@ -133,24 +132,6 @@ script = ExtResource("7_xwprl")
 evidence_resource = ExtResource("15_kate0")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
-[node name="Neighbor House Address" type="ColorRect" parent="Background"]
-offset_left = 132.0
-offset_top = -300.0
-offset_right = 172.0
-offset_bottom = -260.0
-color = Color(0.376471, 0.180392, 0.360784, 1)
-
-[node name="Label" type="Label" parent="Background/Neighbor House Address"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "44"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Block mail box" type="ColorRect" parent="Background"]
 visible = false
 offset_left = 56.0
@@ -182,11 +163,6 @@ text = "40"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="living room int" type="Sprite2D" parent="Background"]
-position = Vector2(318, -197)
-scale = Vector2(0.105373, 0.217275)
-texture = ExtResource("15_1mla5")
-
 [node name="Orange" type="Sprite2D" parent="Background"]
 position = Vector2(1691, 481)
 rotation = -0.24372
@@ -199,7 +175,7 @@ scale = Vector2(1.41607, 1.41607)
 texture = ExtResource("19_p1cgh")
 
 [node name="trunk" type="Sprite2D" parent="Background"]
-position = Vector2(1898, 584)
+position = Vector2(1898, 541)
 texture = ExtResource("20_7jfh8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]

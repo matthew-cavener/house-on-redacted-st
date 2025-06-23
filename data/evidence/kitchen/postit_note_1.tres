@@ -7,7 +7,7 @@
 script = ExtResource("1_5fo1o")
 id = "postit_note_1"
 name = "Old Note"
-description = "Mom, I would never have read Little Women if I knew your namesake DIED!"
+description = "Mom, I would never have read 'Little Women' if I knew your namesake DIED!"
 image = ExtResource("1_8ci4m")
 hero_image = ExtResource("1_8ci4m")
 shows_in_background = true

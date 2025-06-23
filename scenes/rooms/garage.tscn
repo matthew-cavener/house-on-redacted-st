@@ -56,11 +56,6 @@ position = Vector2(769, 518)
 scale = Vector2(0.234906, 0.234906)
 texture = ExtResource("11_phlef")
 
-[node name="radio_leftside" type="Sprite2D" parent="TextureRect"]
-position = Vector2(592, 803)
-scale = Vector2(1.00478, 1.00478)
-texture = ExtResource("13_4fcy8")
-
 [node name="tv_bottom" type="Sprite2D" parent="TextureRect"]
 position = Vector2(1025, 722)
 rotation = 3.14159
@@ -199,6 +194,11 @@ texture_normal = ExtResource("21_5qhiu")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("28_nnbf1")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="radio_leftside" type="Sprite2D" parent="TextureRect"]
+position = Vector2(592, 803)
+scale = Vector2(1.00478, 1.00478)
+texture = ExtResource("13_4fcy8")
 
 [node name="Sprites" type="Node" parent="TextureRect"]
 
