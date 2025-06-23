@@ -46,10 +46,10 @@ stretch_mode = 5
 
 [node name="doctor_note" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1346.0
-offset_top = 635.0
-offset_right = 1763.0
-offset_bottom = 1303.0
+offset_left = 1345.0
+offset_top = 536.0
+offset_right = 1762.0
+offset_bottom = 1204.0
 rotation = 0.104784
 scale = Vector2(0.151589, 0.151589)
 texture_normal = ExtResource("2_2812u")
@@ -92,10 +92,10 @@ evidence_resource = ExtResource("12_avos5")
 
 [node name="daughter_note" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1188.0
-offset_top = 421.0
-offset_right = 1832.0
-offset_bottom = 1445.0
+offset_left = 1187.0
+offset_top = 451.0
+offset_right = 1831.0
+offset_bottom = 1475.0
 rotation = -0.200618
 scale = Vector2(0.0628492, 0.0628492)
 texture_normal = ExtResource("15_33dcn")

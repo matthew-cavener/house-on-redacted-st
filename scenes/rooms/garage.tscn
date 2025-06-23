@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://0s5s7pjbekvw"]
+[gd_scene load_steps=30 format=3 uid="uid://0s5s7pjbekvw"]
 
 [ext_resource type="Texture2D" uid="uid://20r3ocao2cks" path="res://assets/sprites/garage/rachel files/Background_Garage.png" id="1_jq4lw"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="2_n4pu4"]
@@ -25,8 +25,9 @@
 [ext_resource type="Texture2D" uid="uid://c0x2x7u7t6x3a" path="res://assets/sprites/garage/rachel files/TV_BlackCase.png" id="20_y2trn"]
 [ext_resource type="Texture2D" uid="uid://brwf481nw7yvn" path="res://assets/sprites/garage/ian files/strange_machine.png" id="21_5qhiu"]
 [ext_resource type="Texture2D" uid="uid://mtupg5twxo2x" path="res://assets/sprites/garage/ian files/science_note_2.png" id="21_iwi2r"]
-[ext_resource type="Texture2D" uid="uid://cc3gnkir4a4ds" path="res://assets/sprites/garage/ian files/science_note_4.png" id="23_iwi2r"]
+[ext_resource type="Texture2D" uid="uid://1vw3rf8s6avp" path="res://assets/sprites/garage/ian files/science_note_4_skew.png" id="23_iwi2r"]
 [ext_resource type="Texture2D" uid="uid://b6k14tex6ysyr" path="res://assets/sprites/garage/ian files/science_note_3.png" id="25_5qhiu"]
+[ext_resource type="Resource" uid="uid://cs4rm5k1pyunx" path="res://data/evidence/garage/strange_machine.tres" id="28_nnbf1"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nnbf1"]
 load_path = "res://.godot/imported/diagram_2.jpg-bce4176d5145e6e59c4ec52dfa04a963.ctex"
@@ -47,6 +48,74 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_jq4lw")
+
+[node name="blueprint" type="Sprite2D" parent="TextureRect"]
+position = Vector2(769, 518)
+scale = Vector2(0.234906, 0.234906)
+texture = ExtResource("11_phlef")
+
+[node name="radio_leftside" type="Sprite2D" parent="TextureRect"]
+position = Vector2(592, 803)
+scale = Vector2(1.00478, 1.00478)
+texture = ExtResource("13_4fcy8")
+
+[node name="tv_bottom" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1025, 722)
+rotation = 3.14159
+scale = Vector2(0.832389, 0.832389)
+texture = ExtResource("14_5f4xn")
+flip_v = true
+
+[node name="tv_lady" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1401, 590)
+scale = Vector2(0.81822, 0.81822)
+texture = ExtResource("15_qq1up")
+
+[node name="tv_orangeytube" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1435, 480)
+rotation = 0.0212577
+scale = Vector2(0.775658, 0.775658)
+texture = ExtResource("16_phlef")
+
+[node name="tv_top" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1034, 497)
+scale = Vector2(0.861773, 0.861773)
+texture = ExtResource("17_5qhiu")
+
+[node name="radio_ham" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1141, 892)
+scale = Vector2(1.7407, 1.7407)
+texture = ExtResource("18_iwi2r")
+
+[node name="radio_rightside" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1533, 492)
+scale = Vector2(0.720037, 0.773929)
+texture = ExtResource("19_nnbf1")
+
+[node name="tv_blackcase" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1531, 602)
+scale = Vector2(0.603979, 0.603979)
+texture = ExtResource("20_y2trn")
+
+[node name="diagram_1" type="Sprite2D" parent="TextureRect"]
+position = Vector2(610, 508)
+scale = Vector2(0.26673, 0.26673)
+texture = SubResource("CompressedTexture2D_nnbf1")
+
+[node name="diagram_2" type="Sprite2D" parent="TextureRect"]
+position = Vector2(609, 612)
+scale = Vector2(0.249452, 0.249452)
+texture = ExtResource("20_5qhiu")
+
+[node name="diagram_3" type="Sprite2D" parent="TextureRect"]
+position = Vector2(671, 622)
+scale = Vector2(0.125148, 0.125148)
+texture = ExtResource("21_iwi2r")
+
+[node name="paper_on_door" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1773, 473)
+scale = Vector2(0.10977, 0.111729)
+texture = ExtResource("23_iwi2r")
 
 [node name="notebook_1" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
@@ -83,7 +152,6 @@ evidence_resource = ExtResource("14_h84gu")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="envelope_1" type="TextureButton" parent="TextureRect"]
-z_index = 1
 layout_mode = 0
 offset_left = 1447.0
 offset_top = 649.0
@@ -95,82 +163,7 @@ texture_normal = ExtResource("7_o0bpy")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("7_371gr")
 
-[node name="Sprites" type="Node" parent="TextureRect"]
-
-[node name="blueprint" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(769, 518)
-scale = Vector2(0.234906, 0.234906)
-texture = ExtResource("11_phlef")
-
-[node name="radio_leftside" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(576, 777)
-scale = Vector2(1.00478, 1.00478)
-texture = ExtResource("13_4fcy8")
-
-[node name="tv_bottom" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1025, 722)
-scale = Vector2(-0.832389, -0.832389)
-texture = ExtResource("14_5f4xn")
-flip_v = true
-
-[node name="tv_lady" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1401, 590)
-scale = Vector2(0.81822, 0.81822)
-texture = ExtResource("15_qq1up")
-
-[node name="tv_orangeytube" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1435, 480)
-rotation = 0.0212577
-scale = Vector2(0.775658, 0.775658)
-texture = ExtResource("16_phlef")
-
-[node name="tv_top" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1034, 497)
-scale = Vector2(0.861773, 0.861773)
-texture = ExtResource("17_5qhiu")
-
-[node name="radio_ham" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1141, 892)
-scale = Vector2(1.7407, 1.7407)
-texture = ExtResource("18_iwi2r")
-
-[node name="radio_rightside" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1533, 492)
-scale = Vector2(0.720037, 0.773929)
-texture = ExtResource("19_nnbf1")
-
-[node name="tv_blackcase" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1531, 602)
-scale = Vector2(0.603979, 0.603979)
-texture = ExtResource("20_y2trn")
-
-[node name="diagram_1" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(610, 508)
-scale = Vector2(0.26673, 0.26673)
-texture = SubResource("CompressedTexture2D_nnbf1")
-
-[node name="diagram_2" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(609, 612)
-scale = Vector2(0.249452, 0.249452)
-texture = ExtResource("20_5qhiu")
-
-[node name="diagram_3" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(671, 617)
-scale = Vector2(0.125148, 0.125148)
-texture = ExtResource("21_iwi2r")
-
-[node name="strange machine" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(379, 806)
-scale = Vector2(1.11452, 1.11452)
-texture = ExtResource("21_5qhiu")
-
-[node name="paper_on_door" type="Sprite2D" parent="TextureRect/Sprites"]
-position = Vector2(1773, 453)
-scale = Vector2(0.125702, 0.125702)
-texture = ExtResource("23_iwi2r")
-
 [node name="notebook_3" type="TextureButton" parent="TextureRect"]
-z_index = 1
 layout_mode = 0
 offset_left = 1283.0
 offset_top = 579.0
@@ -183,13 +176,26 @@ script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("5_q6jwl")
 
 [node name="science_note_2" type="TextureButton" parent="TextureRect"]
-z_index = 1
 layout_mode = 0
-offset_left = 663.0
-offset_top = 439.0
-offset_right = 1687.0
-offset_bottom = 1357.0
+offset_left = 693.0
+offset_top = 457.0
+offset_right = 1717.0
+offset_bottom = 1375.0
 scale = Vector2(0.120416, 0.120416)
 texture_normal = ExtResource("25_5qhiu")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("11_a2xk5")
+
+[node name="strange_machine" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = -255.0
+offset_top = 441.0
+offset_right = 769.0
+offset_bottom = 1209.0
+scale = Vector2(1.01117, 1.01117)
+texture_normal = ExtResource("21_5qhiu")
+script = ExtResource("2_n4pu4")
+evidence_resource = ExtResource("28_nnbf1")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="Sprites" type="Node" parent="TextureRect"]
