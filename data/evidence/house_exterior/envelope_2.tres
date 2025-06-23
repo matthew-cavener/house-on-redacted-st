@@ -10,6 +10,5 @@ name = "Letter"
 description = "“I don’t know what you’re talking about. If you knew me or read my book, you’d know the answer to your question.”
 From MD"
 image = ExtResource("1_74hyy")
-hero_image = ExtResource("1_74hyy")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

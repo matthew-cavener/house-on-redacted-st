@@ -9,6 +9,5 @@ id = "item_2"
 name = "Letter"
 description = "Hey, neighbor. Have you seen my rake? I'm worried that the nutcase in house 340 with our street's namesake hung up in his window ran off with it..."
 image = ExtResource("1_sq713")
-hero_image = ExtResource("1_sq713")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

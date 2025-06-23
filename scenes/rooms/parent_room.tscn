@@ -188,7 +188,7 @@ texture_normal = ExtResource("20_a7bte")
 script = ExtResource("3_gc6a3")
 evidence_resource = ExtResource("21_l6shy")
 
-[node name="EvidenceButton" type="TextureButton" parent="TextureRect"]
+[node name="science_note_5" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
 offset_left = 733.0
 offset_top = 920.0
@@ -200,7 +200,7 @@ texture_normal = ExtResource("22_stoh5")
 script = ExtResource("3_gc6a3")
 evidence_resource = ExtResource("23_0g5rn")
 
-[node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
+[node name="painting" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
 offset_left = 92.0
 offset_top = 304.0

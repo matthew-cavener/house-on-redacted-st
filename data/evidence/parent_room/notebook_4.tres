@@ -11,6 +11,5 @@ description = "I can't believe it! Years after Grace disappeared into thin air, 
 
 At first I thought someone stole her idea and made it into a show themselves, but then I discovered that the studio who made this show doesn't exist. Nor do the actors, the writers, director-- anybody! It gets stranger because I asked my colleagues at the bank, my neighbors, and family from out of state: no one gets this program but this house. It's like it's being beamed directly to this set, and no where else. I have to study this!"
 image = ExtResource("1_0je0x")
-hero_image = ExtResource("1_0je0x")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

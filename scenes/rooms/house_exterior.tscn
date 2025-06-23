@@ -124,10 +124,10 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="broken_mailbox" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_left = 32.0
-offset_top = 759.0
-offset_right = 354.0
-offset_bottom = 1115.0
+offset_left = 34.0
+offset_top = 768.0
+offset_right = 356.0
+offset_bottom = 1124.0
 texture_normal = ExtResource("12_l0peu")
 script = ExtResource("7_xwprl")
 evidence_resource = ExtResource("15_kate0")
