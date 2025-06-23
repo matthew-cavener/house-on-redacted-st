@@ -5,9 +5,9 @@
 
 [resource]
 script = ExtResource("1_ikgdy")
-id = ""
-name = ""
-description = ""
+id = "strange_machine"
+name = "Strange Machine"
+description = "This large bizarre machine gives an unnerving hum."
 image = ExtResource("1_4pxcp")
 hero_image = ExtResource("1_4pxcp")
 shows_in_background = true

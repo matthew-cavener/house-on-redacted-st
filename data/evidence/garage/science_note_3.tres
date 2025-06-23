@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://l8nd6l5pogul"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_5gpm3"]
+[ext_resource type="Texture2D" uid="uid://bhkg674ny3lrs" path="res://assets/sprites/garage/ian files/science_note_1.png" id="1_tfuym"]
+
+[resource]
+script = ExtResource("1_5gpm3")
+id = "science_note_3"
+name = "Adrian Note #3"
+description = "I can increase the volume of the signal with resonance boosters I've created out of [illegible]. With these, I should be able to hone in on the source. I should only have two of these devices, so I just need which rooms to put them in...Luckily, I don't think I need one in [illilegible] which is just as well since it pains me to go in there."
+image = ExtResource("1_tfuym")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"
