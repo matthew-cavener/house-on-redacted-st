@@ -20,11 +20,62 @@ var is_transitioning: bool = false
 var fade_overlay: ColorRect
 var fade_duration: float = 0.333
 var current_evidence_popup: Control
+var notepad_textures: Array[Texture2D] = []
+var position_weights: Array[float] = [2.1, 1.8, 1.2, 0.9, 0.3, 0.0]
+var textures_loaded: bool = false
 
 func _ready():
 	EventBus.evidence_popup_requested.connect(_on_evidence_popup_requested)
 	_setup_fade_overlay()
+	_load_notepad_textures()
 	_load_and_show_starting_room()
+
+func _load_notepad_textures():
+	if textures_loaded:
+		return
+	for i in range(1, 7):
+		var texture_path = "res://assets/sprites/ui/notepad%d.png" % i
+		var texture = load(texture_path) as Texture2D
+		if texture:
+			notepad_textures.append(texture)
+			texture.set_meta("original_name", "notepad%d" % i)
+	textures_loaded = true
+	print("Initialized notepad textures array with ", notepad_textures.size(), " textures")
+
+func get_next_notepad_texture() -> Texture2D:
+	if notepad_textures.is_empty():
+		return null
+	if notepad_textures.size() == 1:
+		return notepad_textures[0]
+	var selection_range = notepad_textures.size() - 1
+	var total_weight = 0.0
+	print("Current texture order before selection:")
+	for i in range(notepad_textures.size()):
+		var tex_name = notepad_textures[i].get_meta("original_name", "unknown")
+		print("    Position ", i, ": ", tex_name)
+	for i in range(selection_range):
+		var weight = position_weights[i] if i < position_weights.size() else 1.0
+		total_weight += weight
+	var random_value = randf() * total_weight
+	var cumulative_weight = 0.0
+	var selected_index = 0
+	for i in range(selection_range):
+		var weight = position_weights[i] if i < position_weights.size() else 1.0
+		cumulative_weight += weight
+		if random_value <= cumulative_weight:
+			selected_index = i
+			break
+	var selected_texture = notepad_textures[selected_index]
+	var texture_name = selected_texture.get_meta("original_name", "unknown")
+	print("Selected notepad texture: ", texture_name, " from position ", selected_index)
+	notepad_textures.remove_at(selected_index)
+	notepad_textures.append(selected_texture)
+	print("Texture order after moving to back:")
+	for i in range(notepad_textures.size()):
+		var tex_name = notepad_textures[i].get_meta("original_name", "unknown")
+		print("    Position ", i, ": ", tex_name)
+	print("---")
+	return selected_texture
 
 func _load_and_show_starting_room():
 	var room_path = "res://scenes/rooms/%s.tscn" % starting_room
