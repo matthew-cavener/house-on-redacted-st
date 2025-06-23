@@ -29,7 +29,7 @@ func _create_evidence_indicator():
 
 func _create_indicator_sprite_frames() -> SpriteFrames:
 	var sprite_frames = SpriteFrames.new()
-	var atlas_texture = load("res://assets/sprites/S001_nyknck.png") as Texture2D
+	var atlas_texture = load("res://assets/sprites/ui/S001_nyknck.png") as Texture2D
 	var regions = [
 		Rect2(0, 0, 32, 32),
 		Rect2(32, 0, 32, 32),
