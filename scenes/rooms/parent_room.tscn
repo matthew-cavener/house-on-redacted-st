@@ -8,7 +8,7 @@
 [ext_resource type="Resource" uid="uid://dwx7v1v6th826" path="res://data/evidence/parent_room/notebook_2.tres" id="4_bj8xo"]
 [ext_resource type="Texture2D" uid="uid://cwg457m4c2bjm" path="res://assets/sprites/parent_room/notebook_4.png" id="5_bj8xo"]
 [ext_resource type="Resource" uid="uid://be20p7ig70dli" path="res://data/evidence/parent_room/notebook_4.tres" id="5_gc6a3"]
-[ext_resource type="Texture2D" uid="uid://dqdrnvjww5oss" path="res://assets/sprites/parent_room/rachel files/Clue_PaperGrid.png" id="7_1fbsb"]
+[ext_resource type="Texture2D" uid="uid://dq2aeb54fjbu3" path="res://assets/sprites/parent_room/paper_grid_1.png" id="8_i0vi3"]
 [ext_resource type="Resource" uid="uid://c7hi078u6pcec" path="res://data/evidence/parent_room/paper_grid_1.tres" id="8_mxvmn"]
 [ext_resource type="Texture2D" uid="uid://c7ikfut8umd08" path="res://assets/sprites/parent_room/pile_paper_3.png" id="9_i3wi4"]
 [ext_resource type="Texture2D" uid="uid://c44cdp1g2nj8p" path="res://assets/sprites/parent_room/tv_note_1.png" id="9_ld0ee"]
@@ -95,11 +95,12 @@ evidence_resource = ExtResource("4_bj8xo")
 
 [node name="adrian_note_2" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 779.0
-offset_top = 779.0
-offset_right = 1179.0
-offset_bottom = 1097.0
-texture_normal = ExtResource("7_1fbsb")
+offset_left = 810.0
+offset_top = 852.0
+offset_right = 1532.0
+offset_bottom = 1452.0
+scale = Vector2(0.500135, 0.500135)
+texture_normal = ExtResource("8_i0vi3")
 script = ExtResource("3_gc6a3")
 evidence_resource = ExtResource("8_mxvmn")
 
@@ -268,9 +269,9 @@ evidence_resource = ExtResource("9_mxvmn")
 
 [node name="EvidenceButton" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1122.0
+offset_left = 1150.0
 offset_top = 581.0
-offset_right = 1488.0
+offset_right = 1516.0
 offset_bottom = 967.0
 scale = Vector2(0.801258, 0.801258)
 texture_normal = ExtResource("30_d3c4e")

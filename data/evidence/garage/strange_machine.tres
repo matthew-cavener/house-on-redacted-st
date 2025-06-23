@@ -5,8 +5,8 @@
 
 [resource]
 script = ExtResource("1_ikgdy")
-id = "strange_machine"
-name = "Strange Machine"
+id = ""
+name = ""
 description = "This large bizarre machine gives an unnerving hum."
 image = ExtResource("1_4pxcp")
 shows_in_background = true

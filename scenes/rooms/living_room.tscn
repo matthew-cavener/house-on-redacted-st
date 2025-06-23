@@ -63,11 +63,11 @@ texture = ExtResource("12_mnsc7")
 
 [node name="EvidenceButton2" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1072.0
-offset_top = 344.0
-offset_right = 1934.0
-offset_bottom = 1209.0
-scale = Vector2(0.555918, 0.555918)
+offset_left = 1095.0
+offset_top = 332.0
+offset_right = 1524.0
+offset_bottom = 1162.0
+scale = Vector2(0.574454, 0.574454)
 texture_normal = ExtResource("15_xsf0y")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("16_8mmjm")
@@ -102,10 +102,10 @@ texture = ExtResource("19_v4v7e")
 
 [node name="easter_pic" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1677.0
-offset_top = 412.0
-offset_right = 1929.0
-offset_bottom = 620.0
+offset_left = 1673.0
+offset_top = 426.0
+offset_right = 1925.0
+offset_bottom = 634.0
 texture_normal = ExtResource("20_b5xou")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("6_5s50e")
@@ -113,10 +113,10 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="Wedding Frame" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1530.0
-offset_top = 260.0
-offset_right = 1756.0
-offset_bottom = 459.0
+offset_left = 1532.0
+offset_top = 252.0
+offset_right = 1758.0
+offset_bottom = 451.0
 texture_normal = ExtResource("5_m25an")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("7_5s50e")

@@ -87,10 +87,10 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="letter_2" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_left = 282.0
-offset_top = 970.0
-offset_right = 1306.0
-offset_bottom = 1738.0
+offset_left = 453.0
+offset_top = 940.0
+offset_right = 1477.0
+offset_bottom = 1708.0
 rotation = 0.189759
 scale = Vector2(0.109901, 0.109901)
 texture_normal = ExtResource("8_xwprl")
@@ -100,10 +100,10 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="Envelope 2" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_left = 367.0
-offset_top = 880.0
-offset_right = 4015.0
-offset_bottom = 6352.0
+offset_left = 400.0
+offset_top = 812.0
+offset_right = 4048.0
+offset_bottom = 6284.0
 scale = Vector2(0.034972, 0.0194811)
 texture_normal = ExtResource("11_8eor1")
 script = ExtResource("7_xwprl")
@@ -124,10 +124,10 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="broken_mailbox" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_left = 34.0
-offset_top = 768.0
-offset_right = 356.0
-offset_bottom = 1124.0
+offset_left = 89.0
+offset_top = 832.0
+offset_right = 352.0
+offset_bottom = 1080.0
 texture_normal = ExtResource("12_l0peu")
 script = ExtResource("7_xwprl")
 evidence_resource = ExtResource("15_kate0")

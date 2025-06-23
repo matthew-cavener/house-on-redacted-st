@@ -7,8 +7,9 @@
 script = ExtResource("1_wdyxw")
 id = "xmas_list"
 name = "Grace's Christmas List"
-description = "Dear Santa, 
-Please get me an [---------], the 5958 model please. I like to imagine it’d be the perfect snack for Oboe — too bad he’s not real though!
+description = "~~ LETTER TO SANTA ~~
+Dear Santa, 
+Please get me an [---------], the '59 model please. I like to imagine it’d be the perfect snack for Oboe — too bad he’s not real though!
 ~ Grace"
 image = ExtResource("1_rdrox")
 shows_in_background = true
