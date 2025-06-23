@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cbxpkyuvvymnv"]
+[gd_scene load_steps=26 format=3 uid="uid://cbxpkyuvvymnv"]
 
 [ext_resource type="Texture2D" uid="uid://bmaol3gd82t20" path="res://assets/sprites/living_room/Rachel pic/Background_LivingRoom.png" id="1_m25an"]
 [ext_resource type="Texture2D" uid="uid://bwajgfl1tg445" path="res://assets/sprites/living_room/newspaper_photo_2.png" id="2_qlgtg"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://c1jrrjlqsrxo" path="res://assets/sprites/living_room/Rachel pic/Sofa.png" id="20_v4v7e"]
 [ext_resource type="Texture2D" uid="uid://3i7s5un86301" path="res://assets/sprites/living_room/Rachel pic/HeightRecord.png" id="23_b5xou"]
 [ext_resource type="Resource" uid="uid://dhvv0v5xc0nfe" path="res://data/evidence/kitchen/height_marker.tres" id="24_12hvq"]
+[ext_resource type="Texture2D" uid="uid://c18jjhtifeuf0" path="res://assets/sprites/living_room/Rachel pic/Clue_BookPile.png" id="25_eqisx"]
 
 [node name="LivingRoom" type="Control"]
 layout_mode = 3
@@ -165,3 +166,8 @@ texture_normal = ExtResource("23_b5xou")
 script = ExtResource("3_oy7wu")
 evidence_resource = ExtResource("24_12hvq")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="books" type="Sprite2D" parent="TextureRect"]
+position = Vector2(728, 633)
+scale = Vector2(0.384904, 0.384904)
+texture = ExtResource("25_eqisx")
