@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://b4ahyo76nd4il"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_7slgb"]
+
+[resource]
+script = ExtResource("1_7slgb")
+field_name = "do you agree"
+options = Array[String](["I agree", "I do not agree", "Is this legal?"])
+answer = "I agree"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

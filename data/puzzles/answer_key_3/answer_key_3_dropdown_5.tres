@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://c1fiwa6yy680r"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_5yg8i"]
+
+[resource]
+script = ExtResource("1_5yg8i")
+field_name = "husband last name"
+options = Array[String](["McAllister", "Greene", "Hughes"])
+answer = "McAllister"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

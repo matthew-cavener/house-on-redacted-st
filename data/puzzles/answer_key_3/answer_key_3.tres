@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=11 format=3 uid="uid://fuxm5p63q736"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_oawyc"]
+[ext_resource type="Resource" uid="uid://dheqcshh0sx5m" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_1.tres" id="2_qufns"]
+[ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="2_u0wm7"]
+[ext_resource type="Resource" uid="uid://dnoxhgnabax0k" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_2.tres" id="3_1xnd5"]
+[ext_resource type="Resource" uid="uid://dfrwvocdroo00" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_3.tres" id="4_lmre0"]
+[ext_resource type="Resource" uid="uid://dxmvye6n7jtpw" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_4.tres" id="5_x2lu1"]
+[ext_resource type="Resource" uid="uid://c1fiwa6yy680r" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_5.tres" id="6_ytqpv"]
+[ext_resource type="Resource" uid="uid://bqefywqormh1i" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_6.tres" id="7_vbb80"]
+[ext_resource type="Resource" uid="uid://qgqb3mgqtt1o" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_7.tres" id="8_4rp2p"]
+[ext_resource type="Resource" uid="uid://57rxuh88shjs" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_8.tres" id="9_srqtv"]
+
+[resource]
+script = ExtResource("2_u0wm7")
+puzzle_id = ""
+puzzle_name = ""
+dropdown_fields = Array[ExtResource("1_oawyc")]([ExtResource("2_qufns"), ExtResource("3_1xnd5"), ExtResource("4_lmre0"), ExtResource("5_x2lu1"), ExtResource("6_ytqpv"), ExtResource("7_vbb80"), ExtResource("8_4rp2p"), ExtResource("9_srqtv")])
+incorrect_fields_for_close_feedback = 2
+solved_feedback = "You have correctly filled out the paperwork. Please proceed with your investigation."
+close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. Please correct your mistakes."
+failure_feedback = "Your paperwork has too many errors. Please try again."
+metadata/_custom_type_script = "uid://3jcevwhmv3f7"

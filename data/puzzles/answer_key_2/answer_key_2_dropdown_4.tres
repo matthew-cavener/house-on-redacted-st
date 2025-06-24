@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_53dik")
-field_name = ""
+field_name = "house zip code"
 options = Array[String](["09618", "10689", "61089", "68019", "68901", "96810"])
 answer = "68901"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

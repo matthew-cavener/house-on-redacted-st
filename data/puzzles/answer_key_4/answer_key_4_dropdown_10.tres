@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://6o6fdcii1s1f"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_vn5jw"]
+
+[resource]
+script = ExtResource("1_vn5jw")
+field_name = "Melody animal"
+options = Array[String](["Anteater", "Dinosaur", "Goose", "Horse", "Possum", "Robot", "Seahorse", "Tiger", "Zebra"])
+answer = "Tiger"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"
