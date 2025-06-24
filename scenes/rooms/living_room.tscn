@@ -79,10 +79,11 @@ texture = ExtResource("17_16llt")
 
 [node name="boot_prints" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1000.0
-offset_top = 872.0
-offset_right = 2500.0
-offset_bottom = 2088.0
+offset_left = 1032.0
+offset_top = 856.0
+offset_right = 2532.0
+offset_bottom = 2072.0
+rotation = 0.397935
 scale = Vector2(0.149203, 0.149203)
 texture_normal = ExtResource("17_xsf0y")
 script = ExtResource("3_oy7wu")
@@ -95,8 +96,8 @@ scale = Vector2(1.09022, 1.09022)
 texture = ExtResource("20_331a7")
 
 [node name="Armchair" type="Sprite2D" parent="TextureRect"]
-position = Vector2(1566, 889)
-scale = Vector2(0.958314, 0.958314)
+position = Vector2(1584, 872)
+scale = Vector2(0.792261, 0.79226)
 texture = ExtResource("19_v4v7e")
 
 [node name="easter_pic" type="TextureButton" parent="TextureRect"]
@@ -122,8 +123,8 @@ evidence_resource = ExtResource("7_5s50e")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="sofa" type="Sprite2D" parent="TextureRect"]
-position = Vector2(312, 897)
-scale = Vector2(0.673173, 0.673173)
+position = Vector2(262.509, 895.029)
+scale = Vector2(0.734345, 0.734345)
 texture = ExtResource("20_v4v7e")
 
 [node name="Coffee Table" type="Sprite2D" parent="TextureRect"]
@@ -145,10 +146,10 @@ evidence_resource = ExtResource("11_eokjc")
 
 [node name="receipt" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 195.0
-offset_top = 845.0
-offset_right = 801.0
-offset_bottom = 1452.0
+offset_left = 152.0
+offset_top = 848.0
+offset_right = 758.0
+offset_bottom = 1455.0
 rotation = 0.158028
 scale = Vector2(0.102432, 0.102432)
 texture_normal = ExtResource("13_xsf0y")

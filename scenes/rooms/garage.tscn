@@ -80,8 +80,8 @@ scale = Vector2(0.861773, 0.861773)
 texture = ExtResource("17_5qhiu")
 
 [node name="radio_ham" type="Sprite2D" parent="TextureRect"]
-position = Vector2(1141, 892)
-scale = Vector2(1.7407, 1.7407)
+position = Vector2(1220, 880)
+scale = Vector2(1.36635, 1.36635)
 texture = ExtResource("18_iwi2r")
 
 [node name="radio_rightside" type="Sprite2D" parent="TextureRect"]

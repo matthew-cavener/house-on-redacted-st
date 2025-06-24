@@ -83,11 +83,11 @@ texture = ExtResource("27_7mtmq")
 
 [node name="character_appearances" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 644.0
-offset_top = 710.0
-offset_right = 1668.0
-offset_bottom = 1478.0
-rotation = -0.392341
+offset_left = 680.0
+offset_top = 696.0
+offset_right = 1704.0
+offset_bottom = 1464.0
+rotation = 0.00523599
 scale = Vector2(0.119058, 0.119058)
 texture_normal = ExtResource("2_vmc6p")
 script = ExtResource("3_gc6a3")
@@ -105,7 +105,7 @@ script = ExtResource("3_gc6a3")
 evidence_resource = ExtResource("8_mxvmn")
 
 [node name="paper_pile_2" type="Sprite2D" parent="TextureRect"]
-position = Vector2(850, 448)
+position = Vector2(960, 448)
 rotation = -0.0606741
 scale = Vector2(0.127335, 0.127335)
 texture = ExtResource("9_i3wi4")
@@ -118,11 +118,11 @@ flip_h = true
 
 [node name="adrian_note_1" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 486.0
-offset_top = 586.0
-offset_right = 1510.0
-offset_bottom = 1269.0
-rotation = 0.474028
+offset_left = 496.0
+offset_top = 680.0
+offset_right = 1520.0
+offset_bottom = 1363.0
+rotation = -0.39968
 scale = Vector2(0.149066, 0.149066)
 texture_normal = ExtResource("5_bj8xo")
 script = ExtResource("3_gc6a3")
@@ -192,10 +192,10 @@ evidence_resource = ExtResource("21_l6shy")
 
 [node name="science_note_5" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 733.0
-offset_top = 920.0
-offset_right = 2141.0
-offset_bottom = 2409.0
+offset_left = 728.0
+offset_top = 952.0
+offset_right = 2136.0
+offset_bottom = 2441.0
 rotation = 0.982872
 scale = Vector2(0.0543507, 0.0543507)
 texture_normal = ExtResource("22_stoh5")
@@ -257,11 +257,11 @@ texture = ExtResource("37_i0vi3")
 
 [node name="adrian_note_3" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 533.0
-offset_top = 807.0
-offset_right = 1058.0
-offset_bottom = 1438.0
-rotation = 1.83259
+offset_left = 550.0
+offset_top = 811.0
+offset_right = 1075.0
+offset_bottom = 1442.0
+rotation = 1.69297
 scale = Vector2(0.15285, 0.15285)
 texture_normal = ExtResource("9_ld0ee")
 script = ExtResource("3_gc6a3")
