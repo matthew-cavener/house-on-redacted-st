@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://r715kb1j4rem"]
 
-[ext_resource type="Texture2D" uid="uid://bjdcoacpct4lw" path="res://assets/sprites/grace_room/rachel pic/Background_DaughtersRoom_PENDING_clearwindows.png" id="1_0bejd"]
+[ext_resource type="Texture2D" uid="uid://dqsv8rk682p2q" path="res://assets/sprites/grace_room/rachel pic/Background_DaughtersRoom.png" id="1_0bejd"]
 [ext_resource type="Texture2D" uid="uid://bnexc6v3hww4d" path="res://assets/sprites/grace_room/rachel pic/Clue_MissingPoster_OnDesk.png" id="2_hg2dm"]
 [ext_resource type="Texture2D" uid="uid://ce4urc6ksvhje" path="res://assets/sprites/grace_room/floor_lamp.png" id="2_iosu6"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_1laj6"]
