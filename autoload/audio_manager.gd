@@ -138,7 +138,7 @@ func play_melodys_melodies():
 
 func _on_evidence_popup_requested(evidence: EvidenceResource):
 	play_pen_click()
-	if evidence and evidence.resource_path.contains("parent_room/tv.tres"):
+	if evidence and evidence.id == "parent_room_tv_with_music":
 		print("AudioManager: TV evidence detected - playing Melody's Melodies")
 		play_melodys_melodies()
 
