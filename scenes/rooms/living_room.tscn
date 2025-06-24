@@ -91,7 +91,7 @@ evidence_resource = ExtResource("18_16llt")
 
 [node name="ceiling_fan" type="Sprite2D" parent="TextureRect"]
 position = Vector2(947, 144)
-rotation = 0.989222
+rotation = -0.0453786
 scale = Vector2(1.09022, 1.09022)
 texture = ExtResource("20_331a7")
 

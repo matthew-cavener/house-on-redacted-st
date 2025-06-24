@@ -66,15 +66,9 @@ scale = Vector2(0.658398, 0.658398)
 texture = ExtResource("2_6b6ne")
 
 [node name="boxes" type="Sprite2D" parent="TextureRect"]
-position = Vector2(1173, 597)
-scale = Vector2(0.556644, 0.556644)
+position = Vector2(1109, 581)
+scale = Vector2(0.993328, 0.993328)
 texture = ExtResource("2_d3c4e")
-
-[node name="boxes2" type="Sprite2D" parent="TextureRect"]
-position = Vector2(910, 652)
-scale = Vector2(0.442699, 0.442699)
-texture = ExtResource("2_d3c4e")
-flip_h = true
 
 [node name="Bed" type="Sprite2D" parent="TextureRect"]
 position = Vector2(583, 729)
@@ -105,9 +99,9 @@ script = ExtResource("3_gc6a3")
 evidence_resource = ExtResource("8_mxvmn")
 
 [node name="paper_pile_2" type="Sprite2D" parent="TextureRect"]
-position = Vector2(960, 448)
+position = Vector2(946, 416)
 rotation = -0.0606741
-scale = Vector2(0.127335, 0.127335)
+scale = Vector2(0.0986526, 0.0986526)
 texture = ExtResource("9_i3wi4")
 
 [node name="desk2" type="Sprite2D" parent="TextureRect"]
@@ -233,9 +227,9 @@ scale = Vector2(0.787153, 0.787153)
 texture = ExtResource("30_d3c4e")
 
 [node name="ceiling_light_2" type="Sprite2D" parent="TextureRect"]
-position = Vector2(983, 142)
+position = Vector2(981, 32)
 rotation = 0.0673414
-scale = Vector2(0.52736, 0.52736)
+scale = Vector2(0.692782, 0.692782)
 texture = ExtResource("31_yb5w5")
 
 [node name="chart_1" type="Sprite2D" parent="TextureRect"]

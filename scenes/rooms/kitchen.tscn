@@ -71,12 +71,13 @@ evidence_resource = ExtResource("8_m75iv")
 
 [node name="newspaper" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1456.0
-offset_top = 541.0
-offset_right = 2457.0
-offset_bottom = 1383.0
+offset_left = 1432.0
+offset_top = 520.0
+offset_right = 2689.0
+offset_bottom = 1744.0
 scale = Vector2(0.152774, 0.152774)
 texture_normal = ExtResource("9_dlhyq")
+stretch_mode = 5
 script = ExtResource("3_jtubd")
 evidence_resource = ExtResource("10_714v7")
 

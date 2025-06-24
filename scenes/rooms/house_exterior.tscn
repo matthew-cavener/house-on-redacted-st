@@ -113,9 +113,9 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 [node name="painting square" type="TextureButton" parent="Background"]
 layout_mode = 0
 offset_left = 592.0
-offset_top = 424.0
-offset_right = 1155.0
-offset_bottom = 1056.0
+offset_top = 400.0
+offset_right = 1211.0
+offset_bottom = 1095.0
 scale = Vector2(0.284315, 0.284315)
 texture_normal = ExtResource("13_s8m07")
 ignore_texture_size = true
