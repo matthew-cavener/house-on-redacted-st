@@ -61,6 +61,7 @@ expand_mode = 1
 stretch_mode = 6
 
 [node name="TextOverlay" type="ColorRect" parent="PopupContainer/HeroLayout/TextBackgroundTexture"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.032
