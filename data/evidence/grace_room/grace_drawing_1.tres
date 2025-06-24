@@ -7,7 +7,10 @@
 script = ExtResource("1_brrep")
 id = "grace_drawing_1"
 name = "Grace Drawing #1"
-description = "I’m pretty disappointed in what I'm calling season three of MM. It’s only half as long as the first one! Least it has this swell moment of Harmony. "
+description = "~~ CHILD'S DRAWING ~~
+I’m pretty disappointed in what I'm calling season three of MM. It’s only half as long as the first one! Least it has this swell moment of Harmony. 
+
+Dated 1957"
 image = ExtResource("1_2qvhc")
 hero_image = ExtResource("1_2qvhc")
 shows_in_background = true

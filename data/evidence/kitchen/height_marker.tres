@@ -9,6 +9,5 @@ id = "height_marker"
 name = "Height Marker"
 description = "Marks drawn on the wall charting the growth of a child. The entries stop in 1959."
 image = ExtResource("1_igrqw")
-hero_image = ExtResource("1_igrqw")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -7,7 +7,7 @@
 script = ExtResource("1_hclyh")
 id = "painting_1_rectangle"
 name = "Painting"
-description = "A beautiful painting sits on the table."
+description = "A beautiful painting sits on the ground."
 image = ExtResource("1_eioh5")
 hero_image = ExtResource("1_eioh5")
 shows_in_background = true

@@ -7,8 +7,8 @@
 script = ExtResource("1_v8ump")
 id = "receipt_1"
 name = "Customer Receipt"
-description = "Note addressed to MZ Electronics. \"I don’t know how you did it, but your electrician was a real genius. They made my TV work better than ever before! Enjoy a tip! Dated 1964."
+description = "~~ CRUMPLED NOTE ~~
+Note addressed to MZ Electronics. \"I don’t know how you did it, but your electrician was a real genius. They made my TV work better than ever before! Enjoy a tip! Dated 1964."
 image = ExtResource("1_wbdge")
-hero_image = ExtResource("1_wbdge")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -7,19 +7,15 @@
 script = ExtResource("1_r7xj8")
 id = "notebook_2"
 name = "List of Character Appearances in Melody's Melodies"
-description = "\"LAST APPEARANCE OF MAJOR CHARACTERS: 
+description = "~~ NOTEBOOK ~~ 
+Last appearance of all major characters
 Melody - final episode of series
 Grim Night - Season 3, Episode 3
-
 Skeleton Trombone - Season 1, 
-
 Harmony - Season 3, Episode 4 (shocking death!!!)
-
 Cadence - Season 2, episode 9 (finale)
-
 March - Season 4, Episode 2 (Yet another death??)
-
-Oboe - Final Season, episode 8\""
+Oboe - Final Season, episode 8"
 image = ExtResource("1_2g2t4")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

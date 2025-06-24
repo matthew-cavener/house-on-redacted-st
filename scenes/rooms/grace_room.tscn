@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://r715kb1j4rem"]
 
-[ext_resource type="Texture2D" uid="uid://dqcpstfl2carr" path="res://assets/sprites/grace_room/rachel pic/Background_DaughtersRoom_PENDING.png" id="1_iaio8"]
+[ext_resource type="Texture2D" uid="uid://bjdcoacpct4lw" path="res://assets/sprites/grace_room/rachel pic/Background_DaughtersRoom_PENDING_clearwindows.png" id="1_0bejd"]
 [ext_resource type="Texture2D" uid="uid://bnexc6v3hww4d" path="res://assets/sprites/grace_room/rachel pic/Clue_MissingPoster_OnDesk.png" id="2_hg2dm"]
 [ext_resource type="Texture2D" uid="uid://ce4urc6ksvhje" path="res://assets/sprites/grace_room/floor_lamp.png" id="2_iosu6"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_1laj6"]
@@ -42,7 +42,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_iaio8")
+texture = ExtResource("1_0bejd")
 expand_mode = 1
 stretch_mode = 5
 
@@ -134,10 +134,10 @@ evidence_resource = ExtResource("14_cnmpb")
 
 [node name="ant_farm" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1579.0
-offset_top = 589.0
-offset_right = 1718.0
-offset_bottom = 716.0
+offset_left = 1496.0
+offset_top = 574.0
+offset_right = 1635.0
+offset_bottom = 701.0
 texture_normal = ExtResource("18_06cw7")
 script = ExtResource("3_1laj6")
 evidence_resource = ExtResource("10_f1jou")

@@ -1,13 +1,14 @@
 [gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://c7hi078u6pcec"]
 
-[ext_resource type="Texture2D" uid="uid://dqdrnvjww5oss" path="res://assets/sprites/parent_room/rachel files/Clue_PaperGrid.png" id="1_k2xsh"]
+[ext_resource type="Texture2D" uid="uid://dq2aeb54fjbu3" path="res://assets/sprites/parent_room/paper_grid_1.png" id="1_k2xsh"]
 [ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_nxfsl"]
 
 [resource]
 script = ExtResource("1_nxfsl")
 id = "paper_grid_1"
 name = "Adrian's Note #2"
-description = "I have watched and re-watched all 39 episodes of this show; and it doesn't make sense. 
+description = "~~ PAPER GRID ~~
+I have watched and re-watched all 39 episodes of this show; and it doesn't make sense. 
 
 At first I thought it might have some meaning about grief like that book Beth made me read but then two seasons after the death of Melody’s girlfriend, the show just ends. My wife thinks I'm crazy studying a cartoon like this, but maybe this could somehow explain why our little girl disappeared all those years ago..."
 image = ExtResource("1_k2xsh")

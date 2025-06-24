@@ -9,6 +9,5 @@ id = "postit_note_1"
 name = "Old Note"
 description = "Mom, I would never have read 'Little Women' if I knew your namesake DIED!"
 image = ExtResource("1_8ci4m")
-hero_image = ExtResource("1_8ci4m")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

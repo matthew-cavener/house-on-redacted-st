@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://02qwqvtv5dw7"]
+
+[ext_resource type="Texture2D" uid="uid://cfgfyepbppsr8" path="res://assets/sprites/parent_room/rachel files/TV.png" id="1_sdchn"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_shpsr"]
+
+[resource]
+script = ExtResource("1_shpsr")
+id = "tv"
+name = "Television Set"
+description = "An old TV. As soon as you turn it on, you hear the cheery tune of a children's cartoon show. "
+image = ExtResource("1_sdchn")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

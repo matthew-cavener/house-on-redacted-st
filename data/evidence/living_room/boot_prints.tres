@@ -9,6 +9,5 @@ id = "boot_prints"
 name = "Boot Prints"
 description = "There are deep bootmarks burned into the rug."
 image = ExtResource("1_l8wnw")
-hero_image = ExtResource("1_l8wnw")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

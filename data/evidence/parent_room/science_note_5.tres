@@ -7,7 +7,8 @@
 script = ExtResource("1_bakml")
 id = "science_note_5"
 name = "Adrian Note"
-description = "It’s imperative there is as little electrical interference as possible inside this room, even from my own devices."
+description = "~~ SCRAWLED NOTE ~~
+It’s imperative there is as little electrical interference as possible inside this room, even from my own devices."
 image = ExtResource("1_08bny")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

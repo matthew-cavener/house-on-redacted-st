@@ -9,6 +9,5 @@ id = "rectangle_frame"
 name = "Spot on the Wall"
 description = "Dust on the wall shows something used to be placed here."
 image = ExtResource("1_66531")
-hero_image = ExtResource("1_66531")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

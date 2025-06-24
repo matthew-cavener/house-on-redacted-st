@@ -7,9 +7,11 @@
 script = ExtResource("1_nt2v6")
 id = "movie_poster_4"
 name = "Movie Poster #4"
-description = "A poster of the movie 'Autumn Manor'
-The romance movie of 1962
-Directed by Naroa Lur"
+description = "A poster of the movie \"Autumn Manor.\"
+
+The romance movie of 1962.
+
+Directed by Naroa Lur."
 image = ExtResource("1_ha5vd")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -150,11 +150,11 @@ metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="envelope_1" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1447.0
-offset_top = 649.0
-offset_right = 8167.0
-offset_bottom = 5129.0
-rotation = -0.243514
+offset_left = 1485.0
+offset_top = 631.0
+offset_right = 8205.0
+offset_bottom = 5111.0
+rotation = -0.198657
 scale = Vector2(0.0185992, 0.0185992)
 texture_normal = ExtResource("7_o0bpy")
 script = ExtResource("2_n4pu4")
@@ -162,12 +162,12 @@ evidence_resource = ExtResource("7_371gr")
 
 [node name="notebook_3" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 1283.0
-offset_top = 579.0
-offset_right = 5523.0
-offset_bottom = 3411.0
-rotation = -0.103455
-scale = Vector2(0.0431207, 0.0431207)
+offset_left = 1366.0
+offset_top = 635.0
+offset_right = 3542.0
+offset_bottom = 2064.0
+rotation = -0.113063
+scale = Vector2(0.0425212, 0.0425212)
 texture_normal = ExtResource("5_nl2ye")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("5_q6jwl")
@@ -183,31 +183,29 @@ texture_normal = ExtResource("25_5qhiu")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("11_a2xk5")
 
+[node name="radio_leftside" type="Sprite2D" parent="TextureRect"]
+position = Vector2(587, 817)
+scale = Vector2(1.00478, 1.00478)
+texture = ExtResource("13_4fcy8")
+
 [node name="strange_machine" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = -255.0
-offset_top = 441.0
-offset_right = 769.0
-offset_bottom = 1209.0
-scale = Vector2(1.01117, 1.01117)
+offset_top = 453.0
+offset_right = 581.0
+offset_bottom = 1088.0
 texture_normal = ExtResource("21_5qhiu")
 script = ExtResource("2_n4pu4")
 evidence_resource = ExtResource("28_nnbf1")
 metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
-[node name="radio_leftside" type="Sprite2D" parent="TextureRect"]
-position = Vector2(592, 803)
-scale = Vector2(1.00478, 1.00478)
-texture = ExtResource("13_4fcy8")
-
 [node name="Sprites" type="Node" parent="TextureRect"]
 
 [node name="science_note_3" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
-offset_left = 521.0
-offset_top = 906.0
-offset_right = 1545.0
-offset_bottom = 1530.0
+offset_left = 579.0
+offset_top = 936.0
+offset_right = 1603.0
+offset_bottom = 1560.0
 rotation = -0.159844
 scale = Vector2(0.216976, 0.216976)
 texture_normal = ExtResource("11_kq0ux")
