@@ -193,10 +193,10 @@ texture = ExtResource("20_6m3xl")
 
 [node name="TireSwingEvidence" type="TextureButton" parent="Background"]
 layout_mode = 0
-offset_left = 1446.0
-offset_top = -133.0
-offset_right = 1729.0
-offset_bottom = 799.0
+offset_left = 1452.0
+offset_top = -65.0
+offset_right = 1679.0
+offset_bottom = 834.0
 texture_normal = ExtResource("15_6m3xl")
 script = ExtResource("7_xwprl")
 evidence_resource = ExtResource("5_1fkhj")
