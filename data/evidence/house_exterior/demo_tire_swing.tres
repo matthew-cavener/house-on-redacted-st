@@ -6,8 +6,8 @@
 [resource]
 script = ExtResource("1_8xy71")
 id = "demo_tire_swing"
-name = "Demo Tire Swing"
-description = "An old tired swing. It doesn't look like anyone has used it in a long time.q"
+name = "Tire Swing"
+description = "An old tired swing. It doesn't look like anyone has used it in a long time."
 image = ExtResource("1_lnnnl")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

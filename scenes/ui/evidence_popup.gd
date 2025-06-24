@@ -26,7 +26,7 @@ func _setup_display():
 		return
 	_set_notepad_texture()
 	hero_layout.show()
-	hero_text.text = current_evidence.description
+	hero_text.text = current_evidence.name + "\n\n\n" + current_evidence.description
 	if current_evidence.hero_image:
 		hero_image.show()
 		hero_image.texture = current_evidence.hero_image
