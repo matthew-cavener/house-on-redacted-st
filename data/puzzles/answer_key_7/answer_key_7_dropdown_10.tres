@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://cywo14rw6p31e"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_5fvw6"]
+
+[resource]
+script = ExtResource("1_5fvw6")
+field_name = "3rd room"
+options = Array[String](["Living Room", "Kitchen", "Grace's Room", "Adrian's Room", "Garage"])
+answer = "Grace's Room"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

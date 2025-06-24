@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://wlrt4aa6c20c"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_tqt3i"]
+
+[resource]
+script = ExtResource("1_tqt3i")
+field_name = "What happened to them"
+options = Array[String](["Divorce", "Death", "Disappearance", "Killing"])
+answer = "Disappearance"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

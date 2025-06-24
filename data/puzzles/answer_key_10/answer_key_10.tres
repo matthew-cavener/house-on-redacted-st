@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=3 format=3 uid="uid://dmdkx8myimpg4"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_a7e8y"]
+[ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="2_g7ndp"]
+
+[resource]
+script = ExtResource("2_g7ndp")
+puzzle_id = ""
+puzzle_name = ""
+dropdown_fields = Array[ExtResource("1_a7e8y")]([])
+incorrect_fields_for_close_feedback = 2
+solved_feedback = "You have correctly filled out the paperwork. Please proceed with your investigation."
+close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. Please correct your mistakes."
+failure_feedback = "Your paperwork has too many errors. Please try again."
+metadata/_custom_type_script = "uid://3jcevwhmv3f7"
