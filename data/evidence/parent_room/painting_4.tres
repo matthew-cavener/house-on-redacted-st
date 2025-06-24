@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("1_ih1tl")
 id = "painting_4"
-name = "Painting of Mountain"
+name = "Painting on Wall"
 description = "A beautiful painting."
 image = ExtResource("2_qrnng")
 hero_image = ExtResource("1_trl85")

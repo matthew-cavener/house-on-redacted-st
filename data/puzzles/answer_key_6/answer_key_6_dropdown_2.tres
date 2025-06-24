@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://fifigh76grnr"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_yjmq1"]
+
+[resource]
+script = ExtResource("1_yjmq1")
+field_name = "Verb"
+options = Array[String](["Disappeared", "Died from natural causes", "Was murdered"])
+answer = "Disappeared"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

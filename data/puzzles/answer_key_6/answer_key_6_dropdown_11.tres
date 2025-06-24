@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://dyub3mq6cmsti"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_efw2s"]
+
+[resource]
+script = ExtResource("1_efw2s")
+field_name = "was ever produced"
+options = Array[String](["Was ever produced", "Was ever aired", "Was ever released"])
+answer = "Was ever produced"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

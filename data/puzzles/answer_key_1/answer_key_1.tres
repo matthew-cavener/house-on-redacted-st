@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=4 format=3 uid="uid://bt5kk4is2dvfs"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_5t62g"]
+[ext_resource type="Resource" uid="uid://b4ahyo76nd4il" path="res://data/puzzles/answer_key_1/answer_key_1_dropdown_1.tres" id="2_0obux"]
+[ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="2_nwia4"]
+
+[resource]
+script = ExtResource("2_nwia4")
+puzzle_id = "answer_key_1"
+puzzle_name = "answer_key_1"
+dropdown_fields = Array[ExtResource("1_5t62g")]([ExtResource("2_0obux")])
+incorrect_fields_for_close_feedback = 2
+solved_feedback = "The Bureau looks forward to your surveyance. Please proceed with your investigation."
+close_feedback = "Please agree to this form to begin your investigation."
+failure_feedback = "Your paperwork has too many errors. Please try again."
+metadata/_custom_type_script = "uid://3jcevwhmv3f7"

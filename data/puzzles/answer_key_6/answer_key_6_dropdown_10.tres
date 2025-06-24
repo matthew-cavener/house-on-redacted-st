@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://cjeutqjl8t1a6"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_5dose"]
+
+[resource]
+script = ExtResource("1_5dose")
+field_name = "tv show"
+options = Array[String](["Encryption", "Government secret", "Pirate radio", "TV show"])
+answer = "TV show"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=15 format=3 uid="uid://dx6jd8fmkbt0n"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_6ek7x"]
+[ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="2_ge8ox"]
+[ext_resource type="Resource" uid="uid://b0ft00vqys14r" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_1.tres" id="2_x3p24"]
+[ext_resource type="Resource" uid="uid://c5kv7djgg5loh" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_2.tres" id="3_3q0c3"]
+[ext_resource type="Resource" uid="uid://6sms02alikya" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_3.tres" id="4_1sd0j"]
+[ext_resource type="Resource" uid="uid://dqjpwlravy7j7" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_4.tres" id="5_8nb5c"]
+[ext_resource type="Resource" uid="uid://cdg7widaiupd0" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_5.tres" id="6_r1wbj"]
+[ext_resource type="Resource" uid="uid://dfec388k4scql" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_6.tres" id="7_mi4wc"]
+[ext_resource type="Resource" uid="uid://boapykc83qyss" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_7.tres" id="8_27jwt"]
+[ext_resource type="Resource" uid="uid://p23qdla38dy6" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_8.tres" id="9_oy7rl"]
+[ext_resource type="Resource" uid="uid://cgxwrw0srv3x4" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_9.tres" id="10_f24n6"]
+[ext_resource type="Resource" uid="uid://6o6fdcii1s1f" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_10.tres" id="11_1d757"]
+[ext_resource type="Resource" uid="uid://cm0j3kppra6ht" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_11.tres" id="12_qk7i6"]
+[ext_resource type="Resource" uid="uid://gnv8ee2pxlj7" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_12.tres" id="13_4f088"]
+
+[resource]
+script = ExtResource("2_ge8ox")
+puzzle_id = "answer_key_4"
+puzzle_name = "answer_key_4"
+dropdown_fields = Array[ExtResource("1_6ek7x")]([ExtResource("2_x3p24"), ExtResource("3_3q0c3"), ExtResource("4_1sd0j"), ExtResource("5_8nb5c"), ExtResource("6_r1wbj"), ExtResource("7_mi4wc"), ExtResource("8_27jwt"), ExtResource("9_oy7rl"), ExtResource("10_f24n6"), ExtResource("11_1d757"), ExtResource("12_qk7i6"), ExtResource("13_4f088")])
+incorrect_fields_for_close_feedback = 2
+solved_feedback = "You have correctly filled out the paperwork. Please proceed with your investigation."
+close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. Please correct your mistakes."
+failure_feedback = "Your paperwork has too many errors. Please try again."
+metadata/_custom_type_script = "uid://3jcevwhmv3f7"

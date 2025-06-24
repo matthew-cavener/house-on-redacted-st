@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://bhb2jcu06kyge"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_pvw0s"]
+
+[resource]
+script = ExtResource("1_pvw0s")
+field_name = "Dream Vacation"
+options = Array[String](["Greece", "Spain", "Hawaii", "Korea", "Egypt"])
+answer = "Greece"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://cxq6c6xpn6voa"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_a1lfd"]
+
+[resource]
+script = ExtResource("1_a1lfd")
+field_name = "in this world"
+options = Array[String](["In this city", "In this country", "In this world"])
+answer = "In this world"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=5 format=3 uid="uid://dmdkx8myimpg4"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_a7e8y"]
+[ext_resource type="Resource" uid="uid://d2mntodayq1n7" path="res://data/puzzles/answer_key_10/answer_key_10_dropdown_1.tres" id="2_0hfw1"]
+[ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="2_g7ndp"]
+[ext_resource type="Resource" uid="uid://ds17xwc12svgq" path="res://data/puzzles/answer_key_10/answer_key_10_dropdown_2.tres" id="3_83bes"]
+
+[resource]
+script = ExtResource("2_g7ndp")
+puzzle_id = "answer_key_8"
+puzzle_name = "answer_key_8"
+dropdown_fields = Array[ExtResource("1_a7e8y")]([ExtResource("2_0hfw1"), ExtResource("3_83bes")])
+incorrect_fields_for_close_feedback = 2
+solved_feedback = "You have correctly filled out the paperwork. Please proceed with your investigation."
+close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. Please correct your mistakes."
+failure_feedback = "Your paperwork has too many errors. Please try again."
+metadata/_custom_type_script = "uid://3jcevwhmv3f7"
