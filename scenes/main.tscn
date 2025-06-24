@@ -72,3 +72,15 @@ offset_top = 304.0
 offset_right = 192.0
 offset_bottom = 368.0
 text = "Room History:"
+
+[node name="AudioPlayers" type="Node" parent="."]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"Music"
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]
+volume_db = -5.0
+bus = &"SFX"
+
+[node name="UIPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]
+bus = &"UI"

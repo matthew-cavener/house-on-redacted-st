@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7q1dri7adi0b"]
+[gd_scene load_steps=3 format=3 uid="uid://c7q1dri7adi0b"]
 
 [ext_resource type="Script" uid="uid://depsgf6sx08yv" path="res://scenes/ui/evidence_popup.gd" id="1_lvauh"]
+[ext_resource type="Texture2D" uid="uid://ckv6rrpho7ffq" path="res://assets/sprites/ui/notepad1.png" id="2_bu38h"]
 
 [node name="EvidencePopup" type="Control"]
 layout_mode = 3
@@ -27,10 +28,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -400.0
-offset_top = -300.0
-offset_right = 400.0
-offset_bottom = 300.0
+offset_left = -500.0
+offset_top = -350.0
+offset_right = 500.0
+offset_bottom = 350.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -44,6 +45,7 @@ grow_vertical = 2
 theme_override_constants/separation = 30
 
 [node name="HeroImage" type="TextureRect" parent="PopupContainer/HeroLayout"]
+custom_minimum_size = Vector2(450, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.5
@@ -51,14 +53,36 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="TextBackgroundTexture" type="TextureRect" parent="PopupContainer/HeroLayout"]
+custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 4
+texture = ExtResource("2_bu38h")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextOverlay" type="ColorRect" parent="PopupContainer/HeroLayout/TextBackgroundTexture"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.032
+anchor_top = 0.014
+anchor_right = 0.96
+anchor_bottom = 0.997
+offset_top = 0.2
+offset_right = -3.05176e-05
+offset_bottom = 0.0999756
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.996, 0.976, 0.75)
 
 [node name="HeroText" type="RichTextLabel" parent="PopupContainer/HeroLayout/TextBackgroundTexture"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = 25.0
+offset_right = -35.0
+offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cy3wgw2cul6wd"
+path="res://.godot/imported/PenClickOut_SFXB.3135 R.wav-c9a14e10e910df1d3e71dcee91bf80a9.sample"
+
+[deps]
+
+source_file="res://assets/sounds/PenClickOut_SFXB.3135 R.wav"
+dest_files=["res://.godot/imported/PenClickOut_SFXB.3135 R.wav-c9a14e10e910df1d3e71dcee91bf80a9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
