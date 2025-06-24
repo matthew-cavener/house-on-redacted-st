@@ -67,7 +67,6 @@ func _update_outline():
 	if not outline_sprite or not evidence_resource or not evidence_resource.image:
 		return
 	outline_sprite.texture = evidence_resource.image
-	outline_sprite.scale = Vector2.ONE * outline_scale
 	outline_sprite.flip_h = flip_h
 	outline_sprite.flip_v = flip_v
 	_update_outline_position()
@@ -143,7 +142,7 @@ func set_outline_enabled(value: bool):
 func set_outline_scale(value: float):
 	outline_scale = value
 	if outline_sprite or Engine.is_editor_hint():
-		_update_outline()
+		_update_outline_position()
 
 func set_outline_color_normal(value: Color):
 	outline_color_normal = value
@@ -173,11 +172,17 @@ func _notification(what):
 		NOTIFICATION_RESIZED, NOTIFICATION_TRANSFORM_CHANGED:
 			if outline_sprite:
 				_update_outline_position()
+				_update_outline()
 
 func _update_outline_position():
-	if not outline_sprite:
+	if not outline_sprite or not evidence_resource or not evidence_resource.image:
 		return
 	outline_sprite.position = size / 2
+	var image_size = evidence_resource.image.get_size()
+	var button_size = size
+	var scale_x = (button_size.x / image_size.x) * outline_scale
+	var scale_y = (button_size.y / image_size.y) * outline_scale
+	outline_sprite.scale = Vector2(scale_x, scale_y)
 
 func _exit_tree():
 	if outline_sprite and is_instance_valid(outline_sprite):
