@@ -7,9 +7,9 @@ const DropdownField = preload("res://data/resources/dropdown_field.gd")
 @export var puzzle_name: String = ""
 @export var dropdown_fields: Array[DropdownField] = []
 @export var incorrect_fields_for_close_feedback: int = 2
-@export var solved_feedback: String = "You have correctly unredacted these documents, that's probably a crime."
-@export var close_feedback: String = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. You ought to just stop now before you learn something you aren't supposed to know."
-@export var failure_feedback: String = "Excellent work good citizen, you have added incorrect data to these official documents you somehow stumbled upon. Present yourself at the nearest NSA field office you are aware of."
+@export_multiline var solved_feedback: String = "You have correctly filled out the paperwork. Please proceed with your investigation."
+@export_multiline var close_feedback: String = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. Please correct your mistakes."
+@export_multiline var failure_feedback: String = "Your paperwork has too many errors. Please try again."
 
 
 func validate_solution(user_selections: Dictionary) -> Dictionary:

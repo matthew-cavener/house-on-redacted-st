@@ -1,13 +1,13 @@
-[gd_resource type="Resource" script_class="PuzzleResource" load_steps=2 format=3 uid="uid://bpj2nkyxvodpy"]
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=3 format=3 uid="uid://bpj2nkyxvodpy"]
 
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_7w87m"]
 [ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="1_rvrdn"]
 
 [resource]
 script = ExtResource("1_rvrdn")
 puzzle_id = ""
 puzzle_name = ""
-solution_fields = Array[String]([])
-solution = {}
+dropdown_fields = Array[ExtResource("1_7w87m")]([])
 incorrect_fields_for_close_feedback = 2
 solved_feedback = "You have correctly unredacted these documents, that's probably a crime."
 close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. You ought to just stop now before you learn something you aren't supposed to know."

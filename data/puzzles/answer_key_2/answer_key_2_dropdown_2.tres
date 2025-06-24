@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropdownField" load_steps=2 format=3 uid="uid://l7i0ki3gqotg"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_mdc7c"]
+
+[resource]
+script = ExtResource("1_mdc7c")
+field_name = ""
+options = Array[String](["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
+answer = "0"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"
