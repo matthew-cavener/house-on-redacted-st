@@ -6,8 +6,8 @@
 
 [resource]
 script = ExtResource("2_nwia4")
-puzzle_id = ""
-puzzle_name = ""
+puzzle_id = "answer_key_1"
+puzzle_name = "answer_key_1"
 dropdown_fields = Array[ExtResource("1_5t62g")]([ExtResource("2_0obux")])
 incorrect_fields_for_close_feedback = 2
 solved_feedback = "The Bureau looks forward to your surveyance. Please proceed with your investigation."

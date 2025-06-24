@@ -6,9 +6,8 @@
 [resource]
 script = ExtResource("1_r7xj8")
 id = "notebook_2"
-name = "List of Character Appearances in Melody's Melodies"
-description = "~~ NOTEBOOK ~~ 
-Last appearance of all major characters
+name = "List of Character Appearances in \"MM\""
+description = "Last appearance of all major characters
 Melody - final episode of series
 Grim Night - Season 3, Episode 3
 Skeleton Trombone - Season 1, 

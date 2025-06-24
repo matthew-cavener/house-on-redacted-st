@@ -17,8 +17,8 @@
 
 [resource]
 script = ExtResource("2_02xed")
-puzzle_id = ""
-puzzle_name = ""
+puzzle_id = "answer_key_6"
+puzzle_name = "answer_key_6"
 dropdown_fields = Array[ExtResource("1_3j64s")]([ExtResource("2_gjnq6"), ExtResource("3_knu1e"), ExtResource("4_owl8k"), ExtResource("5_lxr5j"), ExtResource("6_dwy2v"), ExtResource("7_pgmtf"), ExtResource("8_wbykg"), ExtResource("9_a65ax"), ExtResource("10_k8c2l"), ExtResource("11_kjon7"), ExtResource("12_ojn27"), ExtResource("13_6uou3")])
 incorrect_fields_for_close_feedback = 2
 solved_feedback = "You have correctly filled out the paperwork. Please proceed with your investigation."
