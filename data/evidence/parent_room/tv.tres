@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_shpsr")
-id = "tv"
+id = "parent_room_tv_with_music"
 name = "Television Set"
 description = "An old TV. As soon as you turn it on, you hear the cheery tune of a children's cartoon show. "
 image = ExtResource("1_sdchn")
