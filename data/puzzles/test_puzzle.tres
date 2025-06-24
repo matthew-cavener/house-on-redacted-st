@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=4 format=3 uid="uid://bt5pnqy72kmdp"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_fujmu"]
+[ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="2_2pifs"]
+
+[sub_resource type="Resource" id="Resource_fujmu"]
+script = ExtResource("1_fujmu")
+field_name = "mother's name"
+options = Array[String](["mary", "sue", "lou"])
+answer = "lou"
+metadata/_custom_type_script = "uid://xha7twk0d8v3"
+
+[resource]
+script = ExtResource("2_2pifs")
+puzzle_id = ""
+puzzle_name = ""
+dropdown_fields = Array[ExtResource("1_fujmu")]([SubResource("Resource_fujmu")])
+incorrect_fields_for_close_feedback = 2
+solved_feedback = "You have correctly unredacted these documents, that's probably a crime."
+close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. You ought to just stop now before you learn something you aren't supposed to know."
+failure_feedback = "Excellent work good citizen, you have added incorrect data to these official documents you somehow stumbled upon. Present yourself at the nearest NSA field office you are aware of."
+metadata/_custom_type_script = "uid://3jcevwhmv3f7"
