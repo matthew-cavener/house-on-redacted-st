@@ -128,7 +128,6 @@ func get_next_notepad_texture() -> Texture2D:
 		return notepad_textures[0]
 	var selected_index = _get_weighted_random_index()
 	var selected_texture = notepad_textures[selected_index]
-	_log_texture_selection(selected_texture, selected_index)
 	_move_texture_to_back(selected_index)
 	return selected_texture
 
@@ -136,23 +135,10 @@ func _get_weighted_random_index() -> int:
 	var rng = RandomNumberGenerator.new()
 	return rng.rand_weighted(position_weights)
 
-func _log_texture_selection(texture: Texture2D, index: int):
-	print("Current texture order before selection:")
-	for i in range(notepad_textures.size()):
-		var tex_name = notepad_textures[i].get_meta("original_name", "unknown")
-		print("    %s" % [tex_name])
-	var texture_name = texture.get_meta("original_name", "unknown")
-	print("Selected notepad texture: %s from position %d" % [texture_name, index])
-
 func _move_texture_to_back(index: int):
 	var texture = notepad_textures[index]
 	notepad_textures.remove_at(index)
 	notepad_textures.append(texture)
-	print("Texture order after moving to back:")
-	for i in range(notepad_textures.size()):
-		var tex_name = notepad_textures[i].get_meta("original_name", "unknown")
-		print("    %s" % [tex_name])
-	print("---")
 
 func _on_evidence_popup_requested(evidence: EvidenceResource):
 	show_evidence_popup(evidence)
