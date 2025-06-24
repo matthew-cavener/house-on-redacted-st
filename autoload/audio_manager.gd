@@ -5,6 +5,7 @@ var sfx_player: AudioStreamPlayer
 var ui_player: AudioStreamPlayer
 var investigation_track: AudioStream
 var abyssal_mix: AudioStream
+var melodys_melodies: AudioStream
 var pen_click_randomizer: AudioStreamRandomizer
 var correct_sound: AudioStream
 var incorrect_sound: AudioStream
@@ -27,6 +28,7 @@ func _setup_audio_players():
 func _load_audio_resources():
 	investigation_track = _load_audio_safe("res://assets/sounds/Investigation Track.wav")
 	abyssal_mix = _load_audio_safe("res://assets/sounds/Melody's Melodies [Abyssal Mix].wav")
+	melodys_melodies = _load_audio_safe("res://assets/sounds/Melody's Melodies [Pre-Abyss 1960's Mix].wav")
 	_setup_pen_click_randomizer()
 	correct_sound = _load_audio_safe("res://assets/sounds/UI sounds [Correct].wav")
 	incorrect_sound = _load_audio_safe("res://assets/sounds/UI sounds [Incorrect].wav")
@@ -69,6 +71,8 @@ func play_music(track_name: String, fade_in: bool = true):
 			new_stream = investigation_track
 		"abyssal":
 			new_stream = abyssal_mix
+		"melodys_melodies":
+			new_stream = melodys_melodies
 		_:
 			print("Unknown music track: " + track_name)
 			return
@@ -77,10 +81,22 @@ func play_music(track_name: String, fade_in: bool = true):
 	current_music = track_name
 	if fade_in and music_player.playing:
 		await _fade_out_music()
+	if music_player.finished.is_connected(_on_music_finished):
+		music_player.finished.disconnect(_on_music_finished)
 	music_player.stream = new_stream
+	music_player.finished.connect(_on_music_finished)
 	music_player.play()
 	if fade_in:
 		_fade_in_music()
+
+func _on_music_finished():
+	print("AudioManager: Music finished - current_music: ", current_music)
+	if current_music == "investigation" or current_music == "abyssal":
+		print("AudioManager: Looping ", current_music, " track")
+		music_player.play()
+	else:
+		print("AudioManager: One-time track finished, returning to investigation music")
+		play_music("investigation", true)
 
 func stop_music(fade_out: bool = true):
 	if fade_out:
@@ -117,8 +133,14 @@ func switch_to_nexus_music():
 func switch_to_investigation_music():
 	play_music("investigation", true)
 
-func _on_evidence_popup_requested(_evidence: EvidenceResource):
+func play_melodys_melodies():
+	play_music("melodys_melodies", false)
+
+func _on_evidence_popup_requested(evidence: EvidenceResource):
 	play_pen_click()
+	if evidence and evidence.resource_path.contains("parent_room/tv.tres"):
+		print("AudioManager: TV evidence detected - playing Melody's Melodies")
+		play_melodys_melodies()
 
 func _on_evidence_popup_closed():
 	play_pen_click()
