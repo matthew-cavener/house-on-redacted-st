@@ -7,7 +7,7 @@
 script = ExtResource("1_vviu3")
 id = "letter_3"
 name = "Pyschiactric Note"
-description = "After assessing your daughter's faculties, I'm pleased to report that she is perfectly healthy. She has quite the imagination, and I wouldn't worry about this 'TV show' that she's imagined for herself. It's healthy for young people to have an outlet for creativity. Dated 1958."
+description = "After assessing your daughter's faculties, I'm pleased to report that she is perfectly sound of mind. She has quite the imagination, and I wouldn't worry about this 'TV show' that she's imagined for herself. It's healthy for young people to have an outlet for creativity. Dated 1958."
 image = ExtResource("1_p688f")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"
