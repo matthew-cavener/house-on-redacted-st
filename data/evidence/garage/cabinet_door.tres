@@ -7,7 +7,7 @@
 script = ExtResource("1_7rf5j")
 id = "cabinet_door"
 name = "Cabinet"
-description = "There's a dusty kitchen supplies including cookie cutters in the shape of a cat, a tiger, a heart, and a Christmas tree."
+description = "There's old baking supplies in this cabinet including cookie cutters in the shape of a cat, a tiger, a heart, and a Christmas tree."
 image = ExtResource("1_gdkqk")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"
