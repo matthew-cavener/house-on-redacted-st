@@ -1,3 +1,52 @@
-[gd_scene format=3 uid="uid://cql8l6bjiq58m"]
+[gd_scene load_steps=8 format=3 uid="uid://cql8l6bjiq58m"]
 
-[node name="Nexus1" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://vc360wa0ly47" path="res://assets/sprites/nexus1/1_Dimensions.png" id="1_k6d30"]
+[ext_resource type="Texture2D" uid="uid://bs0i1i6gphyt6" path="res://assets/sprites/nexus1/1_Clickable_L1.png" id="2_xnpbk"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_x8cb6"]
+[ext_resource type="Resource" uid="uid://cncfg5pswch6w" path="res://data/evidence/nexus_1/first_door_left.tres" id="4_3xuqb"]
+[ext_resource type="Texture2D" uid="uid://cvagw1euvtn3e" path="res://assets/sprites/nexus1/1_Clickable_R2.png" id="5_n5vqy"]
+[ext_resource type="Resource" uid="uid://c4k3ljwg6fj7r" path="res://data/evidence/nexus_1/second_door_right.tres" id="6_c0rne"]
+[ext_resource type="Texture2D" uid="uid://bac3cv1oyhsq7" path="res://assets/sprites/nexus1/1_Hall.png" id="7_478vk"]
+
+[node name="Nexus1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_k6d30")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="LeftFirstDoor" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_right = 396.0
+offset_bottom = 1080.0
+texture_normal = ExtResource("2_xnpbk")
+script = ExtResource("3_x8cb6")
+evidence_resource = ExtResource("4_3xuqb")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="RightSecondDoor" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1125.0
+offset_top = 86.0
+offset_right = 1589.0
+offset_bottom = 1490.0
+texture_normal = ExtResource("5_n5vqy")
+script = ExtResource("3_x8cb6")
+evidence_resource = ExtResource("6_c0rne")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="1Hall" type="Sprite2D" parent="Background"]
+position = Vector2(959, 540)
+texture = ExtResource("7_478vk")
