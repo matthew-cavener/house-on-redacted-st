@@ -1,0 +1,144 @@
+[gd_scene load_steps=21 format=3 uid="uid://bgvuhqe1igh04"]
+
+[ext_resource type="Texture2D" uid="uid://d2uaaeos0h65n" path="res://assets/sprites/nexus3/3_Rotation1.png" id="1_ujlxe"]
+[ext_resource type="Texture2D" uid="uid://b6kks8jed0egy" path="res://assets/sprites/nexus3/3_Rotation3.png" id="2_v7ppl"]
+[ext_resource type="Texture2D" uid="uid://t7phwuuuo4bf" path="res://assets/sprites/nexus3/3_Rotation4.png" id="3_l5q4m"]
+[ext_resource type="Texture2D" uid="uid://0ob65553484j" path="res://assets/sprites/nexus3/3_Dimensions.png" id="4_ewfho"]
+[ext_resource type="Texture2D" uid="uid://bc8occ1ag85wt" path="res://assets/sprites/nexus3/3_Clickable_L.1.4.png" id="5_5m485"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="6_2bh08"]
+[ext_resource type="Resource" uid="uid://be8ifpmfcycxj" path="res://data/evidence/nexus_3/first_level_door_4_left.tres" id="7_qs3sw"]
+[ext_resource type="Texture2D" uid="uid://x2adm221g6hj" path="res://assets/sprites/nexus3/3_Clickable_L.2.5.png" id="8_gff7l"]
+[ext_resource type="Resource" uid="uid://ieh75cpojpgg" path="res://data/evidence/nexus_3/second_level_door_5_left.tres" id="9_vh2e8"]
+[ext_resource type="Texture2D" uid="uid://et4ht8umixsu" path="res://assets/sprites/nexus3/3_Clickable_L.3.1.png" id="10_k0g6b"]
+[ext_resource type="Resource" uid="uid://dy433f2g1u7v4" path="res://data/evidence/nexus_3/third_level_door_1.tres" id="11_u2c85"]
+[ext_resource type="Texture2D" uid="uid://dctmmi4abiphy" path="res://assets/sprites/nexus3/3_Clickable_R.1.1.png" id="12_l385i"]
+[ext_resource type="Resource" uid="uid://datkdkcfsbcd8" path="res://data/evidence/nexus_3/first_level_first_door_1.tres" id="13_ihj1d"]
+[ext_resource type="Texture2D" uid="uid://dykf4rrd7bvew" path="res://assets/sprites/nexus3/3_Clickable_R.2.5.png" id="14_y60er"]
+[ext_resource type="Resource" uid="uid://cekwkpp2c5mlr" path="res://data/evidence/nexus_3/right_second_level_door_5.tres" id="15_0ke0w"]
+[ext_resource type="Texture2D" uid="uid://bfabm4ipjkdf0" path="res://assets/sprites/nexus3/3_Clickable_R.3.3.png" id="16_dso38"]
+[ext_resource type="Resource" uid="uid://brw6vmab23sup" path="res://data/evidence/nexus_3/right_third_level_door_3.tres" id="17_lw7yo"]
+[ext_resource type="Texture2D" uid="uid://bv7655qme3tny" path="res://assets/sprites/nexus3/3_Hall_Space.png" id="18_xfjss"]
+[ext_resource type="Texture2D" uid="uid://dr20jtio5ysyh" path="res://assets/sprites/nexus3/skeleton.png" id="19_5b04r"]
+[ext_resource type="Resource" uid="uid://bqnt0t81oihjv" path="res://data/evidence/nexus_3/skeleton.tres" id="20_ujlxe"]
+
+[node name="Nexus3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="3Rotation1" type="Sprite2D" parent="."]
+position = Vector2(1436, 188)
+rotation = 6.28319
+texture = ExtResource("1_ujlxe")
+
+[node name="3Rotation2" type="Sprite2D" parent="."]
+position = Vector2(938, 560)
+rotation = -6.28319
+scale = Vector2(1.73407, 1.16141)
+texture = ExtResource("2_v7ppl")
+
+[node name="3Rotation4" type="Sprite2D" parent="."]
+position = Vector2(969, 560)
+rotation = -0.0593412
+scale = Vector2(0.551865, 0.583508)
+texture = ExtResource("3_l5q4m")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_ewfho")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_lock_ = true
+
+[node name="LeftLevelOneDoorFour" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 558.0
+offset_top = 691.0
+offset_right = 757.0
+offset_bottom = 956.0
+texture_normal = ExtResource("5_5m485")
+ignore_texture_size = true
+script = ExtResource("6_2bh08")
+evidence_resource = ExtResource("7_qs3sw")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="LeftLevelTwoDoorFive" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 747.0
+offset_top = 560.0
+offset_right = 826.0
+offset_bottom = 662.0
+texture_normal = ExtResource("8_gff7l")
+ignore_texture_size = true
+script = ExtResource("6_2bh08")
+evidence_resource = ExtResource("9_vh2e8")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="LeftLevelThreeDoorOne" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_top = 94.0
+offset_right = 322.0
+offset_bottom = 580.0
+texture_normal = ExtResource("10_k0g6b")
+script = ExtResource("6_2bh08")
+evidence_resource = ExtResource("11_u2c85")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="RightLevelOneDoorOne" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1557.0
+offset_top = 865.0
+offset_right = 1736.0
+offset_bottom = 1042.0
+texture_normal = ExtResource("12_l385i")
+ignore_texture_size = true
+script = ExtResource("6_2bh08")
+evidence_resource = ExtResource("13_ihj1d")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="RightLevelTwoDoorFive" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1096.0
+offset_top = 539.0
+offset_right = 1177.0
+offset_bottom = 631.0
+texture_normal = ExtResource("14_y60er")
+ignore_texture_size = true
+script = ExtResource("6_2bh08")
+evidence_resource = ExtResource("15_0ke0w")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="RightLevelThreeDoorThree" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1282.0
+offset_top = 321.0
+offset_right = 1430.0
+offset_bottom = 550.0
+texture_normal = ExtResource("16_dso38")
+script = ExtResource("6_2bh08")
+evidence_resource = ExtResource("17_lw7yo")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="3HallSpace" type="Sprite2D" parent="Background"]
+position = Vector2(960, 540)
+texture = ExtResource("18_xfjss")
+metadata/_edit_lock_ = true
+
+[node name="AdrianSkeleton" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 938.0
+offset_top = 822.0
+offset_right = 1239.0
+offset_bottom = 1095.0
+texture_normal = ExtResource("19_5b04r")
+script = ExtResource("6_2bh08")
+evidence_resource = ExtResource("20_ujlxe")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"

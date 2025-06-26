@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://cy2p4j18ytvv3"]
+
+[ext_resource type="Texture2D" uid="uid://et4ht8umixsu" path="res://assets/sprites/nexus3/3_Clickable_L.3.1.png" id="1_slh3m"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_5ikhn"]
+
+[resource]
+script = ExtResource("2_5ikhn")
+id = "L.3.1"
+name = "Strange Doorway"
+description = "erqeragq"
+image = ExtResource("1_slh3m")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

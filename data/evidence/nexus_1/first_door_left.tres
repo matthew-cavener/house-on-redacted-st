@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://cncfg5pswch6w"]
+
+[ext_resource type="Texture2D" uid="uid://bs0i1i6gphyt6" path="res://assets/sprites/nexus1/1_Clickable_L1.png" id="1_xl3tp"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_5un1m"]
+
+[resource]
+script = ExtResource("2_5un1m")
+id = "L1"
+name = "Strange Doorway"
+description = "An old carriage house, reclaimed by nature."
+image = ExtResource("1_xl3tp")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

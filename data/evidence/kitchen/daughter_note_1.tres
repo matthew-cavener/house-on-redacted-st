@@ -6,8 +6,9 @@
 [resource]
 script = ExtResource("1_y3vev")
 id = "daughter_note_1"
-name = "Daughter's Drawing"
-description = "Melody and Harmony get married in Greece, which you PROMISED to take us to on vacation when I turn 13! Better start saving, Mom and Dad!"
+name = "Daughter's Note"
+description = "Melody and Harmony got married in Greece, and you PROMISED to take me there when I turn 13!
+Better start saving, Mom and Dad!"
 image = ExtResource("1_mpkqd")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://brw6vmab23sup"]
+
+[ext_resource type="Texture2D" uid="uid://bfabm4ipjkdf0" path="res://assets/sprites/nexus3/3_Clickable_R.3.3.png" id="1_kbba2"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_q7uif"]
+
+[resource]
+script = ExtResource("2_q7uif")
+id = "R.3.3"
+name = "Strange Doorway"
+description = "A cafe under renovations, you can smell paint and dust as you walk by."
+image = ExtResource("1_kbba2")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"
