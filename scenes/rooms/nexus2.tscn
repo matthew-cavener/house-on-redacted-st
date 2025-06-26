@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://d2pdg3jed0urq"]
+[gd_scene load_steps=14 format=3 uid="uid://d2pdg3jed0urq"]
 
 [ext_resource type="Texture2D" uid="uid://c55o18uq2rt6i" path="res://assets/sprites/nexus2/2_Rotation.png" id="1_ju8or"]
 [ext_resource type="Texture2D" uid="uid://skec0o3ygn1e" path="res://assets/sprites/nexus2/2_Dimensions.png" id="1_mq7ho"]
+[ext_resource type="Script" uid="uid://bk1plk4rf0oon" path="res://scenes/rooms/2_rotation.gd" id="2_eeglw"]
 [ext_resource type="Texture2D" uid="uid://cmfkfaw8b76ik" path="res://assets/sprites/nexus2/2_Clickable_L.2.1.png" id="2_q8sxq"]
 [ext_resource type="Texture2D" uid="uid://cdqtv5oqwutwb" path="res://assets/sprites/nexus2/2_Clickable_R.2.3.png" id="3_eeglw"]
 [ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_m5j6g"]
@@ -26,6 +27,7 @@ position = Vector2(942, 614)
 rotation = 6.28319
 scale = Vector2(1.24851, 1.24851)
 texture = ExtResource("1_ju8or")
+script = ExtResource("2_eeglw")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1

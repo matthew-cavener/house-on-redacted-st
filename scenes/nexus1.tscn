@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://csf54wtiy5neb"]
+
+[ext_resource type="Texture2D" uid="uid://vc360wa0ly47" path="res://assets/sprites/nexus1/1_Dimensions.png" id="1_m3xui"]
+[ext_resource type="Texture2D" uid="uid://bs0i1i6gphyt6" path="res://assets/sprites/nexus1/1_Clickable_L1.png" id="2_10rka"]
+[ext_resource type="Script" uid="uid://cyoq41rm1sg7e" path="res://scenes/ui/evidence_button.gd" id="3_dnwgo"]
+[ext_resource type="Resource" uid="uid://cncfg5pswch6w" path="res://data/evidence/nexus_1/first_door_left.tres" id="4_dnwgo"]
+[ext_resource type="Texture2D" uid="uid://cvagw1euvtn3e" path="res://assets/sprites/nexus1/1_Clickable_R2.png" id="5_6aud1"]
+[ext_resource type="Texture2D" uid="uid://bac3cv1oyhsq7" path="res://assets/sprites/nexus1/1_Hall.png" id="5_j0bxx"]
+[ext_resource type="Resource" uid="uid://c4k3ljwg6fj7r" path="res://data/evidence/nexus_1/second_door_right.tres" id="6_j0bxx"]
+
+[node name="Nexus1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_m3xui")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="LeftFirstDoor" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_right = 396.0
+offset_bottom = 1080.0
+texture_normal = ExtResource("2_10rka")
+script = ExtResource("3_dnwgo")
+evidence_resource = ExtResource("4_dnwgo")
+rotation_enabled = null
+rotation_rate = null
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="RightSecondDoor" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1125.0
+offset_top = 86.0
+offset_right = 1589.0
+offset_bottom = 1490.0
+texture_normal = ExtResource("5_6aud1")
+script = ExtResource("3_dnwgo")
+evidence_resource = ExtResource("6_j0bxx")
+rotation_enabled = null
+rotation_rate = null
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
+
+[node name="1Hall" type="Sprite2D" parent="Background"]
+position = Vector2(959, 540)
+texture = ExtResource("5_j0bxx")
