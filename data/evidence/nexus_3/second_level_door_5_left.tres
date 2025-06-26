@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://ieh75cpojpgg"]
+
+[ext_resource type="Texture2D" uid="uid://x2adm221g6hj" path="res://assets/sprites/nexus3/3_Clickable_L.2.5.png" id="1_c4tc8"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_avo7s"]
+
+[resource]
+script = ExtResource("2_avo7s")
+id = "L.2.5"
+name = "Strange Doorway"
+description = "A giant bug slowly crawling across a leaf."
+image = ExtResource("1_c4tc8")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

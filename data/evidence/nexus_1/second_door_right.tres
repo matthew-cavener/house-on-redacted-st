@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://c4k3ljwg6fj7r"]
+
+[ext_resource type="Texture2D" uid="uid://cvagw1euvtn3e" path="res://assets/sprites/nexus1/1_Clickable_R2.png" id="1_phi44"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_3e6n1"]
+
+[resource]
+script = ExtResource("2_3e6n1")
+id = "R2"
+name = "Strange Doorway"
+description = "Smells metallic. You're not sure what this is."
+image = ExtResource("1_phi44")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

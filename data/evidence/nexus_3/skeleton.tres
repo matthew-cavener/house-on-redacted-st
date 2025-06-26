@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://bqnt0t81oihjv"]
+
+[ext_resource type="Texture2D" uid="uid://dr20jtio5ysyh" path="res://assets/sprites/nexus3/skeleton.png" id="1_b0kai"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_5vud6"]
+
+[resource]
+script = ExtResource("2_5vud6")
+id = "Skeleton"
+name = "Adrian"
+description = "A skeleton clutching a hand-made, well-loved stuffed tiger."
+image = ExtResource("1_b0kai")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://cceo3wk2fsn6c"]
+
+[ext_resource type="Texture2D" uid="uid://cdqtv5oqwutwb" path="res://assets/sprites/nexus2/2_Clickable_R.2.3.png" id="1_o6qkw"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_1mwoq"]
+
+[resource]
+script = ExtResource("2_1mwoq")
+id = "R.2.3"
+name = "Strange Doorway"
+description = "A building in an architural style you've never seen before. The sky is pink."
+image = ExtResource("1_o6qkw")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

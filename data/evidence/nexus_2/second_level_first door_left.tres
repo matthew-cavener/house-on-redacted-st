@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://bndneolw77jtd"]
+
+[ext_resource type="Texture2D" uid="uid://cmfkfaw8b76ik" path="res://assets/sprites/nexus2/2_Clickable_L.2.1.png" id="1_fgqv5"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_s8ecx"]
+
+[resource]
+script = ExtResource("2_s8ecx")
+id = "L.2.1"
+name = "Strange Doorway"
+description = "You see the burning remnants of a plane crash."
+image = ExtResource("1_fgqv5")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

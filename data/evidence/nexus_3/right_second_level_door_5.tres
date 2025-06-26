@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://cekwkpp2c5mlr"]
+
+[ext_resource type="Texture2D" uid="uid://dykf4rrd7bvew" path="res://assets/sprites/nexus3/3_Clickable_R.2.5.png" id="1_8cgf5"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_ogduo"]
+
+[resource]
+script = ExtResource("2_ogduo")
+id = "R.2.5"
+name = "Strange Doorway"
+description = "A volcano, violently erupting."
+image = ExtResource("1_8cgf5")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

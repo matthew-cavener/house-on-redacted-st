@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://pud3v2unlvh3"]
+
+[ext_resource type="Texture2D" uid="uid://bre8mddso70yl" path="res://assets/sprites/nexus2/2_Clickable_L.1.3.png" id="1_2kage"]
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="2_lsgmg"]
+
+[resource]
+script = ExtResource("2_lsgmg")
+id = "L.1.3"
+name = "Strange Doorway"
+description = "A ball pit. You don't see anyone but you hear static humming from here, interrupted by intermittent burst of laughter."
+image = ExtResource("1_2kage")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"
