@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://x5dklhhnt45s"]
+
+[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="1_1ahpl"]
+[ext_resource type="Texture2D" uid="uid://cf1u3k80h5qfb" path="res://assets/sprites/ui/clipboards/answerform0.png" id="1_o4g0j"]
+
+[node name="AnswerSheet" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_1ahpl")
+
+[node name="Clipboard" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_o4g0j")

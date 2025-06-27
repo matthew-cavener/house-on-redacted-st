@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqtv0y3n4iby7"]
+
+[ext_resource type="Script" uid="uid://docgydg82p2ap" path="res://scenes/ui/answer_button.gd" id="1_rmphh"]
+
+[node name="AnswerButton" type="OptionButton"]
+script = ExtResource("1_rmphh")
