@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pd1cqranij8e"
-path="res://.godot/imported/notepad4.png-f198c49b07c32b1189e4372219a0e755.ctex"
+uid="uid://br1cjijm0vm7u"
+path="res://.godot/imported/answerform3.png-8ec02a4ec0eb9da0cf80fd3a8d80b30f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/notepad4.png"
-dest_files=["res://.godot/imported/notepad4.png-f198c49b07c32b1189e4372219a0e755.ctex"]
+source_file="res://assets/sprites/ui/clipboards/answerform3.png"
+dest_files=["res://.godot/imported/answerform3.png-8ec02a4ec0eb9da0cf80fd3a8d80b30f.ctex"]
 
 [params]
 

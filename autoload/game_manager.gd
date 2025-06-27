@@ -114,7 +114,7 @@ func _load_notepad_textures():
 	if textures_loaded:
 		return
 	for i in range(1, NOTEPAD_TEXTURE_COUNT + 1):
-		var texture_path = "res://assets/sprites/ui/notepad%d.png" % i
+		var texture_path = "res://assets/sprites/ui/notepads/notepad%d.png" % i
 		var texture = load(texture_path) as Texture2D
 		if texture:
 			notepad_textures.append(texture)

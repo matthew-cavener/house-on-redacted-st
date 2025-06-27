@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv8xvisfq18ra"
-path="res://.godot/imported/S001_nyknck.png-067c379a34f9f2de35420883ef0e9390.ctex"
+uid="uid://c4xjlhlvh5ieu"
+path="res://.godot/imported/answerform7.png-2e9055bd3579e3804edef20638dc67ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/S001_nyknck.png"
-dest_files=["res://.godot/imported/S001_nyknck.png-067c379a34f9f2de35420883ef0e9390.ctex"]
+source_file="res://assets/sprites/ui/clipboards/answerform7.png"
+dest_files=["res://.godot/imported/answerform7.png-2e9055bd3579e3804edef20638dc67ad.ctex"]
 
 [params]
 
