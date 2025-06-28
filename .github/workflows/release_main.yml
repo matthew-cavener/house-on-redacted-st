@@ -38,7 +38,7 @@ jobs:
         with:
           name: web
           path: build/web
-          retention-days: 30
+          retention-days: 1
 
   export-linux:
    name: export (linux)
@@ -65,7 +65,7 @@ jobs:
        with:
          name: linux
          path: build/linux
-         retention-days: 30
+         retention-days: 1
 
   export-windows:
     name: export (windows)
@@ -94,7 +94,7 @@ jobs:
         with:
           name: windows
           path: build/windows
-          retention-days: 30
+          retention-days: 1
 
   deploy-itch:
     name: deploy to itch.io
