@@ -184,4 +184,5 @@ func _is_puzzle_complete() -> bool:
 		var user_answer = current_puzzle_selections.get(field.field_name, "")
 		if user_answer.is_empty():
 			return false
-	return current_puzzle.dropdown_fields.size() > 0
+	var is_complete = current_puzzle.dropdown_fields.size() > 0
+	return is_complete
