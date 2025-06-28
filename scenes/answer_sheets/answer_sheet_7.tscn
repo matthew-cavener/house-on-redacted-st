@@ -1,0 +1,690 @@
+[gd_scene load_steps=65 format=3 uid="uid://cp5n5d8is2br"]
+
+[ext_resource type="Texture2D" uid="uid://cdhuptc5q1wm8" path="res://assets/sprites/ui/clipboards/answerform6.png" id="1_tw3m0"]
+[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_at7vq"]
+[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_idhoc"]
+[ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_tw3m0"]
+[ext_resource type="Resource" uid="uid://ber5eexfofwx2" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_1.tres" id="5_a5uti"]
+[ext_resource type="Resource" uid="uid://de7bpkekmi60g" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_2.tres" id="6_ighsm"]
+[ext_resource type="Resource" uid="uid://b4ssifuygcmqn" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_3.tres" id="7_wphmu"]
+[ext_resource type="Resource" uid="uid://o3fhbjhh2b77" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_4.tres" id="8_7nbn8"]
+[ext_resource type="Resource" uid="uid://bxnhtxoc6c624" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_5.tres" id="9_8qwel"]
+[ext_resource type="Resource" uid="uid://dwnmtsuxekmus" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_6.tres" id="10_uuohj"]
+[ext_resource type="Resource" uid="uid://c03vh0aumui21" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_7.tres" id="11_0n7fq"]
+[ext_resource type="Resource" uid="uid://p2x6wm07a2kn" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_8.tres" id="12_x2l5i"]
+[ext_resource type="Resource" uid="uid://co4hsjwp82rof" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_9.tres" id="13_dyvfm"]
+[ext_resource type="Resource" uid="uid://cywo14rw6p31e" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_10.tres" id="14_xbpva"]
+[ext_resource type="Resource" uid="uid://bl4r3nc3i42a5" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_11.tres" id="15_cuuq6"]
+[ext_resource type="Resource" uid="uid://c5rex6734tcdb" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_12.tres" id="16_pda08"]
+[ext_resource type="Resource" uid="uid://tn7ymen1eq0e" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_13.tres" id="17_j3t4m"]
+[ext_resource type="Resource" uid="uid://bhb2jcu06kyge" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_14.tres" id="18_4uo7a"]
+[ext_resource type="Resource" uid="uid://bajbn8i5bhnx0" path="res://data/puzzles/answer_key_7/answer_key_7_dropdown_15.tres" id="19_3ybrj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l7m3k"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_0ywwr"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_lqo5a"]
+image = SubResource("Image_0ywwr")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdpka"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_ibb8x"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_2h324"]
+image = SubResource("Image_ibb8x")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50c87"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_2s14c"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_us65f"]
+image = SubResource("Image_2s14c")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hole0"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_o3foq"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_85hhj"]
+image = SubResource("Image_o3foq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vmpub"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_vj1v1"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_12vho"]
+image = SubResource("Image_vj1v1")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_co8gp"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_dpcmj"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_yv8yf"]
+image = SubResource("Image_dpcmj")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l4nts"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_vyqrw"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_nk5l7"]
+image = SubResource("Image_vyqrw")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drfgk"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_kxmms"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_83646"]
+image = SubResource("Image_kxmms")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q0bnb"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_sbpat"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_k5a7y"]
+image = SubResource("Image_sbpat")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfneg"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_owmd5"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_aifjp"]
+image = SubResource("Image_owmd5")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gnbr7"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_clhds"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_q0nf2"]
+image = SubResource("Image_clhds")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3uuc"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_12v3k"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_vxqs7"]
+image = SubResource("Image_12v3k")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w1s1n"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_2v7va"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_j078m"]
+image = SubResource("Image_2v7va")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txmfc"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_6bu66"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_4m2wy"]
+image = SubResource("Image_6bu66")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tal54"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_aqq6k"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_ijbf5"]
+image = SubResource("Image_aqq6k")
+
+[node name="AnswerSheet7" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_tw3m0")
+script = ExtResource("2_at7vq")
+puzzle_resource = ExtResource("3_idhoc")
+answer_sheet_texture = ExtResource("1_tw3m0")
+metadata/_custom_type_script = "uid://ung6mdt8pxu1"
+metadata/_edit_lock_ = true
+
+[node name="AnswerDropdown1" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 213.0
+offset_right = 385.0
+offset_bottom = 234.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_l7m3k")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_l7m3k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l7m3k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l7m3k")
+theme_override_styles/normal = SubResource("StyleBoxFlat_l7m3k")
+theme_override_icons/arrow = SubResource("ImageTexture_lqo5a")
+item_count = 10
+popup/item_0/text = "18"
+popup/item_0/id = 0
+popup/item_1/text = "34"
+popup/item_1/id = 1
+popup/item_2/text = "36"
+popup/item_2/id = 2
+popup/item_3/text = "47"
+popup/item_3/id = 3
+popup/item_4/text = "52"
+popup/item_4/id = 4
+popup/item_5/text = "54"
+popup/item_5/id = 5
+popup/item_6/text = "57"
+popup/item_6/id = 6
+popup/item_7/text = "58"
+popup/item_7/id = 7
+popup/item_8/text = "81"
+popup/item_8/id = 8
+popup/item_9/text = "84"
+popup/item_9/id = 9
+dropdown_field = ExtResource("5_a5uti")
+
+[node name="AnswerDropdown2" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 242.0
+offset_right = 385.0
+offset_bottom = 263.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_jdpka")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_jdpka")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jdpka")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jdpka")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jdpka")
+theme_override_icons/arrow = SubResource("ImageTexture_2h324")
+item_count = 10
+popup/item_0/text = "18"
+popup/item_0/id = 0
+popup/item_1/text = "34"
+popup/item_1/id = 1
+popup/item_2/text = "36"
+popup/item_2/id = 2
+popup/item_3/text = "47"
+popup/item_3/id = 3
+popup/item_4/text = "52"
+popup/item_4/id = 4
+popup/item_5/text = "54"
+popup/item_5/id = 5
+popup/item_6/text = "57"
+popup/item_6/id = 6
+popup/item_7/text = "58"
+popup/item_7/id = 7
+popup/item_8/text = "81"
+popup/item_8/id = 8
+popup/item_9/text = "84"
+popup/item_9/id = 9
+dropdown_field = ExtResource("6_ighsm")
+
+[node name="AnswerDropdown3" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 273.0
+offset_right = 385.0
+offset_bottom = 294.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_50c87")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_50c87")
+theme_override_styles/hover = SubResource("StyleBoxFlat_50c87")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_50c87")
+theme_override_styles/normal = SubResource("StyleBoxFlat_50c87")
+theme_override_icons/arrow = SubResource("ImageTexture_us65f")
+item_count = 10
+popup/item_0/text = "18"
+popup/item_0/id = 0
+popup/item_1/text = "34"
+popup/item_1/id = 1
+popup/item_2/text = "36"
+popup/item_2/id = 2
+popup/item_3/text = "47"
+popup/item_3/id = 3
+popup/item_4/text = "52"
+popup/item_4/id = 4
+popup/item_5/text = "54"
+popup/item_5/id = 5
+popup/item_6/text = "57"
+popup/item_6/id = 6
+popup/item_7/text = "58"
+popup/item_7/id = 7
+popup/item_8/text = "81"
+popup/item_8/id = 8
+popup/item_9/text = "84"
+popup/item_9/id = 9
+dropdown_field = ExtResource("7_wphmu")
+
+[node name="AnswerDropdown4" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 304.0
+offset_right = 385.0
+offset_bottom = 325.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_hole0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_hole0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_hole0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hole0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hole0")
+theme_override_icons/arrow = SubResource("ImageTexture_85hhj")
+item_count = 10
+popup/item_0/text = "18"
+popup/item_0/id = 0
+popup/item_1/text = "34"
+popup/item_1/id = 1
+popup/item_2/text = "36"
+popup/item_2/id = 2
+popup/item_3/text = "47"
+popup/item_3/id = 3
+popup/item_4/text = "52"
+popup/item_4/id = 4
+popup/item_5/text = "54"
+popup/item_5/id = 5
+popup/item_6/text = "57"
+popup/item_6/id = 6
+popup/item_7/text = "58"
+popup/item_7/id = 7
+popup/item_8/text = "81"
+popup/item_8/id = 8
+popup/item_9/text = "84"
+popup/item_9/id = 9
+dropdown_field = ExtResource("8_7nbn8")
+
+[node name="AnswerDropdown5" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 334.0
+offset_right = 385.0
+offset_bottom = 355.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_vmpub")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_vmpub")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vmpub")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vmpub")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vmpub")
+theme_override_icons/arrow = SubResource("ImageTexture_12vho")
+item_count = 10
+popup/item_0/text = "18"
+popup/item_0/id = 0
+popup/item_1/text = "34"
+popup/item_1/id = 1
+popup/item_2/text = "36"
+popup/item_2/id = 2
+popup/item_3/text = "47"
+popup/item_3/id = 3
+popup/item_4/text = "52"
+popup/item_4/id = 4
+popup/item_5/text = "54"
+popup/item_5/id = 5
+popup/item_6/text = "57"
+popup/item_6/id = 6
+popup/item_7/text = "58"
+popup/item_7/id = 7
+popup/item_8/text = "81"
+popup/item_8/id = 8
+popup/item_9/text = "84"
+popup/item_9/id = 9
+dropdown_field = ExtResource("9_8qwel")
+
+[node name="AnswerDropdown6" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 249.0
+offset_top = 404.0
+offset_right = 343.0
+offset_bottom = 420.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_co8gp")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_co8gp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_co8gp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_co8gp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_co8gp")
+theme_override_icons/arrow = SubResource("ImageTexture_yv8yf")
+item_count = 2
+popup/item_0/text = "Kitchen"
+popup/item_0/id = 0
+popup/item_1/text = "Living room"
+popup/item_1/id = 1
+dropdown_field = ExtResource("10_uuohj")
+
+[node name="AnswerDropdown7" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 434.0
+offset_right = 178.0
+offset_bottom = 451.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_l4nts")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_l4nts")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l4nts")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l4nts")
+theme_override_styles/normal = SubResource("StyleBoxFlat_l4nts")
+theme_override_icons/arrow = SubResource("ImageTexture_nk5l7")
+item_count = 3
+popup/item_0/text = "Grace's Room"
+popup/item_0/id = 0
+popup/item_1/text = "Adrian & Beth's Room"
+popup/item_1/id = 1
+popup/item_2/text = "Garage"
+popup/item_2/id = 2
+dropdown_field = ExtResource("11_0n7fq")
+
+[node name="AnswerDropdown8" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 494.0
+offset_right = 178.0
+offset_bottom = 511.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_drfgk")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_drfgk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_drfgk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_drfgk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_drfgk")
+theme_override_icons/arrow = SubResource("ImageTexture_83646")
+item_count = 5
+popup/item_0/text = "Living Room"
+popup/item_0/id = 0
+popup/item_1/text = "Kitchen"
+popup/item_1/id = 1
+popup/item_2/text = "Grace's Room"
+popup/item_2/id = 2
+popup/item_3/text = "Adrian's Room"
+popup/item_3/id = 3
+popup/item_4/text = "Garage"
+popup/item_4/id = 4
+dropdown_field = ExtResource("12_x2l5i")
+
+[node name="AnswerDropdown9" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 493.0
+offset_right = 456.0
+offset_bottom = 511.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_q0bnb")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_q0bnb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q0bnb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q0bnb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_q0bnb")
+theme_override_icons/arrow = SubResource("ImageTexture_k5a7y")
+item_count = 5
+popup/item_0/text = "Living Room"
+popup/item_0/id = 0
+popup/item_1/text = "Kitchen"
+popup/item_1/id = 1
+popup/item_2/text = "Grace's Room"
+popup/item_2/id = 2
+popup/item_3/text = "Adrian's Room"
+popup/item_3/id = 3
+popup/item_4/text = "Garage"
+popup/item_4/id = 4
+dropdown_field = ExtResource("13_dyvfm")
+
+[node name="AnswerDropdown10" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 523.0
+offset_right = 178.0
+offset_bottom = 541.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_lfneg")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_lfneg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lfneg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lfneg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lfneg")
+theme_override_icons/arrow = SubResource("ImageTexture_aifjp")
+item_count = 5
+popup/item_0/text = "Living Room"
+popup/item_0/id = 0
+popup/item_1/text = "Kitchen"
+popup/item_1/id = 1
+popup/item_2/text = "Grace's Room"
+popup/item_2/id = 2
+popup/item_3/text = "Adrian's Room"
+popup/item_3/id = 3
+popup/item_4/text = "Garage"
+popup/item_4/id = 4
+dropdown_field = ExtResource("14_xbpva")
+
+[node name="AnswerDropdown11" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 523.0
+offset_right = 288.0
+offset_bottom = 541.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_gnbr7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_gnbr7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gnbr7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gnbr7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gnbr7")
+theme_override_icons/arrow = SubResource("ImageTexture_q0nf2")
+item_count = 5
+popup/item_0/text = "Living Room"
+popup/item_0/id = 0
+popup/item_1/text = "Kitchen"
+popup/item_1/id = 1
+popup/item_2/text = "Grace's Room"
+popup/item_2/id = 2
+popup/item_3/text = "Adrian's Room"
+popup/item_3/id = 3
+popup/item_4/text = "Garage"
+popup/item_4/id = 4
+dropdown_field = ExtResource("15_cuuq6")
+
+[node name="AnswerDropdown12" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 524.0
+offset_right = 514.0
+offset_bottom = 542.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_g3uuc")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_g3uuc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g3uuc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g3uuc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_g3uuc")
+theme_override_icons/arrow = SubResource("ImageTexture_vxqs7")
+item_count = 5
+popup/item_0/text = "Living Room"
+popup/item_0/id = 0
+popup/item_1/text = "Kitchen"
+popup/item_1/id = 1
+popup/item_2/text = "Grace's Room"
+popup/item_2/id = 2
+popup/item_3/text = "Adrian's Room"
+popup/item_3/id = 3
+popup/item_4/text = "Garage"
+popup/item_4/id = 4
+dropdown_field = ExtResource("16_pda08")
+
+[node name="AnswerDropdown13" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 584.0
+offset_right = 331.0
+offset_bottom = 600.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_w1s1n")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_w1s1n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w1s1n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_w1s1n")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w1s1n")
+theme_override_icons/arrow = SubResource("ImageTexture_j078m")
+item_count = 5
+popup/item_0/text = "Red"
+popup/item_0/id = 0
+popup/item_1/text = "Blue"
+popup/item_1/id = 1
+popup/item_2/text = "Green"
+popup/item_2/id = 2
+popup/item_3/text = "Yellow"
+popup/item_3/id = 3
+popup/item_4/text = "Orange"
+popup/item_4/id = 4
+dropdown_field = ExtResource("17_j3t4m")
+
+[node name="AnswerDropdown14" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 643.0
+offset_right = 338.0
+offset_bottom = 661.0
+theme_override_constants/h_separation = 4
+theme_override_styles/focus = SubResource("StyleBoxFlat_txmfc")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_txmfc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_txmfc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_txmfc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_txmfc")
+theme_override_icons/arrow = SubResource("ImageTexture_4m2wy")
+item_count = 5
+popup/item_0/text = "Greece"
+popup/item_0/id = 0
+popup/item_1/text = "Spain"
+popup/item_1/id = 1
+popup/item_2/text = "Hawaii"
+popup/item_2/id = 2
+popup/item_3/text = "Korea"
+popup/item_3/id = 3
+popup/item_4/text = "Egypt"
+popup/item_4/id = 4
+dropdown_field = ExtResource("18_4uo7a")
+
+[node name="AnswerDropdown15" parent="." instance=ExtResource("4_tw3m0")]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 702.0
+offset_right = 507.0
+offset_bottom = 721.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_tal54")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tal54")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tal54")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tal54")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tal54")
+theme_override_icons/arrow = SubResource("ImageTexture_ijbf5")
+item_count = 4
+popup/item_0/text = "Birth of Grace"
+popup/item_0/id = 0
+popup/item_1/text = "Wedding day"
+popup/item_1/id = 1
+popup/item_2/text = "Day Summit Bank Opened"
+popup/item_2/id = 2
+popup/item_3/text = "30th birhday"
+popup/item_3/id = 3
+dropdown_field = ExtResource("19_3ybrj")

@@ -1,0 +1,658 @@
+[gd_scene load_steps=53 format=3 uid="uid://bebgie52jpkaw"]
+
+[ext_resource type="Texture2D" uid="uid://br1cjijm0vm7u" path="res://assets/sprites/ui/clipboards/answerform3.png" id="1_pbwv1"]
+[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_a6vrd"]
+[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_fugpw"]
+[ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_4fmg6"]
+[ext_resource type="Resource" uid="uid://b0ft00vqys14r" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_1.tres" id="5_e3ma0"]
+[ext_resource type="Resource" uid="uid://c5kv7djgg5loh" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_2.tres" id="6_v5uiw"]
+[ext_resource type="Resource" uid="uid://6sms02alikya" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_3.tres" id="7_v6ooy"]
+[ext_resource type="Resource" uid="uid://dqjpwlravy7j7" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_4.tres" id="8_yxlrf"]
+[ext_resource type="Resource" uid="uid://cdg7widaiupd0" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_5.tres" id="9_pb4ak"]
+[ext_resource type="Resource" uid="uid://dfec388k4scql" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_6.tres" id="10_ilhuk"]
+[ext_resource type="Resource" uid="uid://boapykc83qyss" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_7.tres" id="11_fybyg"]
+[ext_resource type="Resource" uid="uid://p23qdla38dy6" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_8.tres" id="12_ix6yl"]
+[ext_resource type="Resource" uid="uid://cgxwrw0srv3x4" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_9.tres" id="13_jshbo"]
+[ext_resource type="Resource" uid="uid://6o6fdcii1s1f" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_10.tres" id="14_laptd"]
+[ext_resource type="Resource" uid="uid://cm0j3kppra6ht" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_11.tres" id="15_iokol"]
+[ext_resource type="Resource" uid="uid://gnv8ee2pxlj7" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_12.tres" id="16_fy4o5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbwv1"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_e3ma0"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_v5uiw"]
+image = SubResource("Image_e3ma0")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v6ooy"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_yxlrf"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_pb4ak"]
+image = SubResource("Image_yxlrf")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ilhuk"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_fybyg"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_ix6yl"]
+image = SubResource("Image_fybyg")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jshbo"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_laptd"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_iokol"]
+image = SubResource("Image_laptd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fy4o5"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_67ie7"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_4gdt3"]
+image = SubResource("Image_67ie7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oyahn"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_1qdp7"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_0jf3b"]
+image = SubResource("Image_1qdp7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4osmf"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_11uwd"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_ed100"]
+image = SubResource("Image_11uwd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pdjmn"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_of88q"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_b8xqn"]
+image = SubResource("Image_of88q")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7cao"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_h7stt"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_626ow"]
+image = SubResource("Image_h7stt")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oel85"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_txjkk"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_g2r20"]
+image = SubResource("Image_txjkk")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_py1dg"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_4fcyw"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_keoec"]
+image = SubResource("Image_4fcyw")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14gjm"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_su81w"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_c4gpv"]
+image = SubResource("Image_su81w")
+
+[node name="AnswerSheet4" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_pbwv1")
+script = ExtResource("2_a6vrd")
+puzzle_resource = ExtResource("3_fugpw")
+answer_sheet_texture = ExtResource("1_pbwv1")
+metadata/_custom_type_script = "uid://ung6mdt8pxu1"
+metadata/_edit_lock_ = true
+
+[node name="AnswerDropdown1" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 292.0
+offset_right = 442.0
+offset_bottom = 312.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_pbwv1")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_pbwv1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pbwv1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pbwv1")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pbwv1")
+theme_override_icons/arrow = SubResource("ImageTexture_v5uiw")
+item_count = 11
+popup/item_0/text = "Did not get produced"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+popup/item_10/text = "10"
+popup/item_10/id = 10
+dropdown_field = ExtResource("5_e3ma0")
+
+[node name="AnswerDropdown2" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 322.0
+offset_right = 442.0
+offset_bottom = 342.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_v6ooy")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_v6ooy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v6ooy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v6ooy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_v6ooy")
+theme_override_icons/arrow = SubResource("ImageTexture_pb4ak")
+item_count = 11
+popup/item_0/text = "Did not get produced"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+popup/item_10/text = "10"
+popup/item_10/id = 10
+dropdown_field = ExtResource("6_v5uiw")
+
+[node name="AnswerDropdown3" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 350.0
+offset_right = 442.0
+offset_bottom = 370.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_ilhuk")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ilhuk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ilhuk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ilhuk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ilhuk")
+theme_override_icons/arrow = SubResource("ImageTexture_ix6yl")
+item_count = 10
+popup/item_0/text = "1"
+popup/item_0/id = 0
+popup/item_1/text = "2"
+popup/item_1/id = 1
+popup/item_2/text = "3"
+popup/item_2/id = 2
+popup/item_3/text = "4"
+popup/item_3/id = 3
+popup/item_4/text = "5"
+popup/item_4/id = 4
+popup/item_5/text = "6"
+popup/item_5/id = 5
+popup/item_6/text = "7"
+popup/item_6/id = 6
+popup/item_7/text = "8"
+popup/item_7/id = 7
+popup/item_8/text = "9"
+popup/item_8/id = 8
+popup/item_9/text = "10"
+popup/item_9/id = 9
+dropdown_field = ExtResource("7_v6ooy")
+
+[node name="AnswerDropdown4" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 382.0
+offset_right = 442.0
+offset_bottom = 402.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_jshbo")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_jshbo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jshbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jshbo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jshbo")
+theme_override_icons/arrow = SubResource("ImageTexture_iokol")
+item_count = 11
+popup/item_0/text = "Did not get produced"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+popup/item_10/text = "10"
+popup/item_10/id = 10
+dropdown_field = ExtResource("8_yxlrf")
+
+[node name="AnswerDropdown5" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 410.0
+offset_right = 442.0
+offset_bottom = 430.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_fy4o5")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_fy4o5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fy4o5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fy4o5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fy4o5")
+theme_override_icons/arrow = SubResource("ImageTexture_4gdt3")
+item_count = 11
+popup/item_0/text = "Did not get produced"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+popup/item_10/text = "10"
+popup/item_10/id = 10
+dropdown_field = ExtResource("9_pb4ak")
+
+[node name="AnswerDropdown6" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 441.0
+offset_right = 442.0
+offset_bottom = 461.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_oyahn")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_oyahn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oyahn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oyahn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oyahn")
+theme_override_icons/arrow = SubResource("ImageTexture_0jf3b")
+item_count = 11
+popup/item_0/text = "Did not get produced"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+popup/item_10/text = "10"
+popup/item_10/id = 10
+dropdown_field = ExtResource("10_ilhuk")
+
+[node name="AnswerDropdown7" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 470.0
+offset_right = 442.0
+offset_bottom = 490.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_4osmf")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4osmf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4osmf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4osmf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4osmf")
+theme_override_icons/arrow = SubResource("ImageTexture_ed100")
+item_count = 11
+popup/item_0/text = "Did not get produced"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+popup/item_10/text = "10"
+popup/item_10/id = 10
+dropdown_field = ExtResource("11_fybyg")
+
+[node name="AnswerDropdown8" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 500.0
+offset_right = 375.0
+offset_bottom = 520.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_pdjmn")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_pdjmn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pdjmn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pdjmn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pdjmn")
+theme_override_icons/arrow = SubResource("ImageTexture_b8xqn")
+item_count = 10
+popup/item_0/text = "0"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+dropdown_field = ExtResource("12_ix6yl")
+
+[node name="AnswerDropdown9" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 500.0
+offset_right = 442.0
+offset_bottom = 520.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_w7cao")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_w7cao")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w7cao")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_w7cao")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w7cao")
+theme_override_icons/arrow = SubResource("ImageTexture_626ow")
+item_count = 10
+popup/item_0/text = "0"
+popup/item_0/id = 0
+popup/item_1/text = "1"
+popup/item_1/id = 1
+popup/item_2/text = "2"
+popup/item_2/id = 2
+popup/item_3/text = "3"
+popup/item_3/id = 3
+popup/item_4/text = "4"
+popup/item_4/id = 4
+popup/item_5/text = "5"
+popup/item_5/id = 5
+popup/item_6/text = "6"
+popup/item_6/id = 6
+popup/item_7/text = "7"
+popup/item_7/id = 7
+popup/item_8/text = "8"
+popup/item_8/id = 8
+popup/item_9/text = "9"
+popup/item_9/id = 9
+dropdown_field = ExtResource("13_jshbo")
+
+[node name="AnswerDropdown10" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 574.0
+offset_right = 511.0
+offset_bottom = 593.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_oel85")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_oel85")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oel85")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oel85")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oel85")
+theme_override_icons/arrow = SubResource("ImageTexture_g2r20")
+item_count = 9
+popup/item_0/text = "Anteater"
+popup/item_0/id = 0
+popup/item_1/text = "Dinosaur"
+popup/item_1/id = 1
+popup/item_2/text = "Goose"
+popup/item_2/id = 2
+popup/item_3/text = "Horse"
+popup/item_3/id = 3
+popup/item_4/text = "Possum"
+popup/item_4/id = 4
+popup/item_5/text = "Robot"
+popup/item_5/id = 5
+popup/item_6/text = "Seahorse"
+popup/item_6/id = 6
+popup/item_7/text = "Tiger"
+popup/item_7/id = 7
+popup/item_8/text = "Zebra"
+popup/item_8/id = 8
+dropdown_field = ExtResource("14_laptd")
+
+[node name="AnswerDropdown11" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 640.0
+offset_right = 228.0
+offset_bottom = 660.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_py1dg")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_py1dg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_py1dg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_py1dg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_py1dg")
+theme_override_icons/arrow = SubResource("ImageTexture_keoec")
+item_count = 9
+popup/item_0/text = "Anteater"
+popup/item_0/id = 0
+popup/item_1/text = "Dinosaur"
+popup/item_1/id = 1
+popup/item_2/text = "Goose"
+popup/item_2/id = 2
+popup/item_3/text = "Horse"
+popup/item_3/id = 3
+popup/item_4/text = "Possum"
+popup/item_4/id = 4
+popup/item_5/text = "Robot"
+popup/item_5/id = 5
+popup/item_6/text = "Seahorse"
+popup/item_6/id = 6
+popup/item_7/text = "Tiger"
+popup/item_7/id = 7
+popup/item_8/text = "Zebra"
+popup/item_8/id = 8
+dropdown_field = ExtResource("15_iokol")
+
+[node name="AnswerDropdown12" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 679.0
+offset_right = 493.0
+offset_bottom = 700.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_14gjm")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_14gjm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_14gjm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14gjm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_14gjm")
+theme_override_icons/arrow = SubResource("ImageTexture_c4gpv")
+item_count = 9
+popup/item_0/text = "Anteater"
+popup/item_0/id = 0
+popup/item_1/text = "Dinosaur"
+popup/item_1/id = 1
+popup/item_2/text = "Goose"
+popup/item_2/id = 2
+popup/item_3/text = "Horse"
+popup/item_3/id = 3
+popup/item_4/text = "Possum"
+popup/item_4/id = 4
+popup/item_5/text = "Robot"
+popup/item_5/id = 5
+popup/item_6/text = "Seahorse"
+popup/item_6/id = 6
+popup/item_7/text = "Tiger"
+popup/item_7/id = 7
+popup/item_8/text = "Zebra"
+popup/item_8/id = 8
+dropdown_field = ExtResource("16_fy4o5")
