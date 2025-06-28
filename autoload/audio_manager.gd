@@ -50,7 +50,7 @@ func _setup_pen_click_randomizer():
 	pen_click_randomizer = AudioStreamRandomizer.new()
 	pen_click_randomizer.playback_mode = AudioStreamRandomizer.PLAYBACK_RANDOM_NO_REPEATS
 	pen_click_randomizer.random_pitch = 1.1
-	pen_click_randomizer.random_volume_offset_db = 1.0
+	pen_click_randomizer.random_volume_offset_db = 1.1
 	var pen_click_paths = [
 		"res://assets/sounds/PenClickOut_SFXB.3135.wav",
 		"res://assets/sounds/PenClickOut_SFXB.3135 R.wav",

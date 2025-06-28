@@ -26,9 +26,12 @@ var evidence_popup_scene = preload("res://scenes/ui/evidence_popup.tscn")
 var notepad_textures: Array[Texture2D] = []
 var position_weights: PackedFloat32Array = PackedFloat32Array([5.0, 4.0, 3.0, 2.0, 1.0, 0.0])
 var textures_loaded: bool = false
+var current_puzzle: PuzzleResource = null
+var current_puzzle_selections: Dictionary = {}
 
 func _ready():
 	EventBus.evidence_popup_requested.connect(_on_evidence_popup_requested)
+	EventBus.dropdown_selection_changed.connect(_on_dropdown_selection_changed)
 	_setup_fade_overlay()
 	_load_notepad_textures()
 	_load_and_show_starting_room()
@@ -114,7 +117,7 @@ func _load_notepad_textures():
 	if textures_loaded:
 		return
 	for i in range(1, NOTEPAD_TEXTURE_COUNT + 1):
-		var texture_path = "res://assets/sprites/ui/notepad%d.png" % i
+		var texture_path = "res://assets/sprites/ui/notepads/notepad%d.png" % i
 		var texture = load(texture_path) as Texture2D
 		if texture:
 			notepad_textures.append(texture)
@@ -154,3 +157,31 @@ func show_evidence_popup(evidence: EvidenceResource):
 
 func _on_popup_closed():
 	current_evidence_popup = null
+
+func register_puzzle(puzzle_resource: PuzzleResource):
+	if not puzzle_resource or puzzle_resource.puzzle_id.is_empty():
+		push_error("Cannot register puzzle: invalid puzzle resource or missing ID")
+		return
+	current_puzzle = puzzle_resource
+	current_puzzle_selections.clear()
+
+func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selected_value: String):
+	if not current_puzzle:
+		push_warning("Received dropdown change but no active puzzle")
+		return
+	if current_puzzle.puzzle_id != puzzle_id:
+		push_warning("Received dropdown change for wrong puzzle: expected %s, got %s" % [current_puzzle.puzzle_id, puzzle_id])
+		return
+	current_puzzle_selections[field_name] = selected_value
+	if _is_puzzle_complete():
+		var result = current_puzzle.validate_solution(current_puzzle_selections)
+		EventBus.puzzle_evaluated.emit(puzzle_id, result)
+
+func _is_puzzle_complete() -> bool:
+	if not current_puzzle:
+		return false
+	for field in current_puzzle.dropdown_fields:
+		var user_answer = current_puzzle_selections.get(field.field_name, "")
+		if user_answer.is_empty():
+			return false
+	return current_puzzle.dropdown_fields.size() > 0

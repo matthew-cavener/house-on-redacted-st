@@ -3,4 +3,4 @@ Game made for PIGSquad's Summer 2025 Summer Slow Jam
 
 
 ## Credits
-animated evidence indicator: https://nyknck.itch.io/staranimation
+Handwriting font: github.com/googlefonts/caveat

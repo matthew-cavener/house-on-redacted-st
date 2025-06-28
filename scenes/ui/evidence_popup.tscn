@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c7q1dri7adi0b"]
 
 [ext_resource type="Script" uid="uid://depsgf6sx08yv" path="res://scenes/ui/evidence_popup.gd" id="1_lvauh"]
-[ext_resource type="Texture2D" uid="uid://ckv6rrpho7ffq" path="res://assets/sprites/ui/notepad1.png" id="2_bu38h"]
+[ext_resource type="Texture2D" uid="uid://ckv6rrpho7ffq" path="res://assets/sprites/ui/notepads/notepad1.png" id="2_bu38h"]
 
 [node name="EvidencePopup" type="Control"]
 layout_mode = 3
