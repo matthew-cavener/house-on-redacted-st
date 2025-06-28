@@ -76,18 +76,22 @@ func _replace_with_next_answer_sheet():
 	if not next_answer_sheet:
 		push_error("Failed to instantiate next answer sheet from scene")
 		return
-	var current_position = position
-	var current_slide_state = is_slid_up
 	var parent_node = get_parent()
 	if not parent_node:
 		push_error("AnswerSheet has no parent, cannot replace")
 		return
 	next_answer_sheet.original_position = original_position
-	next_answer_sheet.position = current_position
-	next_answer_sheet.is_slid_up = current_slide_state
+	if is_slid_up:
+		next_answer_sheet.position = original_position
+		next_answer_sheet.is_slid_up = false
+	else:
+		next_answer_sheet.position = position
+		next_answer_sheet.is_slid_up = false
 	parent_node.add_child(next_answer_sheet)
 	var my_index = get_index()
 	parent_node.move_child(next_answer_sheet, my_index)
+	if is_slid_up:
+		next_answer_sheet.slide_up()
 	queue_free()
 
 func set_next_answer_sheet_scene(scene: PackedScene):
