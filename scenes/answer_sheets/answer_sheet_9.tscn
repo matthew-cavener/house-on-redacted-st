@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bap0b1b8mcw5"]
+
+[ext_resource type="Texture2D" uid="uid://s1thbnk0y7rn" path="res://assets/sprites/ui/clipboards/answerform8.png" id="1_3in10"]
+[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_je2jr"]
+[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_yp1sm"]
+
+[node name="AnswerSheet9" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_3in10")
+script = ExtResource("2_je2jr")
+puzzle_resource = ExtResource("3_yp1sm")
+answer_sheet_texture = ExtResource("1_3in10")
+metadata/_custom_type_script = "uid://ung6mdt8pxu1"
+metadata/_edit_lock_ = true
