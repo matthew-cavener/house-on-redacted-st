@@ -1,18 +1,22 @@
-[gd_scene load_steps=21 format=3 uid="uid://bebgie52jpkaw"]
+[gd_scene load_steps=37 format=3 uid="uid://c6dtegepq1dpg"]
 
-[ext_resource type="Texture2D" uid="uid://discjulag06kj" path="res://assets/sprites/ui/clipboards/answerform1.png" id="1_jmva2"]
-[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_lhl7q"]
-[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_7jgw0"]
-[ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_s22w6"]
-[ext_resource type="Resource" uid="uid://ccky4pt6uuqa0" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_1.tres" id="5_hq4pl"]
-[ext_resource type="Resource" uid="uid://l7i0ki3gqotg" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_2.tres" id="6_3s4sj"]
-[ext_resource type="Resource" uid="uid://cpkh3a4apomy3" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_3.tres" id="7_bvecp"]
-[ext_resource type="Resource" uid="uid://bc00j5bvuyr0q" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_4.tres" id="8_iixul"]
+[ext_resource type="Texture2D" uid="uid://bgqnfe6v6j6ac" path="res://assets/sprites/ui/clipboards/answerform2.png" id="1_yq3fd"]
+[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_a6vrd"]
+[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_fugpw"]
+[ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_4fmg6"]
+[ext_resource type="Resource" uid="uid://dheqcshh0sx5m" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_1.tres" id="5_pbwv1"]
+[ext_resource type="Resource" uid="uid://dnoxhgnabax0k" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_2.tres" id="6_e3ma0"]
+[ext_resource type="Resource" uid="uid://dfrwvocdroo00" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_3.tres" id="7_v5uiw"]
+[ext_resource type="Resource" uid="uid://dxmvye6n7jtpw" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_4.tres" id="8_v6ooy"]
+[ext_resource type="Resource" uid="uid://c1fiwa6yy680r" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_5.tres" id="9_yxlrf"]
+[ext_resource type="Resource" uid="uid://bqefywqormh1i" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_6.tres" id="10_pb4ak"]
+[ext_resource type="Resource" uid="uid://qgqb3mgqtt1o" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_7.tres" id="11_ilhuk"]
+[ext_resource type="Resource" uid="uid://57rxuh88shjs" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_8.tres" id="12_fybyg"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_drlu2"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfjce"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_huv6o"]
+[sub_resource type="Image" id="Image_aggfr"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -21,13 +25,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_r0vtq"]
-image = SubResource("Image_huv6o")
+[sub_resource type="ImageTexture" id="ImageTexture_7s2kk"]
+image = SubResource("Image_aggfr")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2qdf"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnmdm"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_75lnj"]
+[sub_resource type="Image" id="Image_kacev"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -36,13 +40,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_1lnx0"]
-image = SubResource("Image_75lnj")
+[sub_resource type="ImageTexture" id="ImageTexture_b5pok"]
+image = SubResource("Image_kacev")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_coxne"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtiya"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_ft2cm"]
+[sub_resource type="Image" id="Image_4ff2j"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -51,13 +55,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_lih07"]
-image = SubResource("Image_ft2cm")
+[sub_resource type="ImageTexture" id="ImageTexture_qedst"]
+image = SubResource("Image_4ff2j")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_namqv"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6kxgs"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_iwey3"]
+[sub_resource type="Image" id="Image_1yvg8"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -66,151 +70,275 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_3idpq"]
-image = SubResource("Image_iwey3")
+[sub_resource type="ImageTexture" id="ImageTexture_dlrpl"]
+image = SubResource("Image_1yvg8")
 
-[node name="AnswerSheet2" type="TextureButton"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agknc"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_su4oe"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_16e4d"]
+image = SubResource("Image_su4oe")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mdpb4"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_6vydc"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_v7bw1"]
+image = SubResource("Image_6vydc")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdo8u"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_il2lk"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_0cfrb"]
+image = SubResource("Image_il2lk")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7tei3"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_run11"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_6mejo"]
+image = SubResource("Image_run11")
+
+[node name="AnswerSheet3" type="TextureButton"]
 offset_right = 40.0
 offset_bottom = 40.0
-texture_normal = ExtResource("1_jmva2")
-script = ExtResource("2_lhl7q")
-puzzle_resource = ExtResource("3_7jgw0")
-answer_sheet_texture = ExtResource("1_jmva2")
+texture_normal = ExtResource("1_yq3fd")
+script = ExtResource("2_a6vrd")
+puzzle_resource = ExtResource("3_fugpw")
+answer_sheet_texture = ExtResource("1_yq3fd")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
 metadata/_edit_lock_ = true
 
-[node name="AnswerDropdown1" parent="." instance=ExtResource("4_s22w6")]
+[node name="AnswerDropdown1" parent="." instance=ExtResource("4_4fmg6")]
 layout_mode = 0
-offset_left = 123.0
-offset_top = 288.0
-offset_right = 192.0
-offset_bottom = 307.0
-theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 11
-theme_override_styles/focus = SubResource("StyleBoxFlat_drlu2")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_drlu2")
-theme_override_styles/hover = SubResource("StyleBoxFlat_drlu2")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_drlu2")
-theme_override_styles/normal = SubResource("StyleBoxFlat_drlu2")
-theme_override_icons/arrow = SubResource("ImageTexture_r0vtq")
-item_count = 10
-popup/item_0/text = "0"
-popup/item_0/id = 0
-popup/item_1/text = "1"
-popup/item_1/id = 1
-popup/item_2/text = "2"
-popup/item_2/id = 2
-popup/item_3/text = "3"
-popup/item_3/id = 3
-popup/item_4/text = "4"
-popup/item_4/id = 4
-popup/item_5/text = "5"
-popup/item_5/id = 5
-popup/item_6/text = "6"
-popup/item_6/id = 6
-popup/item_7/text = "7"
-popup/item_7/id = 7
-popup/item_8/text = "8"
-popup/item_8/id = 8
-popup/item_9/text = "9"
-popup/item_9/id = 9
-dropdown_field = ExtResource("5_hq4pl")
-
-[node name="AnswerDropdown2" parent="." instance=ExtResource("4_s22w6")]
-layout_mode = 0
-offset_left = 192.0
-offset_top = 288.0
-offset_right = 256.0
-offset_bottom = 307.0
-theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 11
-theme_override_styles/focus = SubResource("StyleBoxFlat_d2qdf")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_d2qdf")
-theme_override_styles/hover = SubResource("StyleBoxFlat_d2qdf")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_d2qdf")
-theme_override_styles/normal = SubResource("StyleBoxFlat_d2qdf")
-theme_override_icons/arrow = SubResource("ImageTexture_1lnx0")
-item_count = 10
-popup/item_0/text = "0"
-popup/item_0/id = 0
-popup/item_1/text = "1"
-popup/item_1/id = 1
-popup/item_2/text = "2"
-popup/item_2/id = 2
-popup/item_3/text = "3"
-popup/item_3/id = 3
-popup/item_4/text = "4"
-popup/item_4/id = 4
-popup/item_5/text = "5"
-popup/item_5/id = 5
-popup/item_6/text = "6"
-popup/item_6/id = 6
-popup/item_7/text = "7"
-popup/item_7/id = 7
-popup/item_8/text = "8"
-popup/item_8/id = 8
-popup/item_9/text = "9"
-popup/item_9/id = 9
-dropdown_field = ExtResource("6_3s4sj")
-
-[node name="AnswerDropdown3" parent="." instance=ExtResource("4_s22w6")]
-layout_mode = 0
-offset_left = 125.0
-offset_top = 416.0
-offset_right = 257.0
-offset_bottom = 439.0
+offset_left = 213.0
+offset_top = 234.0
+offset_right = 345.0
+offset_bottom = 257.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 13
-theme_override_styles/focus = SubResource("StyleBoxFlat_coxne")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_coxne")
-theme_override_styles/hover = SubResource("StyleBoxFlat_coxne")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_coxne")
-theme_override_styles/normal = SubResource("StyleBoxFlat_coxne")
-theme_override_icons/arrow = SubResource("ImageTexture_lih07")
-item_count = 8
-popup/item_0/text = "Main"
+theme_override_styles/focus = SubResource("StyleBoxFlat_lfjce")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_lfjce")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lfjce")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lfjce")
+theme_override_styles/normal = SubResource("StyleBoxFlat_lfjce")
+theme_override_icons/arrow = SubResource("ImageTexture_7s2kk")
+item_count = 4
+popup/item_0/text = "Amy "
 popup/item_0/id = 0
-popup/item_1/text = "Jackson"
+popup/item_1/text = "Beth"
 popup/item_1/id = 1
-popup/item_2/text = "Oates"
+popup/item_2/text = "Jessica"
 popup/item_2/id = 2
-popup/item_3/text = "Shelley"
+popup/item_3/text = "Meg"
 popup/item_3/id = 3
-popup/item_4/text = "Butler"
-popup/item_4/id = 4
-popup/item_5/text = "Orange"
-popup/item_5/id = 5
-popup/item_6/text = "Purple"
-popup/item_6/id = 6
-popup/item_7/text = "Yellow"
-popup/item_7/id = 7
-dropdown_field = ExtResource("7_bvecp")
+dropdown_field = ExtResource("5_pbwv1")
 
-[node name="AnswerDropdown4" parent="." instance=ExtResource("4_s22w6")]
+[node name="AnswerDropdown2" parent="." instance=ExtResource("4_4fmg6")]
 layout_mode = 0
-offset_left = 124.0
-offset_top = 545.0
-offset_right = 258.0
-offset_bottom = 567.0
+offset_left = 363.0
+offset_top = 234.0
+offset_right = 497.0
+offset_bottom = 257.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 13
-theme_override_styles/focus = SubResource("StyleBoxFlat_namqv")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_namqv")
-theme_override_styles/hover = SubResource("StyleBoxFlat_namqv")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_namqv")
-theme_override_styles/normal = SubResource("StyleBoxFlat_namqv")
-theme_override_icons/arrow = SubResource("ImageTexture_3idpq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_pnmdm")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_pnmdm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pnmdm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pnmdm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pnmdm")
+theme_override_icons/arrow = SubResource("ImageTexture_b5pok")
+item_count = 3
+popup/item_0/text = "Greene"
+popup/item_0/id = 0
+popup/item_1/text = "Hughes"
+popup/item_1/id = 1
+popup/item_2/text = "McAllister"
+popup/item_2/id = 2
+dropdown_field = ExtResource("6_e3ma0")
+
+[node name="AnswerDropdown3" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 329.0
+offset_right = 455.0
+offset_bottom = 352.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 13
+theme_override_styles/focus = SubResource("StyleBoxFlat_dtiya")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_dtiya")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dtiya")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dtiya")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dtiya")
+theme_override_icons/arrow = SubResource("ImageTexture_qedst")
 item_count = 6
-popup/item_0/text = "09618"
+popup/item_0/text = "Baker"
 popup/item_0/id = 0
-popup/item_1/text = "10689"
+popup/item_1/text = "Barista"
 popup/item_1/id = 1
-popup/item_2/text = "61089"
+popup/item_2/text = "Electrician"
 popup/item_2/id = 2
-popup/item_3/text = "68019"
+popup/item_3/text = "Singer"
 popup/item_3/id = 3
-popup/item_4/text = "68901"
+popup/item_4/text = "Photographer"
 popup/item_4/id = 4
-popup/item_5/text = "96810"
+popup/item_5/text = "Writer"
 popup/item_5/id = 5
-dropdown_field = ExtResource("8_iixul")
+dropdown_field = ExtResource("7_v5uiw")
+
+[node name="AnswerDropdown4" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 431.0
+offset_right = 347.0
+offset_bottom = 452.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_6kxgs")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_6kxgs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6kxgs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6kxgs")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6kxgs")
+theme_override_icons/arrow = SubResource("ImageTexture_dlrpl")
+item_count = 4
+popup/item_0/text = "Adrian"
+popup/item_0/id = 0
+popup/item_1/text = "Alex"
+popup/item_1/id = 1
+popup/item_2/text = "Baxter"
+popup/item_2/id = 2
+popup/item_3/text = "Corbin"
+popup/item_3/id = 3
+dropdown_field = ExtResource("8_v6ooy")
+
+[node name="AnswerDropdown5" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 431.0
+offset_right = 496.0
+offset_bottom = 452.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_agknc")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_agknc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_agknc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_agknc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_agknc")
+theme_override_icons/arrow = SubResource("ImageTexture_16e4d")
+item_count = 3
+popup/item_0/text = "McAllister"
+popup/item_0/id = 0
+popup/item_1/text = "Greene"
+popup/item_1/id = 1
+popup/item_2/text = "Hughes"
+popup/item_2/id = 2
+dropdown_field = ExtResource("9_yxlrf")
+
+[node name="AnswerDropdown6" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 532.0
+offset_right = 455.0
+offset_bottom = 554.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 13
+theme_override_styles/focus = SubResource("StyleBoxFlat_mdpb4")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mdpb4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mdpb4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mdpb4")
+theme_override_styles/normal = SubResource("StyleBoxFlat_mdpb4")
+theme_override_icons/arrow = SubResource("ImageTexture_v7bw1")
+item_count = 6
+popup/item_0/text = "Baker"
+popup/item_0/id = 0
+popup/item_1/text = "Banker"
+popup/item_1/id = 1
+popup/item_2/text = "Barista"
+popup/item_2/id = 2
+popup/item_3/text = "Electrician"
+popup/item_3/id = 3
+popup/item_4/text = "Photographer"
+popup/item_4/id = 4
+popup/item_5/text = "Writer"
+popup/item_5/id = 5
+dropdown_field = ExtResource("10_pb4ak")
+
+[node name="AnswerDropdown7" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 644.0
+offset_right = 346.0
+offset_bottom = 666.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 13
+theme_override_styles/focus = SubResource("StyleBoxFlat_vdo8u")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_vdo8u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vdo8u")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vdo8u")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vdo8u")
+theme_override_icons/arrow = SubResource("ImageTexture_0cfrb")
+item_count = 3
+popup/item_0/text = "Grace"
+popup/item_0/id = 0
+popup/item_1/text = "Louise"
+popup/item_1/id = 1
+popup/item_2/text = "Cheryl"
+popup/item_2/id = 2
+dropdown_field = ExtResource("11_ilhuk")
+
+[node name="AnswerDropdown8" parent="." instance=ExtResource("4_4fmg6")]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 644.0
+offset_right = 495.0
+offset_bottom = 666.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 13
+theme_override_styles/focus = SubResource("StyleBoxFlat_7tei3")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_7tei3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7tei3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7tei3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7tei3")
+theme_override_icons/arrow = SubResource("ImageTexture_6mejo")
+item_count = 3
+popup/item_0/text = "Greene"
+popup/item_0/id = 0
+popup/item_1/text = "Hughes"
+popup/item_1/id = 1
+popup/item_2/text = "McAllister"
+popup/item_2/id = 2
+dropdown_field = ExtResource("12_fybyg")

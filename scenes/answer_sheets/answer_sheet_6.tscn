@@ -1,0 +1,506 @@
+[gd_scene load_steps=53 format=3 uid="uid://cv1uhms03vlop"]
+
+[ext_resource type="Texture2D" uid="uid://dsew70p2woih1" path="res://assets/sprites/ui/clipboards/answerform5.png" id="1_d7bir"]
+[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_uxvi3"]
+[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_ad7k1"]
+[ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_yk3rx"]
+[ext_resource type="Resource" uid="uid://5sw1f6t8mtiy" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_1.tres" id="5_0q7nx"]
+[ext_resource type="Resource" uid="uid://fifigh76grnr" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_2.tres" id="6_vgtkk"]
+[ext_resource type="Resource" uid="uid://kbafq5loodsi" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_3.tres" id="7_2jpt2"]
+[ext_resource type="Resource" uid="uid://bf7e7lnekgxjd" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_4.tres" id="8_ed0n2"]
+[ext_resource type="Resource" uid="uid://bku7xbv763d0l" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_5.tres" id="9_ti0e3"]
+[ext_resource type="Resource" uid="uid://c825n6ovaq0kh" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_6.tres" id="10_dyuwy"]
+[ext_resource type="Resource" uid="uid://dr8qqipprcsa6" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_7.tres" id="11_ossb8"]
+[ext_resource type="Resource" uid="uid://c7cyckoen5n88" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_8.tres" id="12_4cyi3"]
+[ext_resource type="Resource" uid="uid://ba31h5ovusjho" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_9.tres" id="13_fec0k"]
+[ext_resource type="Resource" uid="uid://cjeutqjl8t1a6" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_10.tres" id="14_cjfdc"]
+[ext_resource type="Resource" uid="uid://dyub3mq6cmsti" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_11.tres" id="15_iy7xq"]
+[ext_resource type="Resource" uid="uid://cxq6c6xpn6voa" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_12.tres" id="16_mi77y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_id337"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_2k5pn"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_deiao"]
+image = SubResource("Image_2k5pn")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4io7"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_mdf5k"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_akog3"]
+image = SubResource("Image_mdf5k")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr7lj"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_ybo0c"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_f7gde"]
+image = SubResource("Image_ybo0c")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2frf"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_ifrvy"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_jtl4w"]
+image = SubResource("Image_ifrvy")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40vch"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_b5km0"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_nkdvu"]
+image = SubResource("Image_b5km0")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7eq77"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_0o5fq"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_0rlcn"]
+image = SubResource("Image_0o5fq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_isa0q"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_aliqx"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_48nuq"]
+image = SubResource("Image_aliqx")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6u3x"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_dc5e8"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_7qmdg"]
+image = SubResource("Image_dc5e8")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0w4m"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_bmoyw"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_f528g"]
+image = SubResource("Image_bmoyw")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eu7yl"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_ypmba"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_3lc4p"]
+image = SubResource("Image_ypmba")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4568b"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_455xj"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_1v7fv"]
+image = SubResource("Image_455xj")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e2gm2"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_2tvdb"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_dtbhx"]
+image = SubResource("Image_2tvdb")
+
+[node name="AnswerSheet6" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_d7bir")
+script = ExtResource("2_uxvi3")
+puzzle_resource = ExtResource("3_ad7k1")
+answer_sheet_texture = ExtResource("1_d7bir")
+metadata/_custom_type_script = "uid://ung6mdt8pxu1"
+metadata/_edit_lock_ = true
+
+[node name="AnswerDropdown1" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 276.0
+offset_right = 158.0
+offset_bottom = 296.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_id337")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_id337")
+theme_override_styles/hover = SubResource("StyleBoxFlat_id337")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_id337")
+theme_override_styles/normal = SubResource("StyleBoxFlat_id337")
+theme_override_icons/arrow = SubResource("ImageTexture_deiao")
+item_count = 3
+popup/item_0/text = "Adrian"
+popup/item_0/id = 0
+popup/item_1/text = "Beth"
+popup/item_1/id = 1
+popup/item_2/text = "Grace"
+popup/item_2/id = 2
+dropdown_field = ExtResource("5_0q7nx")
+
+[node name="AnswerDropdown2" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 165.0
+offset_top = 276.0
+offset_right = 281.0
+offset_bottom = 296.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_d4io7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_d4io7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d4io7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d4io7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_d4io7")
+theme_override_icons/arrow = SubResource("ImageTexture_akog3")
+item_count = 3
+popup/item_0/text = "Disappeared"
+popup/item_0/id = 0
+popup/item_1/text = "Died from natural causes"
+popup/item_1/id = 1
+popup/item_2/text = "Was murdered"
+popup/item_2/id = 2
+dropdown_field = ExtResource("6_vgtkk")
+
+[node name="AnswerDropdown3" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 276.0
+offset_right = 377.0
+offset_bottom = 296.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_tr7lj")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tr7lj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tr7lj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tr7lj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tr7lj")
+theme_override_icons/arrow = SubResource("ImageTexture_f7gde")
+item_count = 6
+popup/item_0/text = "1957"
+popup/item_0/id = 0
+popup/item_1/text = "1958"
+popup/item_1/id = 1
+popup/item_2/text = "1959"
+popup/item_2/id = 2
+popup/item_3/text = "1960"
+popup/item_3/id = 3
+popup/item_4/text = "1961"
+popup/item_4/id = 4
+popup/item_5/text = "1962"
+popup/item_5/id = 5
+dropdown_field = ExtResource("7_2jpt2")
+
+[node name="AnswerDropdown4" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 203.0
+offset_top = 336.0
+offset_right = 261.0
+offset_bottom = 356.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_u2frf")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_u2frf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u2frf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u2frf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u2frf")
+theme_override_icons/arrow = SubResource("ImageTexture_jtl4w")
+item_count = 6
+popup/item_0/text = "1957"
+popup/item_0/id = 0
+popup/item_1/text = "1958"
+popup/item_1/id = 1
+popup/item_2/text = "1959"
+popup/item_2/id = 2
+popup/item_3/text = "1960"
+popup/item_3/id = 3
+popup/item_4/text = "1961"
+popup/item_4/id = 4
+popup/item_5/text = "1962"
+popup/item_5/id = 5
+dropdown_field = ExtResource("8_ed0n2")
+
+[node name="AnswerDropdown5" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 336.0
+offset_right = 372.0
+offset_bottom = 356.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_40vch")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_40vch")
+theme_override_styles/hover = SubResource("StyleBoxFlat_40vch")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_40vch")
+theme_override_styles/normal = SubResource("StyleBoxFlat_40vch")
+theme_override_icons/arrow = SubResource("ImageTexture_nkdvu")
+item_count = 3
+popup/item_0/text = "Adrian & Beth"
+popup/item_0/id = 0
+popup/item_1/text = "Grace"
+popup/item_1/id = 1
+popup/item_2/text = "The police"
+popup/item_2/id = 2
+dropdown_field = ExtResource("9_ti0e3")
+
+[node name="AnswerDropdown6" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 367.0
+offset_right = 228.0
+offset_bottom = 386.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_7eq77")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_7eq77")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7eq77")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7eq77")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7eq77")
+theme_override_icons/arrow = SubResource("ImageTexture_0rlcn")
+item_count = 4
+popup/item_0/text = "Broadcast"
+popup/item_0/id = 0
+popup/item_1/text = "Body"
+popup/item_1/id = 1
+popup/item_2/text = "Stash of money"
+popup/item_2/id = 2
+popup/item_3/text = "Home"
+popup/item_3/id = 3
+dropdown_field = ExtResource("10_dyuwy")
+
+[node name="AnswerDropdown7" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 366.0
+offset_right = 475.0
+offset_bottom = 390.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 14
+theme_override_styles/focus = SubResource("StyleBoxFlat_isa0q")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_isa0q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_isa0q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_isa0q")
+theme_override_styles/normal = SubResource("StyleBoxFlat_isa0q")
+theme_override_icons/arrow = SubResource("ImageTexture_48nuq")
+item_count = 4
+popup/item_0/text = "Melody's Melodies"
+popup/item_0/id = 0
+popup/item_1/text = "Pirate radio"
+popup/item_1/id = 1
+popup/item_2/text = "Illegal broadcast"
+popup/item_2/id = 2
+popup/item_3/text = "Government signal"
+popup/item_3/id = 3
+dropdown_field = ExtResource("11_ossb8")
+
+[node name="AnswerDropdown8" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 397.0
+offset_right = 240.0
+offset_bottom = 416.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_m6u3x")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_m6u3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m6u3x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m6u3x")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m6u3x")
+theme_override_icons/arrow = SubResource("ImageTexture_7qmdg")
+item_count = 4
+popup/item_0/text = "High quality"
+popup/item_0/id = 0
+popup/item_1/text = "Illegal"
+popup/item_1/id = 1
+popup/item_2/text = "Musical"
+popup/item_2/id = 2
+popup/item_3/text = "Non-existent"
+popup/item_3/id = 3
+dropdown_field = ExtResource("12_4cyi3")
+
+[node name="AnswerDropdown9" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 397.0
+offset_right = 475.0
+offset_bottom = 416.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_g0w4m")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_g0w4m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g0w4m")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g0w4m")
+theme_override_styles/normal = SubResource("StyleBoxFlat_g0w4m")
+theme_override_icons/arrow = SubResource("ImageTexture_f528g")
+item_count = 4
+popup/item_0/text = "Grace"
+popup/item_0/id = 0
+popup/item_1/text = "Adrian and Beth"
+popup/item_1/id = 1
+popup/item_2/text = "The police"
+popup/item_2/id = 2
+popup/item_3/text = "The school"
+popup/item_3/id = 3
+dropdown_field = ExtResource("13_fec0k")
+
+[node name="AnswerDropdown10" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 517.0
+offset_right = 403.0
+offset_bottom = 537.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxFlat_eu7yl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_eu7yl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eu7yl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_eu7yl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eu7yl")
+theme_override_icons/arrow = SubResource("ImageTexture_3lc4p")
+item_count = 4
+popup/item_0/text = "Encryption"
+popup/item_0/id = 0
+popup/item_1/text = "Government secret"
+popup/item_1/id = 1
+popup/item_2/text = "Pirate radio"
+popup/item_2/id = 2
+popup/item_3/text = "TV show"
+popup/item_3/id = 3
+dropdown_field = ExtResource("14_cjfdc")
+
+[node name="AnswerDropdown11" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 546.0
+offset_right = 300.0
+offset_bottom = 569.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 13
+theme_override_styles/focus = SubResource("StyleBoxFlat_4568b")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4568b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4568b")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4568b")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4568b")
+theme_override_icons/arrow = SubResource("ImageTexture_1v7fv")
+item_count = 3
+popup/item_0/text = "Was ever produced"
+popup/item_0/id = 0
+popup/item_1/text = "Was ever aired"
+popup/item_1/id = 1
+popup/item_2/text = "Was ever released"
+popup/item_2/id = 2
+dropdown_field = ExtResource("15_iy7xq")
+
+[node name="AnswerDropdown12" parent="." instance=ExtResource("4_yk3rx")]
+layout_mode = 0
+offset_left = 305.0
+offset_top = 546.0
+offset_right = 475.0
+offset_bottom = 569.0
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 13
+theme_override_styles/focus = SubResource("StyleBoxFlat_e2gm2")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_e2gm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_e2gm2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e2gm2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_e2gm2")
+theme_override_icons/arrow = SubResource("ImageTexture_dtbhx")
+item_count = 3
+popup/item_0/text = "In this city"
+popup/item_0/id = 0
+popup/item_1/text = "In this country"
+popup/item_1/id = 1
+popup/item_2/text = "In this world"
+popup/item_2/id = 2
+dropdown_field = ExtResource("16_mi77y")
