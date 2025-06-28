@@ -1,8 +1,6 @@
 class_name PuzzleResource
 extends Resource
 
-const DropdownField = preload("res://data/resources/dropdown_field.gd")
-
 @export var puzzle_id: String = ""
 @export var puzzle_name: String = ""
 @export var dropdown_fields: Array[DropdownField] = []
