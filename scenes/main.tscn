@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b27of1woe625"]
+[gd_scene load_steps=3 format=3 uid="uid://b27of1woe625"]
 
 [ext_resource type="Script" uid="uid://fplh06xlympe" path="res://scenes/main.gd" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://b2ss1cny1ukj7" path="res://scenes/answer_sheets/answer_sheet_1.tscn" id="2_0wfyh"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_o5qli")
@@ -72,6 +73,20 @@ offset_top = 304.0
 offset_right = 192.0
 offset_bottom = 368.0
 text = "Room History:"
+
+[node name="AnswerSheet1" parent="GUI" instance=ExtResource("2_0wfyh")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.344271
+anchor_top = 0.888889
+anchor_right = 0.655729
+anchor_bottom = 1.66667
+offset_left = 661.0
+offset_top = 960.0
+offset_right = 1259.0
+offset_bottom = 1800.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [node name="AudioPlayers" type="Node" parent="."]
 

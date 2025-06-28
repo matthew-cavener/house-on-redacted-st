@@ -1,15 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://x5dklhhnt45s"]
+[gd_scene load_steps=8 format=3 uid="uid://x5dklhhnt45s"]
 
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="1_1ahpl"]
 [ext_resource type="Texture2D" uid="uid://cf1u3k80h5qfb" path="res://assets/sprites/ui/clipboards/answerform0.png" id="1_o4g0j"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="3_cfa13"]
-[ext_resource type="FontFile" uid="uid://cbbi63abiy7rv" path="res://assets/fonts/Caveat-VariableFont_wght.ttf" id="4_2wm27"]
 [ext_resource type="Resource" uid="uid://b4ahyo76nd4il" path="res://data/puzzles/answer_key_1/answer_key_1_dropdown_1.tres" id="5_vwye8"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfa13"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jfl6g"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_2wm27"]
+[sub_resource type="Image" id="Image_cfa13"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -18,8 +17,8 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_vwye8"]
-image = SubResource("Image_2wm27")
+[sub_resource type="ImageTexture" id="ImageTexture_2wm27"]
+image = SubResource("Image_cfa13")
 
 [node name="AnswerSheet" type="TextureButton"]
 offset_right = 40.0
@@ -33,20 +32,14 @@ offset_left = 304.0
 offset_top = 701.0
 offset_right = 422.0
 offset_bottom = 726.0
-theme_override_colors/font_disabled_color = Color(0.8, 0.8, 0.8, 1)
-theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.9, 0.9, 0.9, 1)
 theme_override_constants/h_separation = 4
-theme_override_fonts/font = ExtResource("4_2wm27")
 theme_override_font_sizes/font_size = 15
-theme_override_styles/focus = SubResource("StyleBoxFlat_cfa13")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_cfa13")
-theme_override_styles/hover = SubResource("StyleBoxFlat_cfa13")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cfa13")
-theme_override_styles/normal = SubResource("StyleBoxFlat_cfa13")
-theme_override_icons/arrow = SubResource("ImageTexture_vwye8")
+theme_override_styles/focus = SubResource("StyleBoxFlat_jfl6g")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_jfl6g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jfl6g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jfl6g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jfl6g")
+theme_override_icons/arrow = SubResource("ImageTexture_2wm27")
 item_count = 3
 popup/item_0/text = "I agree"
 popup/item_0/id = 0

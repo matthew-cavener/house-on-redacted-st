@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://cm33bbpbant8u" path="res://scenes/ui/answer_dropdown.gd" id="1_2snxi"]
 [ext_resource type="FontFile" uid="uid://cbbi63abiy7rv" path="res://assets/fonts/Caveat-VariableFont_wght.ttf" id="1_55d8f"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hjbfp"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_55d8f"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_mrd6a"]
+[sub_resource type="Image" id="Image_hjbfp"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -15,8 +15,8 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_ohtty"]
-image = SubResource("Image_mrd6a")
+[sub_resource type="ImageTexture" id="ImageTexture_mrd6a"]
+image = SubResource("Image_hjbfp")
 
 [node name="AnswerDropdown" type="OptionButton"]
 theme_override_colors/font_disabled_color = Color(0.8, 0.8, 0.8, 1)
@@ -26,12 +26,12 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.9, 0.9, 0.9, 1)
 theme_override_fonts/font = ExtResource("1_55d8f")
 theme_override_font_sizes/font_size = 10
-theme_override_styles/focus = SubResource("StyleBoxFlat_hjbfp")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_hjbfp")
-theme_override_styles/hover = SubResource("StyleBoxFlat_hjbfp")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_hjbfp")
-theme_override_styles/normal = SubResource("StyleBoxFlat_hjbfp")
-theme_override_icons/arrow = SubResource("ImageTexture_ohtty")
+theme_override_styles/focus = SubResource("StyleBoxFlat_55d8f")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_55d8f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_55d8f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_55d8f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_55d8f")
+theme_override_icons/arrow = SubResource("ImageTexture_mrd6a")
 flat = true
 alignment = 1
 fit_to_longest_item = false

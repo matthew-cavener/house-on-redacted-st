@@ -13,8 +13,9 @@ func _ready():
 
 func set_dropdown_field(field: DropdownField):
 	dropdown_field = field
-	if field and is_inside_tree():
-		_setup_options()
+	if field:
+		if is_inside_tree():
+			_setup_options()
 
 func _setup_options():
 	if not dropdown_field:
