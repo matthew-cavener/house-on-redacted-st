@@ -1,8 +1,9 @@
-[gd_scene load_steps=53 format=3 uid="uid://cv1uhms03vlop"]
+[gd_scene load_steps=54 format=3 uid="uid://cv1uhms03vlop"]
 
 [ext_resource type="Texture2D" uid="uid://dsew70p2woih1" path="res://assets/sprites/ui/clipboards/answerform5.png" id="1_d7bir"]
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_uxvi3"]
 [ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_ad7k1"]
+[ext_resource type="PackedScene" uid="uid://cp5n5d8is2br" path="res://scenes/answer_sheets/answer_sheet_7.tscn" id="4_0q7nx"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_yk3rx"]
 [ext_resource type="Resource" uid="uid://5sw1f6t8mtiy" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_1.tres" id="5_0q7nx"]
 [ext_resource type="Resource" uid="uid://fifigh76grnr" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_2.tres" id="6_vgtkk"]
@@ -17,10 +18,10 @@
 [ext_resource type="Resource" uid="uid://dyub3mq6cmsti" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_11.tres" id="15_iy7xq"]
 [ext_resource type="Resource" uid="uid://cxq6c6xpn6voa" path="res://data/puzzles/answer_key_6/answer_key_6_dropdown_12.tres" id="16_mi77y"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_id337"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgtkk"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_2k5pn"]
+[sub_resource type="Image" id="Image_2jpt2"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -29,13 +30,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_deiao"]
-image = SubResource("Image_2k5pn")
+[sub_resource type="ImageTexture" id="ImageTexture_ed0n2"]
+image = SubResource("Image_2jpt2")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4io7"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ti0e3"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_mdf5k"]
+[sub_resource type="Image" id="Image_dyuwy"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -44,13 +45,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_akog3"]
-image = SubResource("Image_mdf5k")
+[sub_resource type="ImageTexture" id="ImageTexture_ossb8"]
+image = SubResource("Image_dyuwy")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr7lj"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4cyi3"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_ybo0c"]
+[sub_resource type="Image" id="Image_fec0k"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -59,13 +60,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_f7gde"]
-image = SubResource("Image_ybo0c")
+[sub_resource type="ImageTexture" id="ImageTexture_cjfdc"]
+image = SubResource("Image_fec0k")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2frf"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iy7xq"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_ifrvy"]
+[sub_resource type="Image" id="Image_mi77y"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -74,13 +75,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_jtl4w"]
-image = SubResource("Image_ifrvy")
+[sub_resource type="ImageTexture" id="ImageTexture_id337"]
+image = SubResource("Image_mi77y")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40vch"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2k5pn"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_b5km0"]
+[sub_resource type="Image" id="Image_deiao"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -89,13 +90,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_nkdvu"]
-image = SubResource("Image_b5km0")
+[sub_resource type="ImageTexture" id="ImageTexture_d4io7"]
+image = SubResource("Image_deiao")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7eq77"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mdf5k"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_0o5fq"]
+[sub_resource type="Image" id="Image_akog3"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -104,13 +105,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_0rlcn"]
-image = SubResource("Image_0o5fq")
+[sub_resource type="ImageTexture" id="ImageTexture_tr7lj"]
+image = SubResource("Image_akog3")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_isa0q"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybo0c"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_aliqx"]
+[sub_resource type="Image" id="Image_f7gde"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -119,13 +120,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_48nuq"]
-image = SubResource("Image_aliqx")
+[sub_resource type="ImageTexture" id="ImageTexture_u2frf"]
+image = SubResource("Image_f7gde")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6u3x"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ifrvy"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_dc5e8"]
+[sub_resource type="Image" id="Image_jtl4w"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -134,13 +135,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_7qmdg"]
-image = SubResource("Image_dc5e8")
+[sub_resource type="ImageTexture" id="ImageTexture_40vch"]
+image = SubResource("Image_jtl4w")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0w4m"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5km0"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_bmoyw"]
+[sub_resource type="Image" id="Image_nkdvu"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -149,13 +150,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_f528g"]
-image = SubResource("Image_bmoyw")
+[sub_resource type="ImageTexture" id="ImageTexture_7eq77"]
+image = SubResource("Image_nkdvu")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eu7yl"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0o5fq"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_ypmba"]
+[sub_resource type="Image" id="Image_0rlcn"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -164,13 +165,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_3lc4p"]
-image = SubResource("Image_ypmba")
+[sub_resource type="ImageTexture" id="ImageTexture_isa0q"]
+image = SubResource("Image_0rlcn")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4568b"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aliqx"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_455xj"]
+[sub_resource type="Image" id="Image_48nuq"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -179,13 +180,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_1v7fv"]
-image = SubResource("Image_455xj")
+[sub_resource type="ImageTexture" id="ImageTexture_m6u3x"]
+image = SubResource("Image_48nuq")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e2gm2"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dc5e8"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_2tvdb"]
+[sub_resource type="Image" id="Image_7qmdg"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -194,8 +195,8 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_dtbhx"]
-image = SubResource("Image_2tvdb")
+[sub_resource type="ImageTexture" id="ImageTexture_g0w4m"]
+image = SubResource("Image_7qmdg")
 
 [node name="AnswerSheet6" type="TextureButton"]
 offset_right = 40.0
@@ -204,6 +205,7 @@ texture_normal = ExtResource("1_d7bir")
 script = ExtResource("2_uxvi3")
 puzzle_resource = ExtResource("3_ad7k1")
 answer_sheet_texture = ExtResource("1_d7bir")
+next_answer_sheet_scene = ExtResource("4_0q7nx")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
 metadata/_edit_lock_ = true
 
@@ -215,12 +217,12 @@ offset_right = 158.0
 offset_bottom = 296.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 12
-theme_override_styles/focus = SubResource("StyleBoxFlat_id337")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_id337")
-theme_override_styles/hover = SubResource("StyleBoxFlat_id337")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_id337")
-theme_override_styles/normal = SubResource("StyleBoxFlat_id337")
-theme_override_icons/arrow = SubResource("ImageTexture_deiao")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vgtkk")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_vgtkk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vgtkk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vgtkk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vgtkk")
+theme_override_icons/arrow = SubResource("ImageTexture_ed0n2")
 item_count = 3
 popup/item_0/text = "Adrian"
 popup/item_0/id = 0
@@ -238,12 +240,12 @@ offset_right = 281.0
 offset_bottom = 296.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 12
-theme_override_styles/focus = SubResource("StyleBoxFlat_d4io7")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_d4io7")
-theme_override_styles/hover = SubResource("StyleBoxFlat_d4io7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_d4io7")
-theme_override_styles/normal = SubResource("StyleBoxFlat_d4io7")
-theme_override_icons/arrow = SubResource("ImageTexture_akog3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ti0e3")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ti0e3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ti0e3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ti0e3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ti0e3")
+theme_override_icons/arrow = SubResource("ImageTexture_ossb8")
 item_count = 3
 popup/item_0/text = "Disappeared"
 popup/item_0/id = 0
@@ -261,12 +263,12 @@ offset_right = 377.0
 offset_bottom = 296.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 12
-theme_override_styles/focus = SubResource("StyleBoxFlat_tr7lj")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_tr7lj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_tr7lj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_tr7lj")
-theme_override_styles/normal = SubResource("StyleBoxFlat_tr7lj")
-theme_override_icons/arrow = SubResource("ImageTexture_f7gde")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4cyi3")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4cyi3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4cyi3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4cyi3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4cyi3")
+theme_override_icons/arrow = SubResource("ImageTexture_cjfdc")
 item_count = 6
 popup/item_0/text = "1957"
 popup/item_0/id = 0
@@ -290,12 +292,12 @@ offset_right = 261.0
 offset_bottom = 356.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 12
-theme_override_styles/focus = SubResource("StyleBoxFlat_u2frf")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_u2frf")
-theme_override_styles/hover = SubResource("StyleBoxFlat_u2frf")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_u2frf")
-theme_override_styles/normal = SubResource("StyleBoxFlat_u2frf")
-theme_override_icons/arrow = SubResource("ImageTexture_jtl4w")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iy7xq")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_iy7xq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iy7xq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iy7xq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iy7xq")
+theme_override_icons/arrow = SubResource("ImageTexture_id337")
 item_count = 6
 popup/item_0/text = "1957"
 popup/item_0/id = 0
@@ -319,12 +321,12 @@ offset_right = 372.0
 offset_bottom = 356.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 12
-theme_override_styles/focus = SubResource("StyleBoxFlat_40vch")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_40vch")
-theme_override_styles/hover = SubResource("StyleBoxFlat_40vch")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_40vch")
-theme_override_styles/normal = SubResource("StyleBoxFlat_40vch")
-theme_override_icons/arrow = SubResource("ImageTexture_nkdvu")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2k5pn")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2k5pn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2k5pn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2k5pn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2k5pn")
+theme_override_icons/arrow = SubResource("ImageTexture_d4io7")
 item_count = 3
 popup/item_0/text = "Adrian & Beth"
 popup/item_0/id = 0
@@ -342,12 +344,12 @@ offset_right = 228.0
 offset_bottom = 386.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 11
-theme_override_styles/focus = SubResource("StyleBoxFlat_7eq77")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_7eq77")
-theme_override_styles/hover = SubResource("StyleBoxFlat_7eq77")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_7eq77")
-theme_override_styles/normal = SubResource("StyleBoxFlat_7eq77")
-theme_override_icons/arrow = SubResource("ImageTexture_0rlcn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mdf5k")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mdf5k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mdf5k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mdf5k")
+theme_override_styles/normal = SubResource("StyleBoxFlat_mdf5k")
+theme_override_icons/arrow = SubResource("ImageTexture_tr7lj")
 item_count = 4
 popup/item_0/text = "Broadcast"
 popup/item_0/id = 0
@@ -367,12 +369,12 @@ offset_right = 475.0
 offset_bottom = 390.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 14
-theme_override_styles/focus = SubResource("StyleBoxFlat_isa0q")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_isa0q")
-theme_override_styles/hover = SubResource("StyleBoxFlat_isa0q")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_isa0q")
-theme_override_styles/normal = SubResource("StyleBoxFlat_isa0q")
-theme_override_icons/arrow = SubResource("ImageTexture_48nuq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ybo0c")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ybo0c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybo0c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ybo0c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ybo0c")
+theme_override_icons/arrow = SubResource("ImageTexture_u2frf")
 item_count = 4
 popup/item_0/text = "Melody's Melodies"
 popup/item_0/id = 0
@@ -392,12 +394,12 @@ offset_right = 240.0
 offset_bottom = 416.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 11
-theme_override_styles/focus = SubResource("StyleBoxFlat_m6u3x")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_m6u3x")
-theme_override_styles/hover = SubResource("StyleBoxFlat_m6u3x")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m6u3x")
-theme_override_styles/normal = SubResource("StyleBoxFlat_m6u3x")
-theme_override_icons/arrow = SubResource("ImageTexture_7qmdg")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ifrvy")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ifrvy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ifrvy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ifrvy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ifrvy")
+theme_override_icons/arrow = SubResource("ImageTexture_40vch")
 item_count = 4
 popup/item_0/text = "High quality"
 popup/item_0/id = 0
@@ -417,12 +419,12 @@ offset_right = 475.0
 offset_bottom = 416.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 11
-theme_override_styles/focus = SubResource("StyleBoxFlat_g0w4m")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_g0w4m")
-theme_override_styles/hover = SubResource("StyleBoxFlat_g0w4m")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_g0w4m")
-theme_override_styles/normal = SubResource("StyleBoxFlat_g0w4m")
-theme_override_icons/arrow = SubResource("ImageTexture_f528g")
+theme_override_styles/focus = SubResource("StyleBoxFlat_b5km0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_b5km0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b5km0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b5km0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b5km0")
+theme_override_icons/arrow = SubResource("ImageTexture_7eq77")
 item_count = 4
 popup/item_0/text = "Grace"
 popup/item_0/id = 0
@@ -442,12 +444,12 @@ offset_right = 403.0
 offset_bottom = 537.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 12
-theme_override_styles/focus = SubResource("StyleBoxFlat_eu7yl")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_eu7yl")
-theme_override_styles/hover = SubResource("StyleBoxFlat_eu7yl")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_eu7yl")
-theme_override_styles/normal = SubResource("StyleBoxFlat_eu7yl")
-theme_override_icons/arrow = SubResource("ImageTexture_3lc4p")
+theme_override_styles/focus = SubResource("StyleBoxFlat_0o5fq")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0o5fq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0o5fq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0o5fq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0o5fq")
+theme_override_icons/arrow = SubResource("ImageTexture_isa0q")
 item_count = 4
 popup/item_0/text = "Encryption"
 popup/item_0/id = 0
@@ -467,12 +469,12 @@ offset_right = 300.0
 offset_bottom = 569.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 13
-theme_override_styles/focus = SubResource("StyleBoxFlat_4568b")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_4568b")
-theme_override_styles/hover = SubResource("StyleBoxFlat_4568b")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_4568b")
-theme_override_styles/normal = SubResource("StyleBoxFlat_4568b")
-theme_override_icons/arrow = SubResource("ImageTexture_1v7fv")
+theme_override_styles/focus = SubResource("StyleBoxFlat_aliqx")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_aliqx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_aliqx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_aliqx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_aliqx")
+theme_override_icons/arrow = SubResource("ImageTexture_m6u3x")
 item_count = 3
 popup/item_0/text = "Was ever produced"
 popup/item_0/id = 0
@@ -490,12 +492,12 @@ offset_right = 475.0
 offset_bottom = 569.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 13
-theme_override_styles/focus = SubResource("StyleBoxFlat_e2gm2")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_e2gm2")
-theme_override_styles/hover = SubResource("StyleBoxFlat_e2gm2")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_e2gm2")
-theme_override_styles/normal = SubResource("StyleBoxFlat_e2gm2")
-theme_override_icons/arrow = SubResource("ImageTexture_dtbhx")
+theme_override_styles/focus = SubResource("StyleBoxFlat_dc5e8")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_dc5e8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dc5e8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dc5e8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dc5e8")
+theme_override_icons/arrow = SubResource("ImageTexture_g0w4m")
 item_count = 3
 popup/item_0/text = "In this city"
 popup/item_0/id = 0

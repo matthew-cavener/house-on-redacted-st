@@ -1,28 +1,14 @@
-[gd_scene load_steps=21 format=3 uid="uid://dctfjvn8g8f57"]
+[gd_scene load_steps=22 format=3 uid="uid://dctfjvn8g8f57"]
 
 [ext_resource type="Texture2D" uid="uid://discjulag06kj" path="res://assets/sprites/ui/clipboards/answerform1.png" id="1_oc8b0"]
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_drlu2"]
 [ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_kwe3v"]
+[ext_resource type="PackedScene" uid="uid://bebgie52jpkaw" path="res://scenes/answer_sheets/answer_sheet_3.tscn" id="4_d2qdf"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_r0vtq"]
 [ext_resource type="Resource" uid="uid://ccky4pt6uuqa0" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_1.tres" id="5_huv6o"]
 [ext_resource type="Resource" uid="uid://l7i0ki3gqotg" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_2.tres" id="6_r0vtq"]
 [ext_resource type="Resource" uid="uid://cpkh3a4apomy3" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_3.tres" id="7_d2qdf"]
 [ext_resource type="Resource" uid="uid://bc00j5bvuyr0q" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_4.tres" id="8_75lnj"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_huv6o"]
-bg_color = Color(0, 0, 0, 0)
-
-[sub_resource type="Image" id="Image_r0vtq"]
-data = {
-"data": PackedByteArray(0, 0, 0, 0),
-"format": "RGBA8",
-"height": 1,
-"mipmaps": false,
-"width": 1
-}
-
-[sub_resource type="ImageTexture" id="ImageTexture_d2qdf"]
-image = SubResource("Image_r0vtq")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75lnj"]
 bg_color = Color(0, 0, 0, 0)
@@ -69,6 +55,21 @@ data = {
 [sub_resource type="ImageTexture" id="ImageTexture_p5qdd"]
 image = SubResource("Image_3idpq")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_katrw"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Image" id="Image_0td41"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0),
+"format": "RGBA8",
+"height": 1,
+"mipmaps": false,
+"width": 1
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_jd5b8"]
+image = SubResource("Image_0td41")
+
 [node name="AnswerSheet2" type="TextureButton"]
 offset_right = 40.0
 offset_bottom = 40.0
@@ -76,6 +77,7 @@ texture_normal = ExtResource("1_oc8b0")
 script = ExtResource("2_drlu2")
 puzzle_resource = ExtResource("3_kwe3v")
 answer_sheet_texture = ExtResource("1_oc8b0")
+next_answer_sheet_scene = ExtResource("4_d2qdf")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
 metadata/_edit_lock_ = true
 
@@ -87,12 +89,12 @@ offset_right = 192.0
 offset_bottom = 307.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 11
-theme_override_styles/focus = SubResource("StyleBoxFlat_huv6o")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_huv6o")
-theme_override_styles/hover = SubResource("StyleBoxFlat_huv6o")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_huv6o")
-theme_override_styles/normal = SubResource("StyleBoxFlat_huv6o")
-theme_override_icons/arrow = SubResource("ImageTexture_d2qdf")
+theme_override_styles/focus = SubResource("StyleBoxFlat_75lnj")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_75lnj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_75lnj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_75lnj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_75lnj")
+theme_override_icons/arrow = SubResource("ImageTexture_coxne")
 item_count = 10
 popup/item_0/text = "0"
 popup/item_0/id = 0
@@ -124,12 +126,12 @@ offset_right = 256.0
 offset_bottom = 307.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 11
-theme_override_styles/focus = SubResource("StyleBoxFlat_75lnj")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_75lnj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_75lnj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_75lnj")
-theme_override_styles/normal = SubResource("StyleBoxFlat_75lnj")
-theme_override_icons/arrow = SubResource("ImageTexture_coxne")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ft2cm")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ft2cm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ft2cm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ft2cm")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ft2cm")
+theme_override_icons/arrow = SubResource("ImageTexture_namqv")
 item_count = 10
 popup/item_0/text = "0"
 popup/item_0/id = 0
@@ -161,12 +163,12 @@ offset_right = 257.0
 offset_bottom = 439.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 13
-theme_override_styles/focus = SubResource("StyleBoxFlat_ft2cm")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_ft2cm")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ft2cm")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ft2cm")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ft2cm")
-theme_override_icons/arrow = SubResource("ImageTexture_namqv")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iwey3")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_iwey3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iwey3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iwey3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_iwey3")
+theme_override_icons/arrow = SubResource("ImageTexture_p5qdd")
 item_count = 8
 popup/item_0/text = "Main"
 popup/item_0/id = 0
@@ -194,12 +196,12 @@ offset_right = 258.0
 offset_bottom = 567.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 13
-theme_override_styles/focus = SubResource("StyleBoxFlat_iwey3")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_iwey3")
-theme_override_styles/hover = SubResource("StyleBoxFlat_iwey3")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_iwey3")
-theme_override_styles/normal = SubResource("StyleBoxFlat_iwey3")
-theme_override_icons/arrow = SubResource("ImageTexture_p5qdd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_katrw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_katrw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_katrw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_katrw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_katrw")
+theme_override_icons/arrow = SubResource("ImageTexture_jd5b8")
 item_count = 6
 popup/item_0/text = "09618"
 popup/item_0/id = 0
