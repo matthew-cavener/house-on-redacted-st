@@ -74,7 +74,7 @@ func _update_font_size_to_fit():
 	if size.y <= 0:
 		add_theme_font_size_override("font_size", 16)
 		return
-	var optimal_font_size = max(10, min(32, int(size.y * 0.6)))
+	var optimal_font_size = max(10, min(32, int(size.y * 0.8)))
 	add_theme_font_size_override("font_size", optimal_font_size)
 
 func _notification(what):

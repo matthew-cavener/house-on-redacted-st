@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_drlu2"]
 [ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_kwe3v"]
 [ext_resource type="PackedScene" uid="uid://bebgie52jpkaw" path="res://scenes/answer_sheets/answer_sheet_4.tscn" id="4_d2qdf"]
+[ext_resource type="PackedScene" uid="uid://bebgie52jpkaw" path="res://scenes/answer_sheets/answer_sheet_4.tscn" id="4_d2qdf"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_r0vtq"]
 [ext_resource type="Resource" uid="uid://ccky4pt6uuqa0" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_1.tres" id="5_huv6o"]
 [ext_resource type="Resource" uid="uid://l7i0ki3gqotg" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_2.tres" id="6_r0vtq"]
@@ -11,8 +12,10 @@
 [ext_resource type="Resource" uid="uid://bc00j5bvuyr0q" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_4.tres" id="8_75lnj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0vtq"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0vtq"]
 bg_color = Color(0, 0, 0, 0)
 
+[sub_resource type="Image" id="Image_d2qdf"]
 [sub_resource type="Image" id="Image_d2qdf"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
@@ -24,10 +27,14 @@ data = {
 
 [sub_resource type="ImageTexture" id="ImageTexture_75lnj"]
 image = SubResource("Image_d2qdf")
+[sub_resource type="ImageTexture" id="ImageTexture_75lnj"]
+image = SubResource("Image_d2qdf")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lnx0"]
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1lnx0"]
 bg_color = Color(0, 0, 0, 0)
 
+[sub_resource type="Image" id="Image_coxne"]
 [sub_resource type="Image" id="Image_coxne"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
@@ -39,10 +46,14 @@ data = {
 
 [sub_resource type="ImageTexture" id="ImageTexture_ft2cm"]
 image = SubResource("Image_coxne")
+[sub_resource type="ImageTexture" id="ImageTexture_ft2cm"]
+image = SubResource("Image_coxne")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lih07"]
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lih07"]
 bg_color = Color(0, 0, 0, 0)
 
+[sub_resource type="Image" id="Image_namqv"]
 [sub_resource type="Image" id="Image_namqv"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
@@ -54,10 +65,14 @@ data = {
 
 [sub_resource type="ImageTexture" id="ImageTexture_iwey3"]
 image = SubResource("Image_namqv")
+[sub_resource type="ImageTexture" id="ImageTexture_iwey3"]
+image = SubResource("Image_namqv")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3idpq"]
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3idpq"]
 bg_color = Color(0, 0, 0, 0)
 
+[sub_resource type="Image" id="Image_p5qdd"]
 [sub_resource type="Image" id="Image_p5qdd"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
@@ -67,6 +82,8 @@ data = {
 "width": 1
 }
 
+[sub_resource type="ImageTexture" id="ImageTexture_katrw"]
+image = SubResource("Image_p5qdd")
 [sub_resource type="ImageTexture" id="ImageTexture_katrw"]
 image = SubResource("Image_p5qdd")
 
@@ -84,11 +101,11 @@ metadata/_edit_lock_ = true
 [node name="AnswerDropdown1" parent="." instance=ExtResource("4_r0vtq")]
 layout_mode = 0
 offset_left = 123.0
-offset_top = 288.0
-offset_right = 192.0
-offset_bottom = 307.0
+offset_top = 287.0
+offset_right = 174.0
+offset_bottom = 308.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 11
+theme_override_font_sizes/font_size = 16
 theme_override_styles/focus = SubResource("StyleBoxFlat_r0vtq")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_r0vtq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_r0vtq")
@@ -120,12 +137,12 @@ dropdown_field = ExtResource("5_huv6o")
 
 [node name="AnswerDropdown2" parent="." instance=ExtResource("4_r0vtq")]
 layout_mode = 0
-offset_left = 192.0
-offset_top = 288.0
+offset_left = 206.0
+offset_top = 287.0
 offset_right = 256.0
-offset_bottom = 307.0
+offset_bottom = 308.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 11
+theme_override_font_sizes/font_size = 16
 theme_override_styles/focus = SubResource("StyleBoxFlat_1lnx0")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_1lnx0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_1lnx0")
@@ -162,7 +179,7 @@ offset_top = 416.0
 offset_right = 257.0
 offset_bottom = 439.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 13
+theme_override_font_sizes/font_size = 18
 theme_override_styles/focus = SubResource("StyleBoxFlat_lih07")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_lih07")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lih07")
@@ -195,7 +212,7 @@ offset_top = 545.0
 offset_right = 258.0
 offset_bottom = 567.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 13
+theme_override_font_sizes/font_size = 17
 theme_override_styles/focus = SubResource("StyleBoxFlat_3idpq")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_3idpq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3idpq")
@@ -216,3 +233,11 @@ popup/item_4/id = 4
 popup/item_5/text = "96810"
 popup/item_5/id = 5
 dropdown_field = ExtResource("8_75lnj")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 286.0
+offset_right = 206.0
+offset_bottom = 309.0
+color = Color(0.96, 0.96, 0.94, 0.98)
