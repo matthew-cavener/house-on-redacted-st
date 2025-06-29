@@ -11,11 +11,17 @@ var current_tween: Tween
 var initial_position: Vector2
 var up_position: Vector2
 var down_position: Vector2
+var forward_button: TextureButton
+var normal_nav_container: VBoxContainer
+var nexus_nav_container: VBoxContainer
+var is_in_nexus: bool = false
 
 func _ready():
 	initial_position = position
 	up_position = position
 	down_position = position + Vector2(0, slide_distance)
+	normal_nav_container = $VBoxContainer
+	_setup_nexus_navigation()
 	$VBoxContainer/HouseExterior.pressed.connect(_on_room_button_pressed.bind("house_exterior"))
 	$VBoxContainer/ParentRoom.pressed.connect(_on_room_button_pressed.bind("parent_room"))
 	$VBoxContainer/Garage.pressed.connect(_on_room_button_pressed.bind("garage"))
@@ -23,8 +29,10 @@ func _ready():
 	$VBoxContainer/Kitchen.pressed.connect(_on_room_button_pressed.bind("kitchen"))
 	$VBoxContainer/LivingRoom.pressed.connect(_on_room_button_pressed.bind("living_room"))
 	EventBus.puzzle_solved.connect(_on_puzzle_solved)
+	GameManager.room_changed.connect(_on_room_changed)
 	pressed.connect(_on_nav_journal_clicked)
 	_update_button_states()
+	_on_room_changed()
 
 func _update_button_states():
 	$VBoxContainer/HouseExterior.disabled = $VBoxContainer/HouseExterior/HouseExteriorProgressBar.value > 0
@@ -53,6 +61,47 @@ func _on_puzzle_solved(puzzle_id: String):
 			])
 		"answer_key_6":
 			_unredact_rooms([$VBoxContainer/Garage/GarageProgressBar])
+
+func _setup_nexus_navigation():
+	nexus_nav_container = VBoxContainer.new()
+	nexus_nav_container.name = "NexusNavContainer"
+	nexus_nav_container.visible = false
+	nexus_nav_container.position = normal_nav_container.position
+	nexus_nav_container.size = normal_nav_container.size
+	nexus_nav_container.alignment = BoxContainer.ALIGNMENT_CENTER
+	add_child(nexus_nav_container)
+	forward_button = TextureButton.new()
+	forward_button.name = "ForwardButton"
+	var forward_texture = load("res://assets/sprites/ui/nav_journal/navjournalforward.png") as Texture2D
+	if forward_texture:
+		forward_button.texture_normal = forward_texture
+	forward_button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	forward_button.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	forward_button.pressed.connect(_on_forward_pressed)
+	nexus_nav_container.add_child(forward_button)
+
+func _on_room_changed():
+	var current_room = GameManager.current_room
+	is_in_nexus = current_room.begins_with("nexus")
+	_update_navigation_display()
+
+func _update_navigation_display():
+	if is_in_nexus:
+		normal_nav_container.visible = false
+		nexus_nav_container.visible = true
+	else:
+		normal_nav_container.visible = true
+		nexus_nav_container.visible = false
+
+func _on_forward_pressed():
+	var current_room = GameManager.current_room
+	match current_room:
+		"nexus1":
+			GameManager.change_room("nexus2")
+		"nexus2":
+			GameManager.change_room("nexus3")
+		_:
+			pass
 
 func _unredact_rooms(progress_bars: Array[TextureProgressBar]):
 	for i in range(progress_bars.size()):
