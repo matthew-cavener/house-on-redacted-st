@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmgivkyud5vua"]
+
+[ext_resource type="Texture2D" uid="uid://gi7xrv8nlw5h" path="res://assets/sprites/ui/nav_journal/navjournal01.png" id="1_v3yxw"]
+
+[node name="NavJournal" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_v3yxw")
