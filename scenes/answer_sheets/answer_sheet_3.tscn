@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bgqnfe6v6j6ac" path="res://assets/sprites/ui/clipboards/answerform2.png" id="1_yq3fd"]
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_a6vrd"]
-[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_fugpw"]
+[ext_resource type="Resource" uid="uid://fuxm5p63q736" path="res://data/puzzles/answer_key_3/answer_key_3.tres" id="3_3s4sj"]
 [ext_resource type="PackedScene" uid="uid://bebgie52jpkaw" path="res://scenes/answer_sheets/answer_sheet_4.tscn" id="4_3s4sj"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_4fmg6"]
 [ext_resource type="Resource" uid="uid://dheqcshh0sx5m" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_1.tres" id="5_pbwv1"]
@@ -139,7 +139,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("1_yq3fd")
 script = ExtResource("2_a6vrd")
-puzzle_resource = ExtResource("3_fugpw")
+puzzle_resource = ExtResource("3_3s4sj")
 answer_sheet_texture = ExtResource("1_yq3fd")
 next_answer_sheet_scene = ExtResource("4_3s4sj")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
