@@ -2,6 +2,8 @@
 
 Game made for PIGSquad's Summer 2025 Summer Slow Jam
 
+[Play it on itch!](https://matthew-cavener.itch.io/house-on-redacted-st)
+
 ## Credits
 
 **CREDITS:** (in order of when they responded to Ian's Discord ping)
