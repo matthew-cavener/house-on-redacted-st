@@ -7,7 +7,7 @@
 script = ExtResource("1_qfugd")
 id = "newspaper_1"
 name = "Framed News Article"
-description = "\"Congratulations to the opening of Summit Capital, a new credit union. The group was started by three college friends: Alex, Adrian, and Baxter who defied the odds to go into business together...\""
+description = "\"Congratulations on the opening of Summit Capital, a new credit union. The group was started by three college friends: Alex, Adrian, and Baxter who defied the odds to go into business together...\""
 image = ExtResource("1_uia2r")
 hero_image = ExtResource("1_uia2r")
 shows_in_background = true

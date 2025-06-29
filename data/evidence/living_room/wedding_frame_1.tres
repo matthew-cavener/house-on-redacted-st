@@ -8,7 +8,7 @@
 script = ExtResource("1_w6hp8")
 id = "wedding_frame_1"
 name = "Wedding Photo"
-description = "\"Celebrating the marriage of Mrs. [---------] [---------] and Mr. A-[---------] McAllister in 1946.\"
+description = "\"Celebrating the marriage of Mrs. [---------] [---------] and Mr. A[---------] McAllister in 1946.\"
 
 A handwritten note says this is, \"the happiest day of our life.\""
 image = ExtResource("1_k03u5")

@@ -8,7 +8,9 @@
 script = ExtResource("1_5oit6")
 id = "tax_form_1"
 name = "Tax Document"
-description = "A tax document listing Mr. McAllister as a full time student at a trade school for electricians, specializing in antenna dishes. He was also a waiter on the side. Dated 1963."
+description = "A tax document listing Mr. McAllister as a full time student at a trade school for electricians, specializing in antenna dishes. He was also a waiter on the side. 
+
+Dated 1963."
 image = ExtResource("1_vrwv5")
 hero_image = ExtResource("1_l01ca")
 shows_in_background = true
