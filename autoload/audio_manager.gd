@@ -21,7 +21,6 @@ func _ready():
 func _setup_audio_players():
 	var main_scene = get_tree().current_scene
 	var audio_players = main_scene.get_node_or_null("AudioPlayers")
-
 	if audio_players == null:
 		print("AudioPlayers not found, creating dummy players")
 		_create_dummy_players()
