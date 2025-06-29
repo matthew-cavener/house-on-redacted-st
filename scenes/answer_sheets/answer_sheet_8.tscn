@@ -115,10 +115,10 @@ metadata/_edit_lock_ = true
 
 [node name="AnswerDropdown1" parent="." instance=ExtResource("4_ohl5m")]
 layout_mode = 0
-offset_left = 72.0
+offset_left = 76.0
 offset_top = 359.0
-offset_right = 243.0
-offset_bottom = 390.0
+offset_right = 200.0
+offset_bottom = 389.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 24
 theme_override_styles/focus = SubResource("StyleBoxFlat_xajj5")
@@ -138,12 +138,12 @@ dropdown_field = ExtResource("5_xajj5")
 
 [node name="AnswerDropdown2" parent="." instance=ExtResource("4_ohl5m")]
 layout_mode = 0
-offset_left = 276.0
-offset_top = 359.0
-offset_right = 467.0
-offset_bottom = 390.0
+offset_left = 217.0
+offset_top = 356.0
+offset_right = 464.0
+offset_bottom = 389.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 26
 theme_override_styles/focus = SubResource("StyleBoxFlat_vcl8c")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_vcl8c")
 theme_override_styles/hover = SubResource("StyleBoxFlat_vcl8c")
@@ -163,12 +163,12 @@ dropdown_field = ExtResource("6_s5b1w")
 
 [node name="AnswerDropdown3" parent="." instance=ExtResource("4_ohl5m")]
 layout_mode = 0
-offset_left = 72.0
+offset_left = 74.0
 offset_top = 403.0
-offset_right = 203.0
-offset_bottom = 432.0
+offset_right = 204.0
+offset_bottom = 430.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 23
+theme_override_font_sizes/font_size = 21
 theme_override_styles/focus = SubResource("StyleBoxFlat_c5yjm")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_c5yjm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_c5yjm")
@@ -188,10 +188,10 @@ dropdown_field = ExtResource("7_ycp4a")
 
 [node name="AnswerDropdown4" parent="." instance=ExtResource("4_ohl5m")]
 layout_mode = 0
-offset_left = 374.0
-offset_top = 402.0
+offset_left = 373.0
+offset_top = 403.0
 offset_right = 523.0
-offset_bottom = 432.0
+offset_bottom = 433.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 24
 theme_override_styles/focus = SubResource("StyleBoxFlat_umnnl")
@@ -213,12 +213,12 @@ dropdown_field = ExtResource("8_vcl8c")
 
 [node name="AnswerDropdown5" parent="." instance=ExtResource("4_ohl5m")]
 layout_mode = 0
-offset_left = 118.0
-offset_top = 448.0
-offset_right = 297.0
-offset_bottom = 481.0
+offset_left = 121.0
+offset_top = 449.0
+offset_right = 294.0
+offset_bottom = 478.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 23
 theme_override_styles/focus = SubResource("StyleBoxFlat_oa8wo")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_oa8wo")
 theme_override_styles/hover = SubResource("StyleBoxFlat_oa8wo")
@@ -240,10 +240,10 @@ dropdown_field = ExtResource("9_y7t6p")
 layout_mode = 0
 offset_left = 136.0
 offset_top = 492.0
-offset_right = 424.0
-offset_bottom = 527.0
+offset_right = 422.0
+offset_bottom = 526.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 27
 theme_override_styles/focus = SubResource("StyleBoxFlat_geeas")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_geeas")
 theme_override_styles/hover = SubResource("StyleBoxFlat_geeas")
@@ -260,11 +260,3 @@ popup/item_2/id = 2
 popup/item_3/text = "Depths of space"
 popup/item_3/id = 3
 dropdown_field = ExtResource("10_m3le4")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 244.0
-offset_top = 358.0
-offset_right = 276.0
-offset_bottom = 393.0
-color = Color(0.96, 0.96, 0.94, 0.98)
