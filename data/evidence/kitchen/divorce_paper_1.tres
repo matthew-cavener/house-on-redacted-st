@@ -7,7 +7,7 @@
 script = ExtResource("1_lcy6f")
 id = "divorce_paper_1"
 name = "Court Notice"
-description = "Papers delcaring the divorce between [--------] and [--------] official in 1964. The former wife will now go by her maiden name."
+description = "Papers declaring the divorce between [--------] and [--------] official in 1964. The former wife will now go by her maiden name."
 image = ExtResource("1_owxeb")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"
