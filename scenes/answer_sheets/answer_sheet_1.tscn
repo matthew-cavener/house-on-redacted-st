@@ -34,12 +34,12 @@ metadata/_custom_type_script = "uid://ung6mdt8pxu1"
 
 [node name="AnswerDropdown1" parent="." instance=ExtResource("4_d2mk8")]
 layout_mode = 0
-offset_left = 303.0
-offset_top = 700.0
+offset_left = 301.0
+offset_top = 619.0
 offset_right = 423.0
-offset_bottom = 727.0
+offset_bottom = 652.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 21
+theme_override_font_sizes/font_size = 26
 theme_override_styles/focus = SubResource("StyleBoxFlat_skjye")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_skjye")
 theme_override_styles/hover = SubResource("StyleBoxFlat_skjye")
