@@ -7,9 +7,9 @@
 script = ExtResource("1_bnabv")
 id = "envelope_1"
 name = "Letter from Beth"
-description = "Adrian, I took back the painting that used to be hung up in Grace's room. I don’t know why you wrote that the painting was done in ‘58, when it was actually done in 1960 for her funeral. 
+description = "\"Adrian, I took back the painting that used to be hung up in Grace's room. I don’t know why you wrote that the painting was done in ‘58, when it was actually done in 1960 for her funeral. 
 
-Which reminds me, please, let this mad idea of yours go. Whatever happened to our little girl, she is gone, and there is no bringing her back. You need to move on. Your friends at the bank still care for you, and I know it's too late for us, but that doesn't mean... [------]"
+Which reminds me, please, let this mad idea of yours go. Whatever happened to our little girl, she is gone, and there is no bringing her back. You need to move on. Your friends at the bank still care for you, and I know it's too late for us, but that doesn't mean... [------]\""
 image = ExtResource("1_um0nj")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

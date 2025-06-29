@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://1mdtiqf8j787"]
+[gd_scene load_steps=38 format=3 uid="uid://1mdtiqf8j787"]
 
 [ext_resource type="Texture2D" uid="uid://bt3t4jc1awolk" path="res://assets/sprites/parent_room/rachel files/Background_ParentsRoom.png" id="1_l6shy"]
 [ext_resource type="Texture2D" uid="uid://b4uc7hwo6spx7" path="res://assets/sprites/parent_room/pile_paper_5.png" id="2_6b6ne"]
@@ -25,8 +25,6 @@
 [ext_resource type="Resource" uid="uid://00qqjc28d588" path="res://data/evidence/parent_room/writer_letter_2.tres" id="19_hrry1"]
 [ext_resource type="Texture2D" uid="uid://cl7v7kvxqb1b" path="res://assets/sprites/unsorted/crumpled_paper_5.png" id="20_a7bte"]
 [ext_resource type="Resource" uid="uid://bxhbw8e0lh0q0" path="res://data/evidence/parent_room/writer_letter_3.tres" id="21_l6shy"]
-[ext_resource type="Texture2D" uid="uid://dwlhqhjnwgjiw" path="res://assets/sprites/parent_room/science_note_5a.png" id="22_stoh5"]
-[ext_resource type="Resource" uid="uid://dapivnrlorf75" path="res://data/evidence/parent_room/science_note_5.tres" id="23_0g5rn"]
 [ext_resource type="Resource" uid="uid://do0a07c0oaagm" path="res://data/evidence/parent_room/painting_4.tres" id="24_0g5rn"]
 [ext_resource type="Texture2D" uid="uid://dd1x7ehv1i7ag" path="res://assets/sprites/parent_room/rachel files/Clue_Picture.png" id="24_l6shy"]
 [ext_resource type="Texture2D" uid="uid://d05it538ia1j1" path="res://assets/sprites/parent_room/rachel files/Broken_Chair.png" id="26_se3qk"]
@@ -184,18 +182,6 @@ texture_normal = ExtResource("20_a7bte")
 script = ExtResource("3_gc6a3")
 evidence_resource = ExtResource("21_l6shy")
 
-[node name="science_note_5" type="TextureButton" parent="TextureRect"]
-layout_mode = 0
-offset_left = 728.0
-offset_top = 952.0
-offset_right = 2136.0
-offset_bottom = 2441.0
-rotation = 0.982872
-scale = Vector2(0.0543507, 0.0543507)
-texture_normal = ExtResource("22_stoh5")
-script = ExtResource("3_gc6a3")
-evidence_resource = ExtResource("23_0g5rn")
-
 [node name="painting" type="TextureButton" parent="TextureRect"]
 layout_mode = 0
 offset_left = 92.0
@@ -207,8 +193,8 @@ script = ExtResource("3_gc6a3")
 evidence_resource = ExtResource("24_0g5rn")
 
 [node name="Chair" type="Sprite2D" parent="TextureRect"]
-position = Vector2(1294, 953)
-scale = Vector2(0.550132, 0.550132)
+position = Vector2(1241, 899)
+scale = Vector2(0.481116, 0.481116)
 texture = ExtResource("26_se3qk")
 
 [node name="tarp" type="Sprite2D" parent="TextureRect"]

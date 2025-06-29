@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_nh4hl")
 field_name = ""
-options = Array[String](["Allan Nguyen", "Calvin Summer", "Carl Sallow", "Charlie Saccone", "Colton Sabiston", "Harrison Plath", "Naroa Lur", "Judith Knolls", "Meredith Desousa"])
+options = Array[String](["Allan Nguyen", "Calvin Summer", "Calvin Sallow", "Calvin Saccone", "Carl Sallow", "Charlie Sabiston", "Charlie Saccone", "Colton Sabiston", "Harrison Plath", "Naroa Lur", "Judith Knolls", "Meredith Desousa"])
 answer = "Meredith Desousa"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

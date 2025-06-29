@@ -7,7 +7,7 @@
 script = ExtResource("1_is88s")
 id = "notebook_3"
 name = "Note on Paranoia"
-description = "In each room of the house, I’ll mark the signal readings, but I'm worried someone might be observing me. To keep my findings hidden, I'll write down the readings as a percentage, and to diguise them, I'll write down each reading as..."
+description = "\"I just finished measuring the signal of every room in the house when I got nervous someone might be watching me. To keep my findings hidden, I'll write down each reading as a percentage, and then in every room of the house, I'll disguise these measurements as...\""
 image = ExtResource("1_ndkqf")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"
