@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_yy7vh")
 field_name = "daughter first name"
-options = Array[String](["Grace", "Louise", "Cheryl"])
+options = Array[String](["Cheryl", "Grace", "Louise"])
 answer = "Grace"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

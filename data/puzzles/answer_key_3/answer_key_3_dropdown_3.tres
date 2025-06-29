@@ -6,5 +6,5 @@
 script = ExtResource("1_juh67")
 field_name = "wife job"
 options = Array[String](["Baker", "Barista", "Electrician", "Singer", "Photographer", "Writer"])
-answer = ""
+answer = "Baker"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
