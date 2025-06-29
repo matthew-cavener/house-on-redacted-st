@@ -4,6 +4,7 @@ var music_player: AudioStreamPlayer
 var sfx_player: AudioStreamPlayer
 var ui_player: AudioStreamPlayer
 var investigation_track: AudioStream
+var nexus_transfer_sound: AudioStream
 var abyssal_mix: AudioStream
 var melodys_melodies: AudioStream
 var pen_click_randomizer: AudioStreamRandomizer
@@ -44,6 +45,7 @@ func _load_audio_resources():
 	_setup_pen_click_randomizer()
 	correct_sound = _load_audio_safe("res://assets/sounds/UI sound [Correct III].wav")
 	incorrect_sound = _load_audio_safe("res://assets/sounds/UI sounds [Incorrect].wav")
+	nexus_transfer_sound = _load_audio_safe("res://assets/sounds/Nexus Transfer Sound.wav")
 
 func _setup_pen_click_randomizer():
 	pen_click_randomizer = AudioStreamRandomizer.new()

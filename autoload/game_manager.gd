@@ -17,7 +17,10 @@ var room_names: Array[String] = [
 	"house_exterior",
 	"kitchen",
 	"living_room",
-	"parent_room"
+	"parent_room",
+	"nexus1",
+	"nexus2",
+	"nexus3"
 ]
 var is_transitioning: bool = false
 var fade_overlay: ColorRect
@@ -28,6 +31,8 @@ var position_weights: PackedFloat32Array = PackedFloat32Array([5.0, 4.0, 3.0, 2.
 var textures_loaded: bool = false
 var current_puzzle: PuzzleResource = null
 var current_puzzle_selections: Dictionary = {}
+var navigation_puzzle: PuzzleResource = null
+var navigation_puzzle_solved: bool = false
 
 func _ready():
 	EventBus.evidence_popup_requested.connect(_on_evidence_popup_requested)
@@ -91,8 +96,7 @@ func _transition_to_room(new_room: String) -> void:
 	room_history.append(current_room)
 	if room_history.size() > MAX_ROOM_HISTORY:
 		room_history.pop_front()
-	print(room_history)
-	if current_puzzle and _is_navigation_puzzle():
+	if _is_navigation_puzzle():
 		_evaluate_navigation_puzzle()
 	room_changed.emit()
 	await _fade_in()
@@ -163,19 +167,18 @@ func _on_popup_closed():
 
 func register_puzzle(puzzle_resource: PuzzleResource):
 	if not puzzle_resource or puzzle_resource.puzzle_id.is_empty():
-		push_error("Cannot register puzzle: invalid puzzle resource or missing ID")
+		return
+	if puzzle_resource.puzzle_id == "answer_key_9":
+		navigation_puzzle = puzzle_resource
+		_evaluate_navigation_puzzle()
 		return
 	current_puzzle = puzzle_resource
 	current_puzzle_selections.clear()
-	if _is_navigation_puzzle():
-		_evaluate_navigation_puzzle()
 
 func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selected_value: String):
 	if not current_puzzle:
-		push_warning("Received dropdown change but no active puzzle")
 		return
 	if current_puzzle.puzzle_id != puzzle_id:
-		push_warning("Received dropdown change for wrong puzzle: expected %s, got %s" % [current_puzzle.puzzle_id, puzzle_id])
 		return
 	if _is_navigation_puzzle():
 		return
@@ -185,6 +188,9 @@ func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selec
 		EventBus.puzzle_evaluated.emit(puzzle_id, result)
 		if result.is_correct:
 			EventBus.puzzle_solved.emit(puzzle_id)
+			# Handle answer_key_9 special case - transfer to nexus1
+			if puzzle_id == "answer_key_9":
+				_handle_nexus_transfer()
 		else:
 			EventBus.puzzle_failed.emit()
 
@@ -199,27 +205,45 @@ func _is_puzzle_complete() -> bool:
 	return is_complete
 
 func _is_navigation_puzzle() -> bool:
-	return current_puzzle and current_puzzle.puzzle_id == "answer_key_9"
+	var is_nav = navigation_puzzle != null and not navigation_puzzle_solved
+	return is_nav
 
 func _evaluate_navigation_puzzle():
-	if not current_puzzle:
+	if not navigation_puzzle:
+		return
+	if navigation_puzzle_solved:
 		return
 	if _is_navigation_puzzle_complete():
-		var result = current_puzzle.validate_solution({}, room_history)
-		EventBus.puzzle_evaluated.emit(current_puzzle.puzzle_id, result)
+		var result = navigation_puzzle.validate_solution({}, room_history)
+		EventBus.puzzle_evaluated.emit(navigation_puzzle.puzzle_id, result)
 		if result.is_correct:
-			EventBus.puzzle_solved.emit(current_puzzle.puzzle_id)
+			navigation_puzzle_solved = true
+			EventBus.puzzle_solved.emit(navigation_puzzle.puzzle_id)
+			if navigation_puzzle.puzzle_id == "answer_key_9":
+				_handle_nexus_transfer()
+			else:
+				print("Navigation puzzle solved but not answer_key_9, actual ID: %s" % navigation_puzzle.puzzle_id)
 		else:
 			EventBus.puzzle_failed.emit()
 
 func _is_navigation_puzzle_complete() -> bool:
-	if not current_puzzle:
+	if not navigation_puzzle or navigation_puzzle_solved:
 		return false
-	var required_rooms = current_puzzle.dropdown_fields.size()
+	var required_rooms = navigation_puzzle.dropdown_fields.size()
 	var navigation_rooms = room_history.size()
 	return navigation_rooms >= required_rooms
 
 func get_puzzle_selections(puzzle_id: String) -> Dictionary:
 	if current_puzzle and current_puzzle.puzzle_id == puzzle_id:
 		return current_puzzle_selections
+	if navigation_puzzle and navigation_puzzle.puzzle_id == puzzle_id:
+		return {}
 	return {}
+
+func _handle_nexus_transfer():
+	if AudioManager.nexus_transfer_sound:
+		AudioManager.sfx_player.stream = AudioManager.nexus_transfer_sound
+		AudioManager.sfx_player.play()
+	AudioManager.switch_to_nexus_music()
+	await get_tree().create_timer(0.5).timeout
+	change_room("nexus1")
