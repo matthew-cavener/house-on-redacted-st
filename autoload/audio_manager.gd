@@ -42,7 +42,7 @@ func _load_audio_resources():
 	abyssal_mix = _load_audio_safe("res://assets/sounds/Melody's Melodies [Abyssal Mix].wav")
 	melodys_melodies = _load_audio_safe("res://assets/sounds/Melody's Melodies [Pre-Abyss 1960's Mix].wav")
 	_setup_pen_click_randomizer()
-	correct_sound = _load_audio_safe("res://assets/sounds/UI sounds [Correct].wav")
+	correct_sound = _load_audio_safe("res://assets/sounds/UI sound [Correct III].wav")
 	incorrect_sound = _load_audio_safe("res://assets/sounds/UI sounds [Incorrect].wav")
 
 func _setup_pen_click_randomizer():

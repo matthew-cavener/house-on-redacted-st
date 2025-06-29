@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b65a2f0k4ychc"
+path="res://.godot/imported/UI Sound [Correct III].wav-0426a711b61a5df775892467337fdbcf.sample"
+
+[deps]
+
+source_file="res://assets/sounds/UI Sound [Correct III].wav"
+dest_files=["res://.godot/imported/UI Sound [Correct III].wav-0426a711b61a5df775892467337fdbcf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
