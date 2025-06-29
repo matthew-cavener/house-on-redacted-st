@@ -6,8 +6,9 @@
 [resource]
 script = ExtResource("1_xstc3")
 id = "frame_square_spot"
-name = "Empty Sspot"
+name = "Empty Spot"
 description = "A spot in the wall where something used to be."
 image = ExtResource("1_rhpug")
+hero_image = ExtResource("1_rhpug")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

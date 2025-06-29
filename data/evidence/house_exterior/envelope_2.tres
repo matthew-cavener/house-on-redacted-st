@@ -7,7 +7,7 @@
 script = ExtResource("1_u5l2d")
 id = "envelope_2"
 name = "Letter"
-description = "“I don’t know what you’re talking about. If you knew me or read my book, you’d know the answer to your question.”
+description = "“I don’t know what you’re talking about with that M&M stuff. If you knew me or read my book, you’d know the answer to your question.”
 From MD"
 image = ExtResource("1_74hyy")
 shows_in_background = true
