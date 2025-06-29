@@ -44,8 +44,6 @@ func _on_puzzle_evaluated(puzzle_id: String, result: Dictionary):
 		_show_feedback(result.feedback)
 		if result.is_correct:
 			puzzle_completed.emit(result)
-			if next_answer_sheet_scene:
-				_replace_with_next_answer_sheet()
 		else:
 			puzzle_failed.emit(result)
 			_shake_incorrect()
