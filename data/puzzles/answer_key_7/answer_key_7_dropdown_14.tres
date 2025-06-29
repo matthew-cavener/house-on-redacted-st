@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_pvw0s")
 field_name = "Dream Vacation"
-options = Array[String](["Greece", "Spain", "Hawaii", "Korea", "Egypt"])
+options = Array[String](["Egypt", "Greece", "Hawaii", "Korea", "Spain"])
 answer = "Greece"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
