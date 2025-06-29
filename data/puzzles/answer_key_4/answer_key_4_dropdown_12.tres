@@ -6,5 +6,5 @@
 script = ExtResource("1_ebn8l")
 field_name = "Oboe animal"
 options = Array[String](["Anteater", "Dinosaur", "Goose", "Horse", "Possum", "Robot", "Seahorse", "Tiger", "Zebra"])
-answer = ""
+answer = "Anteater"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
