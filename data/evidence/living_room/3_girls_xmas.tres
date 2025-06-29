@@ -8,7 +8,7 @@
 script = ExtResource("1_1jrrl")
 id = "3_girls_xmas"
 name = "Photo of Kids at Easter"
-description = "From left-to-right, the kids are labeled as Grace, Lousie, Cheryl. Photo taken in 1947."
+description = "From left-to-right, the kids are labeled as Lousie, Grace, Cheryl. Photo taken in 1947."
 image = ExtResource("2_mg6xq")
 hero_image = ExtResource("1_pi2kr")
 shows_in_background = true
