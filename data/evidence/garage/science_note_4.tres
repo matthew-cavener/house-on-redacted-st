@@ -8,8 +8,9 @@ script = ExtResource("1_x23l3")
 id = "science_note_4"
 name = "Note on Booster Use"
 description = "\"NOTE TO SELF: 
-DO **NOT** USE BOOSTER IN [-------] ROOM!!
-It howled  like a banshee and damn near killed me when I tripped over a chair.\""
+DO NOT USE BOOSTER IN [-------] ROOM!!
+
+It howled like a banshee and damn near killed me when I tripped over a chair.\""
 image = ExtResource("1_nhkmw")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

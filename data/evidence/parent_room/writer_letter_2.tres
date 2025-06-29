@@ -8,6 +8,7 @@ script = ExtResource("1_6hwd4")
 id = "writer_letter_2"
 name = "Crumpled Letter #2"
 description = "From: [----------]   S[----------]
+
 \"Is this some kind of practical joke? I’ll admit, I got curious and looked it up at the library and found absolutely zero trace of that cartoon existing. But who knows? There's lot of guys with my name. Maybe one of them knows something?\""
 image = ExtResource("1_72lhi")
 shows_in_background = true
