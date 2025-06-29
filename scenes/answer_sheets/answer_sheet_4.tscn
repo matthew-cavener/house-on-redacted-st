@@ -18,10 +18,10 @@
 [ext_resource type="Resource" uid="uid://cm0j3kppra6ht" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_11.tres" id="15_iokol"]
 [ext_resource type="Resource" uid="uid://gnv8ee2pxlj7" path="res://data/puzzles/answer_key_4/answer_key_4_dropdown_12.tres" id="16_fy4o5"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v5uiw"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3ma0"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_v6ooy"]
+[sub_resource type="Image" id="Image_v5uiw"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -30,13 +30,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_yxlrf"]
-image = SubResource("Image_v6ooy")
+[sub_resource type="ImageTexture" id="ImageTexture_v6ooy"]
+image = SubResource("Image_v5uiw")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pb4ak"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yxlrf"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_ilhuk"]
+[sub_resource type="Image" id="Image_pb4ak"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -45,13 +45,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_fybyg"]
-image = SubResource("Image_ilhuk")
+[sub_resource type="ImageTexture" id="ImageTexture_ilhuk"]
+image = SubResource("Image_pb4ak")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ix6yl"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fybyg"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_jshbo"]
+[sub_resource type="Image" id="Image_ix6yl"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -60,13 +60,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_laptd"]
-image = SubResource("Image_jshbo")
+[sub_resource type="ImageTexture" id="ImageTexture_jshbo"]
+image = SubResource("Image_ix6yl")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iokol"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_laptd"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_fy4o5"]
+[sub_resource type="Image" id="Image_iokol"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -75,13 +75,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_67ie7"]
-image = SubResource("Image_fy4o5")
+[sub_resource type="ImageTexture" id="ImageTexture_fy4o5"]
+image = SubResource("Image_iokol")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4gdt3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67ie7"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_oyahn"]
+[sub_resource type="Image" id="Image_4gdt3"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -90,13 +90,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_1qdp7"]
-image = SubResource("Image_oyahn")
+[sub_resource type="ImageTexture" id="ImageTexture_oyahn"]
+image = SubResource("Image_4gdt3")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0jf3b"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1qdp7"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_4osmf"]
+[sub_resource type="Image" id="Image_0jf3b"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -105,13 +105,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_11uwd"]
-image = SubResource("Image_4osmf")
+[sub_resource type="ImageTexture" id="ImageTexture_4osmf"]
+image = SubResource("Image_0jf3b")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ed100"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11uwd"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_pdjmn"]
+[sub_resource type="Image" id="Image_ed100"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -120,13 +120,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_of88q"]
-image = SubResource("Image_pdjmn")
+[sub_resource type="ImageTexture" id="ImageTexture_pdjmn"]
+image = SubResource("Image_ed100")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b8xqn"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_of88q"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_w7cao"]
+[sub_resource type="Image" id="Image_b8xqn"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -135,13 +135,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_h7stt"]
-image = SubResource("Image_w7cao")
+[sub_resource type="ImageTexture" id="ImageTexture_w7cao"]
+image = SubResource("Image_b8xqn")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_626ow"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h7stt"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_oel85"]
+[sub_resource type="Image" id="Image_626ow"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -150,13 +150,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_txjkk"]
-image = SubResource("Image_oel85")
+[sub_resource type="ImageTexture" id="ImageTexture_oel85"]
+image = SubResource("Image_626ow")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g2r20"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txjkk"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_py1dg"]
+[sub_resource type="Image" id="Image_g2r20"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -165,13 +165,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_4fcyw"]
-image = SubResource("Image_py1dg")
+[sub_resource type="ImageTexture" id="ImageTexture_py1dg"]
+image = SubResource("Image_g2r20")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_keoec"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4fcyw"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_14gjm"]
+[sub_resource type="Image" id="Image_keoec"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -180,13 +180,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_su81w"]
-image = SubResource("Image_14gjm")
+[sub_resource type="ImageTexture" id="ImageTexture_14gjm"]
+image = SubResource("Image_keoec")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c4gpv"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_su81w"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_vwc8s"]
+[sub_resource type="Image" id="Image_c4gpv"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -195,8 +195,8 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_ar0dr"]
-image = SubResource("Image_vwc8s")
+[sub_resource type="ImageTexture" id="ImageTexture_vwc8s"]
+image = SubResource("Image_c4gpv")
 
 [node name="AnswerSheet4" type="TextureButton"]
 offset_right = 40.0
@@ -217,12 +217,12 @@ offset_right = 442.0
 offset_bottom = 312.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_v5uiw")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_v5uiw")
-theme_override_styles/hover = SubResource("StyleBoxFlat_v5uiw")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_v5uiw")
-theme_override_styles/normal = SubResource("StyleBoxFlat_v5uiw")
-theme_override_icons/arrow = SubResource("ImageTexture_yxlrf")
+theme_override_styles/focus = SubResource("StyleBoxFlat_e3ma0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_e3ma0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_e3ma0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e3ma0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_e3ma0")
+theme_override_icons/arrow = SubResource("ImageTexture_v6ooy")
 item_count = 11
 popup/item_0/text = "Did not get produced"
 popup/item_0/id = 0
@@ -256,12 +256,12 @@ offset_right = 442.0
 offset_bottom = 342.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_pb4ak")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_pb4ak")
-theme_override_styles/hover = SubResource("StyleBoxFlat_pb4ak")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_pb4ak")
-theme_override_styles/normal = SubResource("StyleBoxFlat_pb4ak")
-theme_override_icons/arrow = SubResource("ImageTexture_fybyg")
+theme_override_styles/focus = SubResource("StyleBoxFlat_yxlrf")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_yxlrf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yxlrf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yxlrf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yxlrf")
+theme_override_icons/arrow = SubResource("ImageTexture_ilhuk")
 item_count = 11
 popup/item_0/text = "Did not get produced"
 popup/item_0/id = 0
@@ -295,12 +295,12 @@ offset_right = 442.0
 offset_bottom = 370.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_ix6yl")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_ix6yl")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ix6yl")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ix6yl")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ix6yl")
-theme_override_icons/arrow = SubResource("ImageTexture_laptd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_fybyg")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_fybyg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fybyg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fybyg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_fybyg")
+theme_override_icons/arrow = SubResource("ImageTexture_jshbo")
 item_count = 10
 popup/item_0/text = "1"
 popup/item_0/id = 0
@@ -332,12 +332,12 @@ offset_right = 442.0
 offset_bottom = 402.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_iokol")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_iokol")
-theme_override_styles/hover = SubResource("StyleBoxFlat_iokol")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_iokol")
-theme_override_styles/normal = SubResource("StyleBoxFlat_iokol")
-theme_override_icons/arrow = SubResource("ImageTexture_67ie7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_laptd")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_laptd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_laptd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_laptd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_laptd")
+theme_override_icons/arrow = SubResource("ImageTexture_fy4o5")
 item_count = 11
 popup/item_0/text = "Did not get produced"
 popup/item_0/id = 0
@@ -371,12 +371,12 @@ offset_right = 442.0
 offset_bottom = 430.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_4gdt3")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_4gdt3")
-theme_override_styles/hover = SubResource("StyleBoxFlat_4gdt3")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_4gdt3")
-theme_override_styles/normal = SubResource("StyleBoxFlat_4gdt3")
-theme_override_icons/arrow = SubResource("ImageTexture_1qdp7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_67ie7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_67ie7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_67ie7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_67ie7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_67ie7")
+theme_override_icons/arrow = SubResource("ImageTexture_oyahn")
 item_count = 11
 popup/item_0/text = "Did not get produced"
 popup/item_0/id = 0
@@ -410,12 +410,12 @@ offset_right = 442.0
 offset_bottom = 461.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_0jf3b")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_0jf3b")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0jf3b")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_0jf3b")
-theme_override_styles/normal = SubResource("StyleBoxFlat_0jf3b")
-theme_override_icons/arrow = SubResource("ImageTexture_11uwd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1qdp7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_1qdp7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1qdp7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1qdp7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1qdp7")
+theme_override_icons/arrow = SubResource("ImageTexture_4osmf")
 item_count = 11
 popup/item_0/text = "Did not get produced"
 popup/item_0/id = 0
@@ -449,12 +449,12 @@ offset_right = 442.0
 offset_bottom = 490.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_ed100")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_ed100")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ed100")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ed100")
-theme_override_styles/normal = SubResource("StyleBoxFlat_ed100")
-theme_override_icons/arrow = SubResource("ImageTexture_of88q")
+theme_override_styles/focus = SubResource("StyleBoxFlat_11uwd")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_11uwd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_11uwd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_11uwd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_11uwd")
+theme_override_icons/arrow = SubResource("ImageTexture_pdjmn")
 item_count = 11
 popup/item_0/text = "Did not get produced"
 popup/item_0/id = 0
@@ -488,12 +488,12 @@ offset_right = 375.0
 offset_bottom = 520.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_b8xqn")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_b8xqn")
-theme_override_styles/hover = SubResource("StyleBoxFlat_b8xqn")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_b8xqn")
-theme_override_styles/normal = SubResource("StyleBoxFlat_b8xqn")
-theme_override_icons/arrow = SubResource("ImageTexture_h7stt")
+theme_override_styles/focus = SubResource("StyleBoxFlat_of88q")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_of88q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_of88q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_of88q")
+theme_override_styles/normal = SubResource("StyleBoxFlat_of88q")
+theme_override_icons/arrow = SubResource("ImageTexture_w7cao")
 item_count = 10
 popup/item_0/text = "0"
 popup/item_0/id = 0
@@ -525,12 +525,12 @@ offset_right = 442.0
 offset_bottom = 520.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_626ow")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_626ow")
-theme_override_styles/hover = SubResource("StyleBoxFlat_626ow")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_626ow")
-theme_override_styles/normal = SubResource("StyleBoxFlat_626ow")
-theme_override_icons/arrow = SubResource("ImageTexture_txjkk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_h7stt")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_h7stt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h7stt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h7stt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h7stt")
+theme_override_icons/arrow = SubResource("ImageTexture_oel85")
 item_count = 10
 popup/item_0/text = "0"
 popup/item_0/id = 0
@@ -562,12 +562,12 @@ offset_right = 511.0
 offset_bottom = 593.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 15
-theme_override_styles/focus = SubResource("StyleBoxFlat_g2r20")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_g2r20")
-theme_override_styles/hover = SubResource("StyleBoxFlat_g2r20")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_g2r20")
-theme_override_styles/normal = SubResource("StyleBoxFlat_g2r20")
-theme_override_icons/arrow = SubResource("ImageTexture_4fcyw")
+theme_override_styles/focus = SubResource("StyleBoxFlat_txjkk")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_txjkk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_txjkk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_txjkk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_txjkk")
+theme_override_icons/arrow = SubResource("ImageTexture_py1dg")
 item_count = 9
 popup/item_0/text = "Anteater"
 popup/item_0/id = 0
@@ -597,12 +597,12 @@ offset_right = 228.0
 offset_bottom = 660.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_keoec")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_keoec")
-theme_override_styles/hover = SubResource("StyleBoxFlat_keoec")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_keoec")
-theme_override_styles/normal = SubResource("StyleBoxFlat_keoec")
-theme_override_icons/arrow = SubResource("ImageTexture_su81w")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4fcyw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4fcyw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4fcyw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4fcyw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4fcyw")
+theme_override_icons/arrow = SubResource("ImageTexture_14gjm")
 item_count = 9
 popup/item_0/text = "Anteater"
 popup/item_0/id = 0
@@ -632,12 +632,12 @@ offset_right = 493.0
 offset_bottom = 700.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 16
-theme_override_styles/focus = SubResource("StyleBoxFlat_c4gpv")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_c4gpv")
-theme_override_styles/hover = SubResource("StyleBoxFlat_c4gpv")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_c4gpv")
-theme_override_styles/normal = SubResource("StyleBoxFlat_c4gpv")
-theme_override_icons/arrow = SubResource("ImageTexture_ar0dr")
+theme_override_styles/focus = SubResource("StyleBoxFlat_su81w")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_su81w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_su81w")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_su81w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_su81w")
+theme_override_icons/arrow = SubResource("ImageTexture_vwc8s")
 item_count = 9
 popup/item_0/text = "Anteater"
 popup/item_0/id = 0
@@ -658,3 +658,11 @@ popup/item_7/id = 7
 popup/item_8/text = "Zebra"
 popup/item_8/id = 8
 dropdown_field = ExtResource("16_fy4o5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 499.0
+offset_right = 388.0
+offset_bottom = 521.0
+color = Color(0.960784, 0.956863, 0.956863, 1)
