@@ -658,3 +658,11 @@ popup/item_7/id = 7
 popup/item_8/text = "Zebra"
 popup/item_8/id = 8
 dropdown_field = ExtResource("16_fy4o5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 499.0
+offset_right = 388.0
+offset_bottom = 521.0
+color = Color(0.960784, 0.956863, 0.956863, 1)

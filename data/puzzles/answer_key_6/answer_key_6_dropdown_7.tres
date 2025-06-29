@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_7vscl")
 field_name = "Name of show"
-options = Array[String](["Government signal", "Illegal broadcast", "Melody's Melodies", "Pirate radio"])
-answer = "Melody's Melodies"
+options = Array[String](["Government signal", "Illegal broadcast", "Melodys Melodies", "Pirate radio"])
+answer = "Melodys Melodies"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
