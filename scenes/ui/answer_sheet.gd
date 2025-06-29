@@ -9,6 +9,11 @@ extends TextureButton
 @export var slide_duration: float = 0.5
 
 var is_slid_up: bool = true
+var is_animating: bool = false
+var current_tween: Tween
+var initial_position: Vector2
+var up_position: Vector2
+var down_position: Vector2
 
 signal puzzle_completed(result: Dictionary)
 signal puzzle_failed(result: Dictionary)
@@ -16,6 +21,12 @@ signal feedback_shown(feedback: String)
 
 func _ready():
 	if not Engine.is_editor_hint():
+		if up_position == Vector2.ZERO and down_position == Vector2.ZERO:
+			initial_position = position
+			up_position = position
+			down_position = position + Vector2(0, slide_distance)
+		elif initial_position == Vector2.ZERO:
+			initial_position = up_position
 		_setup_puzzle()
 		_connect_dropdowns()
 		EventBus.puzzle_evaluated.connect(_on_puzzle_evaluated)
@@ -83,14 +94,18 @@ func _replace_with_next_answer_sheet():
 	if not parent_node:
 		push_error("AnswerSheet has no parent, cannot replace")
 		return
-	var current_position = position
-	var off_screen_position = current_position + Vector2(0, 1000)
+	var target_position = position
+	var off_screen_position = target_position + Vector2(0, 1000)
 	next_answer_sheet.position = off_screen_position
 	next_answer_sheet.is_slid_up = is_slid_up
+	next_answer_sheet.setup_positions(target_position)
+
 	parent_node.add_child(next_answer_sheet)
 	var my_index = get_index()
 	parent_node.move_child(next_answer_sheet, my_index)
-	var current_tween = create_tween()
+	_stop_current_tween()
+	is_animating = true
+	current_tween = create_tween()
 	current_tween.set_ease(Tween.EASE_IN)
 	current_tween.set_trans(Tween.TRANS_QUART)
 	current_tween.tween_property(self, "position", off_screen_position, slide_duration)
@@ -98,56 +113,86 @@ func _replace_with_next_answer_sheet():
 	var new_tween = next_answer_sheet.create_tween()
 	new_tween.set_ease(Tween.EASE_OUT)
 	new_tween.set_trans(Tween.TRANS_QUART)
-	new_tween.tween_property(next_answer_sheet, "position", current_position, slide_duration)
+	new_tween.tween_property(next_answer_sheet, "position", target_position, slide_duration)
 	queue_free()
 
 func set_next_answer_sheet_scene(scene: PackedScene):
 	next_answer_sheet_scene = scene
 
 func _on_answer_sheet_clicked():
+	if is_animating:
+		return
 	toggle_slide()
 
 func slide_up():
-	if is_slid_up:
+	if is_slid_up or is_animating:
 		return
+	_stop_current_tween()
+	is_animating = true
 	is_slid_up = true
-	var target_position = position - Vector2(0, slide_distance)
-	var tween = create_tween()
-	tween.set_parallel(true)
-	tween.set_ease(Tween.EASE_OUT)
-	tween.set_trans(Tween.TRANS_QUART)
-	tween.tween_property(self, "position", target_position, slide_duration)
-	tween.tween_property(self, "scale", Vector2(1.02, 1.02), slide_duration * 0.4)
-	tween.tween_property(self, "scale", Vector2(1.0, 1.0), slide_duration * 0.6).set_delay(slide_duration * 0.4)
+	var target_position = up_position
+	current_tween = create_tween()
+	current_tween.set_parallel(true)
+	current_tween.set_ease(Tween.EASE_OUT)
+	current_tween.set_trans(Tween.TRANS_QUART)
+	current_tween.tween_property(self, "position", target_position, slide_duration)
+	current_tween.tween_property(self, "scale", Vector2(1.02, 1.02), slide_duration * 0.4)
+	current_tween.tween_property(self, "scale", Vector2(1.0, 1.0), slide_duration * 0.6).set_delay(slide_duration * 0.4)
+	current_tween.finished.connect(_on_animation_finished)
 
 func slide_down():
-	if not is_slid_up:
+	if not is_slid_up or is_animating:
 		return
+	_stop_current_tween()
+	is_animating = true
 	is_slid_up = false
-	var target_position = position + Vector2(0, slide_distance)
-	var tween = create_tween()
-	tween.set_parallel(true)
-	tween.set_ease(Tween.EASE_IN_OUT)
-	tween.set_trans(Tween.TRANS_BACK)
-	tween.tween_property(self, "position", target_position, slide_duration)
-	tween.tween_property(self, "scale", Vector2(1.0, 1.0), slide_duration * 0.5)
+	var target_position = down_position
+	current_tween = create_tween()
+	current_tween.set_parallel(true)
+	current_tween.set_ease(Tween.EASE_IN_OUT)
+	current_tween.set_trans(Tween.TRANS_BACK)
+	current_tween.tween_property(self, "position", target_position, slide_duration)
+	current_tween.tween_property(self, "scale", Vector2(1.0, 1.0), slide_duration * 0.5)
+	current_tween.finished.connect(_on_animation_finished)
 
 func toggle_slide():
+	if is_animating:
+		return
 	if is_slid_up:
 		slide_down()
 	else:
 		slide_up()
 
 func _shake_incorrect():
+	if is_animating:
+		return
+	_stop_current_tween()
+	is_animating = true
 	var original_position = position
 	var shake_amount = 6.0
 	var shake_duration = 0.03
 	var shake_count = 3
-	var tween = create_tween()
-	tween.set_ease(Tween.EASE_OUT)
-	tween.set_trans(Tween.TRANS_BACK)
+	current_tween = create_tween()
+	current_tween.set_ease(Tween.EASE_OUT)
+	current_tween.set_trans(Tween.TRANS_BACK)
 	for i in shake_count:
 		var shake_offset = Vector2(shake_amount * (1 if i % 2 == 0 else -1), 0)
-		tween.tween_property(self, "position", original_position + shake_offset, shake_duration)
-		tween.tween_property(self, "position", original_position, shake_duration)
-	tween.tween_property(self, "position", original_position, shake_duration * 0.5)
+		current_tween.tween_property(self, "position", original_position + shake_offset, shake_duration)
+		current_tween.tween_property(self, "position", original_position, shake_duration)
+	current_tween.tween_property(self, "position", original_position, shake_duration * 0.5)
+	current_tween.finished.connect(_on_animation_finished)
+
+func _stop_current_tween():
+	if current_tween and current_tween.is_valid():
+		current_tween.kill()
+		current_tween = null
+
+func _on_animation_finished():
+	is_animating = false
+	if current_tween:
+		current_tween = null
+
+func setup_positions(base_position: Vector2):
+	initial_position = base_position
+	up_position = base_position
+	down_position = base_position + Vector2(0, slide_distance)

@@ -1,18 +1,18 @@
-[gd_scene load_steps=38 format=3 uid="uid://bebgie52jpkaw"]
+[gd_scene load_steps=38 format=3 uid="uid://p1n704ytue10"]
 
-[ext_resource type="Texture2D" uid="uid://bgqnfe6v6j6ac" path="res://assets/sprites/ui/clipboards/answerform2.png" id="1_yq3fd"]
-[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_a6vrd"]
+[ext_resource type="Texture2D" uid="uid://bgqnfe6v6j6ac" path="res://assets/sprites/ui/clipboards/answerform2.png" id="1_jlb6v"]
+[ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_u2qgi"]
 [ext_resource type="Resource" uid="uid://fuxm5p63q736" path="res://data/puzzles/answer_key_3/answer_key_3.tres" id="3_3s4sj"]
-[ext_resource type="PackedScene" uid="uid://bebgie52jpkaw" path="res://scenes/answer_sheets/answer_sheet_4.tscn" id="4_3s4sj"]
-[ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_4fmg6"]
-[ext_resource type="Resource" uid="uid://dheqcshh0sx5m" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_1.tres" id="5_pbwv1"]
-[ext_resource type="Resource" uid="uid://dnoxhgnabax0k" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_2.tres" id="6_e3ma0"]
-[ext_resource type="Resource" uid="uid://dfrwvocdroo00" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_3.tres" id="7_v5uiw"]
-[ext_resource type="Resource" uid="uid://dxmvye6n7jtpw" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_4.tres" id="8_v6ooy"]
-[ext_resource type="Resource" uid="uid://c1fiwa6yy680r" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_5.tres" id="9_yxlrf"]
-[ext_resource type="Resource" uid="uid://bqefywqormh1i" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_6.tres" id="10_pb4ak"]
-[ext_resource type="Resource" uid="uid://qgqb3mgqtt1o" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_7.tres" id="11_ilhuk"]
-[ext_resource type="Resource" uid="uid://57rxuh88shjs" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_8.tres" id="12_fybyg"]
+[ext_resource type="PackedScene" uid="uid://bebgie52jpkaw" path="res://scenes/answer_sheets/answer_sheet_4.tscn" id="4_nxeym"]
+[ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="5_k4xdr"]
+[ext_resource type="Resource" uid="uid://dheqcshh0sx5m" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_1.tres" id="6_7hbvo"]
+[ext_resource type="Resource" uid="uid://dnoxhgnabax0k" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_2.tres" id="7_a7vwg"]
+[ext_resource type="Resource" uid="uid://dfrwvocdroo00" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_3.tres" id="8_u6ohe"]
+[ext_resource type="Resource" uid="uid://dxmvye6n7jtpw" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_4.tres" id="9_p8lab"]
+[ext_resource type="Resource" uid="uid://c1fiwa6yy680r" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_5.tres" id="10_7hijy"]
+[ext_resource type="Resource" uid="uid://bqefywqormh1i" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_6.tres" id="11_enhmj"]
+[ext_resource type="Resource" uid="uid://qgqb3mgqtt1o" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_7.tres" id="12_7njef"]
+[ext_resource type="Resource" uid="uid://57rxuh88shjs" path="res://data/puzzles/answer_key_3/answer_key_3_dropdown_8.tres" id="13_jot5d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3s4sj"]
 bg_color = Color(0, 0, 0, 0)
@@ -137,15 +137,15 @@ image = SubResource("Image_16e4d")
 [node name="AnswerSheet3" type="TextureButton"]
 offset_right = 40.0
 offset_bottom = 40.0
-texture_normal = ExtResource("1_yq3fd")
-script = ExtResource("2_a6vrd")
+texture_normal = ExtResource("1_jlb6v")
+script = ExtResource("2_u2qgi")
 puzzle_resource = ExtResource("3_3s4sj")
-answer_sheet_texture = ExtResource("1_yq3fd")
-next_answer_sheet_scene = ExtResource("4_3s4sj")
+answer_sheet_texture = ExtResource("1_jlb6v")
+next_answer_sheet_scene = ExtResource("4_nxeym")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
 metadata/_edit_lock_ = true
 
-[node name="AnswerDropdown1" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown1" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 213.0
 offset_top = 234.0
@@ -168,9 +168,9 @@ popup/item_2/text = "Jessica"
 popup/item_2/id = 2
 popup/item_3/text = "Meg"
 popup/item_3/id = 3
-dropdown_field = ExtResource("5_pbwv1")
+dropdown_field = ExtResource("6_7hbvo")
 
-[node name="AnswerDropdown2" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown2" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 363.0
 offset_top = 234.0
@@ -191,9 +191,9 @@ popup/item_1/text = "Hughes"
 popup/item_1/id = 1
 popup/item_2/text = "McAllister"
 popup/item_2/id = 2
-dropdown_field = ExtResource("6_e3ma0")
+dropdown_field = ExtResource("7_a7vwg")
 
-[node name="AnswerDropdown3" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown3" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 324.0
 offset_top = 329.0
@@ -220,9 +220,9 @@ popup/item_4/text = "Photographer"
 popup/item_4/id = 4
 popup/item_5/text = "Writer"
 popup/item_5/id = 5
-dropdown_field = ExtResource("7_v5uiw")
+dropdown_field = ExtResource("8_u6ohe")
 
-[node name="AnswerDropdown4" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown4" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 214.0
 offset_top = 431.0
@@ -245,9 +245,9 @@ popup/item_2/text = "Baxter"
 popup/item_2/id = 2
 popup/item_3/text = "Corbin"
 popup/item_3/id = 3
-dropdown_field = ExtResource("8_v6ooy")
+dropdown_field = ExtResource("9_p8lab")
 
-[node name="AnswerDropdown5" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown5" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 364.0
 offset_top = 431.0
@@ -268,9 +268,9 @@ popup/item_1/text = "Greene"
 popup/item_1/id = 1
 popup/item_2/text = "Hughes"
 popup/item_2/id = 2
-dropdown_field = ExtResource("9_yxlrf")
+dropdown_field = ExtResource("10_7hijy")
 
-[node name="AnswerDropdown6" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown6" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 323.0
 offset_top = 532.0
@@ -297,9 +297,9 @@ popup/item_4/text = "Photographer"
 popup/item_4/id = 4
 popup/item_5/text = "Writer"
 popup/item_5/id = 5
-dropdown_field = ExtResource("10_pb4ak")
+dropdown_field = ExtResource("11_enhmj")
 
-[node name="AnswerDropdown7" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown7" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 213.0
 offset_top = 644.0
@@ -320,9 +320,9 @@ popup/item_1/text = "Louise"
 popup/item_1/id = 1
 popup/item_2/text = "Cheryl"
 popup/item_2/id = 2
-dropdown_field = ExtResource("11_ilhuk")
+dropdown_field = ExtResource("12_7njef")
 
-[node name="AnswerDropdown8" parent="." instance=ExtResource("4_4fmg6")]
+[node name="AnswerDropdown8" parent="." instance=ExtResource("5_k4xdr")]
 layout_mode = 0
 offset_left = 364.0
 offset_top = 644.0
@@ -343,4 +343,4 @@ popup/item_1/text = "Hughes"
 popup/item_1/id = 1
 popup/item_2/text = "McAllister"
 popup/item_2/id = 2
-dropdown_field = ExtResource("12_fybyg")
+dropdown_field = ExtResource("13_jot5d")
