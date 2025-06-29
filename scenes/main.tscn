@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b27of1woe625"]
+[gd_scene load_steps=4 format=3 uid="uid://b27of1woe625"]
 
 [ext_resource type="Script" uid="uid://fplh06xlympe" path="res://scenes/main.gd" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://b2ss1cny1ukj7" path="res://scenes/answer_sheets/answer_sheet_1.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://bmgivkyud5vua" path="res://scenes/ui/nav_journal.tscn" id="3_sugp2"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_o5qli")
@@ -18,62 +19,6 @@ grow_vertical = 2
 layout_mode = 3
 anchors_preset = 0
 
-[node name="Button" type="Button" parent="GUI"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 64.0
-offset_right = 128.0
-offset_bottom = 96.0
-text = "garage"
-
-[node name="Button2" type="Button" parent="GUI"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 104.0
-offset_right = 168.0
-offset_bottom = 136.0
-text = "grace_room"
-
-[node name="Button3" type="Button" parent="GUI"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 144.0
-offset_right = 192.0
-offset_bottom = 176.0
-text = "house_exterior"
-
-[node name="Button4" type="Button" parent="GUI"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 184.0
-offset_right = 136.0
-offset_bottom = 216.0
-text = "kitchen"
-
-[node name="Button5" type="Button" parent="GUI"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 224.0
-offset_right = 136.0
-offset_bottom = 256.0
-text = "living_room"
-
-[node name="Button6" type="Button" parent="GUI"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 264.0
-offset_right = 162.0
-offset_bottom = 296.0
-text = "parent_room"
-
-[node name="RichTextLabel" type="RichTextLabel" parent="GUI"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 304.0
-offset_right = 192.0
-offset_bottom = 368.0
-text = "Room History:"
-
 [node name="AnswerSheet1" parent="GUI" instance=ExtResource("2_0wfyh")]
 layout_mode = 1
 anchors_preset = -1
@@ -87,6 +32,13 @@ offset_right = 1259.0
 offset_bottom = 960.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="NavJournal" parent="GUI" instance=ExtResource("3_sugp2")]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 251.0
+offset_right = 554.0
+offset_bottom = 828.0
 
 [node name="AudioPlayers" type="Node" parent="."]
 

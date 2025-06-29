@@ -91,6 +91,7 @@ func _transition_to_room(new_room: String) -> void:
 	room_history.append(current_room)
 	if room_history.size() > MAX_ROOM_HISTORY:
 		room_history.pop_front()
+	print(room_history)
 	room_changed.emit()
 	await _fade_in()
 

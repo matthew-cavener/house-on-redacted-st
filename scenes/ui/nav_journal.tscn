@@ -1,8 +1,158 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmgivkyud5vua"]
+[gd_scene load_steps=15 format=3 uid="uid://bmgivkyud5vua"]
 
 [ext_resource type="Texture2D" uid="uid://gi7xrv8nlw5h" path="res://assets/sprites/ui/nav_journal/navjournal01.png" id="1_v3yxw"]
+[ext_resource type="Script" uid="uid://bq0faimthkpxd" path="res://scenes/ui/nav_journal.gd" id="2_1dy58"]
+[ext_resource type="Texture2D" uid="uid://duio8v75k7nho" path="res://assets/sprites/ui/nav_journal/navjournaloutside.png" id="3_l3e2l"]
+[ext_resource type="Texture2D" uid="uid://jq8f04aist2g" path="res://assets/sprites/ui/nav_journal/navjournaladriansroom.png" id="4_5secr"]
+[ext_resource type="Texture2D" uid="uid://rrhjp6i0f0s6" path="res://assets/sprites/ui/nav_journal/redactions/030.png" id="4_m6i5w"]
+[ext_resource type="Texture2D" uid="uid://b1lrwm3jd7tq3" path="res://assets/sprites/ui/nav_journal/redactions/041.png" id="5_5secr"]
+[ext_resource type="Texture2D" uid="uid://c7ygw37hf011t" path="res://assets/sprites/ui/nav_journal/navjournalgarage.png" id="5_e10gw"]
+[ext_resource type="Texture2D" uid="uid://ckew8g45gvhrw" path="res://assets/sprites/ui/nav_journal/navjournalgracesroom.png" id="6_do7im"]
+[ext_resource type="Texture2D" uid="uid://dkmdtcrgjmspw" path="res://assets/sprites/ui/nav_journal/navjournalkitchen.png" id="7_oclrl"]
+[ext_resource type="Texture2D" uid="uid://ctsvhvldt4b7f" path="res://assets/sprites/ui/nav_journal/redactions/057.png" id="8_e10gw"]
+[ext_resource type="Texture2D" uid="uid://brflaov0imysr" path="res://assets/sprites/ui/nav_journal/navjournallivingroom.png" id="8_s1att"]
+[ext_resource type="Texture2D" uid="uid://g0rl440mqqfq" path="res://assets/sprites/ui/nav_journal/redactions/017.png" id="10_s1att"]
+[ext_resource type="Texture2D" uid="uid://c7bp4p8qy8om1" path="res://assets/sprites/ui/nav_journal/redactions/062.png" id="12_m6i5w"]
+[ext_resource type="Texture2D" uid="uid://j8j0x1sjtvgd" path="res://assets/sprites/ui/nav_journal/redactions/043.png" id="13_dx3cy"]
 
-[node name="NavJournal" type="TextureRect"]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("1_v3yxw")
+[node name="NavJournal" type="TextureButton"]
+offset_right = 490.0
+offset_bottom = 577.0
+texture_normal = ExtResource("1_v3yxw")
+script = ExtResource("2_1dy58")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.130612
+anchor_right = 0.816327
+anchor_bottom = 0.77643
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 35
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="HouseExterior" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_l3e2l")
+
+[node name="HouseExteriorProgressBar" type="TextureProgressBar" parent="VBoxContainer/HouseExterior"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -15.0
+offset_top = -6.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("4_m6i5w")
+tint_progress = Color(0, 0, 0, 1)
+
+[node name="ParentRoom" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("4_5secr")
+
+[node name="ProgressBar" type="TextureProgressBar" parent="VBoxContainer/ParentRoom"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_top = -7.0
+offset_right = 4.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("5_5secr")
+tint_progress = Color(0, 0, 0, 1)
+
+[node name="Garage" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("5_e10gw")
+
+[node name="GarageProgressBar" type="TextureProgressBar" parent="VBoxContainer/Garage"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -9.0
+offset_right = 3.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("10_s1att")
+tint_progress = Color(0, 0, 0, 1)
+
+[node name="GraceRoom" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("6_do7im")
+
+[node name="GraceProgressBar" type="TextureProgressBar" parent="VBoxContainer/GraceRoom"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -9.0
+offset_right = 3.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("8_e10gw")
+tint_progress = Color(0, 0, 0, 1)
+
+[node name="Kitchen" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("7_oclrl")
+
+[node name="KitchenProgressBar" type="TextureProgressBar" parent="VBoxContainer/Kitchen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -9.0
+offset_right = 3.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("13_dx3cy")
+tint_progress = Color(0, 0, 0, 1)
+
+[node name="LivingRoom" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("8_s1att")
+
+[node name="LivingRoomProgressBar" type="TextureProgressBar" parent="VBoxContainer/LivingRoom"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -9.0
+offset_right = 10.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("12_m6i5w")
+tint_progress = Color(0, 0, 0, 1)
