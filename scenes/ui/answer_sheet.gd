@@ -85,11 +85,22 @@ func _replace_with_next_answer_sheet():
 	if not parent_node:
 		push_error("AnswerSheet has no parent, cannot replace")
 		return
-	next_answer_sheet.position = position
+	var current_position = position
+	var off_screen_position = current_position + Vector2(0, 1000)
+	next_answer_sheet.position = off_screen_position
 	next_answer_sheet.is_slid_up = is_slid_up
 	parent_node.add_child(next_answer_sheet)
 	var my_index = get_index()
 	parent_node.move_child(next_answer_sheet, my_index)
+	var current_tween = create_tween()
+	current_tween.set_ease(Tween.EASE_IN)
+	current_tween.set_trans(Tween.TRANS_QUART)
+	current_tween.tween_property(self, "position", off_screen_position, slide_duration)
+	await current_tween.finished
+	var new_tween = next_answer_sheet.create_tween()
+	new_tween.set_ease(Tween.EASE_OUT)
+	new_tween.set_trans(Tween.TRANS_QUART)
+	new_tween.tween_property(next_answer_sheet, "position", current_position, slide_duration)
 	queue_free()
 
 func set_next_answer_sheet_scene(scene: PackedScene):
