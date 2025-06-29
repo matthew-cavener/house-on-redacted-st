@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_pmkqf")
 field_name = "Who was obsessed with show"
-options = Array[String](["Grace", "Adrian and Beth", "The police", "The school"])
+options = Array[String](["Adrian and Beth", "Grace", "The police", "The school"])
 answer = "Grace"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

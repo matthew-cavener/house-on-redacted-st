@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dboaayuskak7h" path="res://assets/sprites/ui/clipboards/answerform4.png" id="1_kaj4k"]
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_68uv5"]
-[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_s06xx"]
+[ext_resource type="Resource" uid="uid://d113dyw8e2884" path="res://data/puzzles/answer_key_5/answer_key_5.tres" id="3_6voju"]
 [ext_resource type="PackedScene" uid="uid://cv1uhms03vlop" path="res://scenes/answer_sheets/answer_sheet_6.tscn" id="4_6voju"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_kghaq"]
 [ext_resource type="Resource" uid="uid://bt47m2dgogoj2" path="res://data/puzzles/answer_key_5/answer_key_5_dropdown_1.tres" id="5_6voju"]
@@ -59,7 +59,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("1_kaj4k")
 script = ExtResource("2_68uv5")
-puzzle_resource = ExtResource("3_s06xx")
+puzzle_resource = ExtResource("3_6voju")
 answer_sheet_texture = ExtResource("1_kaj4k")
 next_answer_sheet_scene = ExtResource("4_6voju")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
@@ -72,7 +72,7 @@ offset_top = 287.0
 offset_right = 268.0
 offset_bottom = 308.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 12
+theme_override_font_sizes/font_size = 16
 theme_override_styles/focus = SubResource("StyleBoxFlat_p6wt8")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_p6wt8")
 theme_override_styles/hover = SubResource("StyleBoxFlat_p6wt8")
@@ -107,7 +107,7 @@ offset_top = 386.0
 offset_right = 268.0
 offset_bottom = 407.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 12
+theme_override_font_sizes/font_size = 16
 theme_override_styles/focus = SubResource("StyleBoxFlat_sp61i")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_sp61i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_sp61i")
@@ -142,7 +142,7 @@ offset_top = 485.0
 offset_right = 360.0
 offset_bottom = 506.0
 theme_override_constants/h_separation = 4
-theme_override_font_sizes/font_size = 12
+theme_override_font_sizes/font_size = 16
 theme_override_styles/focus = SubResource("StyleBoxFlat_kghaq")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_kghaq")
 theme_override_styles/hover = SubResource("StyleBoxFlat_kghaq")

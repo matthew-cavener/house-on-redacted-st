@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_8i6jl")
 field_name = "Happiest day"
-options = Array[String](["Birth of Grace", "Wedding day", "Day Summit Bank Opened", "30th birhday"])
+options = Array[String](["30th birhday", "Birth of Grace", "Day Summit Bank Opened", "Wedding day"])
 answer = "Wedding day"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

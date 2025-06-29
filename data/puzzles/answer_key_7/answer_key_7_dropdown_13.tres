@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_ry8wu")
 field_name = "Favorite Color"
-options = Array[String](["Red", "Blue", "Green", "Yellow", "Orange"])
+options = Array[String](["Blue", "Green", "Orange", "Red", "Yellow"])
 answer = "Orange"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

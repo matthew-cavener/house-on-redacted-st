@@ -2,15 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://bsblpuakaxjxa" path="res://assets/sprites/ui/clipboards/answerform9.png" id="1_t62k0"]
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_0jye1"]
-[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_w7786"]
+[ext_resource type="Resource" uid="uid://dmdkx8myimpg4" path="res://data/puzzles/answer_key_10/answer_key_10.tres" id="3_t62k0"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_o47cg"]
 [ext_resource type="Resource" uid="uid://d2mntodayq1n7" path="res://data/puzzles/answer_key_10/answer_key_10_dropdown_1.tres" id="5_518ds"]
 [ext_resource type="Resource" uid="uid://ds17xwc12svgq" path="res://data/puzzles/answer_key_10/answer_key_10_dropdown_2.tres" id="6_xvchs"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t62k0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_518ds"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_518ds"]
+[sub_resource type="Image" id="Image_xvchs"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -19,13 +19,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_xvchs"]
-image = SubResource("Image_518ds")
+[sub_resource type="ImageTexture" id="ImageTexture_gxfiv"]
+image = SubResource("Image_xvchs")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxfiv"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sn8md"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_sn8md"]
+[sub_resource type="Image" id="Image_0jye1"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -34,15 +34,15 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_0jye1"]
-image = SubResource("Image_sn8md")
+[sub_resource type="ImageTexture" id="ImageTexture_w7786"]
+image = SubResource("Image_0jye1")
 
 [node name="AnswerSheet10" type="TextureButton"]
 offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("1_t62k0")
 script = ExtResource("2_0jye1")
-puzzle_resource = ExtResource("3_w7786")
+puzzle_resource = ExtResource("3_t62k0")
 answer_sheet_texture = ExtResource("1_t62k0")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
 metadata/_edit_lock_ = true
@@ -55,12 +55,12 @@ offset_right = 451.0
 offset_bottom = 381.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_t62k0")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_t62k0")
-theme_override_styles/hover = SubResource("StyleBoxFlat_t62k0")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_t62k0")
-theme_override_styles/normal = SubResource("StyleBoxFlat_t62k0")
-theme_override_icons/arrow = SubResource("ImageTexture_xvchs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_518ds")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_518ds")
+theme_override_styles/hover = SubResource("StyleBoxFlat_518ds")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_518ds")
+theme_override_styles/normal = SubResource("StyleBoxFlat_518ds")
+theme_override_icons/arrow = SubResource("ImageTexture_gxfiv")
 item_count = 4
 popup/item_0/text = "Adrian McAllister"
 popup/item_0/id = 0
@@ -80,12 +80,12 @@ offset_right = 451.0
 offset_bottom = 550.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_gxfiv")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_gxfiv")
-theme_override_styles/hover = SubResource("StyleBoxFlat_gxfiv")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_gxfiv")
-theme_override_styles/normal = SubResource("StyleBoxFlat_gxfiv")
-theme_override_icons/arrow = SubResource("ImageTexture_0jye1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sn8md")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_sn8md")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sn8md")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sn8md")
+theme_override_styles/normal = SubResource("StyleBoxFlat_sn8md")
+theme_override_icons/arrow = SubResource("ImageTexture_w7786")
 item_count = 4
 popup/item_0/text = "Gun"
 popup/item_0/id = 0

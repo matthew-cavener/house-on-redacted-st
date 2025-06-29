@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_yjmq1")
 field_name = "Verb"
-options = Array[String](["Disappeared", "Died from natural causes", "Was murdered"])
+options = Array[String](["Died from natural causes", "Disappeared", "Was murdered"])
 answer = "Disappeared"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
