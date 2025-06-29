@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c4xjlhlvh5ieu" path="res://assets/sprites/ui/clipboards/answerform7.png" id="1_y7t6p"]
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_umnnl"]
-[ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_px8lx"]
+[ext_resource type="Resource" uid="uid://on130hpsuns8" path="res://data/puzzles/answer_key_8/answer_key_8.tres" id="3_xajj5"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_ohl5m"]
 [ext_resource type="PackedScene" uid="uid://bap0b1b8mcw5" path="res://scenes/answer_sheets/answer_sheet_9.tscn" id="4_xajj5"]
 [ext_resource type="Resource" uid="uid://xmbmrks0h2tq" path="res://data/puzzles/answer_key_8/answer_key_8_dropdown_1.tres" id="5_xajj5"]
@@ -12,10 +12,10 @@
 [ext_resource type="Resource" uid="uid://dyndx76o4nhng" path="res://data/puzzles/answer_key_8/answer_key_8_dropdown_5.tres" id="9_y7t6p"]
 [ext_resource type="Resource" uid="uid://cheu31hbdn8jj" path="res://data/puzzles/answer_key_8/answer_key_8_dropdown_6.tres" id="10_m3le4"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xajj5"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5b1w"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_s5b1w"]
+[sub_resource type="Image" id="Image_ycp4a"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -24,13 +24,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_ycp4a"]
-image = SubResource("Image_s5b1w")
+[sub_resource type="ImageTexture" id="ImageTexture_vcl8c"]
+image = SubResource("Image_ycp4a")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcl8c"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m3le4"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_m3le4"]
+[sub_resource type="Image" id="Image_gy732"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -39,13 +39,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_gy732"]
-image = SubResource("Image_m3le4")
+[sub_resource type="ImageTexture" id="ImageTexture_c5yjm"]
+image = SubResource("Image_gy732")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c5yjm"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4xf4c"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_4xf4c"]
+[sub_resource type="Image" id="Image_654xj"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -54,13 +54,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_654xj"]
-image = SubResource("Image_4xf4c")
+[sub_resource type="ImageTexture" id="ImageTexture_umnnl"]
+image = SubResource("Image_654xj")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_umnnl"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_px8lx"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_px8lx"]
+[sub_resource type="Image" id="Image_ohl5m"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -69,13 +69,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_ohl5m"]
-image = SubResource("Image_px8lx")
+[sub_resource type="ImageTexture" id="ImageTexture_oa8wo"]
+image = SubResource("Image_ohl5m")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa8wo"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1vfn"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_c1vfn"]
+[sub_resource type="Image" id="Image_xnvcx"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -84,13 +84,13 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_xnvcx"]
-image = SubResource("Image_c1vfn")
+[sub_resource type="ImageTexture" id="ImageTexture_geeas"]
+image = SubResource("Image_xnvcx")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_geeas"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vxnro"]
 bg_color = Color(0, 0, 0, 0)
 
-[sub_resource type="Image" id="Image_vxnro"]
+[sub_resource type="Image" id="Image_ajenu"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0),
 "format": "RGBA8",
@@ -99,15 +99,15 @@ data = {
 "width": 1
 }
 
-[sub_resource type="ImageTexture" id="ImageTexture_ajenu"]
-image = SubResource("Image_vxnro")
+[sub_resource type="ImageTexture" id="ImageTexture_4dyd4"]
+image = SubResource("Image_ajenu")
 
 [node name="AnswerSheet8" type="TextureButton"]
 offset_right = 40.0
 offset_bottom = 40.0
 texture_normal = ExtResource("1_y7t6p")
 script = ExtResource("2_umnnl")
-puzzle_resource = ExtResource("3_px8lx")
+puzzle_resource = ExtResource("3_xajj5")
 answer_sheet_texture = ExtResource("1_y7t6p")
 next_answer_sheet_scene = ExtResource("4_xajj5")
 metadata/_custom_type_script = "uid://ung6mdt8pxu1"
@@ -121,12 +121,12 @@ offset_right = 243.0
 offset_bottom = 390.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 24
-theme_override_styles/focus = SubResource("StyleBoxFlat_xajj5")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_xajj5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_xajj5")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_xajj5")
-theme_override_styles/normal = SubResource("StyleBoxFlat_xajj5")
-theme_override_icons/arrow = SubResource("ImageTexture_ycp4a")
+theme_override_styles/focus = SubResource("StyleBoxFlat_s5b1w")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_s5b1w")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s5b1w")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s5b1w")
+theme_override_styles/normal = SubResource("StyleBoxFlat_s5b1w")
+theme_override_icons/arrow = SubResource("ImageTexture_vcl8c")
 item_count = 3
 popup/item_0/text = "Beth's"
 popup/item_0/id = 0
@@ -144,12 +144,12 @@ offset_right = 467.0
 offset_bottom = 390.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 24
-theme_override_styles/focus = SubResource("StyleBoxFlat_vcl8c")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_vcl8c")
-theme_override_styles/hover = SubResource("StyleBoxFlat_vcl8c")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_vcl8c")
-theme_override_styles/normal = SubResource("StyleBoxFlat_vcl8c")
-theme_override_icons/arrow = SubResource("ImageTexture_gy732")
+theme_override_styles/focus = SubResource("StyleBoxFlat_m3le4")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_m3le4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_m3le4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_m3le4")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m3le4")
+theme_override_icons/arrow = SubResource("ImageTexture_c5yjm")
 item_count = 4
 popup/item_0/text = "Divorce"
 popup/item_0/id = 0
@@ -169,12 +169,12 @@ offset_right = 203.0
 offset_bottom = 432.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 23
-theme_override_styles/focus = SubResource("StyleBoxFlat_c5yjm")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_c5yjm")
-theme_override_styles/hover = SubResource("StyleBoxFlat_c5yjm")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_c5yjm")
-theme_override_styles/normal = SubResource("StyleBoxFlat_c5yjm")
-theme_override_icons/arrow = SubResource("ImageTexture_654xj")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4xf4c")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4xf4c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4xf4c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4xf4c")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4xf4c")
+theme_override_icons/arrow = SubResource("ImageTexture_umnnl")
 item_count = 4
 popup/item_0/text = "Adrian"
 popup/item_0/id = 0
@@ -194,12 +194,12 @@ offset_right = 523.0
 offset_bottom = 432.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 24
-theme_override_styles/focus = SubResource("StyleBoxFlat_umnnl")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_umnnl")
-theme_override_styles/hover = SubResource("StyleBoxFlat_umnnl")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_umnnl")
-theme_override_styles/normal = SubResource("StyleBoxFlat_umnnl")
-theme_override_icons/arrow = SubResource("ImageTexture_ohl5m")
+theme_override_styles/focus = SubResource("StyleBoxFlat_px8lx")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_px8lx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_px8lx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_px8lx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_px8lx")
+theme_override_icons/arrow = SubResource("ImageTexture_oa8wo")
 item_count = 4
 popup/item_0/text = "Business"
 popup/item_0/id = 0
@@ -219,12 +219,12 @@ offset_right = 297.0
 offset_bottom = 481.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 26
-theme_override_styles/focus = SubResource("StyleBoxFlat_oa8wo")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_oa8wo")
-theme_override_styles/hover = SubResource("StyleBoxFlat_oa8wo")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_oa8wo")
-theme_override_styles/normal = SubResource("StyleBoxFlat_oa8wo")
-theme_override_icons/arrow = SubResource("ImageTexture_xnvcx")
+theme_override_styles/focus = SubResource("StyleBoxFlat_c1vfn")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_c1vfn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c1vfn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c1vfn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_c1vfn")
+theme_override_icons/arrow = SubResource("ImageTexture_geeas")
 item_count = 4
 popup/item_0/text = "Attract"
 popup/item_0/id = 0
@@ -244,12 +244,12 @@ offset_right = 424.0
 offset_bottom = 527.0
 theme_override_constants/h_separation = 4
 theme_override_font_sizes/font_size = 28
-theme_override_styles/focus = SubResource("StyleBoxFlat_geeas")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_geeas")
-theme_override_styles/hover = SubResource("StyleBoxFlat_geeas")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_geeas")
-theme_override_styles/normal = SubResource("StyleBoxFlat_geeas")
-theme_override_icons/arrow = SubResource("ImageTexture_ajenu")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vxnro")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_vxnro")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vxnro")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vxnro")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vxnro")
+theme_override_icons/arrow = SubResource("ImageTexture_4dyd4")
 item_count = 4
 popup/item_0/text = "Signal's source"
 popup/item_0/id = 0
@@ -262,6 +262,7 @@ popup/item_3/id = 3
 dropdown_field = ExtResource("10_m3le4")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = 244.0
 offset_top = 358.0
 offset_right = 276.0

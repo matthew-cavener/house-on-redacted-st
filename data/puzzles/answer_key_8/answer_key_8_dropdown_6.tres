@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_82jeg")
 field_name = "Where"
-options = Array[String](["Signal's source", "Grace's killer", "Infinite wealth", "Depths of space"])
+options = Array[String](["Depths of space", "Grace's killer", "Infinite wealth", "Signal's source"])
 answer = "Signal's source"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_efw2s")
 field_name = "was ever produced"
-options = Array[String](["Was ever produced", "Was ever aired", "Was ever released"])
+options = Array[String](["Was ever aired", "Was ever produced", "Was ever released"])
 answer = "Was ever produced"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

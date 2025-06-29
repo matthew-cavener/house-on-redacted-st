@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_5fvw6")
 field_name = "3rd room"
-options = Array[String](["Living Room", "Kitchen", "Grace's Room", "Adrian's Room", "Garage"])
+options = Array[String](["Adrian's Room", "Garage", "Grace's Room", "Kitchen", "Living Room"])
 answer = "Grace's Room"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
