@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="PuzzleResource" load_steps=8 format=3 uid="uid://ch11dgafjxbt1"]
+
+[ext_resource type="Script" uid="uid://xha7twk0d8v3" path="res://data/resources/dropdown_field.gd" id="1_pq1b2"]
+[ext_resource type="Script" uid="uid://3jcevwhmv3f7" path="res://data/resources/puzzle_resource.gd" id="2_0gdne"]
+[ext_resource type="Resource" uid="uid://cgqekpvfsg61v" path="res://data/puzzles/answer_key_9/answer_key_9_dropdown_1.tres" id="2_2h38l"]
+[ext_resource type="Resource" uid="uid://ccic5280xos0a" path="res://data/puzzles/answer_key_9/answer_key_9_dropdown_2.tres" id="3_br2ae"]
+[ext_resource type="Resource" uid="uid://qj4yubc0et6a" path="res://data/puzzles/answer_key_9/answer_key_9_dropdown_3.tres" id="4_dx8dp"]
+[ext_resource type="Resource" uid="uid://drpjc7h0xk5k4" path="res://data/puzzles/answer_key_9/answer_key_9_dropdown_4.tres" id="5_7y31j"]
+[ext_resource type="Resource" uid="uid://1qiyf5plvd4d" path="res://data/puzzles/answer_key_9/answer_key_9_dropdown_5.tres" id="6_m5hro"]
+
+[resource]
+script = ExtResource("2_0gdne")
+puzzle_id = "answer_key_9"
+puzzle_name = "The Nav Puzzle"
+dropdown_fields = Array[ExtResource("1_pq1b2")]([ExtResource("2_2h38l"), ExtResource("3_br2ae"), ExtResource("4_dx8dp"), ExtResource("5_7y31j"), ExtResource("6_m5hro")])
+incorrect_fields_for_close_feedback = 2
+solved_feedback = "You have correctly filled out the paperwork. Please proceed with your investigation."
+close_feedback = "You have {incorrect_fields_for_close_feedback} or fewer redactions incorrect. Please correct your mistakes."
+failure_feedback = "Your paperwork has too many errors. Please try again."
+metadata/_custom_type_script = "uid://3jcevwhmv3f7"

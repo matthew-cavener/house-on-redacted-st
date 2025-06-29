@@ -40,6 +40,12 @@ offset_top = 251.0
 offset_right = 554.0
 offset_bottom = 828.0
 
+[node name="DebugSolvePuzzle" type="Button" parent="GUI"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "debug, auto solve current puzzle"
+
 [node name="AudioPlayers" type="Node" parent="."]
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]

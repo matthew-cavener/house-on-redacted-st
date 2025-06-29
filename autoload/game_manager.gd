@@ -92,6 +92,8 @@ func _transition_to_room(new_room: String) -> void:
 	if room_history.size() > MAX_ROOM_HISTORY:
 		room_history.pop_front()
 	print(room_history)
+	if current_puzzle and _is_navigation_puzzle():
+		_evaluate_navigation_puzzle()
 	room_changed.emit()
 	await _fade_in()
 
@@ -165,6 +167,8 @@ func register_puzzle(puzzle_resource: PuzzleResource):
 		return
 	current_puzzle = puzzle_resource
 	current_puzzle_selections.clear()
+	if _is_navigation_puzzle():
+		_evaluate_navigation_puzzle()
 
 func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selected_value: String):
 	if not current_puzzle:
@@ -173,9 +177,11 @@ func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selec
 	if current_puzzle.puzzle_id != puzzle_id:
 		push_warning("Received dropdown change for wrong puzzle: expected %s, got %s" % [current_puzzle.puzzle_id, puzzle_id])
 		return
+	if _is_navigation_puzzle():
+		return
 	current_puzzle_selections[field_name] = selected_value
 	if _is_puzzle_complete():
-		var result = current_puzzle.validate_solution(current_puzzle_selections)
+		var result = current_puzzle.validate_solution(current_puzzle_selections, room_history)
 		EventBus.puzzle_evaluated.emit(puzzle_id, result)
 		if result.is_correct:
 			EventBus.puzzle_solved.emit(puzzle_id)
@@ -191,3 +197,29 @@ func _is_puzzle_complete() -> bool:
 			return false
 	var is_complete = current_puzzle.dropdown_fields.size() > 0
 	return is_complete
+
+func _is_navigation_puzzle() -> bool:
+	return current_puzzle and current_puzzle.puzzle_id == "answer_key_9"
+
+func _evaluate_navigation_puzzle():
+	if not current_puzzle:
+		return
+	if _is_navigation_puzzle_complete():
+		var result = current_puzzle.validate_solution({}, room_history)
+		EventBus.puzzle_evaluated.emit(current_puzzle.puzzle_id, result)
+		if result.is_correct:
+			EventBus.puzzle_solved.emit(current_puzzle.puzzle_id)
+		else:
+			EventBus.puzzle_failed.emit()
+
+func _is_navigation_puzzle_complete() -> bool:
+	if not current_puzzle:
+		return false
+	var required_rooms = current_puzzle.dropdown_fields.size()
+	var navigation_rooms = room_history.size()
+	return navigation_rooms >= required_rooms
+
+func get_puzzle_selections(puzzle_id: String) -> Dictionary:
+	if current_puzzle and current_puzzle.puzzle_id == puzzle_id:
+		return current_puzzle_selections
+	return {}

@@ -13,12 +13,9 @@ var up_position: Vector2
 var down_position: Vector2
 
 func _ready():
-	# Setup sliding positions
 	initial_position = position
 	up_position = position
 	down_position = position + Vector2(0, slide_distance)
-	
-	# Connect all room buttons to their respective room navigation functions
 	$VBoxContainer/HouseExterior.pressed.connect(_on_room_button_pressed.bind("house_exterior"))
 	$VBoxContainer/ParentRoom.pressed.connect(_on_room_button_pressed.bind("parent_room"))
 	$VBoxContainer/Garage.pressed.connect(_on_room_button_pressed.bind("garage"))
@@ -26,10 +23,7 @@ func _ready():
 	$VBoxContainer/Kitchen.pressed.connect(_on_room_button_pressed.bind("kitchen"))
 	$VBoxContainer/LivingRoom.pressed.connect(_on_room_button_pressed.bind("living_room"))
 	EventBus.puzzle_solved.connect(_on_puzzle_solved)
-	
-	# Connect click behavior for sliding
 	pressed.connect(_on_nav_journal_clicked)
-	
 	_update_button_states()
 
 func _update_button_states():
