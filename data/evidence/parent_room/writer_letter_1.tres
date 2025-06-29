@@ -8,6 +8,7 @@ script = ExtResource("1_nk12h")
 id = "writer_letter_1"
 name = "Crumpled Letter #1"
 description = "From: CA Summer Air Conditioning
+
 \"Thanks for reaching out, but you’ve got the wrong contact. This is an air conditioning company. Good luck tracking down your 'lost' cartoon!\""
 image = ExtResource("1_8olcv")
 shows_in_background = true

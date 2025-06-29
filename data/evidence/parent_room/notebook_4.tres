@@ -7,9 +7,10 @@
 script = ExtResource("1_g2wym")
 id = "notebook_4"
 name = "Adrian's Note #1"
-description = "\"I can't believe it! Years after Grace disappeared into thin air, I turn on the TV and what do I find on channel 17? A full cartoon production of Melody's Melodies: the show she 'dreamed' up!
+description = "\"I can't believe it! Years after Grace disappeared into thin air, I turn on the TV and what do I find on channel 17? A full cartoon production of Melody's Melodies: the show Grace 'dreamed' up!
 
-It gets stranger because I asked my colleagues at the bank, my neighbors, and family from out of state: this is the only house in the country where this program gets broadcast. I have to find out why...\"
+It gets stranger because I asked my colleagues at the bank, my neighbors, and family from out of state: this is the only house in the country that receives this broadcast. I have to find out why...\"
+
 Dated 1962"
 image = ExtResource("1_0je0x")
 shows_in_background = true

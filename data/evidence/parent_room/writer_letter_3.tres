@@ -8,6 +8,7 @@ script = ExtResource("1_473y4")
 id = "writer_letter_3"
 name = "Crumpled Letter #3"
 description = "From: Calvin [----------]
+
 \"im touchd thhat u think i mite bee the person who did the [----------] for that show, butt as u can probly tell by this leter, what u askked aboot is not my best skill sett.\""
 image = ExtResource("1_mk6ku")
 shows_in_background = true
