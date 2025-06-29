@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_ia8jt")
 field_name = "season_7 episodes"
-options = Array[String](["Did not get produced", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
-answer = "Did not get produced"
+options = Array[String](["Not Produced", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"])
+answer = "Not Produced"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
