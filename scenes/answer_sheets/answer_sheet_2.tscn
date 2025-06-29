@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://discjulag06kj" path="res://assets/sprites/ui/clipboards/answerform1.png" id="1_oc8b0"]
 [ext_resource type="Script" uid="uid://ung6mdt8pxu1" path="res://scenes/ui/answer_sheet.gd" id="2_drlu2"]
 [ext_resource type="Resource" uid="uid://cf3k1ckgauojw" path="res://data/puzzles/answer_key_2/answer_key_2.tres" id="3_kwe3v"]
-[ext_resource type="PackedScene" uid="uid://p1n704ytue10" path="res://scenes/answer_sheets/answer_sheet_3_redux.tscn" id="4_d2qdf"]
+[ext_resource type="PackedScene" uid="uid://p1n704ytue10" path="res://scenes/answer_sheets/answer_sheet_3.tscn" id="4_d2qdf"]
 [ext_resource type="PackedScene" uid="uid://3mrqgambkl3d" path="res://scenes/ui/answer_dropdown.tscn" id="4_r0vtq"]
 [ext_resource type="Resource" uid="uid://ccky4pt6uuqa0" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_1.tres" id="5_huv6o"]
 [ext_resource type="Resource" uid="uid://l7i0ki3gqotg" path="res://data/puzzles/answer_key_2/answer_key_2_dropdown_2.tres" id="6_r0vtq"]
