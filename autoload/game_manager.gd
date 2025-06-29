@@ -188,7 +188,6 @@ func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selec
 		EventBus.puzzle_evaluated.emit(puzzle_id, result)
 		if result.is_correct:
 			EventBus.puzzle_solved.emit(puzzle_id)
-			# Handle answer_key_9 special case - transfer to nexus1
 			if puzzle_id == "answer_key_9":
 				_handle_nexus_transfer()
 		else:
