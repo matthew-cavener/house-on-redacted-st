@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_b5fls")
-field_name = "Who"
+field_name = "WhoDisappeared"
 options = Array[String](["Adrian", "Beth", "Grace"])
 answer = "Grace"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

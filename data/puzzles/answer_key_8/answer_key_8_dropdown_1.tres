@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_ibgtm")
-field_name = "Who"
+field_name = "Who1"
 options = Array[String](["Beth's", "Grace's", "His own"])
 answer = "Grace's"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"

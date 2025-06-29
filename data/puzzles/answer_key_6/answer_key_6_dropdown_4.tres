@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_l4fuk")
-field_name = "Year"
+field_name = "YearDiscovered"
 options = Array[String](["1957", "1958", "1959", "1960", "1961", "1962"])
 answer = "1962"
 metadata/_custom_type_script = "uid://xha7twk0d8v3"
