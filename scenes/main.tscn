@@ -98,4 +98,5 @@ volume_db = -5.0
 bus = &"SFX"
 
 [node name="UIPlayer" type="AudioStreamPlayer" parent="AudioPlayers"]
+volume_db = 5.0
 bus = &"UI"

@@ -176,6 +176,10 @@ func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selec
 	if _is_puzzle_complete():
 		var result = current_puzzle.validate_solution(current_puzzle_selections)
 		EventBus.puzzle_evaluated.emit(puzzle_id, result)
+		if result.is_correct:
+			EventBus.puzzle_solved.emit(puzzle_id)
+		else:
+			EventBus.puzzle_failed.emit()
 
 func _is_puzzle_complete() -> bool:
 	if not current_puzzle:
