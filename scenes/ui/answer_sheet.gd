@@ -19,6 +19,7 @@ func _ready():
 		_setup_puzzle()
 		_connect_dropdowns()
 		EventBus.puzzle_evaluated.connect(_on_puzzle_evaluated)
+		EventBus.puzzle_solved.connect(_on_puzzle_solved)
 		pressed.connect(_on_answer_sheet_clicked)
 
 func _connect_dropdowns():
@@ -47,6 +48,12 @@ func _on_puzzle_evaluated(puzzle_id: String, result: Dictionary):
 				_replace_with_next_answer_sheet()
 		else:
 			puzzle_failed.emit(result)
+			_shake_incorrect()
+
+func _on_puzzle_solved(puzzle_id: String):
+	if puzzle_resource and puzzle_resource.puzzle_id == puzzle_id:
+		if next_answer_sheet_scene:
+			_replace_with_next_answer_sheet()
 
 func _show_feedback(_feedback_text: String):
 	feedback_shown.emit(_feedback_text)
@@ -121,3 +128,17 @@ func toggle_slide():
 		slide_down()
 	else:
 		slide_up()
+
+func _shake_incorrect():
+	var original_position = position
+	var shake_amount = 6.0
+	var shake_duration = 0.03
+	var shake_count = 3
+	var tween = create_tween()
+	tween.set_ease(Tween.EASE_OUT)
+	tween.set_trans(Tween.TRANS_BACK)
+	for i in shake_count:
+		var shake_offset = Vector2(shake_amount * (1 if i % 2 == 0 else -1), 0)
+		tween.tween_property(self, "position", original_position + shake_offset, shake_duration)
+		tween.tween_property(self, "position", original_position, shake_duration)
+	tween.tween_property(self, "position", original_position, shake_duration * 0.5)
