@@ -7,7 +7,9 @@
 script = ExtResource("1_grvbx")
 id = "director_note"
 name = "Letter"
-description = "\"You’re looking for a 'lost' show? That’s fascinating, but unfortunately I've never directed any cartoons. During the 50s when that 'Melody' show would have been produced, I had a gig running photo shoots for a very sweet (haha!) project.\""
+description = "\"You’re looking for a 'lost' show? That’s fascinating, but unfortunately I've never directed any cartoons. 
+
+During the 50s when that 'Melody' show would have been produced, I had a gig running photo shoots for a very sweet (haha!) project.\""
 image = ExtResource("1_uev50")
 shows_in_background = true
 metadata/_custom_type_script = "uid://dj5gc8n3a6657"

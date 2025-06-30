@@ -9,7 +9,7 @@ id = "xmas_list"
 name = "Grace's Christmas List"
 description = "\"Dear Santa, 
 
-Please get me an [---------], the '59 model please. It’d be the perfect snack for Oboe — too bad he’s not real though!\"
+Please get me an [---------], the '59 model. It’d be the perfect snack for Oboe — too bad he’s not real though!\"
 
 ~ Grace"
 image = ExtResource("1_rdrox")
