@@ -188,6 +188,8 @@ func _on_dropdown_selection_changed(puzzle_id: String, field_name: String, selec
 		EventBus.puzzle_evaluated.emit(puzzle_id, result)
 		if result.is_correct:
 			EventBus.puzzle_solved.emit(puzzle_id)
+			if current_puzzle.puzzle_id == "answer_key_8":
+				AudioManager.play_machine_sound()
 			if puzzle_id == "answer_key_9":
 				_handle_nexus_transfer()
 		else:

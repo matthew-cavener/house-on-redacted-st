@@ -11,6 +11,7 @@ var pen_click_randomizer: AudioStreamRandomizer
 var correct_sound: AudioStream
 var incorrect_sound: AudioStream
 var room_unlocked_sound: AudioStream
+var machine_sound: AudioStream
 var current_music: String = ""
 var music_fade_duration: float = 1.0
 
@@ -47,7 +48,8 @@ func _load_audio_resources():
 	correct_sound = _load_audio_safe("res://assets/sounds/UI sound [Correct III].wav")
 	incorrect_sound = _load_audio_safe("res://assets/sounds/UI sounds [Incorrect].wav")
 	nexus_transfer_sound = _load_audio_safe("res://assets/sounds/Nexus Transfer Sound.wav")
-	room_unlocked_sound = _load_audio_safe("res://assets/sounds/UI sound [Room Unlocked].wav")
+	room_unlocked_sound = _load_audio_safe("res://assets/sounds/UI sound [Door 1].wav")
+	machine_sound = _load_audio_safe("res://assets/sounds/UI Sound [Machine].wav")
 
 func _setup_pen_click_randomizer():
 	pen_click_randomizer = AudioStreamRandomizer.new()
@@ -156,6 +158,11 @@ func play_melodys_melodies():
 func play_room_unlocked_sound():
 	if room_unlocked_sound:
 		sfx_player.stream = room_unlocked_sound
+		sfx_player.play()
+
+func play_machine_sound():
+	if machine_sound:
+		sfx_player.stream = machine_sound
 		sfx_player.play()
 
 func _on_evidence_popup_requested(evidence: EvidenceResource):
