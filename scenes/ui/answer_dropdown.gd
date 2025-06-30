@@ -25,6 +25,7 @@ func _setup_options():
 		add_item(option)
 	select(-1)
 	allow_reselect = true
+	call_deferred("_update_font_size_to_fit")
 
 func _on_item_selected(index: int):
 	if not dropdown_field:
@@ -65,16 +66,44 @@ func _setup_redaction_style():
 	add_theme_color_override("font_disabled_color", Color(0.8, 0.8, 0.8, 1.0))
 	var transparent_texture = ImageTexture.new()
 	var image = Image.create(1, 1, false, Image.FORMAT_RGBA8)
-	image.fill(Color(0, 0, 0, 0))  # Transparent
+	image.fill(Color(0, 0, 0, 0))
 	transparent_texture.set_image(image)
 	add_theme_icon_override("arrow", transparent_texture)
 	alignment = HORIZONTAL_ALIGNMENT_CENTER
 
 func _update_font_size_to_fit():
-	if size.y <= 0:
+	if size.y <= 0 or size.x <= 0:
 		add_theme_font_size_override("font_size", 16)
 		return
-	var optimal_font_size = max(10, min(32, int(size.y * 0.8)))
+	var height_based_size = max(10, min(32, int(size.y * 0.8)))
+	var longest_text = ""
+	if dropdown_field and dropdown_field.options.size() > 0:
+		for option in dropdown_field.options:
+			if option.length() > longest_text.length():
+				longest_text = option
+	else:
+		if selected >= 0 and selected < get_item_count():
+			longest_text = get_item_text(selected)
+	if longest_text.is_empty():
+		add_theme_font_size_override("font_size", height_based_size)
+		return
+	var font = get_theme_font("font")
+	if not font:
+		add_theme_font_size_override("font_size", height_based_size)
+		return
+	var available_width = size.x * 0.95
+	var optimal_font_size = height_based_size
+	var min_size = 8
+	var max_size = height_based_size
+	while min_size <= max_size:
+		var test_size = (min_size + max_size) / 2
+		var text_width = font.get_string_size(longest_text, HORIZONTAL_ALIGNMENT_LEFT, -1, test_size).x
+		if text_width <= available_width:
+			optimal_font_size = test_size
+			min_size = test_size + 1
+		else:
+			max_size = test_size - 1
+	optimal_font_size = max(8, min(32, optimal_font_size))
 	add_theme_font_size_override("font_size", optimal_font_size)
 
 func _notification(what):
