@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_bakml")
 id = "science_note_5"
-name = "Adrian Discarded Note"
+name = "Discarded Note"
 description = "\"It’s imperative there is as little electrical interference as possible inside this room, even from my own devices.\""
 image = ExtResource("1_08bny")
 shows_in_background = true
