@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dql5jdsd2mm7t"]
+[gd_scene load_steps=26 format=3 uid="uid://dql5jdsd2mm7t"]
 
 [ext_resource type="Texture2D" uid="uid://catgveo15d0pl" path="res://assets/sprites/house_exterior/rachel pic/Background_Exterior_UndevelopedLand.png" id="1_p1cgh"]
 [ext_resource type="Resource" uid="uid://gdyr2rs1iv4p" path="res://data/evidence/house_exterior/demo_tire_swing.tres" id="5_1fkhj"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://bk8ri8nd3tqr7" path="res://assets/sprites/house_exterior/rachel pic/TireSwing.png" id="15_6m3xl"]
 [ext_resource type="Resource" uid="uid://drxeurbqeg46v" path="res://data/evidence/house_exterior/broken_mailbox.tres" id="15_kate0"]
 [ext_resource type="Texture2D" uid="uid://b7c3ghqcmx6t3" path="res://assets/sprites/house_exterior/rachel pic/House_asset.png" id="15_ky5tg"]
+[ext_resource type="Resource" uid="uid://bxhg046esgivk" path="res://data/evidence/house_exterior/orange.tres" id="17_7jfh8"]
 [ext_resource type="Texture2D" uid="uid://da7h1d5chhmka" path="res://assets/sprites/house_exterior/rachel pic/Orange.png" id="18_l0peu"]
 [ext_resource type="Texture2D" uid="uid://btitthvxnubjk" path="res://assets/sprites/house_exterior/rachel pic/Window.png" id="19_p1cgh"]
 [ext_resource type="Texture2D" uid="uid://2podi06u08c4" path="res://assets/sprites/house_exterior/rachel pic/Mailbox.png" id="20_6m3xl"]
@@ -170,10 +171,22 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Orange" type="Sprite2D" parent="Background"]
+visible = false
 position = Vector2(1691, 481)
 rotation = -0.24372
 scale = Vector2(1.22558, 1.22558)
 texture = ExtResource("18_l0peu")
+
+[node name="EvidenceButton2" type="TextureButton" parent="Background"]
+layout_mode = 0
+offset_left = 1657.0
+offset_top = 450.0
+offset_right = 1725.0
+offset_bottom = 514.0
+texture_normal = ExtResource("18_l0peu")
+script = ExtResource("7_xwprl")
+evidence_resource = ExtResource("17_7jfh8")
+metadata/_custom_type_script = "uid://cyoq41rm1sg7e"
 
 [node name="window" type="Sprite2D" parent="Background"]
 position = Vector2(1679, 442)
