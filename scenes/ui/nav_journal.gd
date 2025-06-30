@@ -61,6 +61,8 @@ func _on_puzzle_solved(puzzle_id: String):
 			])
 		"answer_key_6":
 			_unredact_rooms([$VBoxContainer/Garage/GarageProgressBar])
+		_:
+			pass
 
 func _setup_nexus_navigation():
 	nexus_nav_container = VBoxContainer.new()
@@ -104,6 +106,8 @@ func _on_forward_pressed():
 			pass
 
 func _unredact_rooms(progress_bars: Array[TextureProgressBar]):
+	if progress_bars.size() > 0:
+		EventBus.rooms_unlocked.emit()
 	for i in range(progress_bars.size()):
 		var progress_bar = progress_bars[i]
 		var delay = i * randf_range(0.3, 0.8)

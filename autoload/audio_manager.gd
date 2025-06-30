@@ -10,6 +10,7 @@ var melodys_melodies: AudioStream
 var pen_click_randomizer: AudioStreamRandomizer
 var correct_sound: AudioStream
 var incorrect_sound: AudioStream
+var room_unlocked_sound: AudioStream
 var current_music: String = ""
 var music_fade_duration: float = 1.0
 
@@ -46,6 +47,7 @@ func _load_audio_resources():
 	correct_sound = _load_audio_safe("res://assets/sounds/UI sound [Correct III].wav")
 	incorrect_sound = _load_audio_safe("res://assets/sounds/UI sounds [Incorrect].wav")
 	nexus_transfer_sound = _load_audio_safe("res://assets/sounds/Nexus Transfer Sound.wav")
+	room_unlocked_sound = _load_audio_safe("res://assets/sounds/UI sound [Room Unlocked].wav")
 
 func _setup_pen_click_randomizer():
 	pen_click_randomizer = AudioStreamRandomizer.new()
@@ -77,6 +79,7 @@ func _connect_signals():
 	EventBus.evidence_popup_closed.connect(_on_evidence_popup_closed)
 	EventBus.puzzle_solved.connect(_on_puzzle_solved)
 	EventBus.puzzle_failed.connect(_on_puzzle_failed)
+	EventBus.rooms_unlocked.connect(_on_rooms_unlocked)
 
 func play_music(track_name: String, fade_in: bool = true):
 	var new_stream: AudioStream = null
@@ -150,6 +153,11 @@ func switch_to_investigation_music():
 func play_melodys_melodies():
 	play_music("melodys_melodies", false)
 
+func play_room_unlocked_sound():
+	if room_unlocked_sound:
+		sfx_player.stream = room_unlocked_sound
+		sfx_player.play()
+
 func _on_evidence_popup_requested(evidence: EvidenceResource):
 	play_pen_click()
 	if evidence and evidence.id == "parent_room_tv_with_music":
@@ -164,6 +172,9 @@ func _on_puzzle_solved(_puzzle_id: String):
 
 func _on_puzzle_failed():
 	play_ui_feedback(false)
+
+func _on_rooms_unlocked():
+	play_room_unlocked_sound()
 
 func set_music_volume(volume: float):
 	var db = linear_to_db(volume)
