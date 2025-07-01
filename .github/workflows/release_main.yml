@@ -2,7 +2,9 @@
 name: release-main
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 env:
   GODOT_VERSION: 4.4.1
