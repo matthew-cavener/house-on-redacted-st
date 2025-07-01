@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EvidenceResource" load_steps=3 format=3 uid="uid://bxhg046esgivk"]
+
+[ext_resource type="Script" uid="uid://dj5gc8n3a6657" path="res://data/resources/evidence_resource.gd" id="1_afq0d"]
+[ext_resource type="Texture2D" uid="uid://da7h1d5chhmka" path="res://assets/sprites/house_exterior/rachel pic/Orange.png" id="1_ir8xe"]
+
+[resource]
+script = ExtResource("1_afq0d")
+id = "object_in_window"
+name = "Object in Window"
+description = "	A drawing of an orange fruit sits in the neighbor's window."
+image = ExtResource("1_ir8xe")
+shows_in_background = true
+metadata/_custom_type_script = "uid://dj5gc8n3a6657"

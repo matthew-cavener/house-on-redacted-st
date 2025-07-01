@@ -7,7 +7,7 @@
 script = ExtResource("1_6jywd")
 id = "greene_letter_1"
 name = "Letter"
-description = "\"I let myself in to take the thing my daughter bought with money from her first paycheck, but I couldn't find it. She said it was in the shape of a heart and used it the shop where you two first met, which is still going strong, by the way. I can only imagine what this tragedy has done to you, but you can't shut yourself off from the world like this.\"
+description = "\"I let myself in to take the thing my daughter bought with money from her first paycheck, but I couldn't find it. She said it was in the shape of a heart and used it in the shop where you two first met, which is still going strong, by the way. I can only imagine what this tragedy has done to you, but you can't shut yourself off from the world like this.\"
 
 Signed Corbin Greene. April 1965"
 image = ExtResource("1_s05un")
